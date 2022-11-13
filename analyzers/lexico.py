@@ -219,6 +219,7 @@ t_SEMI = r';'
 t_AT = r'@'
 t_NS_SEPARATOR = r'\\'
 
+
 # Comentarios
 
 def t_DOC_COMENTARIOS(t):
@@ -264,27 +265,24 @@ def t_CLOSE_TAG(t):
 # END Ricardo Zaruma
 
 # START Joby Farra
-
-def t_INLINE_HTML(t):
-    r'([^<]|<(?![?%]))+'
-    t.lexer.lineno += t.value.count("\n")
+def t_STRING(t):
+    r'[A-Za-z_][\w_]*'
     return t
-  
+
 def t_VARIABLE(t):
     r'\$[A-Za-z_][\w_]*'
     return t
 
-def t_FLOATNUMBER(t):
+def t_DECIMAL(t):
     r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
     return t
 
-def t_INTNUMBER(t):
+def t_ENTERO(t):
     r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
     return t
 
 def t_QUOTE(t):
     r'"'
-    t.lexer.push_state('quoted')
     return t
 
 #END Joby Farra
@@ -302,10 +300,14 @@ def t_WHITESPACE(t):
 def t_quoted_VARIABLE(t):
     r'\$[A-Za-z_][\w_]*'
     return t
-
+def t_quoted_QUOTE(t):
+    r'"'
+    return t
+  
 def t_quoted_CURLY_OPEN(t):
     r'\{(?=\$)'
     return t
+  
 def t_error(t):
     print("No es reconocido '%s'" %t.value[0])
     t.lexer.skip(1)
@@ -322,15 +324,18 @@ def analizar(data):
         print(tok)
       
 #Lea el archivo y retorne los tokens
-f = open("script-keylafranco.txt","r")
-lines = f.readlines()
-for line in lines:
-  print("\n",line,"\n")
-  lexer.input(line)
-  while True:
-    tok=lexer.token()
-    if not tok:
-      break
-    print(">>",tok)
+scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+for script in scripts:
+  f = open(script,"r")
+  lines = f.readlines()
+  for line in lines:
+    print("\n",line,"\n")
+    lexer.input(line)
+    while True:
+      tok=lexer.token()
+      if not tok:
+        break
+      print(">>",tok)
+  print("============================================================")
 
 # END KEYLA FRANCO
