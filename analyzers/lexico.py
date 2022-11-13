@@ -309,3 +309,46 @@ def t_QUOTE(t):
     return t
 
 #END Joby Farra
+
+#START KEYLA FRANCO
+def t_newline(t):
+    r'[\r\n]+'
+    t.lexer.lineno += len(t.value)
+  
+def t_WHITESPACE(t):
+    r'[ \t\r\n]+'
+    t.lexer.lineno += t.value.count("\n")
+    return t
+  
+def t_quoted_VARIABLE(t):
+    r'\$[A-Za-z_][\w_]*'
+    return t
+
+def t_quoted_CURLY_OPEN(t):
+    r'\{(?=\$)'
+    return t
+def t_error(t):
+    print("No es reconocido '%s'" %t.value[0])
+    t.lexer.skip(1)
+
+  
+#Construya el lexer
+lexer = lex.lex()
+def analizar(data):
+    lexer.input(data)
+    while True:
+        tok = lexer.token()
+        if not tok:
+            break
+        print(tok)
+#Lea el archivo source.txt y retorne los tokens
+archivo = open("archivo.txt")
+for linea in archivo:
+  print(">>"+linea)
+  analizar(linea)
+  if len(linea) == 0:
+    break
+
+
+
+# END KEYLA FRANCO
