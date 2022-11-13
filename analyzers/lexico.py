@@ -284,3 +284,28 @@ def t_CLOSE_TAG(t):
 
 # END Ricardo Zaruma
 
+# START Joby Farra
+
+def t_INLINE_HTML(t):
+    r'([^<]|<(?![?%]))+'
+    t.lexer.lineno += t.value.count("\n")
+    return t
+  
+def t_VARIABLE(t):
+    r'\$[A-Za-z_][\w_]*'
+    return t
+
+def t_FLOATNUMBER(t):
+    r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
+    return t
+
+def t_INTNUMBER(t):
+    r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
+    return t
+
+def t_QUOTE(t):
+    r'"'
+    t.lexer.push_state('quoted')
+    return t
+
+#END Joby Farra
