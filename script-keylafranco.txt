@@ -1,0 +1,68 @@
+<?php
+//Script de calculadora simple
+# Para probar
+echo '------Calculadora----' ."\n";
+
+menu:
+
+echo "|----Menu----| ". "\n";
+echo "| 1. + Suma ". "\n";
+echo "| 2. - Resta ". "\n";
+echo "| 3. x Multiplicación ". "\n";
+echo "| 4. % División ". "\n";
+echo "| 5. salir". "\n";
+$option = fwrite(STDOUT," Seleccione una operacion: ");
+$option = trim(fgets(STDIN));
+
+if ($option == 1) 
+{
+   $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");
+   $in1 = trim(fgets(STDIN));
+   $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");
+   $in3 = trim(fgets(STDIN));
+   $out = $in1 + $in3; 
+ }
+   elseif 
+ ($option == 2) 
+{
+   $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");
+   $in1 = trim(fgets(STDIN));
+   $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");
+   $in3 = trim(fgets(STDIN));
+   $out = $in1 - $in3; 
+}
+
+ elseif ($option == 3) 
+{
+   $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");
+   $in1 = trim(fgets(STDIN));
+   $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");
+   $in3 = trim(fgets(STDIN));
+   $out = $in1 * $in3; 
+ }
+  elseif 
+ ($option == 4) 
+{
+   $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");
+   $in1 = trim(fgets(STDIN));
+   $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");
+   $in3 = trim(fgets(STDIN));
+   $out = @($in1 / $in3);
+     
+}
+ elseif ($option == 5) 
+{
+   exit;
+ }
+   else 
+ {
+  echo 'La opción que ha escogido es incorrecta'."\n";
+  goto menu;
+ 
+}
+
+
+print "|---->El resultado es: $out"."\n";  
+goto menu;
+
+?> 

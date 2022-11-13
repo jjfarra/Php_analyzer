@@ -115,7 +115,6 @@ tokens = [
   'LOGICAL_OR',
   'LOGICAL_XOR',
   'HALT_COMPILER',
-  'STRING',
   'VARIABLE',
   'ENTERO',
   'DECIMAL',
@@ -159,7 +158,6 @@ tokens = [
   'NS_SEPARATOR',
   #PHP TAGS
   'OPEN_TAG',
-  'ECHO',
   'CLOSE_TAG',
   #ESPACIO EN BLANCO
   'WHITESPACE'
@@ -220,9 +218,6 @@ t_COLON = r':'
 t_SEMI = r';'
 t_AT = r'@'
 t_NS_SEPARATOR = r'\\'
-t_INI_COMMENT = r'/*'
-t_FIN_COMMENT = r'*/'
-t_COMMENT = r'#'
 
 # Comentarios
 
@@ -259,22 +254,6 @@ def t_OPEN_TAG(t):
     if '=' in t.value: t.type = 'OPEN_TAG_WITH_ECHO'
     t.lexer.lineno += t.value.count("\n")
     return t
-
-
-def t_RBRACE(t):
-    r'\}'
-    return t
-# php tags
-
-
-def t_OPEN_TAG(t):
-    r'<[?%]((php[ \t\r\n]?)|=)?'
-    if '=' in t.value:
-        t.type = 'OPEN_TAG_WITH_ECHO'
-    t.lexer.lineno += t.value.count("\n")
-    return t
-
-
 
 def t_CLOSE_TAG(t):
     r'[?%]>\r?\n?'
@@ -341,14 +320,17 @@ def analizar(data):
         if not tok:
             break
         print(tok)
-#Lea el archivo source.txt y retorne los tokens
-archivo = open("archivo.txt")
-for linea in archivo:
-  print(">>"+linea)
-  analizar(linea)
-  if len(linea) == 0:
-    break
-
-
+      
+#Lea el archivo y retorne los tokens
+f = open("script-keylafranco.txt","r")
+lines = f.readlines()
+for line in lines:
+  print("\n",line,"\n")
+  lexer.input(line)
+  while True:
+    tok=lexer.token()
+    if not tok:
+      break
+    print(">>",tok)
 
 # END KEYLA FRANCO
