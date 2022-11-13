@@ -76,9 +76,101 @@ reserved = {
 
 # END Joby Farra
 
+
+#START Keyla Franco
+tokens = [
+  #Operadores
+  'SUMA',
+  'RESTA',
+  'MULTIPLICACION',
+  'DIVISION',
+  'MODULO',
+  'AND',
+  'OR',
+  'NOT',
+  'XOR',
+  'SL',
+  'SR',
+  'BOOLEAN_AND',
+  'BOOLEAN_OR',
+  'BOOLEAN_NOT',
+  'IS_SMALLER',
+  'IS_GREATER',
+  'IS_SMALLER_OR_EQUAL',
+  'IS_GREATER_OR_EQUAL',
+  'IS_EQUAL',
+  'IS_NOT_EQUAL',
+  'IS_IDENTICAL',
+  'IS_NOT_IDENTICAL',
+
+  #Tipos de datos
+  'DIR',
+  'FILE',
+  'LINE',
+  'FUNC_C',
+  'CLASS_C',
+  'METHOD_C',
+  'NS_C',
+  'LOGICAL_AND',
+  'LOGICAL_OR',
+  'LOGICAL_XOR',
+  'HALT_COMPILER',
+  'STRING',
+  'VARIABLE',
+  'ENTERO',
+  'DECIMAL',
+  'NUM_STRING',
+  'CONSTANT_ENCAPSED_STRING',
+  'ENCAPSED_AND_WHITESPACE',
+  'QUOTE',
+  'DOLLAR_OPEN_CURLY_BRACES',
+  'STRING_VARNAME',
+  'CURLY_OPEN',
+  #Comparadores
+  'EQUALS',
+  'MUL_EQUAL',
+  'DIV_EQUAL',
+  'MOD_EQUAL',
+  'PLUS_EQUAL',
+  'MINUS_EQUAL',
+  'SL_EQUAL',
+  'SR_EQUAL',
+  'AND_EQUAL',
+  'OR_EQUAL',
+  'XOR_EQUAL',
+  'CONCAT_EQUAL',
+  #ignorar comentarios
+  'COMENTARIOS',
+  'DOC_COMENTARIOS',
+  #DELIMITADORES
+  'LPAREN',
+  'RPAREN',
+  'LBRACKET',
+  'RBRACKET',
+  'LBRACE',
+  'RBRACE',
+  'DOLLAR',
+  'COMMA',
+  'CONCAT',
+  'QUESTION',
+  'COLON',
+  'SEMI',
+  'AT',
+  'NS_SEPARATOR',
+  #PHP TAGS
+  'OPEN_TAG',
+  'ECHO',
+  'CLOSE_TAG',
+  #ESPACIO EN BLANCO
+  'WHITESPACE'
+] + list(reserved.values())
+
+#END Keyla Franco
+
 # Start Ricardo Zaruma
 
-# OPERADORES
+#OPERADORES
+
 t_SUMA = r'\+'
 t_RESTA = r'-'
 t_MULTIPLICACION = r'\*'
@@ -101,6 +193,7 @@ t_IS_EQUAL = r'=='
 t_IS_NOT_EQUAL = r'(!=(?!=))|(<>)'
 t_IS_IDENTICAL = r'==='
 t_IS_NOT_IDENTICAL = r'!=='
+
 
 # COMPARADORES
 t_EQUALS = r'='
@@ -133,32 +226,38 @@ t_COMMENT = r'#'
 
 # Comentarios
 
-
 def t_DOC_COMENTARIOS(t):
     r'/\*\*(.|\n)*?\*/'
     t.lexer.lineno += t.value.count("\n")
     return t
 
-
 def t_COMENTARIOS(t):
     r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
     t.lexer.lineno += t.value.count("\n")
     return t
-# DELIMITADORES
 
+#DELIMITADORES
 
 def t_LBRACKET(t):
     r'\['
     return t
 
-
 def t_RBRACKET(t):
     r'\]'
     return t
 
-
 def t_LBRACE(t):
     r'\{'
+    return t
+
+def t_RBRACE(t):
+    r'\}'
+    return t
+#php tags
+def t_OPEN_TAG(t):
+    r'<[?%]((php[ \t\r\n]?)|=)?'
+    if '=' in t.value: t.type = 'OPEN_TAG_WITH_ECHO'
+    t.lexer.lineno += t.value.count("\n")
     return t
 
 
@@ -176,9 +275,12 @@ def t_OPEN_TAG(t):
     return t
 
 
+
 def t_CLOSE_TAG(t):
     r'[?%]>\r?\n?'
     t.lexer.lineno += t.value.count("\n")
     return t
 
+
 # END Ricardo Zaruma
+
