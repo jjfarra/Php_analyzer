@@ -1,1 +1,14 @@
 #Script 2
+$nombre = "Jose"
+$edad = 45
+
+if ($edad > 18){
+  echo "es mayor de edad"
+} else
+  echo "es menor de edad"
+}
+function Saludar($nombre) {
+  echo "Bienvenido" , $nombre 
+}
+
+
