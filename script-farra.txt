@@ -1,1 +1,24 @@
 #Script
+#Joby Farra
+#El programa genera numero entre 0 y 100, si es par divide para 2, pero si es impar multiplica por 3 y le suma uno, luego vuelve a consultar si es par o impar hasta llegar a 1
+
+<?php
+    $numero =rand(0,100);
+
+    if($numero > 0 and is_int($numero)){
+        echo "<h2> El número random es: $numero</h2>";
+        echo "<br>";
+        while($numero > 1){
+            if(($numero%2) == 0 ){
+                $numero = $numero/2;  
+            }else{
+                $numero = ($numero*3)+1;
+            }
+            echo "<br>";
+            echo "<li>$numeroPrincipal</li>";
+            echo "<br>"; 
+        }
+    }else{
+        echo "No has ingresado ningún número o el número no es válido";
+    }
+?>
