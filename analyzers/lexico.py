@@ -9,9 +9,10 @@ reserved = {
   "elseif": "ELSEIF",
   "endif": "ENDIF",
   "break": "BREAK",
-  "pass": "PASS",
+  "do": "DO",
+  #"pass": "PASS",
   "continue": "CONTINUE",
-  "default": "DEFAULT",
+  #"default": "DEFAULT",
   "return": "RETURN",
   "require": "REQUIRE",
 
@@ -21,10 +22,10 @@ reserved = {
   "switch": "SWITCH",
   "case": "CASE",
   "foreach": "FOREACH",
-  "match": "MATCH",
-  "endfor": "ENDFOR",
-  "endwhile": "ENDWHILE",
-  "endswitch": "ENDSWITCH",
+  #"match": "MATCH",
+  #"endfor": "ENDFOR",
+  #"endwhile": "ENDWHILE",
+  #"endswitch": "ENDSWITCH",
 
   # Data Types
   "int": "INT",
@@ -37,9 +38,9 @@ reserved = {
   "null": "NULL",
   "true": "TRUE",
   "false": "FALSE",
-  "enum": "ENUM",
-  "resource": "RESOURCE",
-  "iterable": "ITERABLE",
+  #"enum": "ENUM",
+  #"resource": "RESOURCE",
+  #"iterable": "ITERABLE",
 
   # Declaration words
   "function": "FUNCTION",
@@ -51,8 +52,8 @@ reserved = {
   "protected": "PROTECTED",
   "class": "CLASS",
   "new": "NEW",
-  "implements": "IMPLEMENTS",
-  "extends": "EXTENDS",
+  #"implements": "IMPLEMENTS",
+  #"extends": "EXTENDS",
 
   # Match Functions
   "sqrt": "SQRT",
@@ -72,51 +73,14 @@ reserved = {
   "goto": "GOTO",
   "print": "PRINT",
   "echo": "ECHO",
+  "READLIE":"readline",
 }
 
 # END Joby Farra
 
 #START Keyla Franco
-#control structures
-def t_IF(t):
-  r'if'
-  return t
-
-def t_ELSE(t):
-    r'else'
-    return t
-
-def t_ELSEIF(t):
-    r'elseif'
-    return t
-  
-def t_BREAK(t):
-    r'break'
-    return t
-  
-def t_PASS(t):
-  r'pass'
-  return t
-
-def t_CONTINUE(t):
-    r'continue'
-    return t
-
-def t_DEFAULT(t):
-    r'default'
-    return t
-
-def t_RETURN(t):
-  r'return'
-  return t
-
-def t_REQUIRE(t):
-    r'require'
-    return t
-
-#Loop structure
-  
 tokens = [
+  'NOMBRE',
   #Operadores
   'SUMA',
   'RESTA',
@@ -127,19 +91,15 @@ tokens = [
   'OR',
   'NOT',
   'XOR',
-  'SL',
-  'SR',
-  'BOOLEAN_AND',
-  'BOOLEAN_OR',
-  'BOOLEAN_NOT',
-  'IS_SMALLER',
-  'IS_GREATER',
+  'SMALLER',
+  'GREATER',
   'IS_SMALLER_OR_EQUAL',
   'IS_GREATER_OR_EQUAL',
   'IS_EQUAL',
   'IS_NOT_EQUAL',
   'IS_IDENTICAL',
   'IS_NOT_IDENTICAL',
+  'BOOLEAN_NOT',
 
   #Tipos de datos
   'DIR',
@@ -149,9 +109,6 @@ tokens = [
   'CLASS_C',
   'METHOD_C',
   'NS_C',
-  'LOGICAL_AND',
-  'LOGICAL_OR',
-  'LOGICAL_XOR',
   'HALT_COMPILER',
   'VARIABLE',
   'ENTERO',
@@ -170,12 +127,6 @@ tokens = [
   'MOD_EQUAL',
   'PLUS_EQUAL',
   'MINUS_EQUAL',
-  'SL_EQUAL',
-  'SR_EQUAL',
-  'AND_EQUAL',
-  'OR_EQUAL',
-  'XOR_EQUAL',
-  'CONCAT_EQUAL',
   #ignorar comentarios
   'COMENTARIOS',
   'DOC_COMENTARIOS',
@@ -199,42 +150,6 @@ tokens = [
   'CLOSE_TAG'
 ] + list(reserved.values())
 
-t_ignore = " \t"
-def t_IF(t):
-  r'if'
-  return t
-
-def t_ELSE(t):
-    r'else'
-    return t
-
-def t_ELSEIF(t):
-    r'elseif'
-    return t
-  
-def t_BREAK(t):
-    r'break'
-    return t
-  
-def t_PASS(t):
-  r'pass'
-  return t
-
-def t_CONTINUE(t):
-    r'continue'
-    return t
-
-def t_DEFAULT(t):
-    r'default'
-    return t
-
-def t_RETURN(t):
-  r'return'
-  return t
-
-def t_REQUIRE(t):
-    r'require'
-    return t
 #END Keyla Franco
 
 # Start Ricardo Zaruma
@@ -242,21 +157,17 @@ def t_REQUIRE(t):
 #OPERADORES
 
 t_SUMA = r'\+'
-t_RESTA = r'-'
+t_RESTA = r'\-'
 t_MULTIPLICACION = r'\*'
-t_DIVISION = r'/'
+t_DIVISION = r'\/'
 t_MODULO = r'%'
-t_AND = r'&'
-t_OR = r'\|'
+t_AND = r'&&'
+t_OR = r'\|\|'
 t_NOT = r'~'
 t_XOR = r'\^'
-t_SL = r'<<'
-t_SR = r'>>'
-t_BOOLEAN_AND = r'&&'
-t_BOOLEAN_OR = r'\|\|'
 t_BOOLEAN_NOT = r'!'
-t_IS_SMALLER = r'<'
-t_IS_GREATER = r'>'
+t_SMALLER = r'<'
+t_GREATER = r'>'
 t_IS_SMALLER_OR_EQUAL = r'<='
 t_IS_GREATER_OR_EQUAL = r'>='
 t_IS_EQUAL = r'=='
@@ -271,16 +182,8 @@ t_DIV_EQUAL = r'/='
 t_MOD_EQUAL = r'%='
 t_PLUS_EQUAL = r'\+='
 t_MINUS_EQUAL = r'-='
-t_SL_EQUAL = r'<<='
-t_SR_EQUAL = r'>>='
-t_AND_EQUAL = r'&='
-t_OR_EQUAL = r'\|='
-t_XOR_EQUAL = r'\^='
-t_CONCAT_EQUAL = r'\.='
 
 # DELIMITADORES
-t_LPAREN = r'\('
-t_RPAREN = r'\)'
 t_DOLLAR = r'\$'
 t_COMMA = r','
 t_CONCAT = r'\.(?!\d|=)'
@@ -326,7 +229,14 @@ def t_LBRACE(t):
 def t_RBRACE(t):
   r'\}'
   return t
+  
+def t_LPAREN(t):
+  r'\('
+  return t
 
+def t_RPAREN(t):
+  r'\)'
+  return t
 
 #php tags
 def t_OPEN_TAG(t):
@@ -348,6 +258,10 @@ def t_STRING(t):
   t.value = t.value[1:-1]
   return t
 
+def t_NOMBRE(t):
+    r'[a-z][a-zA-Z0-9_]*'
+    t.type = reserved.get(t.value, "NOMBRE")
+    return t
 
 def t_VARIABLE(t):
   r'\$[A-Za-z_][\w_]*'
@@ -400,33 +314,13 @@ def t_error(t):
   print("No es reconocido '%s'" % t.value[0])
   t.lexer.skip(1)
 
+t_ignore = " \t"
 
 #Construya el lexer
 lexer = lex.lex()
 
 
-def analizar(data):
-  lexer.input(data)
-  while True:
-    tok = lexer.token()
-    if not tok:
-      break
-    print(tok)
 
 
-#Lea el archivo y retorne los tokens
-scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
-for script in scripts:
-  f = open(script, "r")
-  lines = f.readlines()
-  for line in lines:
-    print("\n", line, "\n")
-    lexer.input(line)
-    while True:
-      tok = lexer.token()
-      if not tok:
-        break
-      print(">>", tok)
-  print("============================================================")
 
 # END KEYLA FRANCO
