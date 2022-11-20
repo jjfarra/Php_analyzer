@@ -3,81 +3,119 @@ import ply.lex as lex
 # Start Joby Farra
 
 reserved = {
-    # Control Structures
-    "if": "IF",
-    "else": "ELSE",
-    "elseif": "ELSEIF",
-    "endif": "ENDIF",
-    "break": "BREAK",
-    "pass": "PASS",
-    "conntinue": "CONTINUE",
-    "default": "DEFAULT",
-    "return": "RETURN",
-    "require": "REQUIRE",
+  # Control Structures
+  "if": "IF",
+  "else": "ELSE",
+  "elseif": "ELSEIF",
+  "endif": "ENDIF",
+  "break": "BREAK",
+  "pass": "PASS",
+  "continue": "CONTINUE",
+  "default": "DEFAULT",
+  "return": "RETURN",
+  "require": "REQUIRE",
 
-    # Loop Structure
-    "for": "FOR",
-    "while": "WHILE",
-    "switch": "SWITCH",
-    "case": "CASE",
-    "foreach": "FOREACH",
-    "match": "MATCH",
-    "endfor": "ENDFOR",
-    "endwhile": "ENDWHILE",
-    "endswitch": "ENDSWITCH",
+  # Loop Structure
+  "for": "FOR",
+  "while": "WHILE",
+  "switch": "SWITCH",
+  "case": "CASE",
+  "foreach": "FOREACH",
+  "match": "MATCH",
+  "endfor": "ENDFOR",
+  "endwhile": "ENDWHILE",
+  "endswitch": "ENDSWITCH",
 
-    # Data Types
-    "int": "INT",
-    "double": "DOUBLE",
-    "float": "FLOAT",
-    "bool": "BOOL",
-    "string": "STRING",
-    "var": "VAR",
-    "void": "VOID",
-    "null": "NULL",
-    "true": "TRUE",
-    "false": "FALSE",
-    "enum": "ENUM",
-    "resource": "RESOURCE",
-    "iterable": "ITERABLE",
+  # Data Types
+  "int": "INT",
+  "double": "DOUBLE",
+  "float": "FLOAT",
+  "bool": "BOOL",
+  "string": "STRING",
+  "var": "VAR",
+  "void": "VOID",
+  "null": "NULL",
+  "true": "TRUE",
+  "false": "FALSE",
+  "enum": "ENUM",
+  "resource": "RESOURCE",
+  "iterable": "ITERABLE",
 
-    # Declaration words
-    "function": "FUNCTION",
-    "array": "ARRAY",
-    "object": "OBJECT",
-    "public": "PUBLIC",
-    "private": "PRIVATE",
-    "static": "STATIC",
-    "protected": "PROTECTED",
-    "class": "CLASS",
-    "new": "NEW",
-    "implements": "IMPLEMENTS",
-    "extends": "EXTENDS",
+  # Declaration words
+  "function": "FUNCTION",
+  "array": "ARRAY",
+  "object": "OBJECT",
+  "public": "PUBLIC",
+  "private": "PRIVATE",
+  "static": "STATIC",
+  "protected": "PROTECTED",
+  "class": "CLASS",
+  "new": "NEW",
+  "implements": "IMPLEMENTS",
+  "extends": "EXTENDS",
 
-    # Match Functions
-    "sqrt": "SQRT",
-    "abs": "ABS",
-    "rand": "RAND",
-    "min": "MIN",
-    "max": "MAX",
-    "pi": "PI",
+  # Match Functions
+  "sqrt": "SQRT",
+  "abs": "ABS",
+  "rand": "RAND",
+  "min": "MIN",
+  "max": "MAX",
+  "pi": "PI",
 
-    # Handle Error
-    "try": "TRY",
-    "catch": "CATCH",
+  # Handle Error
+  "try": "TRY",
+  "catch": "CATCH",
 
-    # Other words
-    "exit": "EXIT",
-    "global": "GLOBAL",
-    "goto": "GOTO",
-    "print": "PRINT",
-    "echo": "ECHO",
+  # Other words
+  "exit": "EXIT",
+  "global": "GLOBAL",
+  "goto": "GOTO",
+  "print": "PRINT",
+  "echo": "ECHO",
 }
 
 # END Joby Farra
 
-
 #START Keyla Franco
+#control structures
+def t_IF(t):
+  r'if'
+  return t
+
+def t_ELSE(t):
+    r'else'
+    return t
+
+def t_ELSEIF(t):
+    r'elseif'
+    return t
+  
+def t_BREAK(t):
+    r'break'
+    return t
+  
+def t_PASS(t):
+  r'pass'
+  return t
+
+def t_CONTINUE(t):
+    r'continue'
+    return t
+
+def t_DEFAULT(t):
+    r'default'
+    return t
+
+def t_RETURN(t):
+  r'return'
+  return t
+
+def t_REQUIRE(t):
+    r'require'
+    return t
+
+#Loop structure
+  
 tokens = [
   #Operadores
   'SUMA',
@@ -158,11 +196,45 @@ tokens = [
   'NS_SEPARATOR',
   #PHP TAGS
   'OPEN_TAG',
-  'CLOSE_TAG',
-  #ESPACIO EN BLANCO
-  'WHITESPACE'
+  'CLOSE_TAG'
 ] + list(reserved.values())
 
+t_ignore = " \t"
+def t_IF(t):
+  r'if'
+  return t
+
+def t_ELSE(t):
+    r'else'
+    return t
+
+def t_ELSEIF(t):
+    r'elseif'
+    return t
+  
+def t_BREAK(t):
+    r'break'
+    return t
+  
+def t_PASS(t):
+  r'pass'
+  return t
+
+def t_CONTINUE(t):
+    r'continue'
+    return t
+
+def t_DEFAULT(t):
+    r'default'
+    return t
+
+def t_RETURN(t):
+  r'return'
+  return t
+
+def t_REQUIRE(t):
+    r'require'
+    return t
 #END Keyla Franco
 
 # Start Ricardo Zaruma
@@ -192,7 +264,6 @@ t_IS_NOT_EQUAL = r'(!=(?!=))|(<>)'
 t_IS_IDENTICAL = r'==='
 t_IS_NOT_IDENTICAL = r'!=='
 
-
 # COMPARADORES
 t_EQUALS = r'='
 t_MUL_EQUAL = r'\*='
@@ -219,123 +290,143 @@ t_SEMI = r';'
 t_AT = r'@'
 t_NS_SEPARATOR = r'\\'
 
-
 # Comentarios
 
+
 def t_DOC_COMENTARIOS(t):
-    r'/\*\*(.|\n)*?\*/'
-    t.lexer.lineno += t.value.count("\n")
-    return t
+  r'/\*\*(.|\n)*?\*/'
+  t.lexer.lineno += t.value.count("\n")
+  return t
+
 
 def t_COMENTARIOS(t):
-    r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
-    t.lexer.lineno += t.value.count("\n")
-    return t
+  r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
+  t.lexer.lineno += t.value.count("\n")
+  return t
+
 
 #DELIMITADORES
 
+
 def t_LBRACKET(t):
-    r'\['
-    return t
+  r'\['
+  return t
+
 
 def t_RBRACKET(t):
-    r'\]'
-    return t
+  r'\]'
+  return t
+
 
 def t_LBRACE(t):
-    r'\{'
-    return t
+  r'\{'
+  return t
+
 
 def t_RBRACE(t):
-    r'\}'
-    return t
+  r'\}'
+  return t
+
+
 #php tags
 def t_OPEN_TAG(t):
-    r'<[?%]((php[ \t\r\n]?)|=)?'
-    if '=' in t.value: t.type = 'OPEN_TAG_WITH_ECHO'
-    t.lexer.lineno += t.value.count("\n")
-    return t
+  r'(<\?(php)?)'
+  return t
+
 
 def t_CLOSE_TAG(t):
-    r'[?%]>\r?\n?'
-    t.lexer.lineno += t.value.count("\n")
-    return t
+  r'\?>'
+  return t
 
 
 # END Ricardo Zaruma
 
+
 # START Joby Farra
 def t_STRING(t):
-    r'[A-Za-z_][\w_]*'
-    return t
+  r'(("[^"]*")|(\'[^\']*\'))'
+  t.value = t.value[1:-1]
+  return t
+
 
 def t_VARIABLE(t):
-    r'\$[A-Za-z_][\w_]*'
-    return t
+  r'\$[A-Za-z_][\w_]*'
+  return t
+
 
 def t_DECIMAL(t):
-    r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
-    return t
+  r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
+  return t
+
 
 def t_ENTERO(t):
-    r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
-    return t
+  r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
+  return t
 
-def t_QUOTE(t):
-    r'"'
-    return t
 
 #END Joby Farra
 
-#START KEYLA FRANCO
-def t_newline(t):
-    r'[\r\n]+'
-    t.lexer.lineno += len(t.value)
-  
-def t_WHITESPACE(t):
-    r'[ \t\r\n]+'
-    t.lexer.lineno += t.value.count("\n")
-    return t
-  
-def t_quoted_VARIABLE(t):
-    r'\$[A-Za-z_][\w_]*'
-    return t
-def t_quoted_QUOTE(t):
-    r'"'
-    return t
-  
-def t_quoted_CURLY_OPEN(t):
-    r'\{(?=\$)'
-    return t
-  
-def t_error(t):
-    print("No es reconocido '%s'" %t.value[0])
-    t.lexer.skip(1)
 
-  
+#START KEYLA FRANCO
+
+
+def t_newline(t):
+  r'\n+'
+  t.lexer.lineno += len(t.value)
+
+
+def t_quoted_VARIABLE(t):
+  r'\$[A-Za-z_][\w_]*'
+  return t
+
+
+def t_quoted_QUOTE(t):
+  r'"'
+  return t
+
+
+def t_INLINE_HTML(t):
+  r'([^<]|<(?![?%]))+'
+  t.lexer.lineno += t.value.count("\n")
+  return
+
+
+def t_quoted_CURLY_OPEN(t):
+  r'\{(?=\$)'
+  return t
+
+
+def t_error(t):
+  print("No es reconocido '%s'" % t.value[0])
+  t.lexer.skip(1)
+
+
 #Construya el lexer
 lexer = lex.lex()
+
+
 def analizar(data):
-    lexer.input(data)
-    while True:
-        tok = lexer.token()
-        if not tok:
-            break
-        print(tok)
-      
+  lexer.input(data)
+  while True:
+    tok = lexer.token()
+    if not tok:
+      break
+    print(tok)
+
+
 #Lea el archivo y retorne los tokens
 scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
 for script in scripts:
-  f = open(script,"r")
+  f = open(script, "r")
   lines = f.readlines()
   for line in lines:
-    print("\n",line,"\n")
+    print("\n", line, "\n")
     lexer.input(line)
     while True:
-      tok=lexer.token()
+      tok = lexer.token()
       if not tok:
         break
-      print(">>",tok)
+      print(">>", tok)
   print("============================================================")
 
 # END KEYLA FRANCO
