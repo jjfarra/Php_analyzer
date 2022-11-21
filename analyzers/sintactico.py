@@ -68,12 +68,15 @@ def p_operador_logico(p):  #Keyla franco
 def p_condicion_if(p): #KEyla franco
   '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
   '''
+  
 def p_condicion_elseif(p): #KEyla franco
   '''condicion_elseif :  ELSEIF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
   '''
+  
 def p_condicion_else(p): #KEyla franco
   '''condicion_else :  ELSE LBRACE cuerpo RBRACE
   '''
+  
 def p_condicion_ifelse(p):
   '''condicion_ifelse :  condicion_if
                       | condicion_if condicion_else
@@ -104,8 +107,11 @@ def p_operaciones_mat_par(p): #Keyla Franco
   '''
   
 def p_asignacion(p):  # Keyla Franco
-  'asignacion : VARIABLE EQUALS valor SEMI'
-  p[0] = ('asignacion', p[1])
+  '''asignacion : VARIABLE EQUALS valor SEMI
+                | VAR asignacion
+                | proteccion asignacion
+  '''
+
   
 
 def p_asignacion_array(p): # Joby Farra
@@ -179,6 +185,9 @@ def p_bswitch(p):# Ricardo Zaruma
 def p_innerSwitch(p):# Ricardo Zaruma
   ''' innerSwitch : CASE ENTERO COLON cuerpo BREAK SEMI
     | CASE ENTERO COLON cuerpo BREAK SEMI innerSwitch 
+  '''
+def p_colas(p):
+  ''' colas : 
   '''
   
 

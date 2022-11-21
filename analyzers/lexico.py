@@ -16,7 +16,7 @@ reserved = {
   "return": "RETURN",
   "require": "REQUIRE",
   "define" : "DEFINE",
-
+  "queue" : "queue",
   # Loop Structure
   "for": "FOR",
   "while": "WHILE",

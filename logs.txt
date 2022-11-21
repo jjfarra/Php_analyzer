@@ -86,3 +86,6 @@ Input: switch ($a) {case 1: $a=9;}, el resultado fue: None en 2022-11-20 21:19:2
 Input: switch ($a) {case 1: $a=9; break;}, el resultado fue: None en 2022-11-20 21:19:48.688609-05:00 
 Input: switch ($a) {case 1: $a=9; break; case 2: $b=4; break;}, el resultado fue: None en 2022-11-20 21:20:31.857949-05:00 
 Input: function returnr():void{}, el resultado fue: None en 2022-11-20 21:34:27.583195-05:00 
+Input: var $bar = 'Soy bar.';, el resultado fue: None en 2022-11-20 21:42:24.177490-05:00 
+Input: private $weW =34;, el resultado fue: None en 2022-11-20 21:42:42.850131-05:00 
+Input: protected var $w = 89;, el resultado fue: None en 2022-11-20 21:43:47.290427-05:00 
