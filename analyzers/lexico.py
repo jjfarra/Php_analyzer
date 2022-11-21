@@ -46,13 +46,13 @@ reserved = {
   # Declaration words
   "function": "FUNCTION",
   "array": "ARRAY",
-  "object": "OBJECT",
+  #"object": "OBJECT",
   "public": "PUBLIC",
   "private": "PRIVATE",
   "static": "STATIC",
   "protected": "PROTECTED",
-  "class": "CLASS",
-  "new": "NEW",
+  #"class": "CLASS",
+  #"new": "NEW",
   #"implements": "IMPLEMENTS",
   #"extends": "EXTENDS",
 
@@ -70,7 +70,7 @@ reserved = {
 
   # Other words
   "exit": "EXIT",
-  "global": "GLOBAL",
+  #"global": "GLOBAL",
   "goto": "GOTO",
   "print": "PRINT",
   "echo": "ECHO",
@@ -102,20 +102,20 @@ tokens = [
   'IS_NOT_IDENTICAL',
   'BOOLEAN_NOT',
   #Tipos de datos
-  'DIR',
-  'FILE',
-  'LINE',
-  'FUNC_C',
-  'CLASS_C',
-  'METHOD_C',
-  'NS_C',
-  'HALT_COMPILER',
+  #'DIR',
+  #'FILE',
+  #'LINE',
+  #'FUNC_C',
+  #'CLASS_C',
+  #'METHOD_C',
+  #'NS_C',
+  #'HALT_COMPILER',
   'VARIABLE',
   'ENTERO',
   'DECIMAL',
-  'NUM_STRING',
-  'CONSTANT_ENCAPSED_STRING',
-  'ENCAPSED_AND_WHITESPACE',
+  #'NUM_STRING',
+  #'CONSTANT_ENCAPSED_STRING',
+  #'ENCAPSED_AND_WHITESPACE',
   'CURLY_OPEN',
   #Comparadores
   'EQUALS',
@@ -138,8 +138,8 @@ tokens = [
   'CONCAT',
   'COLON',
   'SEMI',
-  'AT',
-  'NS_SEPARATOR',
+  #'AT',
+  #'NS_SEPARATOR',
   #PHP TAGS
   'OPEN_TAG',
   'CLOSE_TAG'
@@ -263,12 +263,12 @@ def t_COLON(t):
 def t_SEMI(t): 
   r';'
   return t 
-def t_AT(t): 
-  r'@'
-  return t 
-def t_NS_SEPARATOR(t): 
-  r'\\'
-  return t 
+#def t_AT(t): 
+#  r'@'
+#  return t 
+#def t_NS_SEPARATOR(t): 
+#  r'\\'
+#  return t 
 
 # Comentarios
 

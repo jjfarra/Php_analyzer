@@ -3,6 +3,7 @@ from analyzers.lexico import tokens
 import datetime, pytz
 
 
+  
 def p_cuerpo(p):  # TODOS
   '''cuerpo : imprimir
             | asignacion
@@ -14,13 +15,20 @@ def p_cuerpo(p):  # TODOS
             | operador_logico
             | condicion_booleana
             | bwhile
+            | bdo
             | bfor
             | bforeach
             | btry
             | operaciones_mat_par
             | condicion_ifelse 
+            | bswitch
+            | bgoto
   '''
 
+def p_cuerpo_general(p):
+  'cuerpo_general : cuerpo'
+def p_form(p):
+  'form : OPEN_TAG cuerpo_general CLOSE_TAG'
 
 def p_imprimir(p):  #Ricardo Zaruma
   '''imprimir : ECHO valor SEMI
@@ -39,7 +47,8 @@ def p_valor(p):  #KEYLA FRANCO
 
 def p_numero(p):
   '''numero : ENTERO
-          | DECIMAL'''
+          | DECIMAL
+  '''
 
 def p_operadores(p):  #KEYLA FRANCO
   '''operadores : SUMA 
@@ -125,6 +134,7 @@ def p_funciones(p):
               | proteccion funcion_opreturn
               | funcion_blank
               | proteccion funcion_blank
+              | funcion_void
   '''
   
 def p_param(p): # Joby Farra
@@ -141,6 +151,9 @@ def p_params_list(p): # Joby Farra
 def p_funcion_opreturn(p): # Ricardo Zaruma
   ''' funcion_opreturn : FUNCTION NOMBRE LPAREN params_list RPAREN stc_bloque_def
   '''
+def p_funcion_void(p):
+  'funcion_void : FUNCTION NOMBRE LPAREN  RPAREN COLON VOID LBRACE empty RBRACE'
+  
 def p_funcion_blank(p): 
   ''' funcion_blank : FUNCTION NOMBRE LPAREN  RPAREN stc_bloque_def
                     | FUNCTION NOMBRE LPAREN  RPAREN LBRACE empty RBRACE
@@ -157,8 +170,16 @@ def p_bwhile(p): # Ricardo Zaruma
   ''' bwhile : WHILE LPAREN condicion RPAREN LBRACE stc_bloque RBRACE 
   | WHILE LPAREN condicion RPAREN COLON stc_bloque  
   '''
-def p_bswitch(p):
-  ''' bswitch : SWITCH LPAREN'''
+def p_bdo(p): #Keyla franco
+  ''' bdo : DO LBRACE cuerpo RBRACE bwhile 
+  '''
+def p_bswitch(p):# Ricardo Zaruma
+  ''' bswitch : SWITCH LPAREN VARIABLE RPAREN LBRACE innerSwitch RBRACE'''
+
+def p_innerSwitch(p):# Ricardo Zaruma
+  ''' innerSwitch : CASE ENTERO COLON cuerpo BREAK SEMI
+    | CASE ENTERO COLON cuerpo BREAK SEMI innerSwitch 
+  '''
   
 
 def p_bfor(p): # Joby Farra
@@ -168,6 +189,7 @@ def p_stc_bloque(p): # Joby Farra
   '''stc_bloque : stc_bloque cuerpo
         | empty
         | RETURN
+        | RETURN NULL
         '''
 
 def p_stc_bloque_def(p): # Joby Farra
@@ -187,6 +209,7 @@ def p_bforeach(p): # Joby Farra
 def p_array_def(p): # Joby Farra
   '''array_def : ARRAY LPAREN RPAREN 
           | ARRAY LPAREN array_elmnt RPAREN'''
+  
 def p_array_elmnt(p): # Joby Farra
     '''array_elmnt : valor
             | empty'''
@@ -201,7 +224,9 @@ def p_catches(p): # Joby Farra
 def p_empty(p): # Joby Farra
   'empty : '
 
-
+def p_bgoto(p):
+  'bgoto : GOTO NOMBRE SEMI'
+  
 #AÑADIENDO EL LOG
 def add_log(s, result): 
 

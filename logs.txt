@@ -57,3 +57,32 @@ Input: while (5<9) {$a=3}, el resultado fue: None en 2022-11-20 20:14:40.435335-
 Input: while (5<9) {$a=3;}, el resultado fue: None en 2022-11-20 20:15:04.027027-05:00 
 Input: protected function hola(){}, el resultado fue: None en 2022-11-20 20:30:25.955196-05:00 
 Input: function hola(){echo "34";}, el resultado fue: None en 2022-11-20 20:30:47.368653-05:00 
+Input: echo "hola";, el resultado fue: None en 2022-11-20 20:48:44.153556-05:00 
+Input: echo "hola";, el resultado fue: None en 2022-11-20 20:49:45.123098-05:00 
+Input: echo "hola";, el resultado fue: None en 2022-11-20 20:50:05.303732-05:00 
+Input: echo "hola";, el resultado fue: None en 2022-11-20 20:50:18.592792-05:00 
+Input: def p_form(p):, el resultado fue: None en 2022-11-20 20:50:22.547078-05:00 
+Input:   'form : OPEN_TAG cuerpo_general CLOSE_TAG', el resultado fue: None en 2022-11-20 20:50:24.235073-05:00 
+Input: <?php echo "hola"; ?>, el resultado fue: None en 2022-11-20 20:50:49.809605-05:00 
+Input: do{$i=5; echo 34;}while($i>6;), el resultado fue: None en 2022-11-20 20:59:43.453669-05:00 
+Input: do{$i=6;}while($i>6);, el resultado fue: None en 2022-11-20 21:00:22.712398-05:00 
+Input: switch($a){case 1: $a} , el resultado fue: None en 2022-11-20 21:08:41.943412-05:00 
+Input: switch($a){case 1: $a;} , el resultado fue: None en 2022-11-20 21:09:13.355934-05:00 
+Input: switch($a){case 1: 5} , el resultado fue: None en 2022-11-20 21:09:23.882144-05:00 
+Input: switch ($a) {2}, el resultado fue: None en 2022-11-20 21:10:05.664199-05:00 
+Input: switch ($a):{2}, el resultado fue: None en 2022-11-20 21:10:33.434153-05:00 
+Input: switch ($a){2}, el resultado fue: None en 2022-11-20 21:10:42.967923-05:00 
+Input: switch($a){2}, el resultado fue: None en 2022-11-20 21:11:39.192000-05:00 
+Input: switch($a){$a=4}, el resultado fue: None en 2022-11-20 21:12:24.706907-05:00 
+Input: switch($a){case 1:$a=4}, el resultado fue: None en 2022-11-20 21:12:49.551934-05:00 
+Input: switch($a){case 1: $a=4}, el resultado fue: None en 2022-11-20 21:12:56.950785-05:00 
+Input: switch($a){case 1: $a=4}, el resultado fue: None en 2022-11-20 21:13:59.974024-05:00 
+Input: switch($a){case 1: $a=4}, el resultado fue: None en 2022-11-20 21:15:05.954079-05:00 
+Input: switch($a){case 1: $a=4}, el resultado fue: None en 2022-11-20 21:15:33.019448-05:00 
+Input: switch($a){case 1: $a=4}, el resultado fue: None en 2022-11-20 21:15:56.412965-05:00 
+Input: switch($a){case 1: $a=4;}, el resultado fue: None en 2022-11-20 21:16:28.007602-05:00 
+Input: switch($a){case 1: $a=4; case 2: $b=3;}, el resultado fue: None en 2022-11-20 21:16:54.545393-05:00 
+Input: switch ($a) {case 1: $a=9;}, el resultado fue: None en 2022-11-20 21:19:28.103221-05:00 
+Input: switch ($a) {case 1: $a=9; break;}, el resultado fue: None en 2022-11-20 21:19:48.688609-05:00 
+Input: switch ($a) {case 1: $a=9; break; case 2: $b=4; break;}, el resultado fue: None en 2022-11-20 21:20:31.857949-05:00 
+Input: function returnr():void{}, el resultado fue: None en 2022-11-20 21:34:27.583195-05:00 
