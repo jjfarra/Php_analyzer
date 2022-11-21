@@ -7,14 +7,15 @@ reserved = {
   "if": "IF",
   "else": "ELSE",
   "elseif": "ELSEIF",
-  "endif": "ENDIF",
+  #"endif": "ENDIF",
   "break": "BREAK",
   "do": "DO",
-  #"pass": "PASS",
+  "as": "AS",
   "continue": "CONTINUE",
-  #"default": "DEFAULT",
+  "default": "DEFAULT",
   "return": "RETURN",
   "require": "REQUIRE",
+  "define" : "DEFINE",
 
   # Loop Structure
   "for": "FOR",
@@ -56,12 +57,12 @@ reserved = {
   #"extends": "EXTENDS",
 
   # Match Functions
-  "sqrt": "SQRT",
-  "abs": "ABS",
-  "rand": "RAND",
-  "min": "MIN",
-  "max": "MAX",
-  "pi": "PI",
+  #"sqrt": "SQRT",
+  #"abs": "ABS",
+  #"rand": "RAND",
+  #"min": "MIN",
+  #"max": "MAX",
+  #"pi": "PI",
 
   # Handle Error
   "try": "TRY",
@@ -73,7 +74,7 @@ reserved = {
   "goto": "GOTO",
   "print": "PRINT",
   "echo": "ECHO",
-  "READLIE":"readline",
+  "readline":"READLINE",
 }
 
 # END Joby Farra
@@ -100,7 +101,6 @@ tokens = [
   'IS_IDENTICAL',
   'IS_NOT_IDENTICAL',
   'BOOLEAN_NOT',
-
   #Tipos de datos
   'DIR',
   'FILE',
@@ -116,9 +116,6 @@ tokens = [
   'NUM_STRING',
   'CONSTANT_ENCAPSED_STRING',
   'ENCAPSED_AND_WHITESPACE',
-  'QUOTE',
-  'DOLLAR_OPEN_CURLY_BRACES',
-  'STRING_VARNAME',
   'CURLY_OPEN',
   #Comparadores
   'EQUALS',
@@ -137,10 +134,8 @@ tokens = [
   'RBRACKET',
   'LBRACE',
   'RBRACE',
-  'DOLLAR',
   'COMMA',
   'CONCAT',
-  'QUESTION',
   'COLON',
   'SEMI',
   'AT',
@@ -155,43 +150,125 @@ tokens = [
 # Start Ricardo Zaruma
 
 #OPERADORES
+def t_SUMA(t):
+  r'\+'
+  return t
+  
+def t_RESTA(t):
+  r'\-'
+  return t
+  
+def t_MULTIPLICACION(t):
+  r'\*'
+  return t
+  
+def t_DIVISION(t):
+  r'\/'
+  return t
+  
+def t_MODULO(t):
+  r'%'
+  return t
+  
+def t_AND(t):
+  r'&&'
+  return t
+  
+def t_OR(t):
+  r'\|\|'
+  return t
+def t_NOT(t):
+  r'~'
+  return t
+  
+def t_XOR (t):
+  r'\^'
+  return t
+  
+def t_BOOLEAN_NOT(t): 
+  r'!'
+  return t
+  
+def t_SMALLER(t): 
+  r'<'
+  return t
+  
+def t_GREATER(t): 
+  r'>'
+  return t
+  
+def t_IS_SMALLER_OR_EQUAL(t): 
+  r'<='
+  return t
+  
+def t_IS_GREATER_OR_EQUAL(t): 
+  r'>='
+  return t
+  
+def t_IS_EQUAL(t): 
+  r'=='
+  return t
+  
+def t_IS_NOT_EQUAL(t): 
+  r'(!=(?!=))|(<>)'
+  return t
+  
+def t_IS_IDENTICAL(t):
+  r'==='
+  return t
+  
+def t_IS_NOT_IDENTICAL(t):
+  r'!=='
+  return t
 
-t_SUMA = r'\+'
-t_RESTA = r'\-'
-t_MULTIPLICACION = r'\*'
-t_DIVISION = r'\/'
-t_MODULO = r'%'
-t_AND = r'&&'
-t_OR = r'\|\|'
-t_NOT = r'~'
-t_XOR = r'\^'
-t_BOOLEAN_NOT = r'!'
-t_SMALLER = r'<'
-t_GREATER = r'>'
-t_IS_SMALLER_OR_EQUAL = r'<='
-t_IS_GREATER_OR_EQUAL = r'>='
-t_IS_EQUAL = r'=='
-t_IS_NOT_EQUAL = r'(!=(?!=))|(<>)'
-t_IS_IDENTICAL = r'==='
-t_IS_NOT_IDENTICAL = r'!=='
+
 
 # COMPARADORES
-t_EQUALS = r'='
-t_MUL_EQUAL = r'\*='
-t_DIV_EQUAL = r'/='
-t_MOD_EQUAL = r'%='
-t_PLUS_EQUAL = r'\+='
-t_MINUS_EQUAL = r'-='
+def t_EQUALS(t): 
+  r'='
+  return t
+  
+def t_MUL_EQUAL(t):
+  r'\*='
+  return t
+  
+def t_DIV_EQUAL(t): 
+  r'/='
+  return t
+  
+def t_MOD_EQUAL(t): 
+  r'%='
+  return t
+  
+def t_PLUS_EQUAL(t): 
+  r'\+='
+  return t
+  
+def t_MINUS_EQUAL(t): 
+  r'-='
+  return t
+  
 
 # DELIMITADORES
-t_DOLLAR = r'\$'
-t_COMMA = r','
-t_CONCAT = r'\.(?!\d|=)'
-t_QUESTION = r'\?'
-t_COLON = r':'
-t_SEMI = r';'
-t_AT = r'@'
-t_NS_SEPARATOR = r'\\'
+
+def t_COMMA(t):
+  r','
+  return t 
+def t_CONCAT(t): 
+  r'\.(?!\d|=)'
+  return t 
+def t_COLON(t): 
+  r':'
+  return t 
+def t_SEMI(t): 
+  r';'
+  return t 
+def t_AT(t): 
+  r'@'
+  return t 
+def t_NS_SEPARATOR(t): 
+  r'\\'
+  return t 
 
 # Comentarios
 
@@ -259,7 +336,7 @@ def t_STRING(t):
   return t
 
 def t_NOMBRE(t):
-    r'[a-z][a-zA-Z0-9_]*'
+    r'[a-zA-Z][a-zA-Z0-9_]*'
     t.type = reserved.get(t.value, "NOMBRE")
     return t
 
@@ -314,11 +391,35 @@ def t_error(t):
   print("No es reconocido '%s'" % t.value[0])
   t.lexer.skip(1)
 
+  
 t_ignore = " \t"
 
 #Construya el lexer
 lexer = lex.lex()
 
+#def analizar(data):
+#  lexer.input(data)
+#  while True:
+#    tok = lexer.token()
+#    if not tok:
+#      break
+#    print(tok)
+    
+#Lea el archivo y retorne los tokens
+#scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+
+#for script in scripts:
+#  f = open(script, "r")
+#  lines = f.readlines()
+#  for line in lines:
+#    print("\n", line, "\n")
+#    lexer.input(line)
+#   while True:
+#      tok = lexer.token()
+#      if not tok:
+#        break
+#      print(">>", tok)
+#  print("============================================================")
 
 
 

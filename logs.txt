@@ -1,0 +1,22 @@
+Input: echo 23;, el resultado fue: None en 2022-11-20 16:17:51.053673-05:00 
+Input: $foo = 34, el resultado fue: None en 2022-11-20 16:20:45.120553-05:00 
+Input: $er=43;, el resultado fue: None en 2022-11-20 16:21:04.053344-05:00 
+Input: 34, el resultado fue: None en 2022-11-20 16:26:14.019317-05:00 
+Input: define("hola","hello");, el resultado fue: None en 2022-11-20 16:31:43.923593-05:00 
+Input: echo cars[23], el resultado fue: None en 2022-11-20 16:32:02.061889-05:00 
+Input: define("hola","hello");, el resultado fue: None en 2022-11-20 16:33:07.854453-05:00 
+Input: while (4<5) { 3 }, el resultado fue: None en 2022-11-20 18:00:13.272549-05:00 
+Input: +, el resultado fue: None en 2022-11-20 18:49:05.931675-05:00 
+Input: 3+4-2, el resultado fue: None en 2022-11-20 19:16:37.393523-05:00 
+Input: 4 + (4 *5 ), el resultado fue: None en 2022-11-20 19:16:48.961740-05:00 
+Input: 3 * 4 / 5 % 34, el resultado fue: None en 2022-11-20 19:16:57.538698-05:00 
+Input: while (5<3){$a}, el resultado fue: None en 2022-11-20 19:20:29.974519-05:00 
+Input: (12.2 * 56), el resultado fue: None en 2022-11-20 19:20:55.304922-05:00 
+Input: 23/23*(23.2 + 4 + (23 * 23)), el resultado fue: None en 2022-11-20 19:21:18.354460-05:00 
+Input: 3.34 + 34 -3, el resultado fue: None en 2022-11-20 19:37:50.838190-05:00 
+Input: 3.34 + 34 -3;, el resultado fue: None en 2022-11-20 19:37:58.249676-05:00 
+Input: 3.34 + 34 - 3, el resultado fue: None en 2022-11-20 19:38:14.858991-05:00 
+Input: 3.34 + 34 - 3;, el resultado fue: None en 2022-11-20 19:38:18.345203-05:00 
+Input: echo "hola";, el resultado fue: None en 2022-11-20 19:38:30.905305-05:00 
+Input: 4+5, el resultado fue: None en 2022-11-20 19:39:07.643217-05:00 
+Input: 4+5-4, el resultado fue: None en 2022-11-20 19:39:11.816151-05:00 
