@@ -1,16 +1,40 @@
-#Script 2
-$nombre = "Jose"
-$edad = 45
+<?php
 
-if ($edad > 18){
-  echo "es mayor de edad"
-} else
-  echo "es menor de edad"
+echo "IDENTIFICAR SI ES MENOR DE EDAD"
+$edad = 15;
+$nombre= "Josh";
+
+function identificar($edad,$nombre){
+  if ($edad <= 18){
+    echo "es menor de edad"
+  }else{
+    echo "es mayor de edad"
+  }
 }
-function Saludar ( $nombre ) {
-  echo "Bienvenido" , $nombre 
-  print("Hola" > 4)
+
+function aumentar($edad){
+  while($edad < 18){
+    $edad ++ ;
+  }
 }
 
 
-$newDE => enqueue()
+print ("MENU")
+print("1) Validar edad")
+print("2) Aumentar edad")
+print("3) Salir")
+
+$opcion = readline("Ingrese una opcion:")
+
+switch($opcion){
+  case 1:
+    identificar($edad,$nombre)   
+    break;
+  case 2:
+    aumentar($edad)
+    break;
+  case 3:
+    echo "Hasta la proxima!!"
+    break;
+}
+?> 

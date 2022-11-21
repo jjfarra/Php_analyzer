@@ -14,15 +14,17 @@ reserved = {
   "continue": "CONTINUE",
   "default": "DEFAULT",
   "return": "RETURN",
-  "require": "REQUIRE",
+  #"require": "REQUIRE",
   "define" : "DEFINE",
-  "queue" : "queue",
+  "SplQueue" : "SPLQUEUE",
+  "SplStack" : "SPLSTACK",
   # Loop Structure
   "for": "FOR",
   "while": "WHILE",
   "switch": "SWITCH",
   "case": "CASE",
   "foreach": "FOREACH",
+  "rand": "RAND",
   #"match": "MATCH",
   #"endfor": "ENDFOR",
   #"endwhile": "ENDWHILE",
@@ -52,14 +54,14 @@ reserved = {
   "static": "STATIC",
   "protected": "PROTECTED",
   #"class": "CLASS",
-  #"new": "NEW",
+  "new": "NEW",
   #"implements": "IMPLEMENTS",
   #"extends": "EXTENDS",
 
   # Match Functions
   #"sqrt": "SQRT",
   #"abs": "ABS",
-  #"rand": "RAND",
+  "rand": "RAND",
   #"min": "MIN",
   #"max": "MAX",
   #"pi": "PI",
@@ -75,6 +77,8 @@ reserved = {
   "print": "PRINT",
   "echo": "ECHO",
   "readline":"READLINE",
+  "fwrite":"FWRITE",
+  "trim" : "TRIM"
 }
 
 # END Joby Farra
@@ -116,7 +120,7 @@ tokens = [
   #'NUM_STRING',
   #'CONSTANT_ENCAPSED_STRING',
   #'ENCAPSED_AND_WHITESPACE',
-  'CURLY_OPEN',
+  #'CURLY_OPEN',
   #Comparadores
   'EQUALS',
   'MUL_EQUAL',
@@ -382,9 +386,9 @@ def t_INLINE_HTML(t):
   return
 
 
-def t_quoted_CURLY_OPEN(t):
-  r'\{(?=\$)'
-  return t
+#def t_quoted_CURLY_OPEN(t):
+#  r'\{(?=\$)'
+#  return t
 
 
 def t_error(t):

@@ -1,6 +1,4 @@
 #Script
-#Joby Farra
-#El programa genera numero entre 0 y 100, si es par divide para 2, pero si es impar multiplica por 3 y le suma uno, luego vuelve a consultar si es par o impar hasta llegar a 1
 
 <?php
     $numero =rand(0,100);

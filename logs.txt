@@ -89,3 +89,926 @@ Input: function returnr():void{}, el resultado fue: None en 2022-11-20 21:34:27.
 Input: var $bar = 'Soy bar.';, el resultado fue: None en 2022-11-20 21:42:24.177490-05:00 
 Input: private $weW =34;, el resultado fue: None en 2022-11-20 21:42:42.850131-05:00 
 Input: protected var $w = 89;, el resultado fue: None en 2022-11-20 21:43:47.290427-05:00 
+Input: $q = new SplStack(), el resultado fue: None en 2022-11-20 21:54:40.542050-05:00 
+Input: $q=new SplStack();, el resultado fue: None en 2022-11-20 21:58:14.666664-05:00 
+Input: $test = "test", el resultado fue: None en 2022-11-20 22:02:51.738210-05:00 
+Input: 3 + 4, el resultado fue: None en 2022-11-20 22:03:52.589909-05:00 
+Input: <?php 3 + 5 ?>, el resultado fue: None en 2022-11-20 22:04:33.064087-05:00 
+Input: 7+9, el resultado fue: None en 2022-11-20 22:05:41.378871-05:00 
+Input: $test = "hola";, el resultado fue: None en 2022-11-20 22:06:01.640778-05:00 
+Input: $test = array("hola");, el resultado fue: None en 2022-11-20 22:06:14.074477-05:00 
+Input: $cola = new SplQueue();, el resultado fue: None en 2022-11-20 22:06:25.309617-05:00 
+Input: readline("ingrese");, el resultado fue: None en 2022-11-20 22:06:43.546853-05:00 
+Input: define('hola','hellow');, el resultado fue: None en 2022-11-20 22:07:29.328852-05:00 
+Input: $we = new SplQueue();, el resultado fue: None en 2022-11-20 22:07:53.314135-05:00 
+Input: $test = array("hola","hellow");, el resultado fue: None en 2022-11-20 22:08:12.712263-05:00 
+Input: $cola = new SplQueue();, el resultado fue: None en 2022-11-20 22:08:37.281794-05:00 
+Input: $test = arra();, el resultado fue: None en 2022-11-20 22:08:50.223741-05:00 
+Input: $test = array();, el resultado fue: None en 2022-11-20 22:08:53.728874-05:00 
+Input: $test = array("hola","hola");, el resultado fue: None en 2022-11-20 22:09:03.256918-05:00 
+Input: $test = array('hola','hellow');, el resultado fue: None en 2022-11-20 22:09:26.642826-05:00 
+Input: $test = array('hola','hellow');, el resultado fue: None en 2022-11-20 22:10:45.647499-05:00 
+Input: $test = array('hola','hellow');, el resultado fue: None en 2022-11-20 22:11:19.794905-05:00 
+Input: $test = array('hola','hellow');, el resultado fue: None en 2022-11-20 22:12:01.912443-05:00 
+Input: $test = array('hola','hellow',);, el resultado fue: None en 2022-11-20 22:12:20.160291-05:00 
+Input: $e = 3 +3, el resultado fue: None en 2022-11-20 22:12:31.263907-05:00 
+Input: $ve = 2+ 3, el resultado fue: None en 2022-11-20 22:13:49.822928-05:00 
+Input: $var = 3 + 3 ;, el resultado fue: None en 2022-11-20 22:14:00.378980-05:00 
+Input: $test = array();, el resultado fue: None en 2022-11-20 22:14:48.277385-05:00 
+Input: $test = array();, el resultado fue: None en 2022-11-20 22:15:07.733881-05:00 
+Input: $test = array('hola');, el resultado fue: None en 2022-11-20 22:15:12.727065-05:00 
+Input: $test = array("hola");, el resultado fue: None en 2022-11-20 22:15:33.888681-05:00 
+Input: $test = array("hola",'hola');, el resultado fue: None en 2022-11-20 22:16:08.163576-05:00 
+Input: $test = array();, el resultado fue: None en 2022-11-20 22:17:50.624073-05:00 
+Input: $test = array('hola');, el resultado fue: None en 2022-11-20 22:17:57.814448-05:00 
+Input: $test = array('hola');, el resultado fue: None en 2022-11-20 22:18:15.306250-05:00 
+Input: $test = array('hola','hellow');, el resultado fue: None en 2022-11-20 22:18:23.147941-05:00 
+Input: function test($ad), el resultado fue: None en 2022-11-20 22:19:29.644696-05:00 
+Input: function test($ad);, el resultado fue: None en 2022-11-20 22:19:34.282987-05:00 
+Input: function test($ad){}, el resultado fue: None en 2022-11-20 22:19:40.787625-05:00 
+Input: function test($ad, $ds){}, el resultado fue: None en 2022-11-20 22:19:49.065988-05:00 
+Input: for ($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:21:17.690228-05:00 
+Input: for ($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:22:15.033777-05:00 
+Input: for($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:22:29.424329-05:00 
+Input: 2 + 2, el resultado fue: None en 2022-11-20 22:23:28.710023-05:00 
+Input: 2 -3 / 3, el resultado fue: None en 2022-11-20 22:23:32.688690-05:00 
+Input: (3 +3), el resultado fue: None en 2022-11-20 22:23:39.960036-05:00 
+Input: (3 + (3 -3)), el resultado fue: None en 2022-11-20 22:24:00.566323-05:00 
+Input: for ($x=0;$x<10;$x++){}3, el resultado fue: None en 2022-11-20 22:24:46.960663-05:00 
+Input: for ($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:24:50.499839-05:00 
+Input: for ($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:26:54.912441-05:00 
+Input: for ($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:27:17.048816-05:00 
+Input: for ($x=0; $x <= 10; $x++){}, el resultado fue: None en 2022-11-20 22:27:45.072808-05:00 
+Input: for ($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:31:11.989682-05:00 
+Input:  $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");, el resultado fue: None en 2022-11-20 22:34:51.502769-05:00 
+Input: fwrite(STDOUT, "|---->Ingrese el primer numero: ");, el resultado fue: None en 2022-11-20 22:34:59.728143-05:00 
+Input: for ($x=0;$x<10;$x++){}, el resultado fue: None en 2022-11-20 22:35:46.814132-05:00 
+Input: $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");, el resultado fue: None en 2022-11-20 22:36:28.822404-05:00 
+Input: while($x <= 5) {, el resultado fue: None en 2022-11-20 22:37:13.419341-05:00 
+Input: while($x <= 5) {}, el resultado fue: None en 2022-11-20 22:37:17.769651-05:00 
+Input: while($x <= 5) {, el resultado fue: None en 2022-11-20 22:38:48.246347-05:00 
+Input: while($x <= 5) {}, el resultado fue: None en 2022-11-20 22:38:51.064484-05:00 
+Input: fwrite();, el resultado fue: None en 2022-11-20 22:40:13.303700-05:00 
+Input: fwrite(STDOUT);, el resultado fue: None en 2022-11-20 22:40:39.618887-05:00 
+Input: fwrite("ewwew");, el resultado fue: None en 2022-11-20 22:41:14.526173-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}, el resultado fue: None en 2022-11-20 22:41:41.907490-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}, el resultado fue: None en 2022-11-20 22:41:44.917770-05:00 
+Input: for ($x = 0; $x <= 10; $x++) { ~}, el resultado fue: None en 2022-11-20 22:42:11.901705-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {, el resultado fue: None en 2022-11-20 22:42:17.572690-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}, el resultado fue: None en 2022-11-20 22:42:22.107629-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}, el resultado fue: None en 2022-11-20 22:42:46.713785-05:00 
+Input: while(x>=3){echo 23;}, el resultado fue: None en 2022-11-20 22:43:08.465632-05:00 
+Input: while(x>3){echo 23;}, el resultado fue: None en 2022-11-20 22:43:29.556019-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}, el resultado fue: None en 2022-11-20 22:44:18.092788-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}, el resultado fue: None en 2022-11-20 22:44:26.102170-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}fwrite(STDOUT, "|---->Ingrese el primer numero: ");, el resultado fue: None en 2022-11-20 22:44:54.915020-05:00 
+Input: for ($x = 0; $x < 10; $x++) {}, el resultado fue: None en 2022-11-20 22:45:18.688863-05:00 
+Input: fwrite(STDOUT, "|---->Ingrese el primer numero: ");, el resultado fue: None en 2022-11-20 22:45:46.566009-05:00 
+Input: fwrite(STDOUT "|---->Ingrese el primer numero: ");, el resultado fue: None en 2022-11-20 22:46:02.952554-05:00 
+Input: for ($x = 0; $x <= 10; $x++) {}, el resultado fue: None en 2022-11-20 22:46:54.996910-05:00 
+Input: for ($x = 0; $x < 10; $x++) {}, el resultado fue: None en 2022-11-20 22:47:12.072922-05:00 
+Input: 2 >3, el resultado fue: None en 2022-11-20 22:51:32.092239-05:00 
+Input: 2 <= 3, el resultado fue: None en 2022-11-20 22:51:37.557601-05:00 
+Input: <?php, el resultado fue: None en 2022-11-20 23:10:06.086931-05:00 
+Input: <?php echp"holas"; ?>, el resultado fue: None en 2022-11-20 23:10:22.097213-05:00 
+Input: <?php echo"holas"; ?>, el resultado fue: None en 2022-11-20 23:11:08.112459-05:00 
+Input: echo "hola";, el resultado fue: None en 2022-11-20 23:11:16.042860-05:00 
+Linea: 1 | $a = 15;| Info: No hay errores!Linea: 3 | $b = 12;| Info: No hay errores!Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores!Linea: 6 | $temp = $a;| Info: No hay errores!Linea: 7 | $a = $b;| Info: No hay errores!Linea: 8 | $b = $temp; | Info: No hay errores!Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores!Linea: 10 | echo "linea erronea"| Info: No hay errores!Linea: 11 | echo "Numero a =".$a." y b=".$b."\n";| Info: No hay errores!PRUEBA DE SCRIPTLinea: 1 | $a = 15;| Info: No hay errores!Linea: 3 | $b = 12;| Info: No hay errores!Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores!Linea: 6 | $temp = $a;| Info: No hay errores!Linea: 7 | $a = $b;| Info: No hay errores!Linea: 8 | $b = $temp; | Info: No hay errores!Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores!Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores!PRUEBA DE SCRIPTLinea: 1 | $a = 15;| Info: No hay errores!Linea: 3 | $b = 12;| Info: No hay errores!Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores!Linea: 6 | $temp = $a;| Info: No hay errores!Linea: 7 | $a = $b;| Info: No hay errores!Linea: 8 | $b = $temp; | Info: No hay errores!Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores!Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores!Linea: 11 | $cola = new SplQueue();| Info: No hay errores!PRUEBA DE SCRIPTLinea: 1 | $a = 15;| Info: No hay errores!Linea: 3 | $b = 12;| Info: No hay errores!Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores!Linea: 6 | $temp = $a;| Info: No hay errores!Linea: 7 | $a = $b;| Info: No hay errores!Linea: 8 | $b = $temp; | Info: No hay errores!Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores!Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores!Linea: 11 | $cola = new SplQueue();| Info: No hay errores!Linea: 12 | $c = 3;| Info: No hay errores!Linea: 13 | $d = 10;| Info: No hay errores!PRUEBA DE SCRIPTLinea: 1 | $a = 15;| Info: No hay errores!Linea: 3 | $b = 12;| Info: No hay errores!Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores!Linea: 6 | $temp = $a;| Info: No hay errores!Linea: 7 | $a = $b;| Info: No hay errores!Linea: 8 | $b = $temp; | Info: No hay errores!Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores!Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores!Linea: 11 | $cola = new SplQueue();| Info: No hay errores!Linea: 12 | $c = 3;| Info: No hay errores!Linea: 13 | $d = 10;| Info: No hay errores!Linea: 14 | function Contar (){| Info: No hay errores!Linea: 15 |   while ($c < $d) {| Info: No hay errores!Linea: 16 |     echo $c ++; | Info: No hay errores!Linea: 17 |   }| Info: No hay errores!Linea: 18 | }| Info: No hay errores!PRUEBA DE SCRIPTLinea: 1 | $a = 15;| Info: No hay errores!Linea: 3 | $b = 12;| Info: No hay errores!Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores!Linea: 6 | $temp = $a;| Info: No hay errores!Linea: 7 | $a = $b;| Info: No hay errores!Linea: 8 | $b = $temp; | Info: No hay errores!Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores!Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores!Linea: 11 | $cola = new SplQueue();| Info: No hay errores!Linea: 12 | $c = 3;| Info: No hay errores!Linea: 13 | $d = 10;| Info: No hay errores!Linea: 14 | function Contar (){while ($c < $d) {echo $c ++;}}| Info: No hay errores!
+PRUEBA DE SCRIPT 
+Linea: 1 | $a = 15;| Info: No hay errores! 
+Linea: 3 | $b = 12;| Info: No hay errores! 
+Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores! 
+Linea: 6 | $temp = $a;| Info: No hay errores! 
+Linea: 7 | $a = $b;| Info: No hay errores! 
+Linea: 8 | $b = $temp; | Info: No hay errores! 
+Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores! 
+Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores! 
+Linea: 11 | $cola = new SplQueue();| Info: No hay errores! 
+Linea: 12 | $c = 3;| Info: No hay errores! 
+Linea: 13 | $d = 10;| Info: No hay errores! 
+Linea: 14 | function Contar(){while ($c < $d) {echo $c ++;}}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $a = 15;| Info: No hay errores! 
+Linea: 3 | $b = 12;| Info: No hay errores! 
+Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores! 
+Linea: 6 | $temp = $a;| Info: No hay errores! 
+Linea: 7 | $a = $b;| Info: No hay errores! 
+Linea: 8 | $b = $temp; | Info: No hay errores! 
+Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores! 
+Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores! 
+Linea: 11 | $cola = new SplQueue();| Info: No hay errores! 
+Linea: 12 | $c = 3;| Info: No hay errores! 
+Linea: 13 | $d = 10;| Info: No hay errores! 
+Linea: 14 | function Contar(){while ($c < $d) {echo $c ++;}}| Info: No hay errores! 
+Linea: 15 | Contar()| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $a = 15;| Info: No hay errores! 
+Linea: 3 | $b = 12;| Info: No hay errores! 
+Linea: 5 | echo "El numero antes del cambio es:";| Info: No hay errores! 
+Linea: 6 | $temp = $a;| Info: No hay errores! 
+Linea: 7 | $a = $b;| Info: No hay errores! 
+Linea: 8 | $b = $temp; | Info: No hay errores! 
+Linea: 9 | echo "El numero despues del intercambio es: ";| Info: No hay errores! 
+Linea: 10 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores! 
+Linea: 11 | $cola = new SplQueue();| Info: No hay errores! 
+Linea: 12 | $c = 3;| Info: No hay errores! 
+Linea: 13 | $d = 10;| Info: No hay errores! 
+Linea: 14 | function Contar(){while ($c < $d) {echo $c ++;}}| Info: No hay errores! 
+Linea: 15 | Contar();| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  }| Info: No hay errores! 
+Linea: 22 |    elseif | Info: No hay errores! 
+Linea: 23 |  ($option == 2) | Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 26 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 28 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 29 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 32 | {| Info: No hay errores! 
+Linea: 33 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 34 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 36 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 37 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 38 |  }| Info: No hay errores! 
+Linea: 39 |   elseif | Info: No hay errores! 
+Linea: 40 |  ($option == 4) | Info: No hay errores! 
+Linea: 41 | {| Info: No hay errores! 
+Linea: 42 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 43 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 44 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 45 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 46 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 47 |      | Info: No hay errores! 
+Linea: 48 | }| Info: No hay errores! 
+Linea: 49 |  elseif ($option == 5) | Info: No hay errores! 
+Linea: 50 | {| Info: No hay errores! 
+Linea: 51 |    exit;| Info: No hay errores! 
+Linea: 52 |  }| Info: No hay errores! 
+Linea: 53 |    else | Info: No hay errores! 
+Linea: 54 |  {| Info: No hay errores! 
+Linea: 55 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 56 |   goto menu;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 59 | goto menu;| Info: No hay errores! 
+Linea: 60 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $a = 15;| Info: No hay errores! 
+Linea: 4 | $b = 12;| Info: No hay errores! 
+Linea: 6 | echo "El numero antes del cambio es:";| Info: No hay errores! 
+Linea: 7 | $temp = $a;| Info: No hay errores! 
+Linea: 8 | $a = $b;| Info: No hay errores! 
+Linea: 9 | $b = $temp; | Info: No hay errores! 
+Linea: 10 | echo "El numero despues del intercambio es: ";| Info: No hay errores! 
+Linea: 11 | echo "Numero a =".$a." y b=".$b."\n"; | Info: No hay errores! 
+Linea: 12 | $cola = new SplQueue();| Info: No hay errores! 
+Linea: 13 | $c = 3;| Info: No hay errores! 
+Linea: 14 | $d = 10;| Info: No hay errores! 
+Linea: 15 | function Contar(){while ($c < $d) {echo $c ++;}}| Info: No hay errores! 
+Linea: 16 | Contar()| Info: No hay errores! 
+Linea: 18 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  }| Info: No hay errores! 
+Linea: 22 |    elseif | Info: No hay errores! 
+Linea: 23 |  ($option == 2) | Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 26 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 28 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 29 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 32 | {| Info: No hay errores! 
+Linea: 33 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 34 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 36 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 37 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 38 |  }| Info: No hay errores! 
+Linea: 39 |   elseif | Info: No hay errores! 
+Linea: 40 |  ($option == 4) | Info: No hay errores! 
+Linea: 41 | {| Info: No hay errores! 
+Linea: 42 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 43 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 44 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 45 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 46 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 47 |      | Info: No hay errores! 
+Linea: 48 | }| Info: No hay errores! 
+Linea: 49 |  elseif ($option == 5) | Info: No hay errores! 
+Linea: 50 | {| Info: No hay errores! 
+Linea: 51 |    exit;| Info: No hay errores! 
+Linea: 52 |  }| Info: No hay errores! 
+Linea: 53 |    else | Info: No hay errores! 
+Linea: 54 |  {| Info: No hay errores! 
+Linea: 55 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 56 |   goto menu;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 59 | goto menu;| Info: No hay errores! 
+Linea: 60 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 21 | print ("MENU")| Info: No hay errores! 
+Linea: 22 | print("Validar edad")| Info: No hay errores! 
+Linea: 23 | print("aumentar edad")| Info: No hay errores! 
+Linea: 24 | $opcion = readline("Ingrese una opcion:")| Info: No hay errores! 
+Linea: 26 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  }| Info: No hay errores! 
+Linea: 22 |    elseif | Info: No hay errores! 
+Linea: 23 |  ($option == 2) | Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 26 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 28 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 29 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 32 | {| Info: No hay errores! 
+Linea: 33 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 34 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 36 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 37 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 38 |  }| Info: No hay errores! 
+Linea: 39 |   elseif | Info: No hay errores! 
+Linea: 40 |  ($option == 4) | Info: No hay errores! 
+Linea: 41 | {| Info: No hay errores! 
+Linea: 42 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 43 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 44 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 45 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 46 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 47 |      | Info: No hay errores! 
+Linea: 48 | }| Info: No hay errores! 
+Linea: 49 |  elseif ($option == 5) | Info: No hay errores! 
+Linea: 50 | {| Info: No hay errores! 
+Linea: 51 |    exit;| Info: No hay errores! 
+Linea: 52 |  }| Info: No hay errores! 
+Linea: 53 |    else | Info: No hay errores! 
+Linea: 54 |  {| Info: No hay errores! 
+Linea: 55 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 56 |   goto menu;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 59 | goto menu;| Info: No hay errores! 
+Linea: 60 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:")| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)| Info: No hay errores! 
+Linea: 32 |   case 2:| Info: No hay errores! 
+Linea: 33 |     aumenta| Info: No hay errores! 
+Linea: 34 | }| Info: No hay errores! 
+Linea: 35 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  }| Info: No hay errores! 
+Linea: 22 |    elseif | Info: No hay errores! 
+Linea: 23 |  ($option == 2) | Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 26 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 28 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 29 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 32 | {| Info: No hay errores! 
+Linea: 33 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 34 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 36 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 37 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 38 |  }| Info: No hay errores! 
+Linea: 39 |   elseif | Info: No hay errores! 
+Linea: 40 |  ($option == 4) | Info: No hay errores! 
+Linea: 41 | {| Info: No hay errores! 
+Linea: 42 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 43 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 44 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 45 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 46 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 47 |      | Info: No hay errores! 
+Linea: 48 | }| Info: No hay errores! 
+Linea: 49 |  elseif ($option == 5) | Info: No hay errores! 
+Linea: 50 | {| Info: No hay errores! 
+Linea: 51 |    exit;| Info: No hay errores! 
+Linea: 52 |  }| Info: No hay errores! 
+Linea: 53 |    else | Info: No hay errores! 
+Linea: 54 |  {| Info: No hay errores! 
+Linea: 55 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 56 |   goto menu;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 59 | goto menu;| Info: No hay errores! 
+Linea: 60 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:")| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)| Info: No hay errores! 
+Linea: 32 |   case 2:| Info: No hay errores! 
+Linea: 33 |     aumentar($edad)| Info: No hay errores! 
+Linea: 34 |   case 3:| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 | }| Info: No hay errores! 
+Linea: 37 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  }| Info: No hay errores! 
+Linea: 22 |    elseif | Info: No hay errores! 
+Linea: 23 |  ($option == 2) | Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 26 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 28 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 29 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 32 | {| Info: No hay errores! 
+Linea: 33 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 34 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 36 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 37 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 38 |  }| Info: No hay errores! 
+Linea: 39 |   elseif | Info: No hay errores! 
+Linea: 40 |  ($option == 4) | Info: No hay errores! 
+Linea: 41 | {| Info: No hay errores! 
+Linea: 42 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 43 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 44 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 45 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 46 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 47 |      | Info: No hay errores! 
+Linea: 48 | }| Info: No hay errores! 
+Linea: 49 |  elseif ($option == 5) | Info: No hay errores! 
+Linea: 50 | {| Info: No hay errores! 
+Linea: 51 |    exit;| Info: No hay errores! 
+Linea: 52 |  }| Info: No hay errores! 
+Linea: 53 |    else | Info: No hay errores! 
+Linea: 54 |  {| Info: No hay errores! 
+Linea: 55 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 56 |   goto menu;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 59 | goto menu;| Info: No hay errores! 
+Linea: 60 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:")| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  }| Info: No hay errores! 
+Linea: 22 |    elseif | Info: No hay errores! 
+Linea: 23 |  ($option == 2) | Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 26 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 28 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 29 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 32 | {| Info: No hay errores! 
+Linea: 33 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 34 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 36 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 37 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 38 |  }| Info: No hay errores! 
+Linea: 39 |   elseif | Info: No hay errores! 
+Linea: 40 |  ($option == 4) | Info: No hay errores! 
+Linea: 41 | {| Info: No hay errores! 
+Linea: 42 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 43 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 44 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 45 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 46 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 47 |      | Info: No hay errores! 
+Linea: 48 | }| Info: No hay errores! 
+Linea: 49 |  elseif ($option == 5) | Info: No hay errores! 
+Linea: 50 | {| Info: No hay errores! 
+Linea: 51 |    exit;| Info: No hay errores! 
+Linea: 52 |  }| Info: No hay errores! 
+Linea: 53 |    else | Info: No hay errores! 
+Linea: 54 |  {| Info: No hay errores! 
+Linea: 55 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 56 |   goto menu;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 59 | goto menu;| Info: No hay errores! 
+Linea: 60 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:")| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  }| Info: No hay errores! 
+Linea: 22 |    elseif | Info: No hay errores! 
+Linea: 23 |  ($option == 2) | Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 26 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 28 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 29 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 32 | {| Info: No hay errores! 
+Linea: 33 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 34 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 36 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 37 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 38 |  }| Info: No hay errores! 
+Linea: 39 |   elseif | Info: No hay errores! 
+Linea: 40 |  ($option == 4) | Info: No hay errores! 
+Linea: 41 | {| Info: No hay errores! 
+Linea: 42 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 43 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 44 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 45 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 46 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 47 |      | Info: No hay errores! 
+Linea: 48 | }| Info: No hay errores! 
+Linea: 49 |  elseif ($option == 5) | Info: No hay errores! 
+Linea: 50 | {| Info: No hay errores! 
+Linea: 51 |    exit;| Info: No hay errores! 
+Linea: 52 |  }| Info: No hay errores! 
+Linea: 53 |    else | Info: No hay errores! 
+Linea: 54 |  {| Info: No hay errores! 
+Linea: 55 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 56 |   goto menu;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 59 | goto menu;| Info: No hay errores! 
+Linea: 60 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:")| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
