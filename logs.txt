@@ -20,3 +20,40 @@ Input: 3.34 + 34 - 3;, el resultado fue: None en 2022-11-20 19:38:18.345203-05:0
 Input: echo "hola";, el resultado fue: None en 2022-11-20 19:38:30.905305-05:00 
 Input: 4+5, el resultado fue: None en 2022-11-20 19:39:07.643217-05:00 
 Input: 4+5-4, el resultado fue: None en 2022-11-20 19:39:11.816151-05:00 
+Input: if($a > $b){echo "a es mayor que b";}, el resultado fue: None en 2022-11-20 19:41:45.123457-05:00 
+Input: else {echo "hola";}, el resultado fue: None en 2022-11-20 19:44:08.293358-05:00 
+Input: else {echo "gola";}, el resultado fue: None en 2022-11-20 19:46:48.886548-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-20 19:52:06.206792-05:00 
+Input:   echo "a es mayor que b";, el resultado fue: None en 2022-11-20 19:52:06.207516-05:00 
+Input: } else {, el resultado fue: None en 2022-11-20 19:52:06.208174-05:00 
+Input:   echo "a NO es mayor que b";, el resultado fue: None en 2022-11-20 19:52:06.208996-05:00 
+Input: }, el resultado fue: None en 2022-11-20 19:52:06.209304-05:00 
+Input: if($a > $b){echo "a es mayor a b";} , el resultado fue: None en 2022-11-20 19:52:40.423213-05:00 
+Input: else{echo"a no es menor a b";}, el resultado fue: None en 2022-11-20 19:53:01.843972-05:00 
+Input: if($a > $b){echo "a es mayor a b";}else{echo"a no es menor a b";}, el resultado fue: None en 2022-11-20 19:53:22.233634-05:00 
+Input: if($a>$b){echo 23;}elseif($a<$b){echo 34}else{echo 34}, el resultado fue: None en 2022-11-20 19:56:16.689714-05:00 
+Input: if($a>$b){echo 23;}elseif($a<$b){echo 34;}else{echo 34;}, el resultado fue: None en 2022-11-20 19:56:49.517314-05:00 
+Input: 23 +3 -3, el resultado fue: None en 2022-11-20 19:57:07.023851-05:00 
+Input: 23 - 9, el resultado fue: None en 2022-11-20 19:58:31.130148-05:00 
+Input: 23 - 9 -2 + 2, el resultado fue: None en 2022-11-20 19:58:39.595176-05:00 
+Input: (23-23), el resultado fue: None en 2022-11-20 19:58:50.973058-05:00 
+Input: (23 - 23 + 34), el resultado fue: None en 2022-11-20 19:59:02.847348-05:00 
+Input: (23)+(32), el resultado fue: None en 2022-11-20 20:01:31.050565-05:00 
+Input: (34+232), el resultado fue: None en 2022-11-20 20:02:11.696202-05:00 
+Input: 34 + (34 -3 * (34 +4 ), el resultado fue: None en 2022-11-20 20:03:16.869253-05:00 
+Input: (34 - 4 * (34 +3)), el resultado fue: None en 2022-11-20 20:03:29.434205-05:00 
+Input: (12+ (23+33)), el resultado fue: None en 2022-11-20 20:03:53.117225-05:00 
+Input: (34 - 4 * (34 +3)), el resultado fue: None en 2022-11-20 20:04:33.518572-05:00 
+Input: 3 +4, el resultado fue: None en 2022-11-20 20:04:59.492339-05:00 
+Input: 3 + 4, el resultado fue: None en 2022-11-20 20:05:21.724219-05:00 
+Input: 3 + 5 -7 / 4 *4 % 6, el resultado fue: None en 2022-11-20 20:05:34.223311-05:00 
+Input: (23 + 43 ), el resultado fue: None en 2022-11-20 20:05:46.008103-05:00 
+Input: ( 43 - (34 *4) +(34/3)), el resultado fue: None en 2022-11-20 20:06:14.817958-05:00 
+Input: 23 -3 * (3 + (3*4)), el resultado fue: None en 2022-11-20 20:06:44.957610-05:00 
+Input: 23 + (34 +5), el resultado fue: None en 2022-11-20 20:07:11.383432-05:00 
+Input: (334 -4+(43-4)), el resultado fue: None en 2022-11-20 20:08:03.357450-05:00 
+Input: while (5<9) {}, el resultado fue: None en 2022-11-20 20:14:28.307488-05:00 
+Input: while (5<9) {$a=3}, el resultado fue: None en 2022-11-20 20:14:40.435335-05:00 
+Input: while (5<9) {$a=3;}, el resultado fue: None en 2022-11-20 20:15:04.027027-05:00 
+Input: protected function hola(){}, el resultado fue: None en 2022-11-20 20:30:25.955196-05:00 
+Input: function hola(){echo "34";}, el resultado fue: None en 2022-11-20 20:30:47.368653-05:00 

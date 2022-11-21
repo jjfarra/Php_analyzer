@@ -7,7 +7,7 @@ def p_cuerpo(p):  # TODOS
   '''cuerpo : imprimir
             | asignacion
             | asignacion_array
-            | funcion_nparams
+            | funciones
             | constante
             | lectura
             | operadores
@@ -17,8 +17,8 @@ def p_cuerpo(p):  # TODOS
             | bfor
             | bforeach
             | btry
-            | operaciones_mat
-            | condicion_if
+            | operaciones_mat_par
+            | condicion_ifelse 
   '''
 
 
@@ -59,7 +59,18 @@ def p_operador_logico(p):  #Keyla franco
 def p_condicion_if(p): #KEyla franco
   '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
   '''
-
+def p_condicion_elseif(p): #KEyla franco
+  '''condicion_elseif :  ELSEIF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
+  '''
+def p_condicion_else(p): #KEyla franco
+  '''condicion_else :  ELSE LBRACE cuerpo RBRACE
+  '''
+def p_condicion_ifelse(p):
+  '''condicion_ifelse :  condicion_if
+                      | condicion_if condicion_else
+                      | condicion_if condicion_elseif
+                      | condicion_if condicion_elseif condicion_else
+  '''
 def p_condicion_boolena(p):  #Keyla Franco
   '''condicion_booleana :  AND
                         | OR
@@ -73,19 +84,16 @@ def p_condicion_boolena(p):  #Keyla Franco
 
 
 def p_operaciones_mat(p): #Keyla Franco
-  '''operaciones_mat :  op_basicas
-                        | op_recursivas
-  '''
-def p_op_basicas(p): #Keyla franco
-    '''op_basicas :  valor operadores valor
-                      | LPAREN valor operadores valor RPAREN
+  '''operaciones_mat :  valor operadores valor
+                        | valor operadores operaciones_mat
+                       
   '''
 
-def p_op_recursivas(p): #Keyla franco
-  '''op_recursivas :  valor operadores op_recursivas
-                    | valor LPAREN valor operadores valor RPAREN operaciones_mat
+def p_operaciones_mat_par(p): #Keyla Franco
+    '''operaciones_mat_par :  LPAREN valor operadores valor RPAREN
+                          |  LPAREN valor operadores operaciones_mat_par RPAREN
   '''
-
+  
 def p_asignacion(p):  # Keyla Franco
   'asignacion : VARIABLE EQUALS valor SEMI'
   p[0] = ('asignacion', p[1])
@@ -103,6 +111,22 @@ def p_lectura(p):  # Joby Farra
   '''lectura : READLINE LPAREN STRING RPAREN SEMI
           | READLINE LPAREN RPAREN SEMI'''
 
+def p_proteccion(p):
+  '''proteccion : PUBLIC
+          | PRIVATE
+          | PROTECTED
+          | STATIC
+  '''
+
+def p_funciones(p):
+  '''funciones : funcion_nparams
+              | proteccion funcion_nparams
+              | funcion_opreturn
+              | proteccion funcion_opreturn
+              | funcion_blank
+              | proteccion funcion_blank
+  '''
+  
 def p_param(p): # Joby Farra
   '''param : VARIABLE
           | asignacion'''
@@ -113,26 +137,38 @@ def p_funcion_nparams(p): # Joby Farra
 def p_params_list(p): # Joby Farra
   '''params_list : params_list COMMA param
                       | param'''
-
+  
+def p_funcion_opreturn(p): # Ricardo Zaruma
+  ''' funcion_opreturn : FUNCTION NOMBRE LPAREN params_list RPAREN stc_bloque_def
+  '''
+def p_funcion_blank(p): 
+  ''' funcion_blank : FUNCTION NOMBRE LPAREN  RPAREN stc_bloque_def
+                    | FUNCTION NOMBRE LPAREN  RPAREN LBRACE empty RBRACE
+  '''
+def p_function_block(p):
+  pass
 
 def p_condicion(p): # Ricardo Zaruma
   ''' condicion : VARIABLE operador_logico VARIABLE
-            | valor operador_logico valor
-          
+            | valor operador_logico valor       
   '''
-
 
 def p_bwhile(p): # Ricardo Zaruma
-  ''' bwhile : WHILE LPAREN condicion RPAREN LBRACE stc_bloque RBRACE
+  ''' bwhile : WHILE LPAREN condicion RPAREN LBRACE stc_bloque RBRACE 
+  | WHILE LPAREN condicion RPAREN COLON stc_bloque  
   '''
-
+def p_bswitch(p):
+  ''' bswitch : SWITCH LPAREN'''
+  
 
 def p_bfor(p): # Joby Farra
   'bfor : FOR LPAREN asignacion SEMI condicion SEMI for_incr RPAREN stc_bloque_def'
 
 def p_stc_bloque(p): # Joby Farra
   '''stc_bloque : stc_bloque cuerpo
-        | empty'''
+        | empty
+        | RETURN
+        '''
 
 def p_stc_bloque_def(p): # Joby Farra
   'stc_bloque_def : LBRACE stc_bloque RBRACE'
@@ -165,6 +201,8 @@ def p_catches(p): # Joby Farra
 def p_empty(p): # Joby Farra
   'empty : '
 
+
+#AÑADIENDO EL LOG
 def add_log(s, result): 
 
   log = open('logs.txt', 'a')
@@ -172,7 +210,7 @@ def add_log(s, result):
   log.write(line)
   log.close()
 
-
+#ERROR
 def p_error(p):
   if p:
     print(
