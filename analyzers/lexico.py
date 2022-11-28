@@ -141,6 +141,7 @@ tokens = [
   'RBRACE',
   'COMMA',
   'CONCAT',
+  'CONCAT_EQUAL',
   'COLON',
   'SEMI',
   #'AT',
@@ -232,21 +233,22 @@ t_MINUS_EQUAL = r'-='
 t_COLON = r':'
 t_COMMA = r','
 t_CONCAT  = r'\.(?!\d|=)'
-T_SEMI = r';'
+t_CONCAT_EQUAL = r'\.='
+t_SEMI = r';'
 t_AT = r'@'
 
 # Comentarios
 
 
 def t_DOC_COMENTARIOS(t):
-  r'/\*\*(.|\n)*?\*/'
-  t.lexer.lineno += t.value.count("\n")
-  pass
-  
+    r'/\*\*(.|\n)*?\*/'
+    t.lexer.lineno += t.value.count("\n")
+    t.lexer.skip(1)
 
 def t_COMENTARIOS(t):
-  r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
-  pass
+    r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
+    t.lexer.lineno += t.value.count("\n")
+    t.lexer.skip(1)
 
 
 #DELIMITADORES

@@ -1,4 +1,4 @@
-#import analyzers.sintactico
+import analyzers.sintactico
 #import analyzers.lexPHP as lex
 #while True:
 #  try:

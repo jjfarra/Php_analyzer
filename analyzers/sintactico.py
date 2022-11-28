@@ -37,6 +37,7 @@ def p_cuerpo(p):  # TODOS
             | boolean_answer
             | otros
             | breturn
+            | comment
   '''
 
 
@@ -343,6 +344,10 @@ def p_otros(p):
   '''otros : SMALLER NOMBRE GREATER
    '''
 
+def p_comment(p):
+  '''comment : COMENTARIOS
+              | DOC_COMENTARIOS
+   '''
 #ESTRUCTURA DE UNA PILA KEYLA FRANCO
 
 #ERROR
@@ -379,7 +384,7 @@ def validaRegla(s):
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
 archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
-for script in scripts:
+for script in archivos:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
   content = file.read()

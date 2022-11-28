@@ -55,6 +55,7 @@ reserved = {
   "protected": "PROTECTED",
   #"class": "CLASS",
   "new": "NEW",
+  "at": "AT",
   #"implements": "IMPLEMENTS",
   #"extends": "EXTENDS",
 
@@ -82,6 +83,7 @@ reserved = {
 }
 
 # END Joby Farra
+
 
 #START Keyla Franco
 tokens = [
@@ -140,6 +142,7 @@ tokens = [
   'RBRACE',
   'COMMA',
   'CONCAT',
+  'CONCAT_EQUAL',
   'COLON',
   'SEMI',
   #'AT',
@@ -149,189 +152,91 @@ tokens = [
   'CLOSE_TAG'
 ] + list(reserved.values())
 
+t_ignore = ' \t'
 #END Keyla Franco
 
 # Start Ricardo Zaruma
 
 #OPERADORES
-def t_SUMA(t):
-  r'\+'
-  return t
-  
-def t_RESTA(t):
-  r'\-'
-  return t
-  
-def t_MULTIPLICACION(t):
-  r'\*'
-  return t
-  
-def t_DIVISION(t):
-  r'\/'
-  return t
-  
-def t_MODULO(t):
-  r'%'
-  return t
-  
-def t_AND(t):
-  r'&&'
-  return t
-  
-def t_OR(t):
-  r'\|\|'
-  return t
-def t_NOT(t):
-  r'~'
-  return t
-  
-def t_XOR (t):
-  r'\^'
-  return t
-  
-def t_BOOLEAN_NOT(t): 
-  r'!'
-  return t
-  
-def t_SMALLER(t): 
-  r'<'
-  return t
-  
-def t_GREATER(t): 
-  r'>'
-  return t
-  
-def t_IS_SMALLER_OR_EQUAL(t): 
-  r'<='
-  return t
-  
-def t_IS_GREATER_OR_EQUAL(t): 
-  r'>='
-  return t
-  
-def t_IS_EQUAL(t): 
-  r'=='
-  return t
-  
-def t_IS_NOT_EQUAL(t): 
-  r'(!=(?!=))|(<>)'
-  return t
-  
-def t_IS_IDENTICAL(t):
-  r'==='
-  return t
-  
-def t_IS_NOT_IDENTICAL(t):
-  r'!=='
-  return t
 
+t_SUMA = r'\+'
+t_RESTA = r'-'
+t_MULTIPLICACION = r'\*'
+t_DIVISION = r'/'
+t_MODULO = r'%'
+t_AND = r'&'
+t_OR = r'\|'
+t_NOT = r'~'
+t_XOR = r'\^'
+t_BOOLEAN_NOT = r'!'
+t_IS_SMALLER_OR_EQUAL = r'<='
+t_IS_GREATER_OR_EQUAL = r'>='
+t_IS_EQUAL = r'=='
+t_IS_NOT_EQUAL = r'(!=(?!=))|(<>)'
+t_IS_IDENTICAL = r'==='
+t_IS_NOT_IDENTICAL = r'!=='
 
 
 # COMPARADORES
-def t_EQUALS(t): 
-  r'='
-  return t
-  
-def t_MUL_EQUAL(t):
-  r'\*='
-  return t
-  
-def t_DIV_EQUAL(t): 
-  r'/='
-  return t
-  
-def t_MOD_EQUAL(t): 
-  r'%='
-  return t
-  
-def t_PLUS_EQUAL(t): 
-  r'\+='
-  return t
-  
-def t_MINUS_EQUAL(t): 
-  r'-='
-  return t
-  
+t_EQUALS = r'='
+t_MUL_EQUAL = r'\*='
+t_DIV_EQUAL = r'/='
+t_MOD_EQUAL = r'%='
+t_PLUS_EQUAL = r'\+='
+t_MINUS_EQUAL = r'-='
+t_CONCAT_EQUAL = r'\.='
 
 # DELIMITADORES
+t_LPAREN = r'\('
+t_RPAREN = r'\)'
+t_COMMA = r','
+t_CONCAT = r'\.(?!\d|=)'
+t_COLON = r':'
+t_SEMI = r';'
+t_AT = r'@'
 
-def t_COMMA(t):
-  r','
-  return t 
-def t_CONCAT(t): 
-  r'\.(?!\d|=)'
-  return t 
-def t_COLON(t): 
-  r':'
-  return t 
-def t_SEMI(t): 
-  r';'
-  return t 
-#def t_AT(t): 
-#  r'@'
-#  return t 
-#def t_NS_SEPARATOR(t): 
-#  r'\\'
-#  return t 
 
 # Comentarios
 
-
 def t_DOC_COMENTARIOS(t):
-  r'/\*\*(.|\n)*?\*/'
-  t.lexer.lineno += t.value.count("\n")
-  return t
-
+    r'/\*\*(.|\n)*?\*/'
+    t.lexer.skip(1)
 
 def t_COMENTARIOS(t):
-  r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
-  t.lexer.lineno += t.value.count("\n")
-  return t
-
+    r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
+    t.lexer.skip(1)
 
 #DELIMITADORES
 
-
 def t_LBRACKET(t):
-  r'\['
-  return t
-
+    r'\['
+    return t
 
 def t_RBRACKET(t):
-  r'\]'
-  return t
-
+    r'\]'
+    return t
 
 def t_LBRACE(t):
-  r'\{'
-  return t
-
+    r'\{'
+    return t
 
 def t_RBRACE(t):
-  r'\}'
-  return t
-  
-def t_LPAREN(t):
-  r'\('
-  return t
-
-def t_RPAREN(t):
-  r'\)'
-  return t
-
+    r'\}'
+    return t
 #php tags
 def t_OPEN_TAG(t):
-  r'(<\?(php)?)'
-  return t
-
+    r'<[?%]((php[ \t\r\n]?)|=)?'
+    if '=' in t.value: t.type = 'OPEN_TAG_WITH_ECHO'
+    t.lexer.lineno += t.value.count("\n")
+    return t
 
 def t_CLOSE_TAG(t):
-  r'\?>'
-  return t
+    r'[?%]>\r?\n?'
+    t.lexer.lineno += t.value.count("\n")
+    return t
 
 
 # END Ricardo Zaruma
-
 
 # START Joby Farra
 def t_STRING(t):
@@ -345,87 +250,53 @@ def t_NOMBRE(t):
     return t
 
 def t_VARIABLE(t):
-  r'\$[A-Za-z_][\w_]*'
-  return t
-
+    r'\$[A-Za-z_][\w_]*'
+    return t
 
 def t_DECIMAL(t):
-  r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
-  return t
-
+    r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
+    return t
 
 def t_ENTERO(t):
-  r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
-  return t
-
+    r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
+    return t
 
 #END Joby Farra
 
-
 #START KEYLA FRANCO
-
-
 def t_newline(t):
   r'\n+'
   t.lexer.lineno += len(t.value)
-
-
-def t_quoted_VARIABLE(t):
-  r'\$[A-Za-z_][\w_]*'
-  return t
-
-
-def t_quoted_QUOTE(t):
-  r'"'
-  return t
-
-
-def t_INLINE_HTML(t):
-  r'([^<]|<(?![?%]))+'
-  t.lexer.lineno += t.value.count("\n")
-  return
-
-
-#def t_quoted_CURLY_OPEN(t):
-#  r'\{(?=\$)'
-#  return t
-
-
+  
+  
 def t_error(t):
-  print("No es reconocido '%s'" % t.value[0])
-  t.lexer.skip(1)
+    print("No es reconocido '%s'" %t.value[0])
+    t.lexer.skip(1)
 
   
-t_ignore = " \t"
-
 #Construya el lexer
 lexer = lex.lex()
-
 def analizar(data):
-  lexer.input(data)
-  while True:
-    tok = lexer.token()
-    if not tok:
-      break
-    print(tok)
-    
+    lexer.input(data)
+    while True:
+        tok = lexer.token()
+        if not tok:
+            break
+        print(tok)
+      
 #Lea el archivo y retorne los tokens
 scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
-
 for script in scripts:
-  f = open(script, "r")
+  f = open(script,"r")
   lines = f.readlines()
   for line in lines:
-    print("\n", line, "\n")
+    print("\n",line,"\n")
     lexer.input(line)
-  while True:
-      tok = lexer.token()
+    while True:
+      tok=lexer.token()
       if not tok:
         break
-      print(">>", tok)
-print("============================================================")
-
-
-
+      print(">>",tok)
+  print("============================================================")
 
 # END KEYLA FRANCO
