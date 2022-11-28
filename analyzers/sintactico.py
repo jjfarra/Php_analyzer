@@ -379,6 +379,8 @@ def validaRegla(s):
   print(result)
   print()
 
+  def analizador_sintactico(data):
+    return parser.parse(data)
 
 # Build the parser
 parser = sintactico.yacc()

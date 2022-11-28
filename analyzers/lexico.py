@@ -335,6 +335,15 @@ def t_error(t):
 #Construya el lexer
 lexer = lex.lex()
 
+def analizador_lexico(code):
+    lexer.input(code)
+    result = []
+    while True:
+        tok = lexer.token()
+        if not tok:
+            break  # No more input
+        result.append(str(tok) + "\n")
+    return result
 #def analizar(data):
 #  lexer.input(data)
 #  while True:

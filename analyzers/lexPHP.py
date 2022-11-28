@@ -289,7 +289,16 @@ def analizar(data):
         if not tok:
             break
         print(tok)
-      
+
+def analizador_lexico(code):
+    lexer.input(code)
+    result = []
+    while True:
+        tok = lexer.token()
+        if not tok:
+            break  # No more input
+        result.append(str(tok) + "\n")
+    return result
 #Lea el archivo y retorne los tokens
 scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
 for script in scripts:
