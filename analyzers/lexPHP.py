@@ -223,16 +223,14 @@ def t_LBRACE(t):
 def t_RBRACE(t):
     r'\}'
     return t
+  
 #php tags
 def t_OPEN_TAG(t):
-    r'<[?%]((php[ \t\r\n]?)|=)?'
-    if '=' in t.value: t.type = 'OPEN_TAG_WITH_ECHO'
-    t.lexer.lineno += t.value.count("\n")
-    return t
+  r'(<\?(php)?)'
+  return t
 
 def t_CLOSE_TAG(t):
-    r'[?%]>\r?\n?'
-    t.lexer.lineno += t.value.count("\n")
+    r'\?>'
     return t
 
 
