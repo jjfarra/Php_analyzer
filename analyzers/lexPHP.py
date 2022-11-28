@@ -197,7 +197,15 @@ t_AT = r'@'
 
 
 # Comentarios
+def t_GREATER(t): 
+  r'>'
+  return t 
 
+def t_SMALLER(t): 
+  r'<'
+  return t
+  
+  
 def t_DOC_COMENTARIOS(t):
     r'/\*\*(.|\n)*?\*/'
     t.lexer.skip(1)
