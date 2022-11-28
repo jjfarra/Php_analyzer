@@ -24,7 +24,7 @@ print("1) Validar edad")
 print("2) Aumentar edad")
 print("3) Salir")
 
-$opcion = readline("Ingrese una opcion:")
+$opcion = readline("Ingrese una opcion:");
 
 switch($opcion){
   case 1:

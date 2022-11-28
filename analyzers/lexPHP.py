@@ -55,7 +55,6 @@ reserved = {
   "protected": "PROTECTED",
   #"class": "CLASS",
   "new": "NEW",
-  "at": "AT",
   #"implements": "IMPLEMENTS",
   #"extends": "EXTENDS",
 
@@ -156,11 +155,25 @@ t_ignore = ' \t'
 # Start Ricardo Zaruma
 
 #OPERADORES
-t_SUMA =  r'\+'
-t_RESTA = r'\-'
-t_MULTIPLICACION = r'\*'
-t_DIVISION =r'\/'
-t_MODULO = r'%'
+def t_SUMA(t):
+  r'\+'
+  return t
+  
+def t_RESTA(t):
+  r'\-'
+  return t
+  
+def t_MULTIPLICACION(t):
+  r'\*'
+  return t
+  
+def t_DIVISION(t):
+  r'\/'
+  return t
+  
+def t_MODULO(t):
+  r'%'
+  return t
   
 def t_AND(t):
   r'&&'
@@ -220,20 +233,47 @@ def t_EQUALS(t):
   r'='
   return t
   
-t_MUL_EQUAL = r'\*='
+def t_MUL_EQUAL(t):
+  r'\*='
+  return t
   
-t_DIV_EQUAL = r'/='
-t_MOD_EQUAL = r'%='  
-t_PLUS_EQUAL= r'\+=' 
-t_MINUS_EQUAL = r'-='
+def t_DIV_EQUAL(t): 
+  r'/='
+  return t
+  
+def t_MOD_EQUAL(t): 
+  r'%='
+  return t
+  
+def t_PLUS_EQUAL(t): 
+  r'\+='
+  return t
+  
+def t_MINUS_EQUAL(t): 
+  r'-='
+  return t
   
 
 # DELIMITADORES
-t_COLON = r':'
-t_COMMA = r','
-t_CONCAT  = r'\.(?!\d|=)'
-T_SEMI = r';'
-t_AT = r'@'
+
+def t_COMMA(t):
+  r','
+  return t 
+def t_CONCAT(t): 
+  r'\.(?!\d|=)'
+  return t 
+def t_COLON(t): 
+  r':'
+  return t 
+def t_SEMI(t): 
+  r';'
+  return t 
+#def t_AT(t): 
+#  r'@'
+#  return t 
+#def t_NS_SEPARATOR(t): 
+#  r'\\'
+#  return t 
 
 # Comentarios
 
@@ -251,13 +291,33 @@ def t_COMENTARIOS(t):
 
 #DELIMITADORES
 
-t_LBRACKET = r'\['
-t_RBRACKET = r'\]'
-t_LBRACE = r'\{'
-t_RBRACE = r'\}'
-t_LPAREN = r'\('
-t_RPAREN = r'\)'
 
+def t_LBRACKET(t):
+  r'\['
+  return t
+
+
+def t_RBRACKET(t):
+  r'\]'
+  return t
+
+
+def t_LBRACE(t):
+  r'\{'
+  return t
+
+
+#def t_RBRACE(t):
+#  r'\}'
+#  return t
+t_RBRACE = r'\}'
+def t_LPAREN(t):
+  r'\('
+  return t
+
+def t_RPAREN(t):
+  r'\)'
+  return t
 
 #php tags
 def t_OPEN_TAG(t):

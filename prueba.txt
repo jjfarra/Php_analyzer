@@ -1,0 +1,4 @@
+<?php
+$name = "Quicy";
+echo "Hi! My name is " .$name . "<br>";
+?>

@@ -18,9 +18,7 @@ if ($option == 1)
    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");
    $in3 = trim(fgets(STDIN));
    $out = $in1 + $in3; 
- }
-   elseif 
- ($option == 2) 
+ } elseif ($option == 2) 
 {
    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");
    $in1 = trim(fgets(STDIN));
@@ -36,9 +34,7 @@ if ($option == 1)
    $in3 = trim(fgets(STDIN));
    $out = $in1 * $in3; 
  }
-  elseif 
- ($option == 4) 
-{
+  elseif ($option == 4) {
    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");
    $in1 = trim(fgets(STDIN));
    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");
@@ -46,12 +42,9 @@ if ($option == 1)
    $out = ($in1 / $in3);
      
 }
- elseif ($option == 5) 
-{
+ elseif ($option == 5) {
    exit;
- }
-   else 
- {
+ } else {
   echo 'La opción que ha escogido es incorrecta'."\n";
   goto menu;
 }

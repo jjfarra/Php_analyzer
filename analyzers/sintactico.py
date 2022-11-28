@@ -20,13 +20,23 @@ def p_cuerpo(p):  # TODOS
             | btry
             | operaciones_mat
             | condicion_ifelse 
+            | condicion_elseif
+            | condicion_else
             | bswitch
+            | bcase
             | bgoto
             | bcolas
             | bpila
             | incrementos_mat
             | bcortes
             | brand
+            | bconcat
+            | escribir
+            | btrim
+            | leer
+            | boolean_answer
+            | otros
+            | breturn
   '''
 
 
@@ -35,6 +45,7 @@ def p_imprimir(p):  #Ricardo Zaruma
             | PRINT valor SEMI
             | PRINT LPAREN valor RPAREN SEMI
             | ECHO NOMBRE LBRACKET ENTERO RBRACKET SEMI
+            | ECHO bconcat
   '''
 
 
@@ -43,6 +54,7 @@ def p_valor(p):  #KEYLA FRANCO
             | VARIABLE
             | STRING
             | NOMBRE
+            | boolean_answer
   '''
 
 
@@ -69,6 +81,7 @@ def p_operador_logico(p):  #Keyla franco
   '''
 
 
+
 def p_incrementos_mat(p):  #Keyla FRanco
   '''incrementos_mat :  MINUS_EQUAL
                         | MOD_EQUAL
@@ -76,11 +89,13 @@ def p_incrementos_mat(p):  #Keyla FRanco
                         | PLUS_EQUAL
   '''
 
-
+def p_boolean_answer(p): #Keyla franco
+  '''boolean_answer :  TRUE
+                      | FALSE
+  '''
 def p_condicion_if(p):  #KEyla franco
   '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
   '''
-
 
 def p_condicion_elseif(p):  #KEyla franco
   '''condicion_elseif :  ELSEIF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
@@ -93,7 +108,7 @@ def p_condicion_else(p):  #KEyla franco
 
 
 def p_condicion_ifelse(p):  # keyla franco
-  '''condicion_ifelse :  condicion_if
+  '''condicion_ifelse : condicion_if
                       | condicion_if condicion_else
                       | condicion_if condicion_elseif
                       | condicion_if condicion_elseif condicion_else
@@ -131,6 +146,10 @@ def p_asignacion(p):  # Keyla Franco
   '''asignacion : VARIABLE EQUALS valor SEMI
                 | VAR asignacion
                 | proteccion asignacion
+                | VARIABLE EQUALS brand
+                | VARIABLE EQUALS escribir
+                | VARIABLE EQUALS btrim
+                | VARIABLE EQUALS leer
   '''
 
 
@@ -152,7 +171,7 @@ def p_brand(p):
   'brand : RAND LPAREN ENTERO COMMA ENTERO RPAREN SEMI'
 
 
-def p_proteccion(p):
+def p_proteccion(p): #Keyla franco
   '''proteccion : PUBLIC
           | PRIVATE
           | PROTECTED
@@ -171,7 +190,8 @@ def p_funciones(p):  #TODOS
 
 def p_param(p):  # Joby Farra
   '''param : VARIABLE
-          | asignacion'''
+          | asignacion
+          '''
 
 
 def p_funcion_nparams(p):  # Joby Farra
@@ -212,13 +232,15 @@ def p_bdo(p):  #Keyla franco
 
 
 def p_bswitch(p):  # Ricardo Zaruma
-  ''' bswitch : SWITCH LPAREN VARIABLE RPAREN LBRACE innerSwitch RBRACE'''
+  ''' bswitch : SWITCH LPAREN VARIABLE RPAREN LBRACE cuerpo SEMI RBRACE'''
 
-
-def p_innerSwitch(p):  # Ricardo Zaruma
-  ''' innerSwitch : CASE ENTERO COLON cuerpo BREAK SEMI
-    | CASE ENTERO COLON cuerpo BREAK SEMI innerSwitch 
-  '''
+def p_bcase(p):
+  'bcase : CASE ENTERO COLON'
+  
+#def p_innerSwitch(p):  # Ricardo Zaruma
+#  ''' innerSwitch : bcase cuerpo BREAK SEMI
+#                  | CASE ENTERO COLON cuerpo BREAK SEMI #innerSwitch 
+#  '''
 
 
 def p_bcolas(p):  #ricardo Zaruma
@@ -232,11 +254,16 @@ def p_bfor(p):  # Joby Farra
 
 def p_stc_bloque(p):  # Joby Farra
   '''stc_bloque : stc_bloque SEMI cuerpo
-        | empty
-        | RETURN
-        | RETURN NULL
+        | breturn
         '''
-
+def p_breturn(p):
+  '''breturn : empty
+        | RETURN SEMI 
+        | RETURN NULL SEMI
+        | RETURN VARIABLE SEMI
+        | RETURN NOMBRE SEMI
+        | RETURN boolean_answer SEMI
+        '''
 
 def p_stc_bloque_def(p):  # Joby Farra
   'stc_bloque_def : LBRACE stc_bloque RBRACE'
@@ -293,10 +320,25 @@ def p_bcortes(p):  #Keyla franco
               | CONTINUE SEMI
    '''
 
+def p_bconcat(p): #KEYLA FRANCO
+  '''bconcat : STRING CONCAT STRING SEMI
+            | VARIABLE EQUALS VARIABLE CONCAT VARIABLE SEMI
+   '''
 
+def p_escribir (p): #KEYLA FRANCO
+  '''escribir : FWRITE LPAREN NOMBRE COMMA STRING RPAREN SEMI
+   '''
 
+def p_btrim (p): #KEYLA RANCO
+  '''btrim : TRIM LPAREN NOMBRE LPAREN NOMBRE RPAREN RPAREN SEMI
+   '''
 
-
+def p_leer(p): #Ricardo Zaruma
+  '''leer : READLINE LPAREN STRING RPAREN SEMI
+   '''
+def p_otros(p):
+  '''otros : SMALLER NOMBRE GREATER
+   '''
 #ERROR
 def p_error(p):
     global resultado_sintactico
@@ -329,8 +371,9 @@ def validaRegla(s):
 
 # Build the parser
 parser = sintactico.yacc()
-archivos = ["script-farra.txt","script-franco.txt","script-zaruma.txt"]
-for script in archivos:
+scripts = ["prueba.txt"]
+archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+for script in scripts:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
   content = file.read()
