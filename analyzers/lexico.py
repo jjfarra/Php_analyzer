@@ -325,12 +325,6 @@ def t_INLINE_HTML(t):
   t.lexer.lineno += t.value.count("\n")
   return
 
-
-#def t_quoted_CURLY_OPEN(t):
-#  r'\{(?=\$)'
-#  return t
-
-
 def t_error(t):
   print("No es reconocido '%s'" % t.value[0])
   t.lexer.skip(1)
@@ -353,15 +347,15 @@ lexer = lex.lex()
 #for script in scripts:
 #  f = open(script, "r")
 #  lines = f.readlines()
-#  for line in lines:
+ # for line in lines:
 #    print("\n", line, "\n")
 #    lexer.input(line)
-#   while True:
-#      tok = lexer.token()
-#      if not tok:
-#        break
+#  while True:
+ #     tok = lexer.token()
+ #     if not tok:
+ #       break
 #      print(">>", tok)
-#  print("============================================================")
+  #print("============================================================")
 
 
 

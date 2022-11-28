@@ -104,6 +104,7 @@ def p_condicion_elseif(p):  #KEyla franco
 
 def p_condicion_else(p):  #KEyla franco
   '''condicion_else :  ELSE LBRACE cuerpo RBRACE
+                    | ELSE breturn
   '''
 
 
@@ -336,9 +337,14 @@ def p_btrim (p): #KEYLA RANCO
 def p_leer(p): #Ricardo Zaruma
   '''leer : READLINE LPAREN STRING RPAREN SEMI
    '''
+
+
 def p_otros(p):
   '''otros : SMALLER NOMBRE GREATER
    '''
+
+#ESTRUCTURA DE UNA PILA KEYLA FRANCO
+
 #ERROR
 def p_error(p):
     global resultado_sintactico

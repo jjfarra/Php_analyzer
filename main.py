@@ -1,5 +1,5 @@
-import analyzers.sintactico as sintactico
-#import analyzers.lexicoPHP as lex
+#import analyzers.sintactico
+#import analyzers.lexPHP as lex
 #while True:
 #  try:
 #    s = input('calc > ')

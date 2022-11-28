@@ -149,7 +149,6 @@ tokens = [
   'CLOSE_TAG'
 ] + list(reserved.values())
 
-t_ignore = ' \t'
 #END Keyla Franco
 
 # Start Ricardo Zaruma
@@ -281,12 +280,13 @@ def t_SEMI(t):
 def t_DOC_COMENTARIOS(t):
   r'/\*\*(.|\n)*?\*/'
   t.lexer.lineno += t.value.count("\n")
-  pass
-  
+  return t
+
 
 def t_COMENTARIOS(t):
   r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
-  pass
+  t.lexer.lineno += t.value.count("\n")
+  return t
 
 
 #DELIMITADORES
@@ -307,10 +307,10 @@ def t_LBRACE(t):
   return t
 
 
-#def t_RBRACE(t):
-#  r'\}'
-#  return t
-t_RBRACE = r'\}'
+def t_RBRACE(t):
+  r'\}'
+  return t
+  
 def t_LPAREN(t):
   r'\('
   return t
@@ -325,10 +325,10 @@ def t_OPEN_TAG(t):
   return t
 
 
-#def t_CLOSE_TAG(t):
-#  r'\?>'
-#  return t
-t_CLOSE_TAG = r'\?>'
+def t_CLOSE_TAG(t):
+  r'\?>'
+  return t
+
 
 # END Ricardo Zaruma
 
@@ -395,33 +395,35 @@ def t_error(t):
   print("No es reconocido '%s'" % t.value[0])
   t.lexer.skip(1)
 
+  
+t_ignore = " \t"
 
 #Construya el lexer
 lexer = lex.lex()
 
-#def analizar(data):
-#  lexer.input(data)
-#  while True:
-#    tok = lexer.token()
-#    if not tok:
-#      break
-#    print(tok)
+def analizar(data):
+  lexer.input(data)
+  while True:
+    tok = lexer.token()
+    if not tok:
+      break
+    print(tok)
     
 #Lea el archivo y retorne los tokens
-#scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
 
-#for script in scripts:
-#  f = open(script, "r")
-#  lines = f.readlines()
-#  for line in lines:
-#    print("\n", line, "\n")
-#    lexer.input(line)
-#   while True:
-#      tok = lexer.token()
-#      if not tok:
-#        break
-#      print(">>", tok)
-#  print("============================================================")
+for script in scripts:
+  f = open(script, "r")
+  lines = f.readlines()
+  for line in lines:
+    print("\n", line, "\n")
+    lexer.input(line)
+  while True:
+      tok = lexer.token()
+      if not tok:
+        break
+      print(">>", tok)
+print("============================================================")
 
 
 

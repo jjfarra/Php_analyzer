@@ -4064,3 +4064,664 @@ Linea: 1 | <?php| Info: No hay errores!
 Linea: 2 | $name = "Quicy";| Info: No hay errores! 
 Linea: 3 | echo "Hi! My name is " .$name . "<br>";| Info: No hay errores! 
 Linea: 4 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo '------Calculadora----' ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  } elseif ($option == 2) | Info: No hay errores! 
+Linea: 22 | {| Info: No hay errores! 
+Linea: 23 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 24 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 25 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 26 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 28 | }| Info: No hay errores! 
+Linea: 29 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 30 | {| Info: No hay errores! 
+Linea: 31 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 32 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 33 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 34 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 36 |  }| Info: No hay errores! 
+Linea: 37 |   elseif ($option == 4) {| Info: No hay errores! 
+Linea: 38 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 39 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 40 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 41 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 42 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 43 |      | Info: No hay errores! 
+Linea: 44 | }| Info: No hay errores! 
+Linea: 45 |  elseif ($option == 5) {| Info: No hay errores! 
+Linea: 46 |    exit;| Info: No hay errores! 
+Linea: 47 |  } else {| Info: No hay errores! 
+Linea: 48 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 49 |   goto menu;| Info: No hay errores! 
+Linea: 50 | }| Info: No hay errores! 
+Linea: 51 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 52 | goto menu;| Info: No hay errores! 
+Linea: 53 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 |   /*| Info: No hay errores! 
+Linea: 3 |   * str_match| Info: No hay errores! 
+Linea: 4 |   *| Info: No hay errores! 
+Linea: 5 |   * return a string with only cacacteres defined in a expression return false if the expression is not valid| Info: No hay errores! 
+Linea: 6 |   *| Info: No hay errores! 
+Linea: 7 |   * @param $str string the string| Info: No hay errores! 
+Linea: 8 |   * @param $match the expression based on the class definition off a PCRE regular expression.| Info: No hay errores! 
+Linea: 9 |   *   the '[', ']', '\' and '^' at class start need to be escaped.| Info: No hay errores! 
+Linea: 10 |   *   like : -a-z0-9_@.| Info: No hay errores! 
+Linea: 11 |   */| Info: No hay errores! 
+Linea: 12 |   function str_match( $str, $match )| Info: No hay errores! 
+Linea: 13 |   {| Info: No hay errores! 
+Linea: 14 |     $return = '';| Info: No hay errores! 
+Linea: 15 |     if( eregi( '(.*)', $match, $class ) )| Info: No hay errores! 
+Linea: 16 |     {| Info: No hay errores! 
+Linea: 17 |       $match = '['.$regs[1].']';| Info: No hay errores! 
+Linea: 18 |       for( $i=0; $i<strlen($str); $i++ )| Info: No hay errores! 
+Linea: 19 |       if( ereg( '['.$class[1].']', $str[$i] ) )| Info: No hay errores! 
+Linea: 20 |       $return .= $str{$i};| Info: No hay errores! 
+Linea: 21 |       return $return;| Info: No hay errores! 
+Linea: 22 |     }| Info: No hay errores! 
+Linea: 23 |     else return false;| Info: No hay errores! 
+Linea: 24 |   }| Info: No hay errores! 
+Linea: 26 |   /*| Info: No hay errores! 
+Linea: 27 |   * example| Info: No hay errores! 
+Linea: 28 |   * accept only alphanum caracteres from the GET/POST parameters 'a'| Info: No hay errores! 
+Linea: 29 |   */| Info: No hay errores! 
+Linea: 31 |   if( ! empty($_REQUEST['a']) )| Info: No hay errores! 
+Linea: 32 |     $_REQUEST['a'] = str_match( $_REQUEST['a'], 'a-zA-Z0-9' );| Info: No hay errores! 
+Linea: 33 |   else| Info: No hay errores! 
+Linea: 34 |     $_REQUEST['a'] = 'default';| Info: No hay errores! 
+Linea: 35 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 |   /*| Info: No hay errores! 
+Linea: 3 |   * str_match| Info: No hay errores! 
+Linea: 4 |   *| Info: No hay errores! 
+Linea: 5 |   * return a string with only cacacteres defined in a expression return false if the expression is not valid| Info: No hay errores! 
+Linea: 6 |   *| Info: No hay errores! 
+Linea: 7 |   * @param $str string the string| Info: No hay errores! 
+Linea: 8 |   * @param $match the expression based on the class definition off a PCRE regular expression.| Info: No hay errores! 
+Linea: 9 |   *   the '[', ']', '\' and '^' at class start need to be escaped.| Info: No hay errores! 
+Linea: 10 |   *   like : -a-z0-9_@.| Info: No hay errores! 
+Linea: 11 |   */| Info: No hay errores! 
+Linea: 12 |   function str_match( $str, $match )| Info: No hay errores! 
+Linea: 13 |   {| Info: No hay errores! 
+Linea: 14 |     $return = '';| Info: No hay errores! 
+Linea: 15 |     if( eregi( '(.*)', $match, $class ) )| Info: No hay errores! 
+Linea: 16 |     {| Info: No hay errores! 
+Linea: 17 |       $match = '['.$regs[1].']';| Info: No hay errores! 
+Linea: 18 |       for( $i=0; $i<strlen($str); $i++ )| Info: No hay errores! 
+Linea: 19 |       if( ereg( '['.$class[1].']', $str[$i] ) )| Info: No hay errores! 
+Linea: 20 |       $return .= $str{$i};| Info: No hay errores! 
+Linea: 21 |       return $return;| Info: No hay errores! 
+Linea: 22 |     }| Info: No hay errores! 
+Linea: 23 |     else return false;| Info: No hay errores! 
+Linea: 24 |   }| Info: No hay errores! 
+Linea: 26 |   /*| Info: No hay errores! 
+Linea: 27 |   * example| Info: No hay errores! 
+Linea: 28 |   * accept only alphanum caracteres from the GET/POST parameters 'a'| Info: No hay errores! 
+Linea: 29 |   */| Info: No hay errores! 
+Linea: 31 |   if( ! empty($_REQUEST['a']) )| Info: No hay errores! 
+Linea: 32 |     $_REQUEST['a'] = str_match( $_REQUEST['a'], 'a-zA-Z0-9' );| Info: No hay errores! 
+Linea: 33 |   else| Info: No hay errores! 
+Linea: 34 |     $_REQUEST['a'] = 'default';| Info: No hay errores! 
+Linea: 35 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?| Info: No hay errores! 
+Linea: 2 | $mytime=time();| Info: No hay errores! 
+Linea: 3 | $mydog="My Dog Ate My PHP!";| Info: No hay errores! 
+Linea: 5 | # Your Parsing String:| Info: No hay errores! 
+Linea: 6 | $s1 = 'Hyphen Variable Preserving: $mytime, and $mydog';| Info: No hay errores! 
+Linea: 7 | echo "Before: <br><br>$s1<br><br>";| Info: No hay errores! 
+Linea: 9 | # Remember, wherever you define this, it will not be defined GLOBAL into the function| Info: No hay errores! 
+Linea: 10 | # which is why we define it here. Defining it global could lead to security issues.| Info: No hay errores! 
+Linea: 11 | $vardata=get_defined_vars();| Info: No hay errores! 
+Linea: 13 | # Parse the string| Info: No hay errores! 
+Linea: 14 | $s1 = StrParse($s1,$vardata);| Info: No hay errores! 
+Linea: 16 | echo "After: <br><br>$s1";| Info: No hay errores! 
+Linea: 18 | function StrParse($str,$vardata) {| Info: No hay errores! 
+Linea: 19 | # Takes a string, or piece of data, that contains PHP Variables| Info: No hay errores! 
+Linea: 21 | # For example, unparsed variables like:  Test using time: $mytime| Info: No hay errores! 
+Linea: 22 | # This example shows $mytime, and not the actual variable value.| Info: No hay errores! 
+Linea: 23 | # The end result shows the actual variable value of $mytime.| Info: No hay errores! 
+Linea: 25 | # This is useful for building a content management system,| Info: No hay errores! 
+Linea: 26 | # and directing your variables into your content data,| Info: No hay errores! 
+Linea: 27 | # where content is stored in a file or database, unparsed.| Info: No hay errores! 
+Linea: 28 | # Of course this could slow down page loads, but it's a good way| Info: No hay errores! 
+Linea: 29 | # to parse data from current variables into your loaded new data| Info: No hay errores! 
+Linea: 30 | # making it compatible.| Info: No hay errores! 
+Linea: 32 | # Then the variables are replaced with the actual variable..| Info: No hay errores! 
+Linea: 33 | $getvarkeys=array_keys($vardata);| Info: No hay errores! 
+Linea: 34 | $ret=$str;| Info: No hay errores! 
+Linea: 35 | for ($x=0; $x < count($getvarkeys); $x++) {| Info: No hay errores! 
+Linea: 36 |     $myvar=$getvarkeys[$x];| Info: No hay errores! 
+Linea: 37 |     #echo "Variable: " . $myvar . " [" . $vardata[$myvar] . "]<br>";| Info: No hay errores! 
+Linea: 38 |     $ret=str_replace('$' . $myvar, $vardata[$myvar], $ret);| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | return $ret;| Info: No hay errores! 
+Linea: 42 | }| Info: No hay errores! 
+Linea: 44 | ?>| Info: No hay errores! 
+
+
+
+PRUEBA DE SCRIPT 
+Linea: 1 | @media screen and (max-width: 1030px) {| Info: No hay errores! 
+Linea: 2 |   html {| Info: No hay errores! 
+Linea: 3 |     font-size: 70%;| Info: No hay errores! 
+Linea: 4 |   }| Info: No hay errores! 
+Linea: 5 |   .foto img{| Info: No hay errores! 
+Linea: 6 |     width: 14vw;| Info: No hay errores! 
+Linea: 7 |   }| Info: No hay errores! 
+Linea: 8 |   | Info: No hay errores! 
+Linea: 9 |   .contact .formulario .map {| Info: No hay errores! 
+Linea: 10 |     height: 40vw;| Info: No hay errores! 
+Linea: 11 |   }| Info: No hay errores! 
+Linea: 12 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+
+PRUEBA DE SCRIPT 
+
+PRUEBA DE SCRIPT 
+
+PRUEBA DE SCRIPT 
+
+PRUEBA DE SCRIPT 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | import ply.lex as lex| Info: No hay errores! 
+Linea: 3 | # Start Joby Farra| Info: No hay errores! 
+Linea: 5 | reserved = {| Info: No hay errores! 
+Linea: 6 |   # Control Structures| Info: No hay errores! 
+Linea: 7 |   "if": "IF",| Info: No hay errores! 
+Linea: 8 |   "else": "ELSE",| Info: No hay errores! 
+Linea: 9 |   "elseif": "ELSEIF",| Info: No hay errores! 
+Linea: 10 |   #"endif": "ENDIF",| Info: No hay errores! 
+Linea: 11 |   "break": "BREAK",| Info: No hay errores! 
+Linea: 12 |   "do": "DO",| Info: No hay errores! 
+Linea: 13 |   "as": "AS",| Info: No hay errores! 
+Linea: 14 |   "continue": "CONTINUE",| Info: No hay errores! 
+Linea: 15 |   "default": "DEFAULT",| Info: No hay errores! 
+Linea: 16 |   "return": "RETURN",| Info: No hay errores! 
+Linea: 17 |   #"require": "REQUIRE",| Info: No hay errores! 
+Linea: 18 |   "define" : "DEFINE",| Info: No hay errores! 
+Linea: 19 |   "SplQueue" : "SPLQUEUE",| Info: No hay errores! 
+Linea: 20 |   "SplStack" : "SPLSTACK",| Info: No hay errores! 
+Linea: 21 |   # Loop Structure| Info: No hay errores! 
+Linea: 22 |   "for": "FOR",| Info: No hay errores! 
+Linea: 23 |   "while": "WHILE",| Info: No hay errores! 
+Linea: 24 |   "switch": "SWITCH",| Info: No hay errores! 
+Linea: 25 |   "case": "CASE",| Info: No hay errores! 
+Linea: 26 |   "foreach": "FOREACH",| Info: No hay errores! 
+Linea: 27 |   "rand": "RAND",| Info: No hay errores! 
+Linea: 28 |   #"match": "MATCH",| Info: No hay errores! 
+Linea: 29 |   #"endfor": "ENDFOR",| Info: No hay errores! 
+Linea: 30 |   #"endwhile": "ENDWHILE",| Info: No hay errores! 
+Linea: 31 |   #"endswitch": "ENDSWITCH",| Info: No hay errores! 
+Linea: 33 |   # Data Types| Info: No hay errores! 
+Linea: 34 |   "int": "INT",| Info: No hay errores! 
+Linea: 35 |   "double": "DOUBLE",| Info: No hay errores! 
+Linea: 36 |   "float": "FLOAT",| Info: No hay errores! 
+Linea: 37 |   "bool": "BOOL",| Info: No hay errores! 
+Linea: 38 |   "string": "STRING",| Info: No hay errores! 
+Linea: 39 |   "var": "VAR",| Info: No hay errores! 
+Linea: 40 |   "void": "VOID",| Info: No hay errores! 
+Linea: 41 |   "null": "NULL",| Info: No hay errores! 
+Linea: 42 |   "true": "TRUE",| Info: No hay errores! 
+Linea: 43 |   "false": "FALSE",| Info: No hay errores! 
+Linea: 44 |   #"enum": "ENUM",| Info: No hay errores! 
+Linea: 45 |   #"resource": "RESOURCE",| Info: No hay errores! 
+Linea: 46 |   #"iterable": "ITERABLE",| Info: No hay errores! 
+Linea: 48 |   # Declaration words| Info: No hay errores! 
+Linea: 49 |   "function": "FUNCTION",| Info: No hay errores! 
+Linea: 50 |   "array": "ARRAY",| Info: No hay errores! 
+Linea: 51 |   #"object": "OBJECT",| Info: No hay errores! 
+Linea: 52 |   "public": "PUBLIC",| Info: No hay errores! 
+Linea: 53 |   "private": "PRIVATE",| Info: No hay errores! 
+Linea: 54 |   "static": "STATIC",| Info: No hay errores! 
+Linea: 55 |   "protected": "PROTECTED",| Info: No hay errores! 
+Linea: 56 |   #"class": "CLASS",| Info: No hay errores! 
+Linea: 57 |   "new": "NEW",| Info: No hay errores! 
+Linea: 58 |   #"implements": "IMPLEMENTS",| Info: No hay errores! 
+Linea: 59 |   #"extends": "EXTENDS",| Info: No hay errores! 
+Linea: 61 |   # Match Functions| Info: No hay errores! 
+Linea: 62 |   #"sqrt": "SQRT",| Info: No hay errores! 
+Linea: 63 |   #"abs": "ABS",| Info: No hay errores! 
+Linea: 64 |   "rand": "RAND",| Info: No hay errores! 
+Linea: 65 |   #"min": "MIN",| Info: No hay errores! 
+Linea: 66 |   #"max": "MAX",| Info: No hay errores! 
+Linea: 67 |   #"pi": "PI",| Info: No hay errores! 
+Linea: 69 |   # Handle Error| Info: No hay errores! 
+Linea: 70 |   "try": "TRY",| Info: No hay errores! 
+Linea: 71 |   "catch": "CATCH",| Info: No hay errores! 
+Linea: 73 |   # Other words| Info: No hay errores! 
+Linea: 74 |   "exit": "EXIT",| Info: No hay errores! 
+Linea: 75 |   #"global": "GLOBAL",| Info: No hay errores! 
+Linea: 76 |   "goto": "GOTO",| Info: No hay errores! 
+Linea: 77 |   "print": "PRINT",| Info: No hay errores! 
+Linea: 78 |   "echo": "ECHO",| Info: No hay errores! 
+Linea: 79 |   "readline":"READLINE",| Info: No hay errores! 
+Linea: 80 |   "fwrite":"FWRITE",| Info: No hay errores! 
+Linea: 81 |   "trim" : "TRIM"| Info: No hay errores! 
+Linea: 82 | }| Info: No hay errores! 
+Linea: 84 | # END Joby Farra| Info: No hay errores! 
+Linea: 86 | #START Keyla Franco| Info: No hay errores! 
+Linea: 87 | tokens = [| Info: No hay errores! 
+Linea: 88 |   'NOMBRE',| Info: No hay errores! 
+Linea: 89 |   #Operadores| Info: No hay errores! 
+Linea: 90 |   'SUMA',| Info: No hay errores! 
+Linea: 91 |   'RESTA',| Info: No hay errores! 
+Linea: 92 |   'MULTIPLICACION',| Info: No hay errores! 
+Linea: 93 |   'DIVISION',| Info: No hay errores! 
+Linea: 94 |   'MODULO',| Info: No hay errores! 
+Linea: 95 |   'AND',| Info: No hay errores! 
+Linea: 96 |   'OR',| Info: No hay errores! 
+Linea: 97 |   'NOT',| Info: No hay errores! 
+Linea: 98 |   'XOR',| Info: No hay errores! 
+Linea: 99 |   'SMALLER',| Info: No hay errores! 
+Linea: 100 |   'GREATER',| Info: No hay errores! 
+Linea: 101 |   'IS_SMALLER_OR_EQUAL',| Info: No hay errores! 
+Linea: 102 |   'IS_GREATER_OR_EQUAL',| Info: No hay errores! 
+Linea: 103 |   'IS_EQUAL',| Info: No hay errores! 
+Linea: 104 |   'IS_NOT_EQUAL',| Info: No hay errores! 
+Linea: 105 |   'IS_IDENTICAL',| Info: No hay errores! 
+Linea: 106 |   'IS_NOT_IDENTICAL',| Info: No hay errores! 
+Linea: 107 |   'BOOLEAN_NOT',| Info: No hay errores! 
+Linea: 108 |   #Tipos de datos| Info: No hay errores! 
+Linea: 109 |   #'DIR',| Info: No hay errores! 
+Linea: 110 |   #'FILE',| Info: No hay errores! 
+Linea: 111 |   #'LINE',| Info: No hay errores! 
+Linea: 112 |   #'FUNC_C',| Info: No hay errores! 
+Linea: 113 |   #'CLASS_C',| Info: No hay errores! 
+Linea: 114 |   #'METHOD_C',| Info: No hay errores! 
+Linea: 115 |   #'NS_C',| Info: No hay errores! 
+Linea: 116 |   #'HALT_COMPILER',| Info: No hay errores! 
+Linea: 117 |   'VARIABLE',| Info: No hay errores! 
+Linea: 118 |   'ENTERO',| Info: No hay errores! 
+Linea: 119 |   'DECIMAL',| Info: No hay errores! 
+Linea: 120 |   #'NUM_STRING',| Info: No hay errores! 
+Linea: 121 |   #'CONSTANT_ENCAPSED_STRING',| Info: No hay errores! 
+Linea: 122 |   #'ENCAPSED_AND_WHITESPACE',| Info: No hay errores! 
+Linea: 123 |   #'CURLY_OPEN',| Info: No hay errores! 
+Linea: 124 |   #Comparadores| Info: No hay errores! 
+Linea: 125 |   'EQUALS',| Info: No hay errores! 
+Linea: 126 |   'MUL_EQUAL',| Info: No hay errores! 
+Linea: 127 |   'DIV_EQUAL',| Info: No hay errores! 
+Linea: 128 |   'MOD_EQUAL',| Info: No hay errores! 
+Linea: 129 |   'PLUS_EQUAL',| Info: No hay errores! 
+Linea: 130 |   'MINUS_EQUAL',| Info: No hay errores! 
+Linea: 131 |   #ignorar comentarios| Info: No hay errores! 
+Linea: 132 |   'COMENTARIOS',| Info: No hay errores! 
+Linea: 133 |   'DOC_COMENTARIOS',| Info: No hay errores! 
+Linea: 134 |   #DELIMITADORES| Info: No hay errores! 
+Linea: 135 |   'LPAREN',| Info: No hay errores! 
+Linea: 136 |   'RPAREN',| Info: No hay errores! 
+Linea: 137 |   'LBRACKET',| Info: No hay errores! 
+Linea: 138 |   'RBRACKET',| Info: No hay errores! 
+Linea: 139 |   'LBRACE',| Info: No hay errores! 
+Linea: 140 |   'RBRACE',| Info: No hay errores! 
+Linea: 141 |   'COMMA',| Info: No hay errores! 
+Linea: 142 |   'CONCAT',| Info: No hay errores! 
+Linea: 143 |   'COLON',| Info: No hay errores! 
+Linea: 144 |   'SEMI',| Info: No hay errores! 
+Linea: 145 |   #'AT',| Info: No hay errores! 
+Linea: 146 |   #'NS_SEPARATOR',| Info: No hay errores! 
+Linea: 147 |   #PHP TAGS| Info: No hay errores! 
+Linea: 148 |   'OPEN_TAG',| Info: No hay errores! 
+Linea: 149 |   'CLOSE_TAG'| Info: No hay errores! 
+Linea: 150 | ] + list(reserved.values())| Info: No hay errores! 
+Linea: 152 | #END Keyla Franco| Info: No hay errores! 
+Linea: 154 | # Start Ricardo Zaruma| Info: No hay errores! 
+Linea: 156 | #OPERADORES| Info: No hay errores! 
+Linea: 157 | def t_SUMA(t):| Info: No hay errores! 
+Linea: 158 |   r'\+'| Info: No hay errores! 
+Linea: 159 |   return t| Info: No hay errores! 
+Linea: 160 |   | Info: No hay errores! 
+Linea: 161 | def t_RESTA(t):| Info: No hay errores! 
+Linea: 162 |   r'\-'| Info: No hay errores! 
+Linea: 163 |   return t| Info: No hay errores! 
+Linea: 164 |   | Info: No hay errores! 
+Linea: 165 | def t_MULTIPLICACION(t):| Info: No hay errores! 
+Linea: 166 |   r'\*'| Info: No hay errores! 
+Linea: 167 |   return t| Info: No hay errores! 
+Linea: 168 |   | Info: No hay errores! 
+Linea: 169 | def t_DIVISION(t):| Info: No hay errores! 
+Linea: 170 |   r'\/'| Info: No hay errores! 
+Linea: 171 |   return t| Info: No hay errores! 
+Linea: 172 |   | Info: No hay errores! 
+Linea: 173 | def t_MODULO(t):| Info: No hay errores! 
+Linea: 174 |   r'%'| Info: No hay errores! 
+Linea: 175 |   return t| Info: No hay errores! 
+Linea: 176 |   | Info: No hay errores! 
+Linea: 177 | def t_AND(t):| Info: No hay errores! 
+Linea: 178 |   r'&&'| Info: No hay errores! 
+Linea: 179 |   return t| Info: No hay errores! 
+Linea: 180 |   | Info: No hay errores! 
+Linea: 181 | def t_OR(t):| Info: No hay errores! 
+Linea: 182 |   r'\|\|'| Info: No hay errores! 
+Linea: 183 |   return t| Info: No hay errores! 
+Linea: 184 | def t_NOT(t):| Info: No hay errores! 
+Linea: 185 |   r'~'| Info: No hay errores! 
+Linea: 186 |   return t| Info: No hay errores! 
+Linea: 187 |   | Info: No hay errores! 
+Linea: 188 | def t_XOR (t):| Info: No hay errores! 
+Linea: 189 |   r'\^'| Info: No hay errores! 
+Linea: 190 |   return t| Info: No hay errores! 
+Linea: 191 |   | Info: No hay errores! 
+Linea: 192 | def t_BOOLEAN_NOT(t): | Info: No hay errores! 
+Linea: 193 |   r'!'| Info: No hay errores! 
+Linea: 194 |   return t| Info: No hay errores! 
+Linea: 195 |   | Info: No hay errores! 
+Linea: 196 | def t_SMALLER(t): | Info: No hay errores! 
+Linea: 197 |   r'<'| Info: No hay errores! 
+Linea: 198 |   return t| Info: No hay errores! 
+Linea: 199 |   | Info: No hay errores! 
+Linea: 200 | def t_GREATER(t): | Info: No hay errores! 
+Linea: 201 |   r'>'| Info: No hay errores! 
+Linea: 202 |   return t| Info: No hay errores! 
+Linea: 203 |   | Info: No hay errores! 
+Linea: 204 | def t_IS_SMALLER_OR_EQUAL(t): | Info: No hay errores! 
+Linea: 205 |   r'<='| Info: No hay errores! 
+Linea: 206 |   return t| Info: No hay errores! 
+Linea: 207 |   | Info: No hay errores! 
+Linea: 208 | def t_IS_GREATER_OR_EQUAL(t): | Info: No hay errores! 
+Linea: 209 |   r'>='| Info: No hay errores! 
+Linea: 210 |   return t| Info: No hay errores! 
+Linea: 211 |   | Info: No hay errores! 
+Linea: 212 | def t_IS_EQUAL(t): | Info: No hay errores! 
+Linea: 213 |   r'=='| Info: No hay errores! 
+Linea: 214 |   return t| Info: No hay errores! 
+Linea: 215 |   | Info: No hay errores! 
+Linea: 216 | def t_IS_NOT_EQUAL(t): | Info: No hay errores! 
+Linea: 217 |   r'(!=(?!=))|(<>)'| Info: No hay errores! 
+Linea: 218 |   return t| Info: No hay errores! 
+Linea: 219 |   | Info: No hay errores! 
+Linea: 220 | def t_IS_IDENTICAL(t):| Info: No hay errores! 
+Linea: 221 |   r'==='| Info: No hay errores! 
+Linea: 222 |   return t| Info: No hay errores! 
+Linea: 223 |   | Info: No hay errores! 
+Linea: 224 | def t_IS_NOT_IDENTICAL(t):| Info: No hay errores! 
+Linea: 225 |   r'!=='| Info: No hay errores! 
+Linea: 226 |   return t| Info: No hay errores! 
+Linea: 230 | # COMPARADORES| Info: No hay errores! 
+Linea: 231 | def t_EQUALS(t): | Info: No hay errores! 
+Linea: 232 |   r'='| Info: No hay errores! 
+Linea: 233 |   return t| Info: No hay errores! 
+Linea: 234 |   | Info: No hay errores! 
+Linea: 235 | def t_MUL_EQUAL(t):| Info: No hay errores! 
+Linea: 236 |   r'\*='| Info: No hay errores! 
+Linea: 237 |   return t| Info: No hay errores! 
+Linea: 238 |   | Info: No hay errores! 
+Linea: 239 | def t_DIV_EQUAL(t): | Info: No hay errores! 
+Linea: 240 |   r'/='| Info: No hay errores! 
+Linea: 241 |   return t| Info: No hay errores! 
+Linea: 242 |   | Info: No hay errores! 
+Linea: 243 | def t_MOD_EQUAL(t): | Info: No hay errores! 
+Linea: 244 |   r'%='| Info: No hay errores! 
+Linea: 245 |   return t| Info: No hay errores! 
+Linea: 246 |   | Info: No hay errores! 
+Linea: 247 | def t_PLUS_EQUAL(t): | Info: No hay errores! 
+Linea: 248 |   r'\+='| Info: No hay errores! 
+Linea: 249 |   return t| Info: No hay errores! 
+Linea: 250 |   | Info: No hay errores! 
+Linea: 251 | def t_MINUS_EQUAL(t): | Info: No hay errores! 
+Linea: 252 |   r'-='| Info: No hay errores! 
+Linea: 253 |   return t| Info: No hay errores! 
+Linea: 254 |   | Info: No hay errores! 
+Linea: 256 | # DELIMITADORES| Info: No hay errores! 
+Linea: 258 | def t_COMMA(t):| Info: No hay errores! 
+Linea: 259 |   r','| Info: No hay errores! 
+Linea: 260 |   return t | Info: No hay errores! 
+Linea: 261 | def t_CONCAT(t): | Info: No hay errores! 
+Linea: 262 |   r'\.(?!\d|=)'| Info: No hay errores! 
+Linea: 263 |   return t | Info: No hay errores! 
+Linea: 264 | def t_COLON(t): | Info: No hay errores! 
+Linea: 265 |   r':'| Info: No hay errores! 
+Linea: 266 |   return t | Info: No hay errores! 
+Linea: 267 | def t_SEMI(t): | Info: No hay errores! 
+Linea: 268 |   r';'| Info: No hay errores! 
+Linea: 269 |   return t | Info: No hay errores! 
+Linea: 270 | #def t_AT(t): | Info: No hay errores! 
+Linea: 271 | #  r'@'| Info: No hay errores! 
+Linea: 272 | #  return t | Info: No hay errores! 
+Linea: 273 | #def t_NS_SEPARATOR(t): | Info: No hay errores! 
+Linea: 274 | #  r'\\'| Info: No hay errores! 
+Linea: 275 | #  return t | Info: No hay errores! 
+Linea: 277 | # Comentarios| Info: No hay errores! 
+Linea: 280 | def t_DOC_COMENTARIOS(t):| Info: No hay errores! 
+Linea: 281 |   r'/\*\*(.|\n)*?\*/'| Info: No hay errores! 
+Linea: 282 |   t.lexer.lineno += t.value.count("\n")| Info: No hay errores! 
+Linea: 283 |   return t| Info: No hay errores! 
+Linea: 286 | def t_COMENTARIOS(t):| Info: No hay errores! 
+Linea: 287 |   r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'| Info: No hay errores! 
+Linea: 288 |   t.lexer.lineno += t.value.count("\n")| Info: No hay errores! 
+Linea: 289 |   return t| Info: No hay errores! 
+Linea: 292 | #DELIMITADORES| Info: No hay errores! 
+Linea: 295 | def t_LBRACKET(t):| Info: No hay errores! 
+Linea: 296 |   r'\['| Info: No hay errores! 
+Linea: 297 |   return t| Info: No hay errores! 
+Linea: 300 | def t_RBRACKET(t):| Info: No hay errores! 
+Linea: 301 |   r'\]'| Info: No hay errores! 
+Linea: 302 |   return t| Info: No hay errores! 
+Linea: 305 | def t_LBRACE(t):| Info: No hay errores! 
+Linea: 306 |   r'\{'| Info: No hay errores! 
+Linea: 307 |   return t| Info: No hay errores! 
+Linea: 310 | def t_RBRACE(t):| Info: No hay errores! 
+Linea: 311 |   r'\}'| Info: No hay errores! 
+Linea: 312 |   return t| Info: No hay errores! 
+Linea: 313 |   | Info: No hay errores! 
+Linea: 314 | def t_LPAREN(t):| Info: No hay errores! 
+Linea: 315 |   r'\('| Info: No hay errores! 
+Linea: 316 |   return t| Info: No hay errores! 
+Linea: 318 | def t_RPAREN(t):| Info: No hay errores! 
+Linea: 319 |   r'\)'| Info: No hay errores! 
+Linea: 320 |   return t| Info: No hay errores! 
+Linea: 322 | #php tags| Info: No hay errores! 
+Linea: 323 | def t_OPEN_TAG(t):| Info: No hay errores! 
+Linea: 324 |   r'(<\?(php)?)'| Info: No hay errores! 
+Linea: 325 |   return t| Info: No hay errores! 
+Linea: 328 | def t_CLOSE_TAG(t):| Info: No hay errores! 
+Linea: 329 |   r'\?>'| Info: No hay errores! 
+Linea: 330 |   return t| Info: No hay errores! 
+Linea: 333 | # END Ricardo Zaruma| Info: No hay errores! 
+Linea: 336 | # START Joby Farra| Info: No hay errores! 
+Linea: 337 | def t_STRING(t):| Info: No hay errores! 
+Linea: 338 |   r'(("[^"]*")|(\'[^\']*\'))'| Info: No hay errores! 
+Linea: 339 |   t.value = t.value[1:-1]| Info: No hay errores! 
+Linea: 340 |   return t| Info: No hay errores! 
+Linea: 342 | def t_NOMBRE(t):| Info: No hay errores! 
+Linea: 343 |     r'[a-zA-Z][a-zA-Z0-9_]*'| Info: No hay errores! 
+Linea: 344 |     t.type = reserved.get(t.value, "NOMBRE")| Info: No hay errores! 
+Linea: 345 |     return t| Info: No hay errores! 
+Linea: 347 | def t_VARIABLE(t):| Info: No hay errores! 
+Linea: 348 |   r'\$[A-Za-z_][\w_]*'| Info: No hay errores! 
+Linea: 349 |   return t| Info: No hay errores! 
+Linea: 352 | def t_DECIMAL(t):| Info: No hay errores! 
+Linea: 353 |   r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'| Info: No hay errores! 
+Linea: 354 |   return t| Info: No hay errores! 
+Linea: 357 | def t_ENTERO(t):| Info: No hay errores! 
+Linea: 358 |   r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'| Info: No hay errores! 
+Linea: 359 |   return t| Info: No hay errores! 
+Linea: 362 | #END Joby Farra| Info: No hay errores! 
+Linea: 365 | #START KEYLA FRANCO| Info: No hay errores! 
+Linea: 368 | def t_newline(t):| Info: No hay errores! 
+Linea: 369 |   r'\n+'| Info: No hay errores! 
+Linea: 370 |   t.lexer.lineno += len(t.value)| Info: No hay errores! 
+Linea: 373 | def t_quoted_VARIABLE(t):| Info: No hay errores! 
+Linea: 374 |   r'\$[A-Za-z_][\w_]*'| Info: No hay errores! 
+Linea: 375 |   return t| Info: No hay errores! 
+Linea: 378 | def t_quoted_QUOTE(t):| Info: No hay errores! 
+Linea: 379 |   r'"'| Info: No hay errores! 
+Linea: 380 |   return t| Info: No hay errores! 
+Linea: 383 | def t_INLINE_HTML(t):| Info: No hay errores! 
+Linea: 384 |   r'([^<]|<(?![?%]))+'| Info: No hay errores! 
+Linea: 385 |   t.lexer.lineno += t.value.count("\n")| Info: No hay errores! 
+Linea: 386 |   return| Info: No hay errores! 
+Linea: 389 | #def t_quoted_CURLY_OPEN(t):| Info: No hay errores! 
+Linea: 390 | #  r'\{(?=\$)'| Info: No hay errores! 
+Linea: 391 | #  return t| Info: No hay errores! 
+Linea: 394 | def t_error(t):| Info: No hay errores! 
+Linea: 395 |   print("No es reconocido '%s'" % t.value[0])| Info: No hay errores! 
+Linea: 396 |   t.lexer.skip(1)| Info: No hay errores! 
+Linea: 398 |   | Info: No hay errores! 
+Linea: 399 | t_ignore = " \t"| Info: No hay errores! 
+Linea: 401 | #Construya el lexer| Info: No hay errores! 
+Linea: 402 | lexer = lex.lex()| Info: No hay errores! 
+Linea: 404 | #def analizar(data):| Info: No hay errores! 
+Linea: 405 | #  lexer.input(data)| Info: No hay errores! 
+Linea: 406 | #  while True:| Info: No hay errores! 
+Linea: 407 | #    tok = lexer.token()| Info: No hay errores! 
+Linea: 408 | #    if not tok:| Info: No hay errores! 
+Linea: 409 | #      break| Info: No hay errores! 
+Linea: 410 | #    print(tok)| Info: No hay errores! 
+Linea: 411 |     | Info: No hay errores! 
+Linea: 412 | #Lea el archivo y retorne los tokens| Info: No hay errores! 
+Linea: 413 | #scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]| Info: No hay errores! 
+Linea: 415 | #for script in scripts:| Info: No hay errores! 
+Linea: 416 | #  f = open(script, "r")| Info: No hay errores! 
+Linea: 417 | #  lines = f.readlines()| Info: No hay errores! 
+Linea: 418 | #  for line in lines:| Info: No hay errores! 
+Linea: 419 | #    print("\n", line, "\n")| Info: No hay errores! 
+Linea: 420 | #    lexer.input(line)| Info: No hay errores! 
+Linea: 421 | #   while True:| Info: No hay errores! 
+Linea: 422 | #      tok = lexer.token()| Info: No hay errores! 
+Linea: 423 | #      if not tok:| Info: No hay errores! 
+Linea: 424 | #        break| Info: No hay errores! 
+Linea: 425 | #      print(">>", tok)| Info: No hay errores! 
+Linea: 426 | #  print("============================================================")| Info: No hay errores! 
+Linea: 431 | # END KEYLA FRANCO| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | parser = sintactico.yacc()| Info: No hay errores! 
+Linea: 2 | scripts = ["prueba.txt"]| Info: No hay errores! 
+Linea: 3 | archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]| Info: No hay errores! 
+Linea: 4 | for script in scripts:| Info: No hay errores! 
+Linea: 5 |   file = open(script, 'r')| Info: No hay errores! 
+Linea: 6 |   log = open('logs.txt', 'a')| Info: No hay errores! 
+Linea: 7 |   content = file.read()| Info: No hay errores! 
+Linea: 8 |   lines = 0| Info: No hay errores! 
+Linea: 9 |   line_log= "\nPRUEBA DE SCRIPT \n"| Info: No hay errores! 
+Linea: 10 |   log.write(line_log)| Info: No hay errores! 
+Linea: 11 |   for item in content.splitlines():| Info: No hay errores! 
+Linea: 12 |     lines += 1| Info: No hay errores! 
+Linea: 13 |     if item:| Info: No hay errores! 
+Linea: 14 |       gram = sintactico.parse(item)| Info: No hay errores! 
+Linea: 15 |       if gram is None:| Info: No hay errores! 
+Linea: 16 |         lin=f"Linea: {str(lines)} | {str(item)}| Info: No hay errores! \n"| Info: No hay errores! 
+Linea: 17 |         log.write(lin)| Info: No hay errores! 
+Linea: 18 |         print(lin)| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |       else:| Info: No hay errores! 
+Linea: 21 |         lin = f"Linea: {str(lines)} | Info: {str(gram)} \n"| Info: No hay errores! 
+Linea: 22 |         log.write(lin)| Info: No hay errores! 
+Linea: 23 |         print(lin)| Info: No hay errores! 
+Linea: 24 |   file.close()| Info: No hay errores! 
+Linea: 25 |   log.close()| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | a = 33| Info: No hay errores! 
+Linea: 2 | b = 200| Info: No hay errores! 
+Linea: 3 | if b > a:| Info: No hay errores! 
+Linea: 4 |   print("b is greater than a")| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | a = 33| Info: No hay errores! 
+Linea: 2 | b = 33| Info: No hay errores! 
+Linea: 3 | if b > a:| Info: No hay errores! 
+Linea: 4 |   print("b is greater than a")| Info: No hay errores! 
+Linea: 5 | elif a == b:| Info: No hay errores! 
+Linea: 6 |   print("a and b are equal")| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | a = 200| Info: No hay errores! 
+Linea: 2 | b = 33| Info: No hay errores! 
+Linea: 3 | if b > a:| Info: No hay errores! 
+Linea: 4 |   print("b is greater than a")| Info: No hay errores! 
+Linea: 5 | elif a == b:| Info: No hay errores! 
+Linea: 6 |   print("a and b are equal")| Info: No hay errores! 
+Linea: 7 | else:| Info: No hay errores! 
+Linea: 8 |   print("a is greater than b")| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | s "hol2" $ew = ewew| Info: No hay errores! 
