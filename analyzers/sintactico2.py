@@ -5,7 +5,8 @@ from analyzers.lexico import tokens
 import datetime, pytz
 
 resultado_sintactico = []
-  
+
+
 def p_cuerpo(p):  # TODOS
   '''cuerpo : imprimir
             | asignacion
@@ -36,7 +37,8 @@ def p_cuerpo(p):  # TODOS
             | bconcat
             | simbolos
   '''
-  
+
+
 #REGLAS BÁSICAS
 #DECLARACIÓN DE VARIABLES
 def p_asignacion(p):  # Keyla Franco
@@ -49,15 +51,18 @@ def p_asignacion(p):  # Keyla Franco
                 | VARIABLE EQUALS lectura
                 | VARIABLE EQUALS bconcat
                 | asignacion_array
-                | VARIABLE EQUALS operaciones_mat 
+                | VARIABLE EQUALS operaciones_mat SEMI
                 | aumentoCasting
                 | VARIABLE EQUALS llamada_funcion
   '''
+
+
 #ASIGNACION DE ARRAYS
 
 
 def p_asignacion_array(p):  # Joby Farra
   'asignacion_array : VARIABLE EQUALS array_def SEMI'
+
 
 #ASIGNACION DE CONSTANTES
 def p_constante(p):  # Joby Farra
@@ -107,12 +112,14 @@ def p_imprimir(p):  #Ricardo Zaruma
 def p_condicion_if(p):  #KEyla franco
   '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
                   | IF LPAREN condicion RPAREN llamada_funcion
-  '''  
+  '''
+
 
 #elif
 def p_condicion_elseif(p):  #KEyla franco
   '''condicion_elseif :  ELSEIF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
   '''
+
 
 #else
 def p_condicion_else(p):  #KEyla franco
@@ -144,6 +151,7 @@ def p_condicion(p):  # Ricardo Zaruma
             
   '''
 
+
 #FOR
 def p_bfor(p):  # Joby Farra
   'bfor : FOR LPAREN asignacion condicion SEMI for_incr RPAREN stc_bloque_def'
@@ -169,12 +177,14 @@ def p_for_incr(p):  # Joby Farra
           | VARIABLE SUMA EQUALS numero
           | VARIABLE RESTA EQUALS numero'''
 
-def p_incrementOp (p):
+
+def p_incrementOp(p):
   '''
   incrementOp : VARIABLE SUMA SUMA SEMI
               | VARIABLE RESTA RESTA SEMI
   '''
-  
+
+
 def p_bforeach(p):  # Joby Farra
   'bforeach :  FOREACH LPAREN VARIABLE AS VARIABLE RPAREN stc_bloque_def'
 
@@ -202,6 +212,7 @@ def p_bcase(p):
   '''bcase : CASE ENTERO COLON
           | CASE CADENA COLON '''
 
+
 def p_innerSwitch(p):  # Ricardo Zaruma
   ''' innerSwitch :  bcase cuerpo BREAK SEMI
                  | bcase cuerpo BREAK SEMI innerSwitch 
@@ -216,7 +227,6 @@ def p_btry(p):  # Joby Farra
 def p_catches(p):  # Joby Farra
   '''catches : catches CATCH LPAREN NOMBRE VARIABLE RPAREN stc_bloque_def
           | empty'''
-
 
 
 #OPERADORES
@@ -265,13 +275,16 @@ def p_operaciones_mat(p):  #Keyla Franco
                        
   '''
 
+
 def p_operaciones_mat_par(p):  #Keyla Franco
   '''operaciones_mat_par :  LPAREN valor operadores valor RPAREN
                           |  LPAREN valor operadores operaciones_mat_par RPAREN
                           | LPAREN VARIABLE operadores VARIABLE RPAREN
                           | LPAREN VARIABLE operadores valor RPAREN operadores valor
                           | LPAREN VARIABLE operadores tipoDato RPAREN
+                          | LPAREN VARIABLE operadores tipoDato RPAREN operadores tipoDato
   '''
+
 
 #FUNCIONES
 def p_funciones(p):  #TODOS
@@ -299,6 +312,7 @@ def p_params_list(p):  # Joby Farra
                  | empty
   '''
 
+
 def p_funcion_void(p):  #Keyla franco
   'funcion_void : FUNCTION NOMBRE LPAREN  RPAREN COLON VOID LBRACE empty RBRACE'
 
@@ -308,19 +322,22 @@ def p_funcion_blank(p):  #keyla Franco
                     | FUNCTION NOMBRE LPAREN  RPAREN LBRACE empty RBRACE
   '''
 
-def p_llamada_funcion(p): #Keyla Franco
+
+def p_llamada_funcion(p):  #Keyla Franco
   'llamada_funcion : NOMBRE LPAREN params_list RPAREN SEMI'
-  
+
+
 def p_brand(p):
   'brand : RAND LPAREN ENTERO COMMA ENTERO RPAREN SEMI'
 
 
-def p_proteccion(p): #Keyla franco
+def p_proteccion(p):  #Keyla franco
   '''proteccion : PUBLIC
           | PRIVATE
           | PROTECTED
           | STATIC
   '''
+
 
 def p_breturn(p):
   '''breturn : empty
@@ -331,16 +348,20 @@ def p_breturn(p):
         | breturn RBRACE
         '''
 
+
 #ESTRUCTURA DE DATOS
 #ARRAY
+
 
 def p_array_def(p):  # Joby Farra
   '''array_def : ARRAY LPAREN RPAREN
           | ARRAY LPAREN array_elmnt RPAREN'''
 
+
 def p_array_elmnt(p):  # Joby Farra
   '''array_elmnt : array_elmnt COMMA valor
             | valor'''
+
 
 def p_empty(p):  # Joby Farra
   'empty : '
@@ -350,7 +371,8 @@ def p_empty(p):  # Joby Farra
 def p_bcolas(p):  #ricardo Zaruma
   ''' bcolas : VARIABLE EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
   '''
-  
+
+
 #PILAS
 def p_bpila(p):  #Keyla Franco
   'bpila : VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI'
@@ -360,20 +382,24 @@ def p_bpila(p):  #Keyla Franco
 def p_lectura(p):  # Joby Farra
   '''lectura : READLINE LPAREN CADENA RPAREN SEMI
           | READLINE LPAREN RPAREN SEMI'''
-  
-def p_escribir (p): #KEYLA FRANCO
+
+
+def p_escribir(p):  #KEYLA FRANCO
   '''escribir : FWRITE LPAREN NOMBRE COMMA CADENA RPAREN SEMI
    '''
 
-def p_btrim (p): #KEYLA RANCO
+
+def p_btrim(p):  #KEYLA RANCO
   '''btrim : TRIM LPAREN NOMBRE LPAREN NOMBRE RPAREN RPAREN SEMI
    '''
-  
+
+
 #OTROS
 def p_comment(p):
   '''comment : COMENTARIOS
               | DOC_COMENTARIOS
    '''
+
 
 def p_bgoto(p):  #Keyla Franco
   'bgoto : GOTO NOMBRE SEMI'
@@ -386,20 +412,25 @@ def p_bcortes(p):  #Keyla franco
               | CONTINUE SEMI
    '''
 
-def p_otros(p): #kEYLA FRANCO
+
+def p_otros(p):  #kEYLA FRANCO
   '''otros : SMALLER NOMBRE GREATER
             | SMALLER DIVISION NOMBRE GREATER
             | NOMBRE COLON 
    '''
+
+
 #Nota: NOMBRE COLON hace referencia al inicio de la instrucción goto, sin ella, no tiene a donde regresar
 
 
-def p_comprobacion(p): #KEYLA FRANCO
+def p_comprobacion(p):  #KEYLA FRANCO
   '''
     comprobacion : NOMBRE LPAREN valor RPAREN
                   | NOMBRE LPAREN VARIABLE RPAREN
   '''
-def p_simbolos(p): #KEYLA FRANCO
+
+
+def p_simbolos(p):  #KEYLA FRANCO
   '''
   simbolos : LPAREN RPAREN
             | LPAREN
@@ -415,6 +446,7 @@ def p_simbolos(p): #KEYLA FRANCO
             | CLOSE_TAG
   '''
 
+
 def p_instrucciones(p):
   '''
     instrucciones : condicion_else
@@ -425,9 +457,10 @@ def p_instrucciones(p):
                   | bswitch
                   | bdo
   '''
-  
+
+
 #REGLA SEMÁNTICA OPERACIONES ENTRE STRINGS
-def p_bconcat(p): #Ricardo Zaruma
+def p_bconcat(p):  #Ricardo Zaruma
   '''bconcat : CADENA CONCAT CADENA SEMI
             | VARIABLE CONCAT CADENA SEMI
             | VARIABLE CONCAT_EQUAL CADENA SEMI
@@ -437,8 +470,9 @@ def p_bconcat(p): #Ricardo Zaruma
             
   '''
 
+
 #REGLA SEMÁNTICA CASTING
-def p_tiposCast(p): #ricardo zaruma
+def p_tiposCast(p):  #ricardo zaruma
   '''tiposCast :  STRING
             | BOOL
             | BOOLEAN
@@ -451,19 +485,25 @@ def p_tiposCast(p): #ricardo zaruma
         
             
    '''
-  
-def p_casting(p): #ricardo zaruma
+
+
+def p_casting(p):  #ricardo zaruma
   '''casting : VARIABLE EQUALS LPAREN tiposCast RPAREN VARIABLE SEMI  
               | LPAREN tiposCast RPAREN VARIABLE SEMI
    '''
-def p_aumentoCasting(p): #Keyla franco
+
+
+def p_aumentoCasting(p):  #Keyla franco
   '''
     aumentoCasting : VARIABLE incrementos_mat tipoDato SEMI
                     | VARIABLE EQUALS VARIABLE operadores tipoDato SEMI
                     | VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
                     | VARIABLE operadores tipoDato condicion_booleana valor
                     | VARIABLE incrementos_mat VARIABLE SEMI
+                    
   '''
+
+
 #ERROR
 def p_error(p):
   global resultado_sintactico
@@ -503,7 +543,7 @@ def analizador_sintactico(data):
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
 archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
-for script in scripts:
+for script in archivos:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
   content = file.read()
