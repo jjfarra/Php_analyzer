@@ -282,7 +282,7 @@ def analizador_lexico(code):
         result.append(str(tok) + "\n")
     return result
 #Lea el archivo y retorne los tokens
-scripts = ["prueba.txt","script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
 for script in scripts:
   f = open(script,"r")
   lines = f.readlines()

@@ -11645,3 +11645,3146 @@ Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores!
 Linea: 38 |     break;| Info: No hay errores! 
 Linea: 39 | }| Info: No hay errores! 
 Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 3 | <html>| Info: No hay errores! 
+Linea: 4 |   <head>| Info: No hay errores! 
+Linea: 5 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 6 |   </head>| Info: No hay errores! 
+Linea: 7 |   <body>| Info: No hay errores! 
+Linea: 8 |     <?php      | Info: No hay errores! 
+Linea: 12 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta", );| Info: No hay errores! 
+Linea: 13 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 15 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 16 |         | Info: No hay errores! 
+Linea: 17 |         $diccionario = array();| Info: No hay errores! 
+Linea: 18 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 21 |             | Info: No hay errores! 
+Linea: 22 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 23 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 26 |         }| Info: No hay errores! 
+Linea: 27 |         | Info: No hay errores! 
+Linea: 28 |         return $diccionario;| Info: No hay errores! 
+Linea: 29 |     }| Info: No hay errores! 
+Linea: 31 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 32 |         | Info: No hay errores! 
+Linea: 33 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 34 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 35 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 36 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 37 |         }| Info: No hay errores! 
+Linea: 38 |     }| Info: No hay errores! 
+Linea: 41 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 42 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 44 |  | Info: No hay errores! 
+Linea: 45 |     | Info: No hay errores! 
+Linea: 46 |     function esPar($_num){| Info: No hay errores! 
+Linea: 47 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 48 |         return True;}| Info: No hay errores! 
+Linea: 49 |         else{| Info: No hay errores! 
+Linea: 50 |         return False;}     | Info: No hay errores! 
+Linea: 51 |     }  | Info: No hay errores! 
+Linea: 52 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 53 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 54 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 56 |     $num=5;| Info: No hay errores! 
+Linea: 57 |     esPar($num); | Info: No hay errores! 
+Linea: 58 |     binario($num);| Info: No hay errores! 
+Linea: 61 | $descuento=25;| Info: No hay errores! 
+Linea: 62 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 63 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 64 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 65 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 66 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 67 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 68 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 69 |   }else{| Info: No hay errores! 
+Linea: 70 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 71 |   }| Info: No hay errores! 
+Linea: 72 | }| Info: No hay errores! 
+Linea: 73 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 75 |  | Info: No hay errores! 
+Linea: 76 |     ?> | Info: No hay errores! 
+Linea: 77 |    | Info: No hay errores! 
+Linea: 78 |     </body>| Info: No hay errores! 
+Linea: 79 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 3 | <html>| Info: No hay errores! 
+Linea: 4 |   <head>| Info: No hay errores! 
+Linea: 5 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 6 |   </head>| Info: No hay errores! 
+Linea: 7 |   <body>| Info: No hay errores! 
+Linea: 8 |     <?php      | Info: No hay errores! 
+Linea: 12 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 13 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 15 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 16 |         | Info: No hay errores! 
+Linea: 17 |         $diccionario = array();| Info: No hay errores! 
+Linea: 18 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 21 |             | Info: No hay errores! 
+Linea: 22 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 23 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 26 |         }| Info: No hay errores! 
+Linea: 27 |         | Info: No hay errores! 
+Linea: 28 |         return $diccionario;| Info: No hay errores! 
+Linea: 29 |     }| Info: No hay errores! 
+Linea: 31 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 32 |         | Info: No hay errores! 
+Linea: 33 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 34 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 35 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 36 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 37 |         }| Info: No hay errores! 
+Linea: 38 |     }| Info: No hay errores! 
+Linea: 41 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 42 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 44 |  | Info: No hay errores! 
+Linea: 45 |     | Info: No hay errores! 
+Linea: 46 |     function esPar($_num){| Info: No hay errores! 
+Linea: 47 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 48 |         return True;}| Info: No hay errores! 
+Linea: 49 |         else{| Info: No hay errores! 
+Linea: 50 |         return False;}     | Info: No hay errores! 
+Linea: 51 |     }  | Info: No hay errores! 
+Linea: 52 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 53 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 54 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 56 |     $num=5;| Info: No hay errores! 
+Linea: 57 |     esPar($num); | Info: No hay errores! 
+Linea: 58 |     binario($num);| Info: No hay errores! 
+Linea: 61 | $descuento=25;| Info: No hay errores! 
+Linea: 62 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 63 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 64 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 65 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 66 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 67 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 68 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 69 |   }else{| Info: No hay errores! 
+Linea: 70 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 71 |   }| Info: No hay errores! 
+Linea: 72 | }| Info: No hay errores! 
+Linea: 73 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 75 |  | Info: No hay errores! 
+Linea: 76 |     ?> | Info: No hay errores! 
+Linea: 77 |    | Info: No hay errores! 
+Linea: 78 |     </body>| Info: No hay errores! 
+Linea: 79 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 3 | <html>| Info: No hay errores! 
+Linea: 4 |   <head>| Info: No hay errores! 
+Linea: 5 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 6 |   </head>| Info: No hay errores! 
+Linea: 7 |   <body>| Info: No hay errores! 
+Linea: 8 |     <?php      | Info: No hay errores! 
+Linea: 12 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 13 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 15 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 16 |         | Info: No hay errores! 
+Linea: 17 |         $diccionario = array();| Info: No hay errores! 
+Linea: 18 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 21 |             | Info: No hay errores! 
+Linea: 22 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 23 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 26 |         }| Info: No hay errores! 
+Linea: 27 |         | Info: No hay errores! 
+Linea: 28 |         return $diccionario;| Info: No hay errores! 
+Linea: 29 |     }| Info: No hay errores! 
+Linea: 31 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 32 |         | Info: No hay errores! 
+Linea: 33 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 34 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 35 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 36 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 37 |         }| Info: No hay errores! 
+Linea: 38 |     }| Info: No hay errores! 
+Linea: 41 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 42 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 44 |  | Info: No hay errores! 
+Linea: 45 |     | Info: No hay errores! 
+Linea: 46 |     function esPar($_num){| Info: No hay errores! 
+Linea: 47 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 48 |         return True;| Info: No hay errores! 
+Linea: 49 | }| Info: No hay errores! 
+Linea: 50 |         else{| Info: No hay errores! 
+Linea: 51 |         return False;}     | Info: No hay errores! 
+Linea: 52 |     }  | Info: No hay errores! 
+Linea: 53 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 54 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 55 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 57 |     $num=5;| Info: No hay errores! 
+Linea: 58 |     esPar($num); | Info: No hay errores! 
+Linea: 59 |     binario($num);| Info: No hay errores! 
+Linea: 62 | $descuento=25;| Info: No hay errores! 
+Linea: 63 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 64 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 65 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 66 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 67 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 68 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 69 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 70 |   }else{| Info: No hay errores! 
+Linea: 71 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 72 |   }| Info: No hay errores! 
+Linea: 73 | }| Info: No hay errores! 
+Linea: 74 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 76 |  | Info: No hay errores! 
+Linea: 77 |     ?> | Info: No hay errores! 
+Linea: 78 |    | Info: No hay errores! 
+Linea: 79 |     </body>| Info: No hay errores! 
+Linea: 80 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 3 | <html>| Info: No hay errores! 
+Linea: 4 |   <head>| Info: No hay errores! 
+Linea: 5 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 6 |   </head>| Info: No hay errores! 
+Linea: 7 |   <body>| Info: No hay errores! 
+Linea: 8 |     <?php      | Info: No hay errores! 
+Linea: 12 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 13 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 15 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 16 |         | Info: No hay errores! 
+Linea: 17 |         $diccionario = array();| Info: No hay errores! 
+Linea: 18 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 21 |             | Info: No hay errores! 
+Linea: 22 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 23 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 26 |         }| Info: No hay errores! 
+Linea: 27 |         | Info: No hay errores! 
+Linea: 28 |         return $diccionario;| Info: No hay errores! 
+Linea: 29 |     }| Info: No hay errores! 
+Linea: 31 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 32 |         | Info: No hay errores! 
+Linea: 33 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 34 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 35 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 36 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 37 |         }| Info: No hay errores! 
+Linea: 38 |     }| Info: No hay errores! 
+Linea: 41 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 42 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 44 |  | Info: No hay errores! 
+Linea: 45 |     | Info: No hay errores! 
+Linea: 46 |     function esPar($_num){| Info: No hay errores! 
+Linea: 47 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 48 |         return True;}| Info: No hay errores! 
+Linea: 49 |         else{| Info: No hay errores! 
+Linea: 50 |         return False;}     | Info: No hay errores! 
+Linea: 51 |     }  | Info: No hay errores! 
+Linea: 52 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 53 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 54 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 56 |     $num=5;| Info: No hay errores! 
+Linea: 57 |     esPar($num); | Info: No hay errores! 
+Linea: 58 |     binario($num);| Info: No hay errores! 
+Linea: 61 | $descuento=25;| Info: No hay errores! 
+Linea: 62 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 63 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 64 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 65 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 66 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 67 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 68 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 69 |   }else{| Info: No hay errores! 
+Linea: 70 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 71 |   }| Info: No hay errores! 
+Linea: 72 | }| Info: No hay errores! 
+Linea: 73 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 75 |  | Info: No hay errores! 
+Linea: 76 |     ?> | Info: No hay errores! 
+Linea: 77 |    | Info: No hay errores! 
+Linea: 78 |     </body>| Info: No hay errores! 
+Linea: 79 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | crear_diccionario| Info: No hay errores! 
+Linea: 2 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 4 | <html>| Info: No hay errores! 
+Linea: 5 |   <head>| Info: No hay errores! 
+Linea: 6 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 7 |   </head>| Info: No hay errores! 
+Linea: 8 |   <body>| Info: No hay errores! 
+Linea: 9 |     <?php      | Info: No hay errores! 
+Linea: 13 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 14 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 16 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 17 |         | Info: No hay errores! 
+Linea: 18 |         $diccionario = array();| Info: No hay errores! 
+Linea: 19 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 20 |         | Info: No hay errores! 
+Linea: 21 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 22 |             | Info: No hay errores! 
+Linea: 23 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 24 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 25 |             | Info: No hay errores! 
+Linea: 26 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 27 |         }| Info: No hay errores! 
+Linea: 28 |         | Info: No hay errores! 
+Linea: 29 |         return $diccionario;| Info: No hay errores! 
+Linea: 30 |     }| Info: No hay errores! 
+Linea: 32 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 33 |         | Info: No hay errores! 
+Linea: 34 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 35 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 36 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 37 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 38 |         }| Info: No hay errores! 
+Linea: 39 |     }| Info: No hay errores! 
+Linea: 42 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 43 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 45 |  | Info: No hay errores! 
+Linea: 46 |     | Info: No hay errores! 
+Linea: 47 |     function esPar($_num){| Info: No hay errores! 
+Linea: 48 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 49 |         return True;}| Info: No hay errores! 
+Linea: 50 |         else{| Info: No hay errores! 
+Linea: 51 |         return False;}     | Info: No hay errores! 
+Linea: 52 |     }  | Info: No hay errores! 
+Linea: 53 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 54 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 55 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 57 |     $num=5;| Info: No hay errores! 
+Linea: 58 |     esPar($num); | Info: No hay errores! 
+Linea: 59 |     binario($num);| Info: No hay errores! 
+Linea: 62 | $descuento=25;| Info: No hay errores! 
+Linea: 63 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 64 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 65 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 66 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 67 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 68 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 69 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 70 |   }else{| Info: No hay errores! 
+Linea: 71 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 72 |   }| Info: No hay errores! 
+Linea: 73 | }| Info: No hay errores! 
+Linea: 74 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 76 |  | Info: No hay errores! 
+Linea: 77 |     ?> | Info: No hay errores! 
+Linea: 78 |    | Info: No hay errores! 
+Linea: 79 |     </body>| Info: No hay errores! 
+Linea: 80 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | crear_diccionario| Info: No hay errores! 
+Linea: 2 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 4 | <html>| Info: No hay errores! 
+Linea: 5 |   <head>| Info: No hay errores! 
+Linea: 6 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 7 |   </head>| Info: No hay errores! 
+Linea: 8 |   <body>| Info: No hay errores! 
+Linea: 9 |     <?php      | Info: No hay errores! 
+Linea: 13 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 14 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 16 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 17 |         | Info: No hay errores! 
+Linea: 18 |         $diccionario = array();| Info: No hay errores! 
+Linea: 19 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 20 |         | Info: No hay errores! 
+Linea: 21 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 22 |             | Info: No hay errores! 
+Linea: 23 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 24 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 25 |             | Info: No hay errores! 
+Linea: 26 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 27 |         }| Info: No hay errores! 
+Linea: 28 |         | Info: No hay errores! 
+Linea: 29 |         return $diccionario;| Info: No hay errores! 
+Linea: 30 |     }| Info: No hay errores! 
+Linea: 32 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 33 |         | Info: No hay errores! 
+Linea: 34 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 35 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 36 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 37 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 38 |         }| Info: No hay errores! 
+Linea: 39 |     }| Info: No hay errores! 
+Linea: 42 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 43 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 45 |  | Info: No hay errores! 
+Linea: 46 |     | Info: No hay errores! 
+Linea: 47 |     function esPar($_num){| Info: No hay errores! 
+Linea: 48 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 49 |         return True;}| Info: No hay errores! 
+Linea: 50 |         else{| Info: No hay errores! 
+Linea: 51 |         return False;}     | Info: No hay errores! 
+Linea: 52 |     }  | Info: No hay errores! 
+Linea: 53 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 54 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 55 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 57 |     $num=5;| Info: No hay errores! 
+Linea: 58 |     esPar($num); | Info: No hay errores! 
+Linea: 59 |     binario($num);| Info: No hay errores! 
+Linea: 62 | $descuento=25;| Info: No hay errores! 
+Linea: 63 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 64 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 65 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 66 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 67 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 68 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 69 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 70 |   }else{| Info: No hay errores! 
+Linea: 71 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 72 |   }| Info: No hay errores! 
+Linea: 73 | }| Info: No hay errores! 
+Linea: 74 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 76 |  | Info: No hay errores! 
+Linea: 77 |     ?> | Info: No hay errores! 
+Linea: 78 |    | Info: No hay errores! 
+Linea: 79 |     </body>| Info: No hay errores! 
+Linea: 80 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 2 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 4 | <html>| Info: No hay errores! 
+Linea: 5 |   <head>| Info: No hay errores! 
+Linea: 6 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 7 |   </head>| Info: No hay errores! 
+Linea: 8 |   <body>| Info: No hay errores! 
+Linea: 9 |     <?php      | Info: No hay errores! 
+Linea: 13 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 14 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 16 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 17 |         | Info: No hay errores! 
+Linea: 18 |         $diccionario = array();| Info: No hay errores! 
+Linea: 19 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 20 |         | Info: No hay errores! 
+Linea: 21 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 22 |             | Info: No hay errores! 
+Linea: 23 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 24 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 25 |             | Info: No hay errores! 
+Linea: 26 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 27 |         }| Info: No hay errores! 
+Linea: 28 |         | Info: No hay errores! 
+Linea: 29 |         return $diccionario;| Info: No hay errores! 
+Linea: 30 |     }| Info: No hay errores! 
+Linea: 32 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 33 |         | Info: No hay errores! 
+Linea: 34 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 35 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 36 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 37 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 38 |         }| Info: No hay errores! 
+Linea: 39 |     }| Info: No hay errores! 
+Linea: 42 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 43 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 45 |  | Info: No hay errores! 
+Linea: 46 |     | Info: No hay errores! 
+Linea: 47 |     function esPar($_num){| Info: No hay errores! 
+Linea: 48 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 49 |         return True;}| Info: No hay errores! 
+Linea: 50 |         else{| Info: No hay errores! 
+Linea: 51 |         return False;}     | Info: No hay errores! 
+Linea: 52 |     }  | Info: No hay errores! 
+Linea: 53 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 54 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 55 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 57 |     $num=5;| Info: No hay errores! 
+Linea: 58 |     esPar($num); | Info: No hay errores! 
+Linea: 59 |     binario($num);| Info: No hay errores! 
+Linea: 62 | $descuento=25;| Info: No hay errores! 
+Linea: 63 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 64 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 65 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 66 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 67 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 68 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 69 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 70 |   }else{| Info: No hay errores! 
+Linea: 71 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 72 |   }| Info: No hay errores! 
+Linea: 73 | }| Info: No hay errores! 
+Linea: 74 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 76 |  | Info: No hay errores! 
+Linea: 77 |     ?> | Info: No hay errores! 
+Linea: 78 |    | Info: No hay errores! 
+Linea: 79 |     </body>| Info: No hay errores! 
+Linea: 80 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 2 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 4 | <html>| Info: No hay errores! 
+Linea: 5 |   <head>| Info: No hay errores! 
+Linea: 6 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 7 |   </head>| Info: No hay errores! 
+Linea: 8 |   <body>| Info: No hay errores! 
+Linea: 9 |     <?php      | Info: No hay errores! 
+Linea: 13 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 14 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 16 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 17 |         | Info: No hay errores! 
+Linea: 18 |         $diccionario = array();| Info: No hay errores! 
+Linea: 19 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 20 |         | Info: No hay errores! 
+Linea: 21 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 22 |             | Info: No hay errores! 
+Linea: 23 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 24 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 25 |             | Info: No hay errores! 
+Linea: 26 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 27 |         }| Info: No hay errores! 
+Linea: 28 |         | Info: No hay errores! 
+Linea: 29 |         return $diccionario;| Info: No hay errores! 
+Linea: 30 |     }| Info: No hay errores! 
+Linea: 32 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 33 |         | Info: No hay errores! 
+Linea: 34 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 35 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 36 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 37 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 38 |         }| Info: No hay errores! 
+Linea: 39 |     }| Info: No hay errores! 
+Linea: 42 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 43 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 45 |  | Info: No hay errores! 
+Linea: 46 |     | Info: No hay errores! 
+Linea: 47 |     function esPar($_num){| Info: No hay errores! 
+Linea: 48 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 49 |         return True;}| Info: No hay errores! 
+Linea: 50 |         else{| Info: No hay errores! 
+Linea: 51 |         return False;}     | Info: No hay errores! 
+Linea: 52 |     }  | Info: No hay errores! 
+Linea: 53 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 54 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 55 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 57 |     $num=5;| Info: No hay errores! 
+Linea: 58 |     esPar($num); | Info: No hay errores! 
+Linea: 59 |     binario($num);| Info: No hay errores! 
+Linea: 62 | $descuento=25;| Info: No hay errores! 
+Linea: 63 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 64 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 65 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 66 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 67 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 68 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 69 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 70 |   }else{| Info: No hay errores! 
+Linea: 71 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 72 |   }| Info: No hay errores! 
+Linea: 73 | }| Info: No hay errores! 
+Linea: 74 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 76 |  | Info: No hay errores! 
+Linea: 77 |     ?> | Info: No hay errores! 
+Linea: 78 |    | Info: No hay errores! 
+Linea: 79 |     </body>| Info: No hay errores! 
+Linea: 80 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 3 | <html>| Info: No hay errores! 
+Linea: 4 |   <head>| Info: No hay errores! 
+Linea: 5 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 6 |   </head>| Info: No hay errores! 
+Linea: 7 |   <body>| Info: No hay errores! 
+Linea: 8 |     <?php      | Info: No hay errores! 
+Linea: 12 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 13 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 15 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 16 |         | Info: No hay errores! 
+Linea: 17 |         $diccionario = array();| Info: No hay errores! 
+Linea: 18 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 21 |             | Info: No hay errores! 
+Linea: 22 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 23 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 26 |         }| Info: No hay errores! 
+Linea: 27 |         | Info: No hay errores! 
+Linea: 28 |         return $diccionario;| Info: No hay errores! 
+Linea: 29 |     }| Info: No hay errores! 
+Linea: 31 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 32 |         | Info: No hay errores! 
+Linea: 33 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 34 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 35 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 36 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 37 |         }| Info: No hay errores! 
+Linea: 38 |     }| Info: No hay errores! 
+Linea: 41 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 42 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 44 |  | Info: No hay errores! 
+Linea: 45 |     | Info: No hay errores! 
+Linea: 46 |     function esPar($_num){| Info: No hay errores! 
+Linea: 47 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 48 |         return True;}| Info: No hay errores! 
+Linea: 49 |         else{| Info: No hay errores! 
+Linea: 50 |         return False;}     | Info: No hay errores! 
+Linea: 51 |     }  | Info: No hay errores! 
+Linea: 52 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 53 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 54 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 56 |     $num=5;| Info: No hay errores! 
+Linea: 57 |     esPar($num); | Info: No hay errores! 
+Linea: 58 |     binario($num);| Info: No hay errores! 
+Linea: 61 | $descuento=25;| Info: No hay errores! 
+Linea: 62 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 63 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 64 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 65 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 66 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 67 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 68 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 69 |   }else{| Info: No hay errores! 
+Linea: 70 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 71 |   }| Info: No hay errores! 
+Linea: 72 | }| Info: No hay errores! 
+Linea: 73 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 75 |  | Info: No hay errores! 
+Linea: 76 |     ?> | Info: No hay errores! 
+Linea: 77 |    | Info: No hay errores! 
+Linea: 78 |     </body>| Info: No hay errores! 
+Linea: 79 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 4 | <html>| Info: No hay errores! 
+Linea: 5 |   <head>| Info: No hay errores! 
+Linea: 6 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 7 |   </head>| Info: No hay errores! 
+Linea: 8 |   <body>| Info: No hay errores! 
+Linea: 9 |     <?php      | Info: No hay errores! 
+Linea: 13 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 14 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 16 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 17 |         | Info: No hay errores! 
+Linea: 18 |         $diccionario = array();| Info: No hay errores! 
+Linea: 19 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 20 |         | Info: No hay errores! 
+Linea: 21 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 22 |             | Info: No hay errores! 
+Linea: 23 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 24 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 25 |             | Info: No hay errores! 
+Linea: 26 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 27 |         }| Info: No hay errores! 
+Linea: 28 |         | Info: No hay errores! 
+Linea: 29 |         return $diccionario;| Info: No hay errores! 
+Linea: 30 |     }| Info: No hay errores! 
+Linea: 32 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 33 |         | Info: No hay errores! 
+Linea: 34 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 35 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 36 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 37 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 38 |         }| Info: No hay errores! 
+Linea: 39 |     }| Info: No hay errores! 
+Linea: 42 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 43 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 45 |  | Info: No hay errores! 
+Linea: 46 |     | Info: No hay errores! 
+Linea: 47 |     function esPar($_num){| Info: No hay errores! 
+Linea: 48 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 49 |         return True;}| Info: No hay errores! 
+Linea: 50 |         else{| Info: No hay errores! 
+Linea: 51 |         return False;}     | Info: No hay errores! 
+Linea: 52 |     }  | Info: No hay errores! 
+Linea: 53 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 54 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 55 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 57 |     $num=5;| Info: No hay errores! 
+Linea: 58 |     esPar($num); | Info: No hay errores! 
+Linea: 59 |     binario($num);| Info: No hay errores! 
+Linea: 62 | $descuento=25;| Info: No hay errores! 
+Linea: 63 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 64 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 65 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 66 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 67 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 68 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 69 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 70 |   }else{| Info: No hay errores! 
+Linea: 71 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 72 |   }| Info: No hay errores! 
+Linea: 73 | }| Info: No hay errores! 
+Linea: 74 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 76 |  | Info: No hay errores! 
+Linea: 77 |     ?> | Info: No hay errores! 
+Linea: 78 |    | Info: No hay errores! 
+Linea: 79 |     </body>| Info: No hay errores! 
+Linea: 80 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | }| Info: No hay errores! 
+Linea: 5 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 7 | <html>| Info: No hay errores! 
+Linea: 8 |   <head>| Info: No hay errores! 
+Linea: 9 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 10 |   </head>| Info: No hay errores! 
+Linea: 11 |   <body>| Info: No hay errores! 
+Linea: 12 |     <?php      | Info: No hay errores! 
+Linea: 16 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 17 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 19 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 20 |         | Info: No hay errores! 
+Linea: 21 |         $diccionario = array();| Info: No hay errores! 
+Linea: 22 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 23 |         | Info: No hay errores! 
+Linea: 24 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 25 |             | Info: No hay errores! 
+Linea: 26 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 27 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 28 |             | Info: No hay errores! 
+Linea: 29 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 30 |         }| Info: No hay errores! 
+Linea: 31 |         | Info: No hay errores! 
+Linea: 32 |         return $diccionario;| Info: No hay errores! 
+Linea: 33 |     }| Info: No hay errores! 
+Linea: 35 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 36 |         | Info: No hay errores! 
+Linea: 37 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 38 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 39 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 40 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 41 |         }| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 45 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 46 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 48 |  | Info: No hay errores! 
+Linea: 49 |     | Info: No hay errores! 
+Linea: 50 |     function esPar($_num){| Info: No hay errores! 
+Linea: 51 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 52 |         return True;}| Info: No hay errores! 
+Linea: 53 |         else{| Info: No hay errores! 
+Linea: 54 |         return False;}     | Info: No hay errores! 
+Linea: 55 |     }  | Info: No hay errores! 
+Linea: 56 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 57 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 58 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 60 |     $num=5;| Info: No hay errores! 
+Linea: 61 |     esPar($num); | Info: No hay errores! 
+Linea: 62 |     binario($num);| Info: No hay errores! 
+Linea: 65 | $descuento=25;| Info: No hay errores! 
+Linea: 66 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 67 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 68 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 69 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 70 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 71 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 72 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 73 |   }else{| Info: No hay errores! 
+Linea: 74 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 75 |   }| Info: No hay errores! 
+Linea: 76 | }| Info: No hay errores! 
+Linea: 77 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 79 |  | Info: No hay errores! 
+Linea: 80 |     ?> | Info: No hay errores! 
+Linea: 81 |    | Info: No hay errores! 
+Linea: 82 |     </body>| Info: No hay errores! 
+Linea: 83 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100)| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = ($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_dscto/100;| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = ($_dscto/100) ;| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_dscto/100;| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_dscto/100;| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) }| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) {| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) {| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | {echo $i ;}| Info: No hay errores! 
+Linea: 2 |  for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 4 | ### Algoritmos de cada miembro del equipo| Info: No hay errores! 
+Linea: 6 | <html>| Info: No hay errores! 
+Linea: 7 |   <head>| Info: No hay errores! 
+Linea: 8 |     <title>PHP Test Lexer</title>| Info: No hay errores! 
+Linea: 9 |   </head>| Info: No hay errores! 
+Linea: 10 |   <body>| Info: No hay errores! 
+Linea: 11 |     <?php      | Info: No hay errores! 
+Linea: 15 |     $libros = array("Don Quijote de la Mancha", "El principito", "El señor de los anillos",  "El Alquimista", "Narnia", "After",  "Romeo y Julieta");| Info: No hay errores! 
+Linea: 16 |     $autores = array("Miguel De Cervantes", "Antoine de Saint-Exupery", "J. R. R. Tolkien",  "Paulo Coello", "C. S. Lewis", "Anna Todd",  "Wiliam Shakespeare");| Info: No hay errores! 
+Linea: 18 |     function crear_diccionario($arreglo_clave, $arreglo_valor){| Info: No hay errores! 
+Linea: 19 |         | Info: No hay errores! 
+Linea: 20 |         $diccionario = array();| Info: No hay errores! 
+Linea: 21 |         $_longitud = count($arreglo_clave);| Info: No hay errores! 
+Linea: 22 |         | Info: No hay errores! 
+Linea: 23 |         for ($i = 0; $i < $_longitud; $i++){| Info: No hay errores! 
+Linea: 24 |             | Info: No hay errores! 
+Linea: 25 |             $clave_autor = $arreglo_clave[$i];| Info: No hay errores! 
+Linea: 26 |             $valor_libro = $arreglo_valor[$i];| Info: No hay errores! 
+Linea: 27 |             | Info: No hay errores! 
+Linea: 28 |             $diccionario[$clave_autor] = $valor_libro ;| Info: No hay errores! 
+Linea: 29 |         }| Info: No hay errores! 
+Linea: 30 |         | Info: No hay errores! 
+Linea: 31 |         return $diccionario;| Info: No hay errores! 
+Linea: 32 |     }| Info: No hay errores! 
+Linea: 34 |     function mostrar_diccionario($_dicc){| Info: No hay errores! 
+Linea: 35 |         | Info: No hay errores! 
+Linea: 36 |         echo "Datos literarios \n";| Info: No hay errores! 
+Linea: 37 |         foreach ($_dicc as $clave => $valor) {| Info: No hay errores! 
+Linea: 38 |             echo "Autor: {$clave}"."\t";| Info: No hay errores! 
+Linea: 39 |             echo "Obra: {$valor} \n";| Info: No hay errores! 
+Linea: 40 |         }| Info: No hay errores! 
+Linea: 41 |     }| Info: No hay errores! 
+Linea: 44 |     $dicc_completo = crear_diccionario($autores, $libros);| Info: No hay errores! 
+Linea: 45 |     mostrar_diccionario($dicc_completo);| Info: No hay errores! 
+Linea: 47 |  | Info: No hay errores! 
+Linea: 48 |     | Info: No hay errores! 
+Linea: 49 |     function esPar($_num){| Info: No hay errores! 
+Linea: 50 |         if($_num%2==0) {| Info: No hay errores! 
+Linea: 51 |         return True;}| Info: No hay errores! 
+Linea: 52 |         else{| Info: No hay errores! 
+Linea: 53 |         return False;}     | Info: No hay errores! 
+Linea: 54 |     }  | Info: No hay errores! 
+Linea: 55 |     #pruebapaaaaa| Info: No hay errores! 
+Linea: 56 |     for($i=1;$i<=10;$i++){echo$i;}| Info: No hay errores! 
+Linea: 57 |     for( $i=1; $i>=10; $i++) {echo $i ;}| Info: No hay errores! 
+Linea: 59 |     $num=5;| Info: No hay errores! 
+Linea: 60 |     esPar($num); | Info: No hay errores! 
+Linea: 61 |     binario($num);| Info: No hay errores! 
+Linea: 64 | $descuento=25;| Info: No hay errores! 
+Linea: 65 | $totalCompra = 100;| Info: No hay errores! 
+Linea: 66 | $minValorDscto = 60;| Info: No hay errores! 
+Linea: 67 | function calcularDescuento($_dscto,$_total,$_minV){| Info: No hay errores! 
+Linea: 68 |   if($_total>$_minV){| Info: No hay errores! 
+Linea: 69 |     echo "Usted aplica al descuento \n";| Info: No hay errores! 
+Linea: 70 |     $dsctoCalcular = $_total-$_total*($_dscto/100);| Info: No hay errores! 
+Linea: 71 |     echo "Total a pagar: $dsctoCalcular";| Info: No hay errores! 
+Linea: 72 |   }else{| Info: No hay errores! 
+Linea: 73 |     echo "Usted no aplica al descuento \n";| Info: No hay errores! 
+Linea: 74 |   }| Info: No hay errores! 
+Linea: 75 | }| Info: No hay errores! 
+Linea: 76 | calcularDescuento($descuento,$totalCompra,$minValorDscto);| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 |     ?> | Info: No hay errores! 
+Linea: 80 |    | Info: No hay errores! 
+Linea: 81 |     </body>| Info: No hay errores! 
+Linea: 82 | </html>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | function foo($arg_1, $arg_2, $arg_n)| Info: No hay errores! 
+Linea: 3 | {| Info: No hay errores! 
+Linea: 4 |     echo "Función de ejemplo.\n";| Info: No hay errores! 
+Linea: 5 |     return $valor_devuelto;| Info: No hay errores! 
+Linea: 6 | }| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | $hacer_algo = true;| Info: No hay errores! 
+Linea: 5 | /* No podemos llamar a foo() desde aquí| Info: No hay errores! 
+Linea: 6 |    ya que no existe aún,| Info: No hay errores! 
+Linea: 7 |    pero podemos llamar a bar() */| Info: No hay errores! 
+Linea: 9 | bar();| Info: No hay errores! 
+Linea: 11 | if ($hacer_algo) {| Info: No hay errores! 
+Linea: 12 |   function foo()| Info: No hay errores! 
+Linea: 13 |   {| Info: No hay errores! 
+Linea: 14 |     echo "No existo hasta que la ejecución del programa llegue hasta mí.\n";| Info: No hay errores! 
+Linea: 15 |   }| Info: No hay errores! 
+Linea: 16 | }| Info: No hay errores! 
+Linea: 18 | /* Ahora podemos llamar de forma segura a foo()| Info: No hay errores! 
+Linea: 19 |    ya que $hacer_algo se evaluó como verdadero */| Info: No hay errores! 
+Linea: 21 | if ($hacer_algo) foo();| Info: No hay errores! 
+Linea: 23 | function bar()| Info: No hay errores! 
+Linea: 24 | {| Info: No hay errores! 
+Linea: 25 |   echo "Existo desde el momento inmediato que comenzó el programa.\n";| Info: No hay errores! 
+Linea: 26 | }| Info: No hay errores! 
+Linea: 28 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | $hacer_algo = true;| Info: No hay errores! 
+Linea: 6 | bar();| Info: No hay errores! 
+Linea: 8 | if ($hacer_algo) {| Info: No hay errores! 
+Linea: 9 |   function foo()| Info: No hay errores! 
+Linea: 10 |   {| Info: No hay errores! 
+Linea: 11 |     echo "No existo hasta que la ejecución del programa llegue hasta mí.\n";| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | /* Ahora podemos llamar de forma segura a foo()| Info: No hay errores! 
+Linea: 16 |    ya que $hacer_algo se evaluó como verdadero */| Info: No hay errores! 
+Linea: 18 | if ($hacer_algo) foo();| Info: No hay errores! 
+Linea: 20 | function bar()| Info: No hay errores! 
+Linea: 21 | {| Info: No hay errores! 
+Linea: 22 |   echo "Existo desde el momento inmediato que comenzó el programa.\n";| Info: No hay errores! 
+Linea: 23 | }| Info: No hay errores! 
+Linea: 25 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | $hacer_algo = true;| Info: No hay errores! 
+Linea: 6 | bar();| Info: No hay errores! 
+Linea: 8 | if ($hacer_algo) {| Info: No hay errores! 
+Linea: 9 |   function foo()| Info: No hay errores! 
+Linea: 10 |   {| Info: No hay errores! 
+Linea: 11 |     echo "No existo hasta que la ejecución del programa llegue hasta mí.\n";| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | /* Ahora podemos llamar de forma segura a foo()| Info: No hay errores! 
+Linea: 16 |    ya que $hacer_algo se evaluó como verdadero */| Info: No hay errores! 
+Linea: 18 | if ($hacer_algo) foo();| Info: No hay errores! 
+Linea: 20 | function bar()| Info: No hay errores! 
+Linea: 21 | {| Info: No hay errores! 
+Linea: 22 |   echo "Existo desde el momento inmediato que comenzó el programa.\n";| Info: No hay errores! 
+Linea: 23 | }| Info: No hay errores! 
+Linea: 25 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | $hacer_algo = true;| Info: No hay errores! 
+Linea: 6 | bar();| Info: No hay errores! 
+Linea: 8 | if ($hacer_algo) {| Info: No hay errores! 
+Linea: 9 |   function foo()| Info: No hay errores! 
+Linea: 10 |   {| Info: No hay errores! 
+Linea: 11 |     echo "No existo hasta que la ejecución del programa llegue hasta mí.\n";| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | /* Ahora podemos llamar de forma segura a foo()| Info: No hay errores! 
+Linea: 16 |    ya que $hacer_algo se evaluó como verdadero */| Info: No hay errores! 
+Linea: 18 | if ($hacer_algo) foo();| Info: No hay errores! 
+Linea: 20 | function bar()| Info: No hay errores! 
+Linea: 21 | {| Info: No hay errores! 
+Linea: 22 |   echo "Existo desde el momento inmediato que comenzó el programa.\n";| Info: No hay errores! 
+Linea: 23 | }| Info: No hay errores! 
+Linea: 25 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | $hacer_algo = true;| Info: No hay errores! 
+Linea: 6 | bar();| Info: No hay errores! 
+Linea: 8 | if ($hacer_algo) {| Info: No hay errores! 
+Linea: 9 |   function foo()| Info: No hay errores! 
+Linea: 10 |   {| Info: No hay errores! 
+Linea: 11 |     echo "No existo hasta que la ejecución del programa llegue hasta mí.\n";| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | /* Ahora podemos llamar de forma segura a foo()| Info: No hay errores! 
+Linea: 16 |    ya que $hacer_algo se evaluó como verdadero */| Info: No hay errores! 
+Linea: 18 | if ($hacer_algo) foo();| Info: No hay errores! 
+Linea: 20 | function bar()| Info: No hay errores! 
+Linea: 21 | {| Info: No hay errores! 
+Linea: 22 |   echo "Existo desde el momento inmediato que comenzó el programa.\n";| Info: No hay errores! 
+Linea: 23 | }| Info: No hay errores! 
+Linea: 25 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | $hacer_algo = true;| Info: No hay errores! 
+Linea: 6 | bar();| Info: No hay errores! 
+Linea: 8 | if ($hacer_algo) {| Info: No hay errores! 
+Linea: 9 |   function foo()| Info: No hay errores! 
+Linea: 10 |   {| Info: No hay errores! 
+Linea: 11 |     echo "No existo hasta que la ejecución del programa llegue hasta mí.\n";| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | /* Ahora podemos llamar de forma segura a foo()| Info: No hay errores! 
+Linea: 16 |    ya que $hacer_algo se evaluó como verdadero */| Info: No hay errores! 
+Linea: 18 | if ($hacer_algo) foo();| Info: No hay errores! 
+Linea: 20 | function bar()| Info: No hay errores! 
+Linea: 21 | {| Info: No hay errores! 
+Linea: 22 |   echo "Existo desde el momento inmediato que comenzó el programa.\n";| Info: No hay errores! 
+Linea: 23 | }| Info: No hay errores! 
+Linea: 25 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | function recursividad($a)| Info: No hay errores! 
+Linea: 3 | {| Info: No hay errores! 
+Linea: 4 |     if ($a < 20) {| Info: No hay errores! 
+Linea: 5 |         echo "$a\n";| Info: No hay errores! 
+Linea: 6 |         recursividad($a + 1);| Info: No hay errores! 
+Linea: 7 |     }| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $i = 0;| Info: No hay errores! 
+Linea: 3 | do {| Info: No hay errores! 
+Linea: 4 |     echo $i;| Info: No hay errores! 
+Linea: 5 | } while ($i > 0);| Info: No hay errores! 
+Linea: 6 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $i = 0;| Info: No hay errores! 
+Linea: 3 | do {| Info: No hay errores! 
+Linea: 4 |     echo $i;| Info: No hay errores! 
+Linea: 5 | } while ($i > 0);| Info: No hay errores! 
+Linea: 6 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $i = 0;| Info: No hay errores! 
+Linea: 3 | do {| Info: No hay errores! 
+Linea: 4 |     echo $i;| Info: No hay errores! 
+Linea: 5 | } while ($i > 0);| Info: No hay errores! 
+Linea: 6 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | do {| Info: No hay errores! 
+Linea: 3 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 4 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 5 |         break;| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     $i *= $factor;| Info: No hay errores! 
+Linea: 8 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 9 |         break;| Info: No hay errores! 
+Linea: 10 |     }| Info: No hay errores! 
+Linea: 11 |    echo "i is ok";| Info: No hay errores! 
+Linea: 13 |     /* process i */| Info: No hay errores! 
+Linea: 15 | } while (0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | do {| Info: No hay errores! 
+Linea: 3 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 4 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 5 |         break;| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     $i *= $factor;| Info: No hay errores! 
+Linea: 8 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 9 |         break;| Info: No hay errores! 
+Linea: 10 |     }| Info: No hay errores! 
+Linea: 11 |    echo "i is ok";| Info: No hay errores! 
+Linea: 13 |     /* process i */| Info: No hay errores! 
+Linea: 15 | } while (0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | do {| Info: No hay errores! 
+Linea: 3 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 4 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 5 |         break;| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     $i *= $factor;| Info: No hay errores! 
+Linea: 8 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 9 |         break;| Info: No hay errores! 
+Linea: 10 |     }| Info: No hay errores! 
+Linea: 11 |    echo "i is ok";| Info: No hay errores! 
+Linea: 13 |     /* process i */| Info: No hay errores! 
+Linea: 15 | } while (0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | do {| Info: No hay errores! 
+Linea: 3 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 4 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 5 |         break;| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     $i *= $factor;| Info: No hay errores! 
+Linea: 8 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 9 |         break;| Info: No hay errores! 
+Linea: 10 |     }| Info: No hay errores! 
+Linea: 11 |    echo "i is ok";| Info: No hay errores! 
+Linea: 13 |     /* process i */| Info: No hay errores! 
+Linea: 15 | } while (0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | do {| Info: No hay errores! 
+Linea: 3 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 4 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 5 |         break;| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     $i *= $factor;| Info: No hay errores! 
+Linea: 8 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 9 |         break;| Info: No hay errores! 
+Linea: 10 |     }| Info: No hay errores! 
+Linea: 11 |    echo "i is ok";| Info: No hay errores! 
+Linea: 13 |     /* process i */| Info: No hay errores! 
+Linea: 15 | } while (0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $x = 1;| Info: No hay errores! 
+Linea: 4 | do {| Info: No hay errores! 
+Linea: 5 |   echo "The number is: $x <br>";| Info: No hay errores! 
+Linea: 6 |   $x++;| Info: No hay errores! 
+Linea: 7 | } while ($x <= 5);| Info: No hay errores! 
+Linea: 8 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | // generating an array with random even numbers between 1 and 1000| Info: No hay errores! 
+Linea: 4 | $numbers = array();| Info: No hay errores! 
+Linea: 5 | $array_size = 10;| Info: No hay errores! 
+Linea: 7 | // for loop runs as long as 2nd condition evaluates to true| Info: No hay errores! 
+Linea: 8 | for ($i=0;$i<$array_size;$i++) {| Info: No hay errores! 
+Linea: 10 |       // always executes (as long as the for-loop runs)| Info: No hay errores! 
+Linea: 11 |       do {| Info: No hay errores! 
+Linea: 12 |          $random = rand(1,1000);| Info: No hay errores! 
+Linea: 14 |      // if the random number is even (condition below is false), the do-while-loop execution ends| Info: No hay errores! 
+Linea: 15 |      // if it's uneven (condition below is true), the loop continues by generating a new random number| Info: No hay errores! 
+Linea: 16 |      } while (($random % 2) == 1);| Info: No hay errores! 
+Linea: 18 |      // even random number is written to array and for-loop continues iteration until original condition is met| Info: No hay errores! 
+Linea: 19 |      $numbers[] = $random;| Info: No hay errores! 
+Linea: 20 | }| Info: No hay errores! 
+Linea: 22 | // sorting array by alphabet| Info: No hay errores! 
+Linea: 24 | asort($numbers);| Info: No hay errores! 
+Linea: 26 | // printing array| Info: No hay errores! 
+Linea: 28 | echo '<pre>';| Info: No hay errores! 
+Linea: 29 | print_r($numbers);| Info: No hay errores! 
+Linea: 30 | echo '</pre>';| Info: No hay errores! 
+Linea: 31 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |    $i = 0;| Info: No hay errores! 
+Linea: 4 | do {| Info: No hay errores! 
+Linea: 5 |     echo $i;| Info: No hay errores! 
+Linea: 6 | } while ($i > 0);| Info: No hay errores! 
+Linea: 7 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 8 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 9 | } else {| Info: No hay errores! 
+Linea: 10 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 11 | }| Info: No hay errores! 
+Linea: 12 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 | do {| Info: No hay errores! 
+Linea: 4 |     echo $i;| Info: No hay errores! 
+Linea: 5 | } while ($i > 0);| Info: No hay errores! 
+Linea: 6 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo "------Calculadora----" ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  } elseif ($option == 2) | Info: No hay errores! 
+Linea: 22 | {| Info: No hay errores! 
+Linea: 23 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 24 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 25 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 26 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 28 | }| Info: No hay errores! 
+Linea: 29 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 30 | {| Info: No hay errores! 
+Linea: 31 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 32 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 33 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 34 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 36 |  }| Info: No hay errores! 
+Linea: 37 |   elseif ($option == 4) {| Info: No hay errores! 
+Linea: 38 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 39 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 40 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 41 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 42 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 43 |      | Info: No hay errores! 
+Linea: 44 | }| Info: No hay errores! 
+Linea: 45 |  elseif ($option == 5) {| Info: No hay errores! 
+Linea: 46 |    exit;| Info: No hay errores! 
+Linea: 47 |  } else {| Info: No hay errores! 
+Linea: 48 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 49 |   goto menu;| Info: No hay errores! 
+Linea: 50 | }| Info: No hay errores! 
+Linea: 51 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 52 | goto menu;| Info: No hay errores! 
+Linea: 53 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo "------Calculadora----" ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  } elseif ($option == 2) | Info: No hay errores! 
+Linea: 22 | {| Info: No hay errores! 
+Linea: 23 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 24 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 25 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 26 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 28 | }| Info: No hay errores! 
+Linea: 29 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 30 | {| Info: No hay errores! 
+Linea: 31 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 32 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 33 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 34 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 36 |  }| Info: No hay errores! 
+Linea: 37 |   elseif ($option == 4) {| Info: No hay errores! 
+Linea: 38 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 39 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 40 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 41 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 42 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 43 |      | Info: No hay errores! 
+Linea: 44 | }| Info: No hay errores! 
+Linea: 45 |  elseif ($option == 5) {| Info: No hay errores! 
+Linea: 46 |    exit;| Info: No hay errores! 
+Linea: 47 |  } else {| Info: No hay errores! 
+Linea: 48 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 49 |   goto menu;| Info: No hay errores! 
+Linea: 50 | }| Info: No hay errores! 
+Linea: 51 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 52 | goto menu;| Info: No hay errores! 
+Linea: 53 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo "------Calculadora----" ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x Multiplicación ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % División ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  } elseif ($option == 2) | Info: No hay errores! 
+Linea: 22 | {| Info: No hay errores! 
+Linea: 23 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 24 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 25 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 26 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 28 | }| Info: No hay errores! 
+Linea: 29 |  elseif ($option == 3) | Info: No hay errores! 
+Linea: 30 | {| Info: No hay errores! 
+Linea: 31 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 32 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 33 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 34 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 35 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 36 |  }| Info: No hay errores! 
+Linea: 37 |   elseif ($option == 4) {| Info: No hay errores! 
+Linea: 38 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 39 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 40 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 41 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 42 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 43 |      | Info: No hay errores! 
+Linea: 44 | }| Info: No hay errores! 
+Linea: 45 |  elseif ($option == 5) {| Info: No hay errores! 
+Linea: 46 |    exit;| Info: No hay errores! 
+Linea: 47 |  } else {| Info: No hay errores! 
+Linea: 48 |   echo 'La opción que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 49 |   goto menu;| Info: No hay errores! 
+Linea: 50 | }| Info: No hay errores! 
+Linea: 51 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 52 | goto menu;| Info: No hay errores! 
+Linea: 53 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  }| Info: No hay errores! 
+Linea: 5 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 6 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 7 | } else {| Info: No hay errores! 
+Linea: 8 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 9 | }| Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  }elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  }do {| Info: No hay errores! 
+Linea: 5 |     echo $i;| Info: No hay errores! 
+Linea: 6 | } while ($i > 0);| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |  }do {| Info: No hay errores! 
+Linea: 5 |     echo $i;| Info: No hay errores! 
+Linea: 6 | } while ($i > 0);| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } | Info: No hay errores! 
+Linea: 5 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 6 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 7 | } else {| Info: No hay errores! 
+Linea: 8 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 9 | }| Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+Linea: 8 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | }| Info: No hay errores! 
+Linea: 6 | else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | }| Info: No hay errores! 
+Linea: 6 | else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }elseif ($a == $b) {| Info: No hay errores! 
+Linea: 9 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | } | Info: No hay errores! 
+Linea: 9 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 10 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 11 | }| Info: No hay errores! 
+Linea: 12 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }  elseif ($a == $b) {| Info: No hay errores! 
+Linea: 9 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | parser = sintactico.yacc()| Info: No hay errores! 
+Linea: 2 | scripts = ["prueba.txt"]| Info: No hay errores! 
+Linea: 3 | archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]| Info: No hay errores! 
+Linea: 4 | for script in scripts:| Info: No hay errores! 
+Linea: 5 |   file = open(script, 'r')| Info: No hay errores! 
+Linea: 6 |   log = open('logs.txt', 'a')| Info: No hay errores! 
+Linea: 7 |   content = file.read()| Info: No hay errores! 
+Linea: 8 |   lines = 0| Info: No hay errores! 
+Linea: 9 |   line_log = "\nPRUEBA DE SCRIPT \n"| Info: No hay errores! 
+Linea: 10 |   log.write(line_log)| Info: No hay errores! 
+Linea: 11 |   for item in content.splitlines():| Info: No hay errores! 
+Linea: 12 |     lines += 1| Info: No hay errores! 
+Linea: 13 |     if item:| Info: No hay errores! 
+Linea: 14 |       gram = sintactico.parse(item)| Info: No hay errores! 
+Linea: 15 |       if gram is None:| Info: No hay errores! 
+Linea: 16 |         lin = f"Linea: {str(lines)} | {str(item)}| Info: No hay errores! \n"| Info: No hay errores! 
+Linea: 17 |         log.write(lin)| Info: No hay errores! 
+Linea: 18 |         print(lin)| Info: No hay errores! 
+Linea: 20 |       else:| Info: No hay errores! 
+Linea: 21 |         lin = f"Linea: {str(lines)} | Info: {str(gram)} \n"| Info: No hay errores! 
+Linea: 22 |         log.write(lin)| Info: No hay errores! 
+Linea: 23 |         print(lin)| Info: No hay errores! 
+Linea: 24 |   file.close()| Info: No hay errores! 
+Linea: 25 |   log.close()| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | // First String| Info: No hay errores! 
+Linea: 2 | $a = 'Hello';| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | // Second String| Info: No hay errores! 
+Linea: 5 | $b = 'World!';| Info: No hay errores! 
+Linea: 6 |  | Info: No hay errores! 
+Linea: 7 | // Concatenation Of String| Info: No hay errores! 
+Linea: 8 | $c = $a.$b;| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | // print Concatenate String| Info: No hay errores! 
+Linea: 11 | echo " $c \n";| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | // First String| Info: No hay errores! 
+Linea: 2 | $a = 'Hello';| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | // Second String| Info: No hay errores! 
+Linea: 5 | $b = 'World!';| Info: No hay errores! 
+Linea: 6 |  | Info: No hay errores! 
+Linea: 7 | // Concatenation Of String| Info: No hay errores! 
+Linea: 8 | $c = $a.4;| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | // print Concatenate String| Info: No hay errores! 
+Linea: 11 | echo " $c \n";| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | // First String| Info: No hay errores! 
+Linea: 2 | $a = 'Hello';| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | // Second String| Info: No hay errores! 
+Linea: 5 | $b = 'World!';| Info: No hay errores! 
+Linea: 6 |  | Info: No hay errores! 
+Linea: 7 | // Concatenation Of String| Info: No hay errores! 
+Linea: 8 | $c = $a.bool;| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | // print Concatenate String| Info: No hay errores! 
+Linea: 11 | echo " $c \n";| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | // First String| Info: No hay errores! 
+Linea: 2 | $a = 'Hello';| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | // Second String| Info: No hay errores! 
+Linea: 5 | $b = 'World!';| Info: No hay errores! 
+Linea: 6 |  | Info: No hay errores! 
+Linea: 7 | // Concatenation Of String| Info: No hay errores! 
+Linea: 8 | $c = $a.true;| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | // print Concatenate String| Info: No hay errores! 
+Linea: 11 | echo " $c \n";| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | // First String| Info: No hay errores! 
+Linea: 2 | $fname = 'John';| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | // Second String| Info: No hay errores! 
+Linea: 5 | $lname = 'Carter!';| Info: No hay errores! 
+Linea: 6 |  | Info: No hay errores! 
+Linea: 7 | // Concatenation Of String| Info: No hay errores! 
+Linea: 8 | $c = $fname." ".$lname;| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | // print Concatenate String| Info: No hay errores! 
+Linea: 11 | echo " $c \n";| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | // First String| Info: No hay errores! 
+Linea: 2 | $fname = 'John';| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | // Second String| Info: No hay errores! 
+Linea: 5 | $lname = 'Carter!';| Info: No hay errores! 
+Linea: 6 |  | Info: No hay errores! 
+Linea: 7 | // Concatenation Of String| Info: No hay errores! 
+Linea: 8 | $c = $fname." ".$lname;| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | // print Concatenate String| Info: No hay errores! 
+Linea: 11 | echo " $c \n";| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | // First String| Info: No hay errores! 
+Linea: 2 | $fname = 'John';| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | // Second String| Info: No hay errores! 
+Linea: 5 | $lname = 'Carter!';| Info: No hay errores! 
+Linea: 6 |  | Info: No hay errores! 
+Linea: 7 | // Concatenation Of String| Info: No hay errores! 
+Linea: 8 | $c = $fname." ".$lname;| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | // print Concatenate String| Info: No hay errores! 
+Linea: 11 | echo " $c \n";| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 |  | Info: No hay errores! 
+Linea: 3 | // First String| Info: No hay errores! 
+Linea: 4 | $a = 'Hello';| Info: No hay errores! 
+Linea: 5 |  | Info: No hay errores! 
+Linea: 6 | // now $a contains "HelloWorld!"| Info: No hay errores! 
+Linea: 7 | $a .= " World!";| Info: No hay errores! 
+Linea: 8 |  | Info: No hay errores! 
+Linea: 9 | // Print The String $a| Info: No hay errores! 
+Linea: 10 | echo " $a \n";| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 |  | Info: No hay errores! 
+Linea: 3 | // First String| Info: No hay errores! 
+Linea: 4 | $a = 'Hello';| Info: No hay errores! 
+Linea: 5 |  | Info: No hay errores! 
+Linea: 6 | // now $a contains "HelloWorld!"| Info: No hay errores! 
+Linea: 7 | $a .= 23;| Info: No hay errores! 
+Linea: 8 |  | Info: No hay errores! 
+Linea: 9 | // Print The String $a| Info: No hay errores! 
+Linea: 10 | echo " $a \n";| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 |  | Info: No hay errores! 
+Linea: 3 | // First String| Info: No hay errores! 
+Linea: 4 | $a = 'Hello';| Info: No hay errores! 
+Linea: 5 |  | Info: No hay errores! 
+Linea: 6 | // now $a contains "HelloWorld!"| Info: No hay errores! 
+Linea: 7 | $a .= $23;| Info: No hay errores! 
+Linea: 8 |  | Info: No hay errores! 
+Linea: 9 | // Print The String $a| Info: No hay errores! 
+Linea: 10 | echo " $a \n";| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 |  | Info: No hay errores! 
+Linea: 3 | // First String| Info: No hay errores! 
+Linea: 4 | $a = 'Hello';| Info: No hay errores! 
+Linea: 5 |  | Info: No hay errores! 
+Linea: 6 | // now $a contains "HelloWorld!"| Info: No hay errores! 
+Linea: 7 | $a .= $gosd;| Info: No hay errores! 
+Linea: 8 |  | Info: No hay errores! 
+Linea: 9 | // Print The String $a| Info: No hay errores! 
+Linea: 10 | echo " $a \n";| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 

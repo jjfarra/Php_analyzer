@@ -13,15 +13,13 @@ def p_cuerpo(p):  # TODOS
             | llamada_funcion
             | constante
             | lectura
+            | condicion_ifelse
             | bwhile
             | bdo
             | bfor
             | incrementOp
             | bforeach
             | btry
-            | condicion_ifelse
-            | condicion_else
-            | condicion_elseif
             | bswitch
             | bcase
             | bgoto
@@ -51,8 +49,9 @@ def p_asignacion(p):  # Keyla Franco
                 | VARIABLE EQUALS lectura
                 | VARIABLE EQUALS bconcat
                 | asignacion_array
-                | VARIABLE EQUALS operaciones_mat SEMI
+                | VARIABLE EQUALS operaciones_mat 
                 | aumentoCasting
+                | VARIABLE EQUALS llamada_funcion
   '''
 #ASIGNACION DE ARRAYS
 
@@ -98,6 +97,8 @@ def p_imprimir(p):  #Ricardo Zaruma
             | ECHO bconcat
             | ECHO operaciones_mat SEMI
             | PRINT operaciones_mat SEMI
+            | ECHO VARIABLE SEMI
+            | PRINT VARIABLE SEMI
   '''
 
 
@@ -105,6 +106,7 @@ def p_imprimir(p):  #Ricardo Zaruma
 #IF
 def p_condicion_if(p):  #KEyla franco
   '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
+                  | IF LPAREN condicion RPAREN llamada_funcion
   '''  
 
 #elif
@@ -137,6 +139,8 @@ def p_condicion(p):  # Ricardo Zaruma
             | LPAREN VARIABLE operadores valor RPAREN condicion_booleana valor
             | condicion condicion_booleana condicion
             | condicion condicion_booleana comprobacion
+            | aumentoCasting
+            | VARIABLE
             
   '''
 
@@ -147,12 +151,14 @@ def p_bfor(p):  # Joby Farra
 
 def p_stc_bloque(p):  # Joby Farra
   '''stc_bloque : stc_bloque SEMI cuerpo
-        | breturn
-        '''
+                | breturn
+  '''
 
 
 def p_stc_bloque_def(p):  # Joby Farra
-  'stc_bloque_def : LBRACE stc_bloque RBRACE'
+  '''stc_bloque_def : LBRACE stc_bloque RBRACE
+                    | LBRACE cuerpo RBRACE
+  '''
 
 
 def p_for_incr(p):  # Joby Farra
@@ -176,7 +182,9 @@ def p_bforeach(p):  # Joby Farra
 #WHILE
 def p_bwhile(p):  # Ricardo Zaruma
   ''' bwhile : WHILE LPAREN condicion RPAREN LBRACE stc_bloque RBRACE 
-  | WHILE LPAREN condicion RPAREN COLON stc_bloque  
+  | WHILE LPAREN condicion RPAREN COLON stc_bloque 
+  | WHILE LPAREN condicion RPAREN SEMI
+  | 
   '''
 
 
@@ -262,6 +270,7 @@ def p_operaciones_mat_par(p):  #Keyla Franco
                           |  LPAREN valor operadores operaciones_mat_par RPAREN
                           | LPAREN VARIABLE operadores VARIABLE RPAREN
                           | LPAREN VARIABLE operadores valor RPAREN operadores valor
+                          | LPAREN VARIABLE operadores tipoDato RPAREN
   '''
 
 #FUNCIONES
@@ -287,6 +296,7 @@ def p_funcion_nparams(p):  # Joby Farra
 def p_params_list(p):  # Joby Farra
   '''params_list : params_list COMMA param
                  | param
+                 | empty
   '''
 
 def p_funcion_void(p):  #Keyla franco
@@ -318,6 +328,7 @@ def p_breturn(p):
         | RETURN NULL SEMI
         | RETURN VARIABLE SEMI
         | RETURN BOOLEANO SEMI
+        | breturn RBRACE
         '''
 
 #ESTRUCTURA DE DATOS
@@ -377,6 +388,7 @@ def p_bcortes(p):  #Keyla franco
 
 def p_otros(p): #kEYLA FRANCO
   '''otros : SMALLER NOMBRE GREATER
+            | SMALLER DIVISION NOMBRE GREATER
             | NOMBRE COLON 
    '''
 #Nota: NOMBRE COLON hace referencia al inicio de la instrucción goto, sin ella, no tiene a donde regresar
@@ -409,17 +421,22 @@ def p_instrucciones(p):
                   | condicion_elseif
                   | bwhile
                   | bfor
+                  | funciones
+                  | bswitch
+                  | bdo
   '''
   
 #REGLA SEMÁNTICA OPERACIONES ENTRE STRINGS
 def p_bconcat(p): #Ricardo Zaruma
   '''bconcat : CADENA CONCAT CADENA SEMI
-            |  VARIABLE CONCAT VARIABLE SEMI
             | VARIABLE CONCAT CADENA SEMI
             | VARIABLE CONCAT_EQUAL CADENA SEMI
             | CADENA CONCAT_EQUAL CADENA SEMI
+            | VARIABLE CONCAT VARIABLE SEMI
+            | VARIABLE CONCAT CADENA CONCAT VARIABLE SEMI
             
-   '''
+  '''
+
 #REGLA SEMÁNTICA CASTING
 def p_tiposCast(p): #ricardo zaruma
   '''tiposCast :  STRING
@@ -443,6 +460,9 @@ def p_aumentoCasting(p): #Keyla franco
   '''
     aumentoCasting : VARIABLE incrementos_mat tipoDato SEMI
                     | VARIABLE EQUALS VARIABLE operadores tipoDato SEMI
+                    | VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
+                    | VARIABLE operadores tipoDato condicion_booleana valor
+                    | VARIABLE incrementos_mat VARIABLE SEMI
   '''
 #ERROR
 def p_error(p):
@@ -482,8 +502,8 @@ def analizador_sintactico(data):
 # Build the parser
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
-archivos = ["script-zaruma.txt"]
-for script in archivos:
+archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+for script in scripts:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
   content = file.read()
