@@ -36,6 +36,7 @@ reserved = {
   "double": "DOUBLE",
   "float": "FLOAT",
   "bool": "BOOL",
+  "boolean" : "BOOLEAN",
   "string": "STRING",
   "array": "ARRAY",
   "object": "OBJECT",
@@ -161,14 +162,14 @@ t_RESTA = r'-'
 t_MULTIPLICACION = r'\*'
 t_DIVISION = r'\/'
 t_MODULO = r'%'
-t_AND = r'&'
-t_OR = r'\|'
+t_AND = r'&&'
+t_OR = r'\|\|'
 t_XOR = r'\^'
 t_IS_SMALLER_OR_EQUAL = r'<='
 t_IS_GREATER_OR_EQUAL = r'>='
 t_IS_EQUAL = r'\=='
 t_IS_NOT_EQUAL = r'(!=(?!=))|(<>)'
-t_IS_IDENTICAL = r'==='
+t_IS_IDENTICAL = r'\==='
 t_IS_NOT_IDENTICAL = r'!=='
 
 
@@ -188,18 +189,16 @@ t_COMMA = r','
 t_CONCAT = r'\.(?!\d|=)'
 t_COLON = r':'
 t_SEMI = r';'
+t_LBRACKET = r'\['
+t_RBRACKET = r'\]'
+t_LBRACE = r'\{'
+t_RBRACE = r'\}'
 
 
-# Comentarios
-def t_GREATER(t): 
-  r'>'
-  return t 
-
-def t_SMALLER(t): 
-  r'<'
-  return t
+t_GREATER = r'>'
+t_SMALLER = r'<'
   
-  
+# Comentarios  
 def t_DOC_COMENTARIOS(t):
     r'/\*\*(.|\n)*?\*/'
     t.lexer.skip(1)
@@ -212,24 +211,7 @@ def t_BOOLEANO(t):
   r'(true|True|TRUE|false|False|FALSE)'
   t.type = reserved.get(t.value, "BOOLEANO")
   return t
-#DELIMITADORES
 
-def t_LBRACKET(t):
-    r'\['
-    return t
-
-def t_RBRACKET(t):
-    r'\]'
-    return t
-
-def t_LBRACE(t):
-    r'\{'
-    return t
-
-def t_RBRACE(t):
-    r'\}'
-    return t
-  
 #php tags
 def t_OPEN_TAG(t):
   r'(<\?(php)?)'
@@ -311,5 +293,6 @@ for script in scripts:
         break
       print(">>",tok)
   print("============================================================")
+
 
 # END KEYLA FRANCO

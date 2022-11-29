@@ -1,11 +1,4 @@
-
-
-<?php 
-if ($a > $b) {
-    echo "a es mayor que b";
-} elseif ($a != $b) {
-    echo "a es igual que b";
-} else {
-    echo "a es menor que b";
-}
-?>
+$dividend = 2;
+$divisor = 3;
+$quotient = $dividend/$divisor;
+print $quotient; // 0.66666666666667

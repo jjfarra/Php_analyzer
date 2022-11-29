@@ -5,11 +5,10 @@ from analyzers.lexico import tokens
 import datetime, pytz
 
 resultado_sintactico = []
-
+  
 def p_cuerpo(p):  # TODOS
   '''cuerpo : imprimir
             | asignacion
-            | asignacion_array
             | funciones
             | constante
             | lectura
@@ -18,16 +17,12 @@ def p_cuerpo(p):  # TODOS
             | bfor
             | bforeach
             | btry
-            | operaciones_mat
-            | condicion_ifelse 
-            | condicion_elseif
-            | condicion_else
+            | repiteCondicional
             | bswitch
             | bcase
             | bgoto
             | bcolas
             | bpila
-            | incrementos_mat
             | bcortes
             | brand
             | escribir
@@ -36,8 +31,8 @@ def p_cuerpo(p):  # TODOS
             | breturn
             | comment
             | casting
+            | bconcat
   '''
-
   
 #REGLAS BÁSICAS
 #DECLARACIÓN DE VARIABLES
@@ -50,14 +45,15 @@ def p_asignacion(p):  # Keyla Franco
                 | VARIABLE EQUALS btrim
                 | VARIABLE EQUALS lectura
                 | VARIABLE EQUALS bconcat
+                | asignacion_array
+                | VARIABLE EQUALS operaciones_mat SEMI
+                | aumentoCasting
   '''
-
 #ASIGNACION DE ARRAYS
 
 
 def p_asignacion_array(p):  # Joby Farra
   'asignacion_array : VARIABLE EQUALS array_def SEMI'
-
 
 #ASIGNACION DE CONSTANTES
 def p_constante(p):  # Joby Farra
@@ -94,14 +90,16 @@ def p_imprimir(p):  #Ricardo Zaruma
             | PRINT LPAREN valor RPAREN SEMI
             | ECHO NOMBRE LBRACKET ENTERO RBRACKET SEMI
             | ECHO bconcat
+            | ECHO operaciones_mat SEMI
+            | PRINT operaciones_mat SEMI
   '''
 
 
 #ESTRUCTURAS DE CONTROL
 #IF
 def p_condicion_if(p):  #KEyla franco
-  '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
-  '''
+  '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE          
+  '''  
 
 #elif
 def p_condicion_elseif(p):  #KEyla franco
@@ -121,6 +119,10 @@ def p_condicion_ifelse(p):  # keyla franco
                       | condicion_if condicion_elseif condicion_else
   '''
 
+def p_repiteCondicional(p): #Keyla Franco
+  '''repiteCondicional : condicion_ifelse
+                        | condicion_ifelse repiteCondicional 
+  '''
 
 def p_condicion(p):  # Ricardo Zaruma
   ''' condicion : VARIABLE operador_logico VARIABLE
@@ -238,10 +240,10 @@ def p_condicion_boolena(p):  #Keyla Franco
 def p_operaciones_mat(p):  #Keyla Franco
   '''operaciones_mat :  valor operadores valor
                         | valor operadores operaciones_mat
+                        | VARIABLE operadores VARIABLE
                         | operaciones_mat_par
                        
   '''
-
 
 def p_operaciones_mat_par(p):  #Keyla Franco
   '''operaciones_mat_par :  LPAREN valor operadores valor RPAREN
@@ -374,6 +376,7 @@ def p_bconcat(p): #Ricardo Zaruma
 def p_tiposCast(p): #ricardo zaruma
   '''tiposCast :  STRING
             | BOOL
+            | BOOLEAN
             | DOUBLE
             | FLOAT
             | ARRAY
@@ -385,9 +388,14 @@ def p_tiposCast(p): #ricardo zaruma
    '''
   
 def p_casting(p): #ricardo zaruma
-  '''casting : VARIABLE LPAREN tiposCast RPAREN VARIABLE SEMI         
+  '''casting : VARIABLE EQUALS LPAREN tiposCast RPAREN VARIABLE SEMI  
+              | LPAREN tiposCast RPAREN VARIABLE SEMI
    '''
-
+def p_aumentoCasting(p): #Keyla franco
+  '''
+    aumentoCasting : VARIABLE incrementos_mat tipoDato SEMI
+                    | VARIABLE EQUALS VARIABLE operadores tipoDato SEMI
+  '''
 #ERROR
 def p_error(p):
   global resultado_sintactico

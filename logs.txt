@@ -8856,3 +8856,1059 @@ Linea: 8 | } else {| Info: No hay errores!
 Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
 Linea: 10 | }| Info: No hay errores! 
 Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 3 | <?php | Info: No hay errores! 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 3 | <?php | Info: No hay errores! 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";} | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {echo "a es mayor que b";} | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 3 | <?php | Info: No hay errores! 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 11 | ?>| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } | Info: No hay errores! 
+Linea: 8 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 4 | if ($a > $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 6 | } elseif ($a != $b) {| Info: No hay errores! 
+Linea: 7 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 8 | } else {| Info: No hay errores! 
+Linea: 9 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 10 | }| Info: No hay errores! 
+Linea: 13 | if ($a > $b) {echo "a es mayor que b";} elseif ($a != $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $numero =rand(0,100);| Info: No hay errores! 
+Linea: 3 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 4 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 5 |         echo "<br>";| Info: No hay errores! 
+Linea: 6 |         while($numero > 1){| Info: No hay errores! 
+Linea: 7 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 8 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 9 |             }else{| Info: No hay errores! 
+Linea: 10 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 11 |             }| Info: No hay errores! 
+Linea: 12 |             echo "<br>";| Info: No hay errores! 
+Linea: 13 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 14 |             echo "<br>"; | Info: No hay errores! 
+Linea: 15 |         }| Info: No hay errores! 
+Linea: 16 |     }else{| Info: No hay errores! 
+Linea: 17 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 18 |     }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | Info: ('cuerpo', None) 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 | Info: ('cuerpo', None) 
+Linea: 4 | Info: ('cuerpo', None) 
+Linea: 5 | Info: ('cuerpo', None) 
+Linea: 6 | Info: ('cuerpo', None) 
+Linea: 7 | Info: ('cuerpo', None) 
+Linea: 8 | Info: ('cuerpo', None) 
+Linea: 9 | Info: ('cuerpo', None) 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | Info: ('cuerpo', None) 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 | Info: ('cuerpo', None) 
+Linea: 4 | Info: ('cuerpo', None) 
+Linea: 5 | Info: ('cuerpo', None) 
+Linea: 6 | Info: ('cuerpo', None) 
+Linea: 7 | Info: ('cuerpo', None) 
+Linea: 8 | Info: ('cuerpo', None) 
+Linea: 9 | Info: ('cuerpo', None) 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | Info: ('cuerpo', None) 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 | Info: ('cuerpo', None) 
+Linea: 4 | Info: ('cuerpo', None) 
+Linea: 5 | Info: ('cuerpo', None) 
+Linea: 6 | Info: ('cuerpo', None) 
+Linea: 7 | Info: ('cuerpo', None) 
+Linea: 8 | Info: ('cuerpo', None) 
+Linea: 9 | Info: ('cuerpo', None) 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | Info: ('cuerpo', None) 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 | Info: ('cuerpo', None) 
+Linea: 4 | Info: ('cuerpo', None) 
+Linea: 5 | Info: ('cuerpo', None) 
+Linea: 6 | Info: ('cuerpo', None) 
+Linea: 7 | Info: ('cuerpo', None) 
+Linea: 8 | Info: ('cuerpo', None) 
+Linea: 9 | Info: ('cuerpo', None) 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | Info: ('cuerpo', None) 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 | Info: ('cuerpo', None) 
+Linea: 4 | Info: ('cuerpo', None) 
+Linea: 5 | Info: ('cuerpo', None) 
+Linea: 6 | Info: ('cuerpo', None) 
+Linea: 7 | Info: ('cuerpo', None) 
+Linea: 8 | Info: ('cuerpo', None) 
+Linea: 9 | Info: ('cuerpo', None) 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 2 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 3 |         echo "<br>";| Info: No hay errores! 
+Linea: 4 |         while($numero > 1){| Info: No hay errores! 
+Linea: 5 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 6 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 7 |             }else{| Info: No hay errores! 
+Linea: 8 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 9 |             }| Info: No hay errores! 
+Linea: 10 |             echo "<br>";| Info: No hay errores! 
+Linea: 11 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 12 |             echo "<br>"; | Info: No hay errores! 
+Linea: 13 |         }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(true;){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(true){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1=1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 + 3| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if(1==1){| Info: No hay errores! 
+Linea: 2 |   $num = 4 - 3 ;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | for ($i = 1; $i <= 10; $i++) {| Info: No hay errores! 
+Linea: 2 |     echo $i;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | for ($i = 1; $i <= 10; $i++) | Info: No hay errores! 
+Linea: 2 |     echo $i;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | for ($i = 1; $i <= 10; $i++| Info: No hay errores! 
+Linea: 2 |     echo $i;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $i = 1; $i <= 10; $i++| Info: No hay errores! 
+Linea: 2 |     echo $i;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | for $i = 1; $i <= 10; $i++| Info: No hay errores! 
+Linea: 2 |     echo $i;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | for $i = 1; $i <= 10; $i++| Info: No hay errores! 
+Linea: 2 |     echo $i;| Info: No hay errores! 
+Linea: 3 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | i| Info: No hay errores! 
+Linea: 2 | f| Info: No hay errores! 
+Linea: 3 |  | Info: No hay errores! 
+Linea: 4 | (| Info: No hay errores! 
+Linea: 5 | $| Info: No hay errores! 
+Linea: 6 | a| Info: No hay errores! 
+Linea: 7 |  | Info: No hay errores! 
+Linea: 8 | >| Info: No hay errores! 
+Linea: 9 |  | Info: No hay errores! 
+Linea: 10 | $| Info: No hay errores! 
+Linea: 11 | b| Info: No hay errores! 
+Linea: 12 | )| Info: No hay errores! 
+Linea: 13 |  | Info: No hay errores! 
+Linea: 14 | {| Info: No hay errores! 
+Linea: 15 | 
+| Info: No hay errores! 
+Linea: 16 |  | Info: No hay errores! 
+Linea: 17 |  | Info: No hay errores! 
+Linea: 18 |  | Info: No hay errores! 
+Linea: 19 |  | Info: No hay errores! 
+Linea: 20 | e| Info: No hay errores! 
+Linea: 21 | c| Info: No hay errores! 
+Linea: 22 | h| Info: No hay errores! 
+Linea: 23 | o| Info: No hay errores! 
+Linea: 24 |  | Info: No hay errores! 
+Linea: 25 | "| Info: No hay errores! 
+Linea: 26 | a| Info: No hay errores! 
+Linea: 27 |  | Info: No hay errores! 
+Linea: 28 | e| Info: No hay errores! 
+Linea: 29 | s| Info: No hay errores! 
+Linea: 30 |  | Info: No hay errores! 
+Linea: 31 | m| Info: No hay errores! 
+Linea: 32 | a| Info: No hay errores! 
+Linea: 33 | y| Info: No hay errores! 
+Linea: 34 | o| Info: No hay errores! 
+Linea: 35 | r| Info: No hay errores! 
+Linea: 36 |  | Info: No hay errores! 
+Linea: 37 | q| Info: No hay errores! 
+Linea: 38 | u| Info: No hay errores! 
+Linea: 39 | e| Info: No hay errores! 
+Linea: 40 |  | Info: No hay errores! 
+Linea: 41 | b| Info: No hay errores! 
+Linea: 42 | "| Info: No hay errores! 
+Linea: 43 | ;| Info: No hay errores! 
+Linea: 44 | 
+| Info: No hay errores! 
+Linea: 45 | }| Info: No hay errores! 
+Linea: 46 |  | Info: No hay errores! 
+Linea: 47 | e| Info: No hay errores! 
+Linea: 48 | l| Info: No hay errores! 
+Linea: 49 | s| Info: No hay errores! 
+Linea: 50 | e| Info: No hay errores! 
+Linea: 51 | i| Info: No hay errores! 
+Linea: 52 | f| Info: No hay errores! 
+Linea: 53 |  | Info: No hay errores! 
+Linea: 54 | (| Info: No hay errores! 
+Linea: 55 | $| Info: No hay errores! 
+Linea: 56 | a| Info: No hay errores! 
+Linea: 57 |  | Info: No hay errores! 
+Linea: 58 | =| Info: No hay errores! 
+Linea: 59 | =| Info: No hay errores! 
+Linea: 60 |  | Info: No hay errores! 
+Linea: 61 | $| Info: No hay errores! 
+Linea: 62 | b| Info: No hay errores! 
+Linea: 63 | )| Info: No hay errores! 
+Linea: 64 |  | Info: No hay errores! 
+Linea: 65 | {| Info: No hay errores! 
+Linea: 66 | 
+| Info: No hay errores! 
+Linea: 67 |  | Info: No hay errores! 
+Linea: 68 |  | Info: No hay errores! 
+Linea: 69 |  | Info: No hay errores! 
+Linea: 70 |  | Info: No hay errores! 
+Linea: 71 | e| Info: No hay errores! 
+Linea: 72 | c| Info: No hay errores! 
+Linea: 73 | h| Info: No hay errores! 
+Linea: 74 | o| Info: No hay errores! 
+Linea: 75 |  | Info: No hay errores! 
+Linea: 76 | "| Info: No hay errores! 
+Linea: 77 | a| Info: No hay errores! 
+Linea: 78 |  | Info: No hay errores! 
+Linea: 79 | e| Info: No hay errores! 
+Linea: 80 | s| Info: No hay errores! 
+Linea: 81 |  | Info: No hay errores! 
+Linea: 82 | i| Info: No hay errores! 
+Linea: 83 | g| Info: No hay errores! 
+Linea: 84 | u| Info: No hay errores! 
+Linea: 85 | a| Info: No hay errores! 
+Linea: 86 | l| Info: No hay errores! 
+Linea: 87 |  | Info: No hay errores! 
+Linea: 88 | q| Info: No hay errores! 
+Linea: 89 | u| Info: No hay errores! 
+Linea: 90 | e| Info: No hay errores! 
+Linea: 91 |  | Info: No hay errores! 
+Linea: 92 | b| Info: No hay errores! 
+Linea: 93 | "| Info: No hay errores! 
+Linea: 94 | ;| Info: No hay errores! 
+Linea: 95 | 
+| Info: No hay errores! 
+Linea: 96 | }| Info: No hay errores! 
+Linea: 97 |  | Info: No hay errores! 
+Linea: 98 | e| Info: No hay errores! 
+Linea: 99 | l| Info: No hay errores! 
+Linea: 100 | s| Info: No hay errores! 
+Linea: 101 | e| Info: No hay errores! 
+Linea: 102 |  | Info: No hay errores! 
+Linea: 103 | {| Info: No hay errores! 
+Linea: 104 | 
+| Info: No hay errores! 
+Linea: 105 |  | Info: No hay errores! 
+Linea: 106 |  | Info: No hay errores! 
+Linea: 107 |  | Info: No hay errores! 
+Linea: 108 |  | Info: No hay errores! 
+Linea: 109 | e| Info: No hay errores! 
+Linea: 110 | c| Info: No hay errores! 
+Linea: 111 | h| Info: No hay errores! 
+Linea: 112 | o| Info: No hay errores! 
+Linea: 113 |  | Info: No hay errores! 
+Linea: 114 | "| Info: No hay errores! 
+Linea: 115 | a| Info: No hay errores! 
+Linea: 116 |  | Info: No hay errores! 
+Linea: 117 | e| Info: No hay errores! 
+Linea: 118 | s| Info: No hay errores! 
+Linea: 119 |  | Info: No hay errores! 
+Linea: 120 | m| Info: No hay errores! 
+Linea: 121 | e| Info: No hay errores! 
+Linea: 122 | n| Info: No hay errores! 
+Linea: 123 | o| Info: No hay errores! 
+Linea: 124 | r| Info: No hay errores! 
+Linea: 125 |  | Info: No hay errores! 
+Linea: 126 | q| Info: No hay errores! 
+Linea: 127 | u| Info: No hay errores! 
+Linea: 128 | e| Info: No hay errores! 
+Linea: 129 |  | Info: No hay errores! 
+Linea: 130 | b| Info: No hay errores! 
+Linea: 131 | "| Info: No hay errores! 
+Linea: 132 | ;| Info: No hay errores! 
+Linea: 133 | 
+| Info: No hay errores! 
+Linea: 134 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b):| Info: No hay errores! 
+Linea: 2 |     echo $a." es mayor que ".$b;| Info: No hay errores! 
+Linea: 3 | else if ($a == $b): // No compilará| Info: No hay errores! 
+Linea: 4 |     echo "La línea anterior provoca un error del interprete.";| Info: No hay errores! 
+Linea: 5 | endif;| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | if ($a > $b) {| Info: No hay errores! 
+Linea: 2 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 3 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 5 | } else {| Info: No hay errores! 
+Linea: 6 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 7 | }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 7 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | +=| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | +=| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | +=| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | +=| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | +=| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | $foo = 10;   // $foo es un integer| Info: No hay errores! 
+Linea: 9 | $bar = (boolean) $foo; | Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | $foo = 10;   // $foo es un integer| Info: No hay errores! 
+Linea: 9 | $bar = (boolean) $foo; | Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | $foo = 10;   // $foo es un integer| Info: No hay errores! 
+Linea: 9 | $bar = (boolean) $foo; | Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = "0";  // $foo es string (ASCII 48)| Info: No hay errores! 
+Linea: 3 | $foo += 2;   // $foo es ahora un integer (2)| Info: No hay errores! 
+Linea: 4 | $foo = $foo + 1.3;  // $foo es ahora un float (3.3)| Info: No hay errores! 
+Linea: 5 | $foo = 5 + "10 Cerditos pequeñitos"; // $foo es integer (15)| Info: No hay errores! 
+Linea: 6 | $foo = 5 + "10 Cerdos pequeños";     // $foo es integer (15)| Info: No hay errores! 
+Linea: 8 | $foo = 10;   // $foo es un integer| Info: No hay errores! 
+Linea: 9 | $bar = (boolean) $foo; | Info: No hay errores! 
+Linea: 11 | $foo = (int) $bar;| Info: No hay errores! 
+Linea: 12 | $foo = ( int ) $bar;| Info: No hay errores! 
+Linea: 13 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = 10;            // $foo es un integer| Info: No hay errores! 
+Linea: 3 | $str = "$foo";        // $str es un string| Info: No hay errores! 
+Linea: 4 | $fst = (string) $foo; // $fst es tambien un string| Info: No hay errores! 
+Linea: 6 | // Esto muestra que "son lo mismo"| Info: No hay errores! 
+Linea: 7 | if ($fst === $str) {| Info: No hay errores! 
+Linea: 8 |     echo "son lo mismo";| Info: No hay errores! 
+Linea: 9 | }| Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = 10;            // $foo es un integer| Info: No hay errores! 
+Linea: 3 | $str = "$foo";        // $str es un string| Info: No hay errores! 
+Linea: 4 | $fst = (string) $foo; // $fst es tambien un string| Info: No hay errores! 
+Linea: 6 | // Esto muestra que "son lo mismo"| Info: No hay errores! 
+Linea: 7 | if ($fst === $str) {| Info: No hay errores! 
+Linea: 8 |     echo "son lo mismo";| Info: No hay errores! 
+Linea: 9 | }| Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | $foo = 10;            // $foo es un integer| Info: No hay errores! 
+Linea: 3 | $str = "$foo";        // $str es un string| Info: No hay errores! 
+Linea: 4 | $fst = (stringENTERO)| Info: No hay errores! 
+Linea: 5 | // Esto muestra que "son lo mismo"| Info: No hay errores! 
+Linea: 6 | if ($fst === $str) {| Info: No hay errores! 
+Linea: 7 |     echo "son lo mismo";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $dividend = 2;| Info: No hay errores! 
+Linea: 2 | $divisor = 3;| Info: No hay errores! 
+Linea: 3 | $quotient = $dividend/$divisor;| Info: No hay errores! 
+Linea: 4 | print $quotient; // 0.66666666666667| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | $dividend = 2;| Info: No hay errores! 
+Linea: 2 | $divisor = 3;| Info: No hay errores! 
+Linea: 3 | $quotient = $dividend/$divisor;| Info: No hay errores! 
+Linea: 4 | print $quotient; // 0.66666666666667| Info: No hay errores! 

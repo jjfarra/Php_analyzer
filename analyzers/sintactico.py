@@ -29,7 +29,6 @@ def p_cuerpo(p):  # TODOS
             | bgoto
             | bcolas
             | bpila
-            | incrementos_mat
             | bcortes
             | brand
             | escribir
@@ -126,6 +125,7 @@ def p_condicion_boolena(p):  #Keyla Franco
 def p_operaciones_mat(p):  #Keyla Franco
   '''operaciones_mat :  valor operadores valor
                         | valor operadores operaciones_mat
+                        | aumentos_valores
                         | operaciones_mat_par
                        
   '''
@@ -137,6 +137,10 @@ def p_operaciones_mat_par(p):  #Keyla Franco
                           |  valor operadores operaciones_mat_par 
   '''
 
+def p_aumentos_valores(p): #Keyla franco
+  '''
+    aumentos_valores : VARIABLE incrementos_mat tipoDatos
+  '''
 
 def p_asignacion(p):  # Keyla Franco
   '''asignacion : VARIABLE EQUALS valor SEMI
