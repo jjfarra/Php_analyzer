@@ -235,7 +235,8 @@ def p_bswitch(p):  # Ricardo Zaruma
   ''' bswitch : SWITCH LPAREN VARIABLE RPAREN LBRACE cuerpo SEMI RBRACE'''
 
 def p_bcase(p):
-  'bcase : CASE ENTERO COLON'
+  '''bcase : CASE ENTERO COLON
+          | CASE NOMBRE COLON '''
   
 #def p_innerSwitch(p):  # Ricardo Zaruma
 #  ''' innerSwitch : bcase cuerpo BREAK SEMI

@@ -11505,3 +11505,143 @@ Linea: 50 | }| Info: No hay errores!
 Linea: 51 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
 Linea: 52 | goto menu;| Info: No hay errores! 
 Linea: 53 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 40 | ?> | Info: No hay errores! 

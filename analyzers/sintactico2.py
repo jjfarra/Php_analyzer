@@ -16,6 +16,7 @@ def p_cuerpo(p):  # TODOS
             | bwhile
             | bdo
             | bfor
+            | incrementOp
             | bforeach
             | btry
             | condicion_ifelse
@@ -162,7 +163,12 @@ def p_for_incr(p):  # Joby Farra
           | VARIABLE SUMA EQUALS numero
           | VARIABLE RESTA EQUALS numero'''
 
-
+def p_incrementOp (p):
+  '''
+  incrementOp : VARIABLE SUMA SUMA SEMI
+              | VARIABLE RESTA RESTA SEMI
+  '''
+  
 def p_bforeach(p):  # Joby Farra
   'bforeach :  FOREACH LPAREN VARIABLE AS VARIABLE RPAREN stc_bloque_def'
 
@@ -181,16 +187,16 @@ def p_bdo(p):  #Keyla franco
 
 #SWITCH CASE
 def p_bswitch(p):  # Ricardo Zaruma
-  ''' bswitch : SWITCH LPAREN VARIABLE RPAREN LBRACE cuerpo SEMI RBRACE'''
+  ''' bswitch : SWITCH LPAREN VARIABLE RPAREN LBRACE innerSwitch RBRACE'''
 
 
 def p_bcase(p):
-  'bcase : CASE ENTERO COLON'
-
+  '''bcase : CASE ENTERO COLON
+          | CASE CADENA COLON '''
 
 def p_innerSwitch(p):  # Ricardo Zaruma
-  ''' innerSwitch : bcase cuerpo BREAK SEMI
-                 | CASE ENTERO COLON cuerpo BREAK SEMI innerSwitch 
+  ''' innerSwitch :  bcase cuerpo BREAK SEMI
+                 | bcase cuerpo BREAK SEMI innerSwitch 
   '''
 
 
@@ -476,7 +482,7 @@ def analizador_sintactico(data):
 # Build the parser
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
-archivos = ["script-franco.txt"]
+archivos = ["script-zaruma.txt"]
 for script in archivos:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
