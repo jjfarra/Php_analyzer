@@ -227,7 +227,7 @@ def t_CLOSE_TAG(t):
 
 # START Joby Farra
 def t_CADENA(t):
-  r'("[^"]*"|\`[^\']*\`)'
+  r'(("[^"]*")|(\'[^\']*\'))'
   t.type = reserved.get(t.value, "CADENA")
   return t
 

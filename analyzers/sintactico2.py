@@ -92,6 +92,7 @@ def p_imprimir(p):  #Ricardo Zaruma
   '''imprimir : ECHO valor SEMI
             | PRINT valor SEMI
             | PRINT LPAREN valor RPAREN SEMI
+            | PRINT bconcat
             | ECHO NOMBRE LBRACKET ENTERO RBRACKET SEMI
             | ECHO bconcat
             | ECHO operaciones_mat SEMI
@@ -253,6 +254,7 @@ def p_operaciones_mat(p):  #Keyla Franco
 def p_operaciones_mat_par(p):  #Keyla Franco
   '''operaciones_mat_par :  LPAREN valor operadores valor RPAREN
                           |  LPAREN valor operadores operaciones_mat_par RPAREN
+                          | LPAREN VARIABLE operadores VARIABLE RPAREN
                           | LPAREN VARIABLE operadores valor RPAREN operadores valor
   '''
 
@@ -367,16 +369,19 @@ def p_bcortes(p):  #Keyla franco
               | CONTINUE SEMI
    '''
 
-def p_otros(p):
+def p_otros(p): #kEYLA FRANCO
   '''otros : SMALLER NOMBRE GREATER
+            | NOMBRE COLON 
    '''
+#Nota: NOMBRE COLON hace referencia al inicio de la instrucción goto, sin ella, no tiene a donde regresar
 
-def p_comprobacion(p):
+
+def p_comprobacion(p): #KEYLA FRANCO
   '''
     comprobacion : NOMBRE LPAREN valor RPAREN
                   | NOMBRE LPAREN VARIABLE RPAREN
   '''
-def p_simbolos(p):
+def p_simbolos(p): #KEYLA FRANCO
   '''
   simbolos : LPAREN RPAREN
             | LPAREN
@@ -471,7 +476,7 @@ def analizador_sintactico(data):
 # Build the parser
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
-archivos = ["script-farra.txt"]
+archivos = ["script-franco.txt"]
 for script in archivos:
   file = open(script, 'r')
   log = open('logs.txt', 'a')

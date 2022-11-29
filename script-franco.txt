@@ -1,7 +1,7 @@
 <?php
 //Script
 # Keyla Franco
-echo '------Calculadora----' ."\n";
+echo "------Calculadora----" ."\n";
 menu:
 echo "|----Menu----| ". "\n";
 echo "| 1. + Suma ". "\n";
