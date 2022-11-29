@@ -236,16 +236,17 @@ def t_NOMBRE(t):
     return t
 
 def t_VARIABLE(t):
-    r'\$[A-Za-z_][\w_]*'
-    return t
+  r'\$[A-Za-z_][\w_]*'
+  t.type = reserved.get(t.value, "VARIABLE")
+  return t
 
 def t_DECIMAL(t):
     r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
     return t
 
 def t_ENTERO(t):
-    r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
-    return t
+  r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
+  return t
 
 #END Joby Farra
 
@@ -293,6 +294,5 @@ for script in scripts:
         break
       print(">>",tok)
   print("============================================================")
-
 
 # END KEYLA FRANCO

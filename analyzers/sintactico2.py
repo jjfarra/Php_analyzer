@@ -32,6 +32,7 @@ def p_cuerpo(p):  # TODOS
             | comment
             | casting
             | bconcat
+            | simbolos
   '''
   
 #REGLAS BÁSICAS
@@ -98,7 +99,7 @@ def p_imprimir(p):  #Ricardo Zaruma
 #ESTRUCTURAS DE CONTROL
 #IF
 def p_condicion_if(p):  #KEyla franco
-  '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE          
+  '''condicion_if :  IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
   '''  
 
 #elif
@@ -362,7 +363,28 @@ def p_otros(p):
   '''otros : SMALLER NOMBRE GREATER
    '''
 
+def p_simbolos(p):
+  '''
+  simbolos : LPAREN RPAREN
+            | LPAREN
+            | RPAREN
+            | LBRACKET RBRACKET
+            | LBRACKET
+            | RBRACKET
+            | LBRACE RBRACE
+            | LBRACE
+            | RBRACE instrucciones
+            | OPEN_TAG CLOSE_TAG
+            | OPEN_TAG
+            | CLOSE_TAG
+  '''
 
+def p_instrucciones(p):
+  '''
+    instrucciones : condicion_else
+                  | condicion_elseif
+  '''
+  
 #REGLA SEMÁNTICA OPERACIONES ENTRE STRINGS
 def p_bconcat(p): #Ricardo Zaruma
   '''bconcat : CADENA CONCAT CADENA SEMI
@@ -435,7 +457,7 @@ def analizador_sintactico(data):
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
 archivos = ["script-farra.txt"]
-for script in scripts:
+for script in archivos:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
   content = file.read()
