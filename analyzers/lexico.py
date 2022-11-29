@@ -32,19 +32,17 @@ reserved = {
 
   # Data Types
   "int": "INT",
+  "integer" : "INTEGER",
   "double": "DOUBLE",
   "float": "FLOAT",
   "bool": "BOOL",
   "string": "STRING",
+  "array": "ARRAY",
+  "object": "OBJECT",
   "var": "VAR",
   "void": "VOID",
   "null": "NULL",
-  "true": "TRUE",
-  "false": "FALSE",
-  #"enum": "ENUM",
-  #"resource": "RESOURCE",
-  #"iterable": "ITERABLE",
-
+  
   # Declaration words
   "function": "FUNCTION",
   "array": "ARRAY",
@@ -55,7 +53,6 @@ reserved = {
   "protected": "PROTECTED",
   #"class": "CLASS",
   "new": "NEW",
-  "at": "AT",
   #"implements": "IMPLEMENTS",
   #"extends": "EXTENDS",
 
@@ -84,6 +81,7 @@ reserved = {
 
 # END Joby Farra
 
+
 #START Keyla Franco
 tokens = [
   'NOMBRE',
@@ -95,7 +93,6 @@ tokens = [
   'MODULO',
   'AND',
   'OR',
-  'NOT',
   'XOR',
   'SMALLER',
   'GREATER',
@@ -105,7 +102,7 @@ tokens = [
   'IS_NOT_EQUAL',
   'IS_IDENTICAL',
   'IS_NOT_IDENTICAL',
-  'BOOLEAN_NOT',
+  'BOOLEANO',
   #Tipos de datos
   #'DIR',
   #'FILE',
@@ -148,7 +145,8 @@ tokens = [
   #'NS_SEPARATOR',
   #PHP TAGS
   'OPEN_TAG',
-  'CLOSE_TAG'
+  'CLOSE_TAG',
+  'CADENA'
 ] + list(reserved.values())
 
 t_ignore = ' \t'
@@ -157,128 +155,97 @@ t_ignore = ' \t'
 # Start Ricardo Zaruma
 
 #OPERADORES
-t_SUMA =  r'\+'
-t_RESTA = r'\-'
+
+t_SUMA = r'\+'
+t_RESTA = r'-'
 t_MULTIPLICACION = r'\*'
-t_DIVISION =r'\/'
+t_DIVISION = r'\/'
 t_MODULO = r'%'
-  
-def t_AND(t):
-  r'&&'
-  return t
-  
-def t_OR(t):
-  r'\|\|'
-  return t
-def t_NOT(t):
-  r'~'
-  return t
-  
-def t_XOR (t):
-  r'\^'
-  return t
-  
-def t_BOOLEAN_NOT(t): 
-  r'!'
-  return t
-  
+t_AND = r'&'
+t_OR = r'\|'
+t_XOR = r'\^'
+t_IS_SMALLER_OR_EQUAL = r'<='
+t_IS_GREATER_OR_EQUAL = r'>='
+t_IS_EQUAL = r'\=='
+t_IS_NOT_EQUAL = r'(!=(?!=))|(<>)'
+t_IS_IDENTICAL = r'==='
+t_IS_NOT_IDENTICAL = r'!=='
+
+
+# COMPARADORES
+t_EQUALS = r'='
+t_MUL_EQUAL = r'\*='
+t_DIV_EQUAL = r'/='
+t_MOD_EQUAL = r'%='
+t_PLUS_EQUAL = r'\+='
+t_MINUS_EQUAL = r'-='
+t_CONCAT_EQUAL = r'\.='
+
+# DELIMITADORES
+t_LPAREN = r'\('
+t_RPAREN = r'\)'
+t_COMMA = r','
+t_CONCAT = r'\.(?!\d|=)'
+t_COLON = r':'
+t_SEMI = r';'
+
+
+# Comentarios
+def t_GREATER(t): 
+  r'>'
+  return t 
+
 def t_SMALLER(t): 
   r'<'
   return t
   
-def t_GREATER(t): 
-  r'>'
-  return t
   
-def t_IS_SMALLER_OR_EQUAL(t): 
-  r'<='
-  return t
-  
-def t_IS_GREATER_OR_EQUAL(t): 
-  r'>='
-  return t
-  
-def t_IS_EQUAL(t): 
-  r'=='
-  return t
-  
-def t_IS_NOT_EQUAL(t): 
-  r'(!=(?!=))|(<>)'
-  return t
-  
-def t_IS_IDENTICAL(t):
-  r'==='
-  return t
-  
-def t_IS_NOT_IDENTICAL(t):
-  r'!=='
-  return t
-
-
-
-# COMPARADORES
-def t_EQUALS(t): 
-  r'='
-  return t
-  
-t_MUL_EQUAL = r'\*='
-  
-t_DIV_EQUAL = r'/='
-t_MOD_EQUAL = r'%='  
-t_PLUS_EQUAL= r'\+=' 
-t_MINUS_EQUAL = r'-='
-  
-
-# DELIMITADORES
-t_COLON = r':'
-t_COMMA = r','
-t_CONCAT  = r'\.(?!\d|=)'
-t_CONCAT_EQUAL = r'\.='
-t_SEMI = r';'
-t_AT = r'@'
-
-# Comentarios
-
-
 def t_DOC_COMENTARIOS(t):
     r'/\*\*(.|\n)*?\*/'
-    t.lexer.lineno += t.value.count("\n")
     t.lexer.skip(1)
 
 def t_COMENTARIOS(t):
     r'/\*(.|\n)*?\*/ | //([^?%\n]|[?%](?!>))*\n? | \#([^?%\n]|[?%](?!>))*\n?'
-    t.lexer.lineno += t.value.count("\n")
     t.lexer.skip(1)
 
-
+def t_BOOLEANO(t):
+  r'(true|True|TRUE|false|False|FALSE)'
+  t.type = reserved.get(t.value, "BOOLEANO")
+  return t
 #DELIMITADORES
 
-t_LBRACKET = r'\['
-t_RBRACKET = r'\]'
-t_LBRACE = r'\{'
-t_RBRACE = r'\}'
-t_LPAREN = r'\('
-t_RPAREN = r'\)'
+def t_LBRACKET(t):
+    r'\['
+    return t
 
+def t_RBRACKET(t):
+    r'\]'
+    return t
 
+def t_LBRACE(t):
+    r'\{'
+    return t
+
+def t_RBRACE(t):
+    r'\}'
+    return t
+  
 #php tags
 def t_OPEN_TAG(t):
   r'(<\?(php)?)'
   return t
 
+def t_CLOSE_TAG(t):
+    r'\?>'
+    return t
 
-#def t_CLOSE_TAG(t):
-#  r'\?>'
-#  return t
-t_CLOSE_TAG = r'\?>'
 
 # END Ricardo Zaruma
 
-
 # START Joby Farra
-def t_STRING(t):
-  r'(("[^"]*")|(\'[^\']*\'))'
-  t.value = t.value[1:-1]
+def t_CADENA(t):
+  r'("[^"]*"|\`[^\']*\`)'
+  t.type = reserved.get(t.value, "CADENA")
   return t
 
 def t_NOMBRE(t):
@@ -287,53 +254,39 @@ def t_NOMBRE(t):
     return t
 
 def t_VARIABLE(t):
-  r'\$[A-Za-z_][\w_]*'
-  return t
-
+    r'\$[A-Za-z_][\w_]*'
+    return t
 
 def t_DECIMAL(t):
-  r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
-  return t
-
+    r'(\d*\.\d+|\d+\.\d*)([Ee][+-]?\d+)? | (\d+[Ee][+-]?\d+)'
+    return t
 
 def t_ENTERO(t):
-  r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
-  return t
-
+    r'(0b[01]+)|(0x[0-9A-Fa-f]+)|\d+'
+    return t
 
 #END Joby Farra
 
-
 #START KEYLA FRANCO
-
-
 def t_newline(t):
   r'\n+'
   t.lexer.lineno += len(t.value)
-
-
-def t_quoted_VARIABLE(t):
-  r'\$[A-Za-z_][\w_]*'
-  return t
-
-
-def t_quoted_QUOTE(t):
-  r'"'
-  return t
-
-
-def t_INLINE_HTML(t):
-  r'([^<]|<(?![?%]))+'
-  t.lexer.lineno += t.value.count("\n")
-  return
-
+  
+  
 def t_error(t):
-  print("No es reconocido '%s'" % t.value[0])
-  t.lexer.skip(1)
+    print("No es reconocido '%s'" %t.value[0])
+    t.lexer.skip(1)
 
-
+  
 #Construya el lexer
 lexer = lex.lex()
+def analizar(data):
+    lexer.input(data)
+    while True:
+        tok = lexer.token()
+        if not tok:
+            break
+        print(tok)
 
 def analizador_lexico(code):
     lexer.input(code)
@@ -344,31 +297,19 @@ def analizador_lexico(code):
             break  # No more input
         result.append(str(tok) + "\n")
     return result
-#def analizar(data):
-#  lexer.input(data)
-#  while True:
-#    tok = lexer.token()
-#    if not tok:
-#      break
-#    print(tok)
-    
 #Lea el archivo y retorne los tokens
-#scripts = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
-
-#for script in scripts:
-#  f = open(script, "r")
-#  lines = f.readlines()
- # for line in lines:
-#    print("\n", line, "\n")
-#    lexer.input(line)
-#  while True:
- #     tok = lexer.token()
- #     if not tok:
- #       break
-#      print(">>", tok)
-  #print("============================================================")
-
-
-
+scripts = ["prueba.txt","script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+for script in scripts:
+  f = open(script,"r")
+  lines = f.readlines()
+  for line in lines:
+    print("\n",line,"\n")
+    lexer.input(line)
+    while True:
+      tok=lexer.token()
+      if not tok:
+        break
+      print(">>",tok)
+  print("============================================================")
 
 # END KEYLA FRANCO

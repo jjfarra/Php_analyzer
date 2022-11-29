@@ -1,5 +1,7 @@
 import ply.yacc as sintactico
 from analyzers.lexico import tokens
+#from analyzers.lexSeman import tokens
+
 import datetime, pytz
 resultado_sintactico = []
 
@@ -30,7 +32,6 @@ def p_cuerpo(p):  # TODOS
             | incrementos_mat
             | bcortes
             | brand
-            | bconcat
             | escribir
             | btrim
             | leer
@@ -41,13 +42,6 @@ def p_cuerpo(p):  # TODOS
   '''
 
 
-def p_imprimir(p):  #Ricardo Zaruma
-  '''imprimir : ECHO valor SEMI
-            | PRINT valor SEMI
-            | PRINT LPAREN valor RPAREN SEMI
-            | ECHO NOMBRE LBRACKET ENTERO RBRACKET SEMI
-            | ECHO bconcat
-  '''
 
 
 def p_valor(p):  #KEYLA FRANCO
@@ -322,9 +316,31 @@ def p_bcortes(p):  #Keyla franco
               | CONTINUE SEMI
    '''
 
-def p_bconcat(p): #KEYLA FRANCO
+#REGLA SEMÁNTICA OPERACIONES ENTRE STRINGS
+def p_bconcat(p): #Ricardo Zaruma
   '''bconcat : STRING CONCAT STRING SEMI
             | VARIABLE EQUALS VARIABLE CONCAT VARIABLE SEMI
+            | VARIABLE CONCAT STRING SEMI
+            | VARIABLE EQUALS VARIABLE CONCAT STRING SEMI
+            | VARIABLE CONCAT_EQUAL STRING SEMI
+            | STRING CONCAT_EQUAL STRING SEMI
+            
+   '''
+#REGLA SEMÁNTICA CASTING
+def p_tiposCast(p):
+  '''tiposCast :  STRING
+            | BOOL
+            | DOUBLE
+            | FLOAT
+            | ARRAY
+            | OBJECT 
+            | INTEGER
+        
+            
+   '''
+  
+def p_casting(p):
+  '''casting : VARIABLE LPAREN tipoCast RPAREN VARIABLE SEMI         
    '''
 
 def p_escribir (p): #KEYLA FRANCO
@@ -379,13 +395,13 @@ def validaRegla(s):
   print(result)
   print()
 
-  def analizador_sintactico(data):
-    return parser.parse(data)
+def analizador_sintactico(data):
+  return parser.parse(data)
 
 # Build the parser
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
-archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+archivos = ["script-farra.txt"]
 for script in archivos:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
