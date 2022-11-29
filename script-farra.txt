@@ -3,7 +3,7 @@
 <?php
     $numero =rand(0,100);
 
-    if($numero > 0 and is_int($numero)){
+    if($numero > 0 && is_int($numero)){
         echo "<h2> El número random es: $numero</h2>";
         echo "<br>";
         while($numero > 1){

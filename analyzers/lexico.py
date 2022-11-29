@@ -69,6 +69,7 @@ reserved = {
   "try": "TRY",
   "catch": "CATCH",
 
+  
   # Other words
   "exit": "EXIT",
   #"global": "GLOBAL",

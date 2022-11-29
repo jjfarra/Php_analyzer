@@ -10,6 +10,7 @@ def p_cuerpo(p):  # TODOS
   '''cuerpo : imprimir
             | asignacion
             | funciones
+            | llamada_funcion
             | constante
             | lectura
             | bwhile
@@ -17,7 +18,9 @@ def p_cuerpo(p):  # TODOS
             | bfor
             | bforeach
             | btry
-            | repiteCondicional
+            | condicion_ifelse
+            | condicion_else
+            | condicion_elseif
             | bswitch
             | bcase
             | bgoto
@@ -120,10 +123,6 @@ def p_condicion_ifelse(p):  # keyla franco
                       | condicion_if condicion_elseif condicion_else
   '''
 
-def p_repiteCondicional(p): #Keyla Franco
-  '''repiteCondicional : condicion_ifelse
-                        | condicion_ifelse repiteCondicional 
-  '''
 
 def p_condicion(p):  # Ricardo Zaruma
   ''' condicion : VARIABLE operador_logico VARIABLE
@@ -132,6 +131,11 @@ def p_condicion(p):  # Ricardo Zaruma
             | VARIABLE condicion_booleana VARIABLE
             | valor condicion_booleana valor
             | VARIABLE condicion_booleana valor
+            | LPAREN VARIABLE operadores valor RPAREN operador_logico valor
+            | LPAREN VARIABLE operadores valor RPAREN condicion_booleana valor
+            | condicion condicion_booleana condicion
+            | condicion condicion_booleana comprobacion
+            
   '''
 
 #FOR
@@ -249,6 +253,7 @@ def p_operaciones_mat(p):  #Keyla Franco
 def p_operaciones_mat_par(p):  #Keyla Franco
   '''operaciones_mat_par :  LPAREN valor operadores valor RPAREN
                           |  LPAREN valor operadores operaciones_mat_par RPAREN
+                          | LPAREN VARIABLE operadores valor RPAREN operadores valor
   '''
 
 #FUNCIONES
@@ -273,8 +278,8 @@ def p_funcion_nparams(p):  # Joby Farra
 
 def p_params_list(p):  # Joby Farra
   '''params_list : params_list COMMA param
-                      | param'''
-
+                 | param
+  '''
 
 def p_funcion_void(p):  #Keyla franco
   'funcion_void : FUNCTION NOMBRE LPAREN  RPAREN COLON VOID LBRACE empty RBRACE'
@@ -285,6 +290,9 @@ def p_funcion_blank(p):  #keyla Franco
                     | FUNCTION NOMBRE LPAREN  RPAREN LBRACE empty RBRACE
   '''
 
+def p_llamada_funcion(p): #Keyla Franco
+  'llamada_funcion : NOMBRE LPAREN params_list RPAREN SEMI'
+  
 def p_brand(p):
   'brand : RAND LPAREN ENTERO COMMA ENTERO RPAREN SEMI'
 
@@ -363,6 +371,11 @@ def p_otros(p):
   '''otros : SMALLER NOMBRE GREATER
    '''
 
+def p_comprobacion(p):
+  '''
+    comprobacion : NOMBRE LPAREN valor RPAREN
+                  | NOMBRE LPAREN VARIABLE RPAREN
+  '''
 def p_simbolos(p):
   '''
   simbolos : LPAREN RPAREN
@@ -383,6 +396,8 @@ def p_instrucciones(p):
   '''
     instrucciones : condicion_else
                   | condicion_elseif
+                  | bwhile
+                  | bfor
   '''
   
 #REGLA SEMÁNTICA OPERACIONES ENTRE STRINGS

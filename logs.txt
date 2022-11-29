@@ -10404,3 +10404,554 @@ Linea: 19 |     }else{| Info: No hay errores!
 Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
 Linea: 21 |     }| Info: No hay errores! 
 Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | if ($a > $b) {| Info: No hay errores! 
+Linea: 3 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 4 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 5 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 6 | } else {| Info: No hay errores! 
+Linea: 7 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 9 | ?>| Info: No hay errores! 
+Linea: 11 | <?php| Info: No hay errores! 
+Linea: 12 | if ($a > $b) {echo "a es mayor que b";} elseif ($a == $b) {echo "a es igual que b";} else {echo "a es menor que b";}| Info: No hay errores! 
+Linea: 13 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 and is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+Linea: 24 | <?php| Info: No hay errores! 
+Linea: 25 | if ($a > $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 27 | }| Info: No hay errores! 
+Linea: 28 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 29 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 30 | } | Info: No hay errores! 
+Linea: 31 | else {| Info: No hay errores! 
+Linea: 32 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 33 | }| Info: No hay errores! 
+Linea: 34 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+Linea: 24 | <?php| Info: No hay errores! 
+Linea: 25 | if ($a > $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 27 | }| Info: No hay errores! 
+Linea: 28 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 29 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 30 | } | Info: No hay errores! 
+Linea: 31 | else {| Info: No hay errores! 
+Linea: 32 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 33 | }| Info: No hay errores! 
+Linea: 34 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+Linea: 24 | <?php| Info: No hay errores! 
+Linea: 25 | if ($a > $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 27 | }| Info: No hay errores! 
+Linea: 28 | elseif ($a == $b) {| Info: No hay errores! 
+Linea: 29 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 30 | } | Info: No hay errores! 
+Linea: 31 | else {| Info: No hay errores! 
+Linea: 32 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 33 | }| Info: No hay errores! 
+Linea: 34 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+Linea: 24 | <?php| Info: No hay errores! 
+Linea: 25 | if ($a > $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 27 | }| Info: No hay errores! 
+Linea: 28 | if ($a > $b) {| Info: No hay errores! 
+Linea: 29 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 30 | }| Info: No hay errores! 
+Linea: 31 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+Linea: 24 | <?php| Info: No hay errores! 
+Linea: 25 | if ($a > $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 27 | }| Info: No hay errores! 
+Linea: 28 | if ($a > $b) {}| Info: No hay errores! 
+Linea: 29 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+Linea: 24 | <?php| Info: No hay errores! 
+Linea: 25 | if ($a > $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 27 | }| Info: No hay errores! 
+Linea: 28 | if ($a > $b)| Info: No hay errores! 
+Linea: 29 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El número random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningún número o el número no es válido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
