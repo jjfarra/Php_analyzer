@@ -15786,3 +15786,350 @@ Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores!
 Linea: 38 |     break;| Info: No hay errores! 
 Linea: 39 | }| Info: No hay errores! 
 Linea: 40 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 39 | array_push($prueba, "test");| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   //Crea una Cola| Info: No hay errores! 
+Linea: 38 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 40 |   //Añade elementos| Info: No hay errores! 
+Linea: 41 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 42 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 45 |   //Retira elementos| Info: No hay errores! 
+Linea: 46 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 48 |   //Muestra el número de elementos de la cola (3)| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 52 |   $queue->rewind();| Info: No hay errores! 
+Linea: 54 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 55 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 56 |   {| Info: No hay errores! 
+Linea: 57 |     echo $queue->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 58 |     $queue->next();| Info: No hay errores! 
+Linea: 59 |   }| Info: No hay errores! 
+Linea: 62 | array_push($prueba, "test");| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   //Crea una Cola| Info: No hay errores! 
+Linea: 38 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 40 |   //Añade elementos| Info: No hay errores! 
+Linea: 41 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 42 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 45 |   //Retira elementos| Info: No hay errores! 
+Linea: 46 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 48 |   //Muestra el número de elementos de la cola (3)| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 52 |   $queue->rewind();| Info: No hay errores! 
+Linea: 54 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 55 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 56 |   {| Info: No hay errores! 
+Linea: 57 |     echo $queue->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 58 |     $queue->next();| Info: No hay errores! 
+Linea: 59 |   }| Info: No hay errores! 
+Linea: 61 | array_pop($prueba);| Info: No hay errores! 
+Linea: 62 | array_push($prueba, "test");| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   //Crea una Cola| Info: No hay errores! 
+Linea: 38 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 40 |   //Añade elementos| Info: No hay errores! 
+Linea: 41 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 42 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 45 |   //Retira elementos| Info: No hay errores! 
+Linea: 46 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 48 |   //Muestra el número de elementos de la cola (3)| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 52 |   $queue->rewind();| Info: No hay errores! 
+Linea: 54 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 55 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 56 |   {| Info: No hay errores! 
+Linea: 57 |     echo $queue->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 58 |     $queue->next();| Info: No hay errores! 
+Linea: 59 |   }| Info: No hay errores! 
+Linea: 61 | array_pop($prueba);| Info: No hay errores! 
+Linea: 62 | array_push($prueba, "test");| Info: No hay errores! 
+Linea: 63 | var_dump($prueba);| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   //Crea una Cola| Info: No hay errores! 
+Linea: 38 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 40 |   //Añade elementos| Info: No hay errores! 
+Linea: 41 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 42 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 45 |   //Retira elementos| Info: No hay errores! 
+Linea: 46 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 48 |   //Muestra el número de elementos de la cola (3)| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 52 |   $queue->rewind();| Info: No hay errores! 
+Linea: 54 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 55 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 56 |   {| Info: No hay errores! 
+Linea: 57 |     echo $queue->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 58 |     $queue->next();| Info: No hay errores! 
+Linea: 59 |   }| Info: No hay errores! 
+Linea: 61 | array_pop($prueba);| Info: No hay errores! 
+Linea: 62 | array_push($prueba, "test");| Info: No hay errores! 
+Linea: 63 | var_dump($prueba);| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //Añade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el número de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el último elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el número de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   //Crea una Cola| Info: No hay errores! 
+Linea: 38 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 40 |   //Añade elementos| Info: No hay errores! 
+Linea: 41 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 42 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 45 |   //Retira elementos| Info: No hay errores! 
+Linea: 46 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 48 |   //Muestra el número de elementos de la cola (3)| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 52 |   $queue->rewind();| Info: No hay errores! 
+Linea: 54 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 55 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 56 |   {| Info: No hay errores! 
+Linea: 57 |     echo $queue->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 58 |     $queue->next();| Info: No hay errores! 
+Linea: 59 |   }| Info: No hay errores! 
+Linea: 61 | array_pop($prueba);| Info: No hay errores! 
+Linea: 62 | array_push($prueba, "test");| Info: No hay errores! 
+Linea: 63 | var_dump($prueba);| Info: No hay errores! 
+Linea: 64 | $bigArray = array_values( $bigArray );| Info: No hay errores! 
+Linea: 65 | print_r( array_values( $a ));| Info: No hay errores! 

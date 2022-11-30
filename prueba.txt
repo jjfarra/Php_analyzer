@@ -1,0 +1,65 @@
+ //Crea la pila
+  $stack = new SplStack();
+
+  //Añade elementos
+  $stack->push('1');
+  $stack->push('2');
+  $stack->push('3');
+
+  //Muestra el número de elementos de la pila (3)
+  echo $stack->count();
+
+  //Situa el puntero al final de la cola
+  $stack->rewind();
+
+  //Muestra los elementos (3, 2, 1)
+  while( $stack->valid() )
+  {
+    echo $stack->current(), PHP_EOL;
+    $stack->next();
+  }
+
+   //Saca de la pila el último elemento y lo muestra
+   echo $stack->pop();
+
+  //Situa el puntero al final de la cola
+   $stack->rewind();
+
+   //Muestra el número de elementos de la pila (2)
+    echo $stack->count();
+
+  //Muestra los elementos (2, 1)
+   while( $stack->valid() )
+   {
+    echo $stack->current(), PHP_EOL;
+    $stack->next();
+   }
+  //Crea una Cola
+  $queue = new SplQueue();
+
+  //Añade elementos
+  $queue->enqueue('1');
+  $queue->enqueue('2');
+  $queue->enqueue('3');
+
+  //Retira elementos
+  $queue->dequeue('3');
+
+  //Muestra el número de elementos de la cola (3)
+  echo $queue->count();
+
+  //Situa el puntero al final de la cola
+  $queue->rewind();
+
+  //Muestra los elementos (3, 2, 1)
+  while( $queue->valid() )
+  {
+    echo $queue->current(), PHP_EOL;
+    $queue->next();
+  }
+
+array_pop($prueba);
+array_push($prueba, "test");
+var_dump($prueba);
+$bigArray = array_values( $bigArray );
+print_r( array_values( $a ));

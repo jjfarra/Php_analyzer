@@ -36,6 +36,13 @@ def p_cuerpo(p):  # TODOS
             | casting
             | bconcat
             | simbolos
+            | funcionesCP_semi
+            | addpila
+            | addcola
+            | minuscola
+            | arraypop
+            | arraypush
+            | poppila
   '''
 
 
@@ -54,6 +61,7 @@ def p_asignacion(p):  # Keyla Franco
                 | VARIABLE EQUALS operaciones_mat SEMI
                 | aumentoCasting
                 | VARIABLE EQUALS llamada_funcion
+                | VARIABLE EQUALS arrayvalues SEMI
   '''
 
 
@@ -62,12 +70,6 @@ def p_asignacion(p):  # Keyla Franco
 
 def p_asignacion_array(p):  # Joby Farra
   'asignacion_array : VARIABLE EQUALS array_def SEMI'
-
-
-#ASIGNACION DE CONSTANTES
-def p_constante(p):  # Joby Farra
-  '''constante : DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-          | DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI'''
 
 
 #VALORES DE UNA VARIABLE
@@ -104,6 +106,13 @@ def p_imprimir(p):  #Ricardo Zaruma
             | PRINT operaciones_mat SEMI
             | ECHO VARIABLE SEMI
             | PRINT VARIABLE SEMI
+            | ECHO funcionesCP_semi
+            | PRINT funcionesCP_semi
+            | ECHO funcionesCP_semi COMMA NOMBRE SEMI
+            | ECHO poppila
+            | VAR_DUMP LPAREN VARIABLE RPAREN SEMI
+            | PRINT_R LPAREN VARIABLE RPAREN SEMI
+            | PRINT_R LPAREN arrayvalues RPAREN SEMI
   '''
 
 
@@ -148,6 +157,7 @@ def p_condicion(p):  # Ricardo Zaruma
             | condicion condicion_booleana comprobacion
             | aumentoCasting
             | VARIABLE
+            | funcionesCP
             
   '''
 
@@ -372,12 +382,6 @@ def p_bcolas(p):  #ricardo Zaruma
   ''' bcolas : VARIABLE EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
   '''
 
-
-#PILAS
-def p_bpila(p):  #Keyla Franco
-  'bpila : VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI'
-
-
 #LECTURA Y ESCRITURA
 def p_lectura(p):  # Joby Farra
   '''lectura : READLINE LPAREN CADENA RPAREN SEMI
@@ -460,7 +464,7 @@ def p_instrucciones(p):
 
 
 #REGLA SEMÁNTICA OPERACIONES ENTRE STRINGS
-def p_bconcat(p):  #Ricardo Zaruma
+def p_bconcat(p):  #KEYLA FRANCO
   '''bconcat : CADENA CONCAT CADENA SEMI
             | VARIABLE CONCAT CADENA SEMI
             | VARIABLE CONCAT_EQUAL CADENA SEMI
@@ -487,13 +491,14 @@ def p_tiposCast(p):  #ricardo zaruma
    '''
 
 
+
 def p_casting(p):  #ricardo zaruma
   '''casting : VARIABLE EQUALS LPAREN tiposCast RPAREN VARIABLE SEMI  
               | LPAREN tiposCast RPAREN VARIABLE SEMI
    '''
 
 
-def p_aumentoCasting(p):  #Keyla franco
+def p_aumentoCasting(p):  #ricardo zaruma
   '''
     aumentoCasting : VARIABLE incrementos_mat tipoDato SEMI
                     | VARIABLE EQUALS VARIABLE operadores tipoDato SEMI
@@ -502,6 +507,63 @@ def p_aumentoCasting(p):  #Keyla franco
                     | VARIABLE incrementos_mat VARIABLE SEMI
                     
   '''
+
+#REGLA SEMANTICA ESTRUCTURA DE UNA PILA
+#PILAS
+def p_bpila(p):  #Keyla Franco
+  'bpila : VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI'
+
+#AÑADIR ELEMENTOS A UNA PILA
+def p_addpila(p):  #kEYLA fRANCO
+  '''
+    addpila : VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
+  '''
+
+def p_poppila(p): #Keyla Franco
+  'poppila : VARIABLE FLECHA POP LPAREN RPAREN SEMI'
+
+def p_funcionesCP(p): #FRanco Keyla, Zaruma Ricardo 
+  '''
+    funcionesCP : VARIABLE FLECHA REWIND LPAREN RPAREN 
+                | VARIABLE FLECHA VALID LPAREN RPAREN 
+                | VARIABLE FLECHA COUNT LPAREN RPAREN 
+                | VARIABLE FLECHA NEXT LPAREN RPAREN 
+                | VARIABLE FLECHA CURRENT LPAREN RPAREN 
+                
+  '''
+
+def p_funcionesCP_semi(p): #FRanco Keyla, Zaruma Ricardo
+  '''funcionesCP_semi : funcionesCP
+                      | funcionesCP SEMI'''
+#REGLA SEMÁNTICA ESTRUCTURA DE UNA COLA
+
+def p_addcola(p):
+    '''
+      addcola : VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+             
+   '''
+def p_minuscola(p):
+  '''
+      minuscola : VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+             
+   '''
+  
+
+#REGLA SEMANTICA CONSTANTES
+#ASIGNACION DE CONSTANTES
+def p_constante(p):  # Joby Farra
+  '''constante : DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+              | DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI'''  
+
+  #REGLA SEMANTICA DE ARRAYS
+def p_arraypop(p): #Joby Farra
+  '''arraypop : ARRAY_POP LPAREN VARIABLE RPAREN SEMI'''
+
+def p_arraypush(p):#Joby Farra
+  '''arraypush : ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI'''
+
+def p_arrayvalues(p):#Joby Farra
+  '''arrayvalues : ARRAY_VALUES LPAREN VARIABLE RPAREN'''
 
 
 #ERROR
@@ -543,7 +605,7 @@ def analizador_sintactico(data):
 parser = sintactico.yacc()
 scripts = ["prueba.txt"]
 archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
-for script in archivos:
+for script in scripts:
   file = open(script, 'r')
   log = open('logs.txt', 'a')
   content = file.read()

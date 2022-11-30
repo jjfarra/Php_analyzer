@@ -76,9 +76,25 @@ reserved = {
   "goto": "GOTO",
   "print": "PRINT",
   "echo": "ECHO",
+  "var_dump": "VAR_DUMP",
   "readline":"READLINE",
   "fwrite":"FWRITE",
-  "trim" : "TRIM"
+  "trim" : "TRIM",
+
+  #PALABRAS PARA ESTRUCTURAS DE CONTROL
+  "push" : "PUSH",
+  "pop" : "POP",
+  "rewind" : "REWIND",
+  "current" : "CURRENT",
+  "valid" : "VALID",
+  "count" : "COUNT",
+  "next" : "NEXT",
+  "array_values" : "ARRAY_VALUES",
+  "enqueue" : "ENQUEUE",
+  "dequeue" : "DEQUEUE",
+  "array_push" : "ARRAY_PUSH",
+  "array_pop" : "ARRAY_POP",
+  "print_r" : "PRINT_R"
 }
 
 # END Joby Farra
@@ -106,21 +122,9 @@ tokens = [
   'IS_NOT_IDENTICAL',
   'BOOLEANO',
   #Tipos de datos
-  #'DIR',
-  #'FILE',
-  #'LINE',
-  #'FUNC_C',
-  #'CLASS_C',
-  #'METHOD_C',
-  #'NS_C',
-  #'HALT_COMPILER',
   'VARIABLE',
   'ENTERO',
   'DECIMAL',
-  #'NUM_STRING',
-  #'CONSTANT_ENCAPSED_STRING',
-  #'ENCAPSED_AND_WHITESPACE',
-  #'CURLY_OPEN',
   #Comparadores
   'EQUALS',
   'MUL_EQUAL',
@@ -143,12 +147,11 @@ tokens = [
   'CONCAT_EQUAL',
   'COLON',
   'SEMI',
-  #'AT',
-  #'NS_SEPARATOR',
   #PHP TAGS
   'OPEN_TAG',
   'CLOSE_TAG',
-  'CADENA'
+  'CADENA',
+  'FLECHA'
 ] + list(reserved.values())
 
 t_ignore = ' \t'
@@ -176,6 +179,7 @@ t_IS_NOT_IDENTICAL = r'!=='
 
 # COMPARADORES
 t_EQUALS = r'='
+t_FLECHA = r'\->'
 t_MUL_EQUAL = r'\*='
 t_DIV_EQUAL = r'/='
 t_MOD_EQUAL = r'%='
