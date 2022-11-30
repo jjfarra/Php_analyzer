@@ -62,6 +62,7 @@ def p_asignacion(p):  # Keyla Franco
                 | aumentoCasting
                 | VARIABLE EQUALS llamada_funcion
                 | VARIABLE EQUALS arrayvalues SEMI
+                | VARIABLE EQUALS arraysearch SEMI
   '''
 
 
@@ -111,6 +112,8 @@ def p_imprimir(p):  #Ricardo Zaruma
             | ECHO funcionesCP_semi COMMA NOMBRE SEMI
             | ECHO poppila
             | VAR_DUMP LPAREN VARIABLE RPAREN SEMI
+            | VAR_DUMP LPAREN arrayvalues RPAREN SEMI
+            | PRINT_R LPAREN arraysearch RPAREN SEMI
             | PRINT_R LPAREN VARIABLE RPAREN SEMI
             | PRINT_R LPAREN arrayvalues RPAREN SEMI
   '''
@@ -235,7 +238,7 @@ def p_btry(p):  # Joby Farra
 
 
 def p_catches(p):  # Joby Farra
-  '''catches : catches CATCH LPAREN NOMBRE VARIABLE RPAREN stc_bloque_def
+  '''catches : catches CATCH LPAREN EXCEPTION VARIABLE RPAREN stc_bloque_def
           | empty'''
 
 
@@ -460,6 +463,7 @@ def p_instrucciones(p):
                   | funciones
                   | bswitch
                   | bdo
+                  | catches
   '''
 
 
@@ -537,12 +541,12 @@ def p_funcionesCP_semi(p): #FRanco Keyla, Zaruma Ricardo
                       | funcionesCP SEMI'''
 #REGLA SEMÁNTICA ESTRUCTURA DE UNA COLA
 
-def p_addcola(p):
+def p_addcola(p): #Ricardo Zaruma
     '''
       addcola : VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
              
    '''
-def p_minuscola(p):
+def p_minuscola(p): #Ricardo Zaruma
   '''
       minuscola : VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
              
@@ -565,7 +569,9 @@ def p_arraypush(p):#Joby Farra
 def p_arrayvalues(p):#Joby Farra
   '''arrayvalues : ARRAY_VALUES LPAREN VARIABLE RPAREN'''
 
-
+def p_arraysearch(p):
+  '''arraysearch : ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN'''
+  
 #ERROR
 def p_error(p):
   global resultado_sintactico
@@ -603,8 +609,8 @@ def analizador_sintactico(data):
 
 # Build the parser
 parser = sintactico.yacc()
-scripts = ["prueba.txt"]
-archivos = ["script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+scripts = ["prueba2.txt"]
+archivos = ["prueba.txt","script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
 for script in scripts:
   file = open(script, 'r')
   log = open('logs.txt', 'a')

@@ -94,7 +94,9 @@ reserved = {
   "dequeue" : "DEQUEUE",
   "array_push" : "ARRAY_PUSH",
   "array_pop" : "ARRAY_POP",
-  "print_r" : "PRINT_R"
+  "array_search": "ARRAY_SEARCH",
+  "print_r" : "PRINT_R",
+  "Exception": "EXCEPTION"
 }
 
 # END Joby Farra

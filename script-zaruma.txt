@@ -37,4 +37,23 @@ switch($opcion){
     echo "Hasta la proxima!!"
     break;
 }
+
+  $queue = new SplQueue();
+
+  $queue->enqueue('1');
+  $queue->enqueue('2');
+  $queue->enqueue('3');
+
+  $queue->dequeue('3');
+
+  echo $queue->count();
+
+  $queue->rewind();
+
+  while( $queue->valid() )
+  {
+    echo $queue->current();
+    $queue->next();
+  }
+
 ?> 

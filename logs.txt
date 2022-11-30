@@ -16133,3 +16133,685 @@ Linea: 62 | array_push($prueba, "test");| Info: No hay errores!
 Linea: 63 | var_dump($prueba);| Info: No hay errores! 
 Linea: 64 | $bigArray = array_values( $bigArray );| Info: No hay errores! 
 Linea: 65 | print_r( array_values( $a ));| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 5 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 6 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 7 | } else {| Info: No hay errores! 
+Linea: 8 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 9 | }| Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+Linea: 11 | <?php| Info: No hay errores! 
+Linea: 12 | $i = 0;| Info: No hay errores! 
+Linea: 13 | do {| Info: No hay errores! 
+Linea: 14 |     echo $i;| Info: No hay errores! 
+Linea: 15 | } while ($i > 0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+Linea: 17 | <?php| Info: No hay errores! 
+Linea: 18 | do {| Info: No hay errores! 
+Linea: 19 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 20 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 21 |         break;| Info: No hay errores! 
+Linea: 22 |     }| Info: No hay errores! 
+Linea: 23 |     $i *= $factor;| Info: No hay errores! 
+Linea: 24 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 25 |         break;| Info: No hay errores! 
+Linea: 26 |     }| Info: No hay errores! 
+Linea: 27 |    echo "i is ok";| Info: No hay errores! 
+Linea: 29 |     /* process i */| Info: No hay errores! 
+Linea: 31 | } while (0);| Info: No hay errores! 
+Linea: 32 | ?>| Info: No hay errores! 
+Linea: 33 | <?php| Info: No hay errores! 
+Linea: 34 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 35 | foreach ($array as &$valor) {| Info: No hay errores! 
+Linea: 36 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 37 | }| Info: No hay errores! 
+Linea: 38 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 39 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 40 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 5 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 6 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 7 | } else {| Info: No hay errores! 
+Linea: 8 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 9 | }| Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+Linea: 11 | <?php| Info: No hay errores! 
+Linea: 12 | $i = 0;| Info: No hay errores! 
+Linea: 13 | do {| Info: No hay errores! 
+Linea: 14 |     echo $i;| Info: No hay errores! 
+Linea: 15 | } while ($i > 0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+Linea: 17 | <?php| Info: No hay errores! 
+Linea: 18 | do {| Info: No hay errores! 
+Linea: 19 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 20 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 21 |         break;| Info: No hay errores! 
+Linea: 22 |     }| Info: No hay errores! 
+Linea: 23 |     $i *= $factor;| Info: No hay errores! 
+Linea: 24 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 25 |         break;| Info: No hay errores! 
+Linea: 26 |     }| Info: No hay errores! 
+Linea: 27 |    echo "i is ok";| Info: No hay errores! 
+Linea: 29 |     /* process i */| Info: No hay errores! 
+Linea: 31 | } while (0);| Info: No hay errores! 
+Linea: 32 | ?>| Info: No hay errores! 
+Linea: 33 | <?php| Info: No hay errores! 
+Linea: 34 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 35 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 36 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 37 | }| Info: No hay errores! 
+Linea: 38 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 39 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 40 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | if ($a > $b) {| Info: No hay errores! 
+Linea: 4 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 5 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 6 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 7 | } else {| Info: No hay errores! 
+Linea: 8 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 9 | }| Info: No hay errores! 
+Linea: 10 | ?>| Info: No hay errores! 
+Linea: 11 | <?php| Info: No hay errores! 
+Linea: 12 | $i = 0;| Info: No hay errores! 
+Linea: 13 | do {| Info: No hay errores! 
+Linea: 14 |     echo $i;| Info: No hay errores! 
+Linea: 15 | } while ($i > 0);| Info: No hay errores! 
+Linea: 16 | ?>| Info: No hay errores! 
+Linea: 17 | <?php| Info: No hay errores! 
+Linea: 18 | do {| Info: No hay errores! 
+Linea: 19 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 20 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 21 |         break;| Info: No hay errores! 
+Linea: 22 |     }| Info: No hay errores! 
+Linea: 23 |     $i *= $factor;| Info: No hay errores! 
+Linea: 24 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 25 |         break;| Info: No hay errores! 
+Linea: 26 |     }| Info: No hay errores! 
+Linea: 27 |    echo "i is ok";| Info: No hay errores! 
+Linea: 29 |     /* process i */| Info: No hay errores! 
+Linea: 31 | } while (0);| Info: No hay errores! 
+Linea: 32 | ?>| Info: No hay errores! 
+Linea: 33 | <?php| Info: No hay errores! 
+Linea: 34 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 35 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 36 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 37 | }| Info: No hay errores! 
+Linea: 38 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 39 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 40 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch| Info: No hay errores! 
+Linea: 2 | <?php| Info: No hay errores! 
+Linea: 3 | function inverso($x) {| Info: No hay errores! 
+Linea: 4 |     if (!$x) {| Info: No hay errores! 
+Linea: 5 |         throw new Exception('División por cero.');| Info: No hay errores! 
+Linea: 6 |     }| Info: No hay errores! 
+Linea: 7 |     return 1/$x;| Info: No hay errores! 
+Linea: 8 | }| Info: No hay errores! 
+Linea: 10 | try {| Info: No hay errores! 
+Linea: 11 |     echo inverso(5) . "\n";| Info: No hay errores! 
+Linea: 12 |     echo inverso(0) . "\n";| Info: No hay errores! 
+Linea: 13 | } catch (Exception $e) {| Info: No hay errores! 
+Linea: 14 |     echo 'Excepción capturada: ',  $e->getMessage(), "\n";| Info: No hay errores! 
+Linea: 15 | }| Info: No hay errores! 
+Linea: 17 | // Continuar la ejecución| Info: No hay errores! 
+Linea: 18 | echo 'Hola Mundo\n';| Info: No hay errores! 
+Linea: 19 | ?>| Info: No hay errores! 
+Linea: 22 | <?php| Info: No hay errores! 
+Linea: 23 | if ($a > $b) {| Info: No hay errores! 
+Linea: 24 |     echo "a es mayor que b";| Info: No hay errores! 
+Linea: 25 | } elseif ($a == $b) {| Info: No hay errores! 
+Linea: 26 |     echo "a es igual que b";| Info: No hay errores! 
+Linea: 27 | } else {| Info: No hay errores! 
+Linea: 28 |     echo "a es menor que b";| Info: No hay errores! 
+Linea: 29 | }| Info: No hay errores! 
+Linea: 30 | ?>| Info: No hay errores! 
+Linea: 31 | <?php| Info: No hay errores! 
+Linea: 32 | $i = 0;| Info: No hay errores! 
+Linea: 33 | do {| Info: No hay errores! 
+Linea: 34 |     echo $i;| Info: No hay errores! 
+Linea: 35 | } while ($i > 0);| Info: No hay errores! 
+Linea: 36 | ?>| Info: No hay errores! 
+Linea: 37 | <?php| Info: No hay errores! 
+Linea: 38 | do {| Info: No hay errores! 
+Linea: 39 |     if ($i < 5) {| Info: No hay errores! 
+Linea: 40 |         echo "i is not big enough";| Info: No hay errores! 
+Linea: 41 |         break;| Info: No hay errores! 
+Linea: 42 |     }| Info: No hay errores! 
+Linea: 43 |     $i *= $factor;| Info: No hay errores! 
+Linea: 44 |     if ($i < $minimum_limit) {| Info: No hay errores! 
+Linea: 45 |         break;| Info: No hay errores! 
+Linea: 46 |     }| Info: No hay errores! 
+Linea: 47 |    echo "i is ok";| Info: No hay errores! 
+Linea: 49 |     /* process i */| Info: No hay errores! 
+Linea: 51 | } while (0);| Info: No hay errores! 
+Linea: 52 | ?>| Info: No hay errores! 
+Linea: 53 | <?php| Info: No hay errores! 
+Linea: 54 | $array = array(1, 2, 3, 4);| Info: No hay errores! 
+Linea: 55 | foreach ($array as $valor) {| Info: No hay errores! 
+Linea: 56 |     $valor = $valor * 2;| Info: No hay errores! 
+Linea: 57 | }| Info: No hay errores! 
+Linea: 58 | // $array ahora es array(2, 4, 6, 8)| Info: No hay errores! 
+Linea: 59 | unset($valor); // rompe la referencia con el último elemento| Info: No hay errores! 
+Linea: 60 | ?>| Info: No hay errores! 

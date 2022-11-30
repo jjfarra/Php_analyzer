@@ -1,0 +1,60 @@
+#if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch
+<?php
+function inverso($x) {
+    if (!$x) {
+        throw new Exception('División por cero.');
+    }
+    return 1/$x;
+}
+
+try {
+    echo inverso(5) . "\n";
+    echo inverso(0) . "\n";
+} catch (Exception $e) {
+    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+}
+
+// Continuar la ejecución
+echo 'Hola Mundo\n';
+?>
+
+
+<?php
+if ($a > $b) {
+    echo "a es mayor que b";
+} elseif ($a == $b) {
+    echo "a es igual que b";
+} else {
+    echo "a es menor que b";
+}
+?>
+<?php
+$i = 0;
+do {
+    echo $i;
+} while ($i > 0);
+?>
+<?php
+do {
+    if ($i < 5) {
+        echo "i is not big enough";
+        break;
+    }
+    $i *= $factor;
+    if ($i < $minimum_limit) {
+        break;
+    }
+   echo "i is ok";
+
+    /* process i */
+
+} while (0);
+?>
+<?php
+$array = array(1, 2, 3, 4);
+foreach ($array as $valor) {
+    $valor = $valor * 2;
+}
+// $array ahora es array(2, 4, 6, 8)
+unset($valor); // rompe la referencia con el último elemento
+?>
