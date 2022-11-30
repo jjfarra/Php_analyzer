@@ -579,10 +579,8 @@ def p_error(p):
   if p:
     resultado = "Error sintactico de tipo: {} en el valor: {}".format(
       str(p.type), str(p.value))
-    print(resultado)
   else:
     resultado = "Error sintactico: {}".format(p)
-    print(resultado)
   resultado_sintactico.append(resultado)
 
 
@@ -597,6 +595,7 @@ def add_log(s, result):
 
 
 def validaRegla(s):
+  resultado_sintactico.clear()
   result = parser.parse(s)
   add_log(s, result)
   print(result)
@@ -604,32 +603,35 @@ def validaRegla(s):
 
 
 def analizador_sintactico(data):
-  return parser.parse(data)
+  resultado_sintactico.clear()
+  result=parser.parse(data)
+  add_log(data,result)
+  return result
 
-
-# Build the parser
 parser = sintactico.yacc()
-scripts = ["prueba2.txt"]
-archivos = ["prueba.txt","script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
-for script in archivos:
-  file = open(script, 'r')
-  log = open('logs.txt', 'a')
-  content = file.read()
-  lines = 0
-  line_log = "\nPRUEBA DE SCRIPT \n"
-  log.write(line_log)
-  for item in content.splitlines():
-    lines += 1
-    if item:
-      gram = sintactico.parse(item)
-      if gram is None:
-        lin = f"Linea: {str(lines)} | {str(item)}| Info: No hay errores! \n"
-        log.write(lin)
-        print(lin)
-
-      else:
-        lin = f"Linea: {str(lines)} | Info: {str(gram)} \n"
-        log.write(lin)
-        print(lin)
-  file.close()
-  log.close()
+# Build the parser
+# parser = sintactico.yacc()
+# scripts = ["prueba2.txt"]
+# archivos = ["prueba.txt","script-farra.txt", "script-franco.txt", "script-zaruma.txt"]
+# for script in archivos:
+#   file = open(script, 'r')
+#   log = open('logs.txt', 'a')
+#   content = file.read()
+#   lines = 0
+#   line_log = "\nPRUEBA DE SCRIPT \n"
+#   log.write(line_log)
+#   for item in content.splitlines():
+#     lines += 1
+#     if item:
+#       gram = sintactico.parse(item)
+#       if gram is None:
+#         lin = f"Linea: {str(lines)} | {str(item)}| Info: No hay errores! \n"
+#         log.write(lin)
+#         print(lin)
+#
+#       else:
+#         lin = f"Linea: {str(lines)} | Info: {str(gram)} \n"
+#         log.write(lin)
+#         print(lin)
+#   file.close()
+#   log.close()

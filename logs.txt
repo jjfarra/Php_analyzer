@@ -16974,3 +16974,1652 @@ Linea: 55 |     echo $queue->current();| Info: No hay errores!
 Linea: 56 |     $queue->next();| Info: No hay errores! 
 Linea: 57 |   }| Info: No hay errores! 
 Linea: 59 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //AÃ±ade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el nÃºmero de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el Ãºltimo elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el nÃºmero de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   | Info: No hay errores! 
+Linea: 38 | array_pop($prueba);| Info: No hay errores! 
+Linea: 39 | array_push($prueba, "test");| Info: No hay errores! 
+Linea: 40 | var_dump($prueba);| Info: No hay errores! 
+Linea: 41 | var_dump(array_values($prueba));| Info: No hay errores! 
+Linea: 42 | $key = array_search("a", $code);| Info: No hay errores! 
+Linea: 43 | $bigArray = array_values( $bigArray );| Info: No hay errores! 
+Linea: 44 | print_r( array_values( $a ));| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El nÃºmero random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningÃºn nÃºmero o el nÃºmero no es vÃ¡lido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo "------Calculadora----" ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x MultiplicaciÃ³n ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % DivisiÃ³n ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  } elseif ($option == 2) | Info: No hay errores! 
+Linea: 22 | {| Info: No hay errores! 
+Linea: 23 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 24 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 25 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 26 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 28 | } elseif ($option == 3) | Info: No hay errores! 
+Linea: 29 | {| Info: No hay errores! 
+Linea: 30 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 31 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 32 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 33 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 34 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 35 |  }elseif ($option == 4) {| Info: No hay errores! 
+Linea: 36 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 37 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 38 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 39 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 40 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 41 |      | Info: No hay errores! 
+Linea: 42 | } elseif ($option == 5) {| Info: No hay errores! 
+Linea: 43 |    exit;| Info: No hay errores! 
+Linea: 44 |  } else {| Info: No hay errores! 
+Linea: 45 |   echo 'La opciÃ³n que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 46 |   goto menu;| Info: No hay errores! 
+Linea: 47 | }| Info: No hay errores! 
+Linea: 48 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 49 | goto menu;| Info: No hay errores! 
+Linea: 50 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 41 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 44 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 45 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 47 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   $queue->rewind();| Info: No hay errores! 
+Linea: 53 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 54 |   {| Info: No hay errores! 
+Linea: 55 |     echo $queue->current();| Info: No hay errores! 
+Linea: 56 |     $queue->next();| Info: No hay errores! 
+Linea: 57 |   }| Info: No hay errores! 
+Linea: 59 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //AÃ±ade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el nÃºmero de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el Ãºltimo elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el nÃºmero de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   | Info: No hay errores! 
+Linea: 38 | array_pop($prueba);| Info: No hay errores! 
+Linea: 39 | array_push($prueba, "test");| Info: No hay errores! 
+Linea: 40 | var_dump($prueba);| Info: No hay errores! 
+Linea: 41 | var_dump(array_values($prueba));| Info: No hay errores! 
+Linea: 42 | $key = array_search("a", $code);| Info: No hay errores! 
+Linea: 43 | $bigArray = array_values( $bigArray );| Info: No hay errores! 
+Linea: 44 | print_r( array_values( $a ));| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El nÃºmero random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningÃºn nÃºmero o el nÃºmero no es vÃ¡lido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo "------Calculadora----" ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x MultiplicaciÃ³n ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % DivisiÃ³n ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  } elseif ($option == 2) | Info: No hay errores! 
+Linea: 22 | {| Info: No hay errores! 
+Linea: 23 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 24 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 25 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 26 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 28 | } elseif ($option == 3) | Info: No hay errores! 
+Linea: 29 | {| Info: No hay errores! 
+Linea: 30 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 31 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 32 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 33 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 34 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 35 |  }elseif ($option == 4) {| Info: No hay errores! 
+Linea: 36 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 37 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 38 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 39 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 40 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 41 |      | Info: No hay errores! 
+Linea: 42 | } elseif ($option == 5) {| Info: No hay errores! 
+Linea: 43 |    exit;| Info: No hay errores! 
+Linea: 44 |  } else {| Info: No hay errores! 
+Linea: 45 |   echo 'La opciÃ³n que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 46 |   goto menu;| Info: No hay errores! 
+Linea: 47 | }| Info: No hay errores! 
+Linea: 48 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 49 | goto menu;| Info: No hay errores! 
+Linea: 50 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 41 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 44 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 45 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 47 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   $queue->rewind();| Info: No hay errores! 
+Linea: 53 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 54 |   {| Info: No hay errores! 
+Linea: 55 |     echo $queue->current();| Info: No hay errores! 
+Linea: 56 |     $queue->next();| Info: No hay errores! 
+Linea: 57 |   }| Info: No hay errores! 
+Linea: 59 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 |  //Crea la pila| Info: No hay errores! 
+Linea: 2 |   $stack = new SplStack();| Info: No hay errores! 
+Linea: 4 |   //AÃ±ade elementos| Info: No hay errores! 
+Linea: 5 |   $stack->push('1');| Info: No hay errores! 
+Linea: 6 |   $stack->push('2');| Info: No hay errores! 
+Linea: 7 |   $stack->push('3');| Info: No hay errores! 
+Linea: 9 |   //Muestra el nÃºmero de elementos de la pila (3)| Info: No hay errores! 
+Linea: 10 |   echo $stack->count();| Info: No hay errores! 
+Linea: 12 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 13 |   $stack->rewind();| Info: No hay errores! 
+Linea: 15 |   //Muestra los elementos (3, 2, 1)| Info: No hay errores! 
+Linea: 16 |   while( $stack->valid() )| Info: No hay errores! 
+Linea: 17 |   {| Info: No hay errores! 
+Linea: 18 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 19 |     $stack->next();| Info: No hay errores! 
+Linea: 20 |   }| Info: No hay errores! 
+Linea: 22 |    //Saca de la pila el Ãºltimo elemento y lo muestra| Info: No hay errores! 
+Linea: 23 |    echo $stack->pop();| Info: No hay errores! 
+Linea: 25 |   //Situa el puntero al final de la cola| Info: No hay errores! 
+Linea: 26 |    $stack->rewind();| Info: No hay errores! 
+Linea: 28 |    //Muestra el nÃºmero de elementos de la pila (2)| Info: No hay errores! 
+Linea: 29 |     echo $stack->count();| Info: No hay errores! 
+Linea: 31 |   //Muestra los elementos (2, 1)| Info: No hay errores! 
+Linea: 32 |    while( $stack->valid() )| Info: No hay errores! 
+Linea: 33 |    {| Info: No hay errores! 
+Linea: 34 |     echo $stack->current(), PHP_EOL;| Info: No hay errores! 
+Linea: 35 |     $stack->next();| Info: No hay errores! 
+Linea: 36 |    }| Info: No hay errores! 
+Linea: 37 |   | Info: No hay errores! 
+Linea: 38 | array_pop($prueba);| Info: No hay errores! 
+Linea: 39 | array_push($prueba, "test");| Info: No hay errores! 
+Linea: 40 | var_dump($prueba);| Info: No hay errores! 
+Linea: 41 | var_dump(array_values($prueba));| Info: No hay errores! 
+Linea: 42 | $key = array_search("a", $code);| Info: No hay errores! 
+Linea: 43 | $bigArray = array_values( $bigArray );| Info: No hay errores! 
+Linea: 44 | print_r( array_values( $a ));| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | #Script| Info: No hay errores! 
+Linea: 3 | <?php| Info: No hay errores! 
+Linea: 4 |     $numero =rand(0,100);| Info: No hay errores! 
+Linea: 6 |     if($numero > 0 && is_int($numero)){| Info: No hay errores! 
+Linea: 7 |         echo "<h2> El nÃºmero random es: $numero</h2>";| Info: No hay errores! 
+Linea: 8 |         echo "<br>";| Info: No hay errores! 
+Linea: 9 |         while($numero > 1){| Info: No hay errores! 
+Linea: 10 |             if(($numero%2) == 0 ){| Info: No hay errores! 
+Linea: 11 |                 $numero = $numero/2;  | Info: No hay errores! 
+Linea: 12 |             }else{| Info: No hay errores! 
+Linea: 13 |                 $numero = ($numero*3)+1;| Info: No hay errores! 
+Linea: 14 |             }| Info: No hay errores! 
+Linea: 15 |             echo "<br>";| Info: No hay errores! 
+Linea: 16 |             echo "<li>$numeroPrincipal</li>";| Info: No hay errores! 
+Linea: 17 |             echo "<br>"; | Info: No hay errores! 
+Linea: 18 |         }| Info: No hay errores! 
+Linea: 19 |     }else{| Info: No hay errores! 
+Linea: 20 |         echo "No has ingresado ningÃºn nÃºmero o el nÃºmero no es vÃ¡lido";| Info: No hay errores! 
+Linea: 21 |     }| Info: No hay errores! 
+Linea: 22 | ?>| Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 2 | //Script| Info: No hay errores! 
+Linea: 3 | # Keyla Franco| Info: No hay errores! 
+Linea: 4 | echo "------Calculadora----" ."\n";| Info: No hay errores! 
+Linea: 5 | menu:| Info: No hay errores! 
+Linea: 6 | echo "|----Menu----| ". "\n";| Info: No hay errores! 
+Linea: 7 | echo "| 1. + Suma ". "\n";| Info: No hay errores! 
+Linea: 8 | echo "| 2. - Resta ". "\n";| Info: No hay errores! 
+Linea: 9 | echo "| 3. x MultiplicaciÃ³n ". "\n";| Info: No hay errores! 
+Linea: 10 | echo "| 4. % DivisiÃ³n ". "\n";| Info: No hay errores! 
+Linea: 11 | echo "| 5. salir". "\n";| Info: No hay errores! 
+Linea: 12 | $option = fwrite(STDOUT," Seleccione una operacion: ");| Info: No hay errores! 
+Linea: 13 | $option = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 14 | if ($option == 1) | Info: No hay errores! 
+Linea: 15 | {| Info: No hay errores! 
+Linea: 16 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 17 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 18 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 19 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 20 |    $out = $in1 + $in3; | Info: No hay errores! 
+Linea: 21 |  } elseif ($option == 2) | Info: No hay errores! 
+Linea: 22 | {| Info: No hay errores! 
+Linea: 23 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 24 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 25 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 26 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 27 |    $out = $in1 - $in3; | Info: No hay errores! 
+Linea: 28 | } elseif ($option == 3) | Info: No hay errores! 
+Linea: 29 | {| Info: No hay errores! 
+Linea: 30 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 31 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 32 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 33 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 34 |    $out = $in1 * $in3; | Info: No hay errores! 
+Linea: 35 |  }elseif ($option == 4) {| Info: No hay errores! 
+Linea: 36 |    $in = fwrite(STDOUT, "|---->Ingrese el primer numero: ");| Info: No hay errores! 
+Linea: 37 |    $in1 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 38 |    $in2 = fwrite(STDOUT, "|---->Ingrese el segundo numero: ");| Info: No hay errores! 
+Linea: 39 |    $in3 = trim(fgets(STDIN));| Info: No hay errores! 
+Linea: 40 |    $out = ($in1 / $in3);| Info: No hay errores! 
+Linea: 41 |      | Info: No hay errores! 
+Linea: 42 | } elseif ($option == 5) {| Info: No hay errores! 
+Linea: 43 |    exit;| Info: No hay errores! 
+Linea: 44 |  } else {| Info: No hay errores! 
+Linea: 45 |   echo 'La opciÃ³n que ha escogido es incorrecta'."\n";| Info: No hay errores! 
+Linea: 46 |   goto menu;| Info: No hay errores! 
+Linea: 47 | }| Info: No hay errores! 
+Linea: 48 | print "|---->El resultado es: $out"."\n";  | Info: No hay errores! 
+Linea: 49 | goto menu;| Info: No hay errores! 
+Linea: 50 | ?> | Info: No hay errores! 
+
+PRUEBA DE SCRIPT 
+Linea: 1 | <?php| Info: No hay errores! 
+Linea: 3 | echo "IDENTIFICAR SI ES MENOR DE EDAD"| Info: No hay errores! 
+Linea: 4 | $edad = 15;| Info: No hay errores! 
+Linea: 5 | $nombre= "Josh";| Info: No hay errores! 
+Linea: 7 | function identificar($edad,$nombre){| Info: No hay errores! 
+Linea: 8 |   if ($edad <= 18){| Info: No hay errores! 
+Linea: 9 |     echo "es menor de edad"| Info: No hay errores! 
+Linea: 10 |   }else{| Info: No hay errores! 
+Linea: 11 |     echo "es mayor de edad"| Info: No hay errores! 
+Linea: 12 |   }| Info: No hay errores! 
+Linea: 13 | }| Info: No hay errores! 
+Linea: 15 | function aumentar($edad){| Info: No hay errores! 
+Linea: 16 |   while($edad < 18){| Info: No hay errores! 
+Linea: 17 |     $edad ++ ;| Info: No hay errores! 
+Linea: 18 |   }| Info: No hay errores! 
+Linea: 19 | }| Info: No hay errores! 
+Linea: 22 | print ("MENU")| Info: No hay errores! 
+Linea: 23 | print("1) Validar edad")| Info: No hay errores! 
+Linea: 24 | print("2) Aumentar edad")| Info: No hay errores! 
+Linea: 25 | print("3) Salir")| Info: No hay errores! 
+Linea: 27 | $opcion = readline("Ingrese una opcion:");| Info: No hay errores! 
+Linea: 29 | switch($opcion){| Info: No hay errores! 
+Linea: 30 |   case 1:| Info: No hay errores! 
+Linea: 31 |     identificar($edad,$nombre)   | Info: No hay errores! 
+Linea: 32 |     break;| Info: No hay errores! 
+Linea: 33 |   case 2:| Info: No hay errores! 
+Linea: 34 |     aumentar($edad)| Info: No hay errores! 
+Linea: 35 |     break;| Info: No hay errores! 
+Linea: 36 |   case 3:| Info: No hay errores! 
+Linea: 37 |     echo "Hasta la proxima!!"| Info: No hay errores! 
+Linea: 38 |     break;| Info: No hay errores! 
+Linea: 39 | }| Info: No hay errores! 
+Linea: 41 |   $queue = new SplQueue();| Info: No hay errores! 
+Linea: 43 |   $queue->enqueue('1');| Info: No hay errores! 
+Linea: 44 |   $queue->enqueue('2');| Info: No hay errores! 
+Linea: 45 |   $queue->enqueue('3');| Info: No hay errores! 
+Linea: 47 |   $queue->dequeue('3');| Info: No hay errores! 
+Linea: 49 |   echo $queue->count();| Info: No hay errores! 
+Linea: 51 |   $queue->rewind();| Info: No hay errores! 
+Linea: 53 |   while( $queue->valid() )| Info: No hay errores! 
+Linea: 54 |   {| Info: No hay errores! 
+Linea: 55 |     echo $queue->current();| Info: No hay errores! 
+Linea: 56 |     $queue->next();| Info: No hay errores! 
+Linea: 57 |   }| Info: No hay errores! 
+Linea: 59 | ?> | Info: No hay errores! 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 22:45:30.425210-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 22:45:30.425210-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input: }, el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input: , el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 22:45:30.426179-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 22:45:30.427177-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 22:45:30.427177-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 22:45:30.427177-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 22:45:30.427177-05:00 
+Input: }, el resultado fue: None en 2022-11-29 22:45:30.427177-05:00 
+Input: , el resultado fue: None en 2022-11-29 22:45:30.427177-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input: , el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input: , el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 22:45:30.428174-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 22:45:30.429172-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 22:45:30.429172-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 22:45:30.429172-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 22:45:30.429172-05:00 
+Input: }, el resultado fue: None en 2022-11-29 22:45:30.429172-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 22:45:30.429172-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 22:45:30.429172-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 22:45:30.430168-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 22:45:30.431166-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 22:45:30.431166-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 22:45:30.431166-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 22:45:30.431166-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 22:45:30.431166-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 22:45:30.431166-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 22:45:30.431166-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input: , el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input: , el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 22:45:30.432163-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 22:45:30.433160-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 22:45:30.433160-05:00 
+Input: }, el resultado fue: None en 2022-11-29 22:45:30.433160-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 22:45:30.433160-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 22:45:30.433160-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 22:45:30.433160-05:00 
+Input: if{}else, el resultado fue: None en 2022-11-29 22:45:30.433160-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 22:58:52.123292-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:03:33.430213-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:03:55.575280-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:03:55.576267-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:03:55.576267-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:03:55.576267-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:03:55.576267-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:03:55.576267-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:03:55.576267-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:03:55.577268-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:03:55.577268-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:03:55.577268-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:03:55.577268-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:03:55.577268-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:03:55.577268-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:03:55.577268-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:03:55.578243-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:03:55.578243-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:03:55.578243-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:03:55.578243-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:03:55.578243-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:03:55.578243-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:03:55.578243-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:03:55.579238-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:03:55.579238-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:03:55.579238-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:03:55.579238-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:03:55.579238-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:03:55.579238-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:03:55.579238-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:03:55.580267-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:03:55.581263-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:03:55.581263-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:03:55.581263-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:03:55.581263-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:03:55.581263-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:03:55.581263-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:03:55.581263-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:03:55.582261-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:03:55.583269-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:03:55.583269-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:03:55.583269-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:03:55.583269-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:03:55.583269-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:03:55.583269-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:03:55.584254-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:03:55.584254-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:03:55.584254-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:05:32.961650-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:05:32.961650-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:05:45.349475-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:05:45.349475-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:07:12.617191-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:07:12.617191-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:07:12.617191-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:07:12.617191-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:07:12.617191-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:07:12.618189-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:07:12.618189-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:07:12.618189-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:07:12.618189-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:07:12.618189-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:07:12.618189-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:07:12.618189-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:07:12.619186-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:07:12.619186-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:07:12.619186-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:07:12.619186-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:07:12.619186-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:07:12.619186-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:07:12.619186-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:07:12.620183-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:07:12.621181-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:07:12.622178-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:07:12.623175-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:07:12.624173-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:07:12.625170-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:07:12.625170-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:07:12.625170-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:08:11.911282-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:08:11.912280-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:08:11.912280-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:08:11.912280-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:08:11.912280-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:08:11.912280-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:08:11.912280-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:08:11.912280-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:08:11.913277-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:08:11.913277-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:08:11.913277-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:08:11.913277-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:08:11.913277-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:08:11.913277-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:08:11.913277-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:08:11.914274-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:08:11.915272-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:08:11.916269-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:08:11.917266-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:08:11.918264-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:08:11.918264-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:08:11.918264-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:08:11.918264-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:08:11.918264-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:08:11.918264-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:08:11.918264-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:08:11.919261-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:09:53.264581-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:09:53.264581-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:09:53.264581-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:09:53.264581-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:09:53.265551-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:09:53.265551-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:09:53.265551-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:09:53.265551-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:09:53.265551-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:09:53.265551-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:09:53.266548-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:09:53.267545-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:09:53.268542-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:09:53.269540-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:09:53.269540-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:09:53.269540-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:09:53.269540-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:09:53.269540-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:09:53.269540-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:09:53.269540-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:09:53.270537-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:09:53.271534-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:09:53.271534-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:09:53.271534-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:09:53.271534-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:09:53.271534-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:09:53.271534-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:09:53.272532-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:09:53.272532-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:09:53.272532-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:09:53.272532-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:09:53.272532-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:09:53.272532-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:09:53.272532-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:11:35.975853-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.975853-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:11:35.975853-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:11:35.975853-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:11:35.975853-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:11:35.976839-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:11:35.977812-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:11:35.977812-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.977812-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:11:35.977812-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:11:35.977812-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:11:35.977812-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.977812-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.978810-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.978810-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:11:35.978810-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:11:35.978810-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:11:35.978810-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:11:35.978810-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:11:35.978810-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:11:35.979837-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.980835-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:11:35.980835-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:11:35.980835-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:11:35.980835-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:11:35.980835-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:11:35.980835-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:11:35.980835-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:11:35.981835-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:11:35.982829-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:11:35.983830-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.983830-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:11:35.983830-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:11:35.983830-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:11:35.983830-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:11:35.983830-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:11:35.984823-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.985826-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:11:35.986824-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:11:35.986824-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:11:35.986824-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:11:35.986824-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:11:35.986824-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:11:35.986824-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:11:35.987785-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:11:35.987785-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:11:35.987785-05:00 
+Input: #Script, el resultado fue: None en 2022-11-29 23:13:10.851543-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:13:10.851543-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:13:10.851543-05:00 
+Input:     $numero =rand(0,100);, el resultado fue: None en 2022-11-29 23:13:10.852542-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:13:10.852542-05:00 
+Input:     if($numero > 0 && is_int($numero)){, el resultado fue: None en 2022-11-29 23:13:10.852542-05:00 
+Input:         echo "<h2> El número random es: $numero</h2>";, el resultado fue: None en 2022-11-29 23:13:10.852542-05:00 
+Input:         echo "<br>";, el resultado fue: None en 2022-11-29 23:13:10.852542-05:00 
+Input:         while($numero > 1){, el resultado fue: None en 2022-11-29 23:13:10.852542-05:00 
+Input:             if(($numero%2) == 0 ){, el resultado fue: None en 2022-11-29 23:13:10.852542-05:00 
+Input:                 $numero = $numero/2;  , el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:             }else{, el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:                 $numero = ($numero*3)+1;, el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:             }, el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:             echo "<br>";, el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:             echo "<li>$numeroPrincipal</li>";, el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:             echo "<br>"; , el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:         }, el resultado fue: None en 2022-11-29 23:13:10.853539-05:00 
+Input:     }else{, el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input:         echo "No has ingresado ningún número o el número no es válido";, el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input: #Script, el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input:     $numero =rand(0,100);, el resultado fue: None en 2022-11-29 23:13:10.854536-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:13:10.855534-05:00 
+Input:     if($numero > 0 && is_int($numero)){, el resultado fue: None en 2022-11-29 23:13:10.855534-05:00 
+Input:         echo "<h2> El número random es: $numero</h2>";, el resultado fue: None en 2022-11-29 23:13:10.855534-05:00 
+Input:         echo "<br>";, el resultado fue: None en 2022-11-29 23:13:10.855534-05:00 
+Input:         while($numero > 1){, el resultado fue: None en 2022-11-29 23:13:10.855534-05:00 
+Input:             if(($numero%2) == 0 ){, el resultado fue: None en 2022-11-29 23:13:10.855534-05:00 
+Input:                 $numero = $numero/2;  , el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:             }else{, el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:                 $numero = ($numero*3)+1;, el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:             }, el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:             echo "<br>";, el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:             echo "<li>$numeroPrincipal</li>";, el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:             echo "<br>"; , el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:         }, el resultado fue: None en 2022-11-29 23:13:10.856531-05:00 
+Input:     }else{, el resultado fue: None en 2022-11-29 23:13:10.857534-05:00 
+Input:         echo "No has ingresado ningún número o el número no es válido";, el resultado fue: None en 2022-11-29 23:13:10.857534-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:13:10.857534-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:13:10.857534-05:00 
+Input: Linea: #Script | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.109460-05:00 
+Input: Linea:  | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.109460-05:00 
+Input: Linea: <?php | Resultado: None | Error: Error sintactico de tipo: NEW en el valor: new, el resultado fue: None en 2022-11-29 23:14:38.110490-05:00 
+Input: Linea:     $numero =rand(0,100); | Resultado: None | Error: Error sintactico de tipo: ENTERO en el valor: 1, el resultado fue: None en 2022-11-29 23:14:38.110490-05:00 
+Input: Linea:  | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.110490-05:00 
+Input: Linea:     if($numero > 0 && is_int($numero)){ | Resultado: None | Error: Error sintactico de tipo: LPAREN en el valor: (, el resultado fue: None en 2022-11-29 23:14:38.110490-05:00 
+Input: Linea:         echo "<h2> El número random es: $numero</h2>"; | Resultado: None | Error: Error sintactico de tipo: LPAREN en el valor: (, el resultado fue: None en 2022-11-29 23:14:38.110490-05:00 
+Input: Linea:         echo "<br>"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.111474-05:00 
+Input: Linea:         while($numero > 1){ | Resultado: None | Error: Error sintactico de tipo: COMMA en el valor: ,, el resultado fue: None en 2022-11-29 23:14:38.111474-05:00 
+Input: Linea:             if(($numero%2) == 0 ){ | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.111474-05:00 
+Input: Linea:                 $numero = $numero/2;   | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.111474-05:00 
+Input: Linea:             }else{ | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.111474-05:00 
+Input: Linea:                 $numero = ($numero*3)+1; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.112486-05:00 
+Input: Linea:             } | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.112486-05:00 
+Input: Linea:             echo "<br>"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.112486-05:00 
+Input: Linea:             echo "<li>$numeroPrincipal</li>"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.112486-05:00 
+Input: Linea:             echo "<br>";  | Resultado: None | Error: Error sintactico de tipo: RPAREN en el valor: ), el resultado fue: None en 2022-11-29 23:14:38.112486-05:00 
+Input: Linea:         } | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.113471-05:00 
+Input: Linea:     }else{ | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.113471-05:00 
+Input: Linea:         echo "No has ingresado ningún número o el número no es válido"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.113471-05:00 
+Input: Linea:     } | Resultado: None | Error: Error sintactico de tipo: NEW en el valor: new, el resultado fue: None en 2022-11-29 23:14:38.113471-05:00 
+Input: Linea: ?> | Resultado: None | Error: Error sintactico de tipo: ENTERO en el valor: 1, el resultado fue: None en 2022-11-29 23:14:38.113471-05:00 
+Input: Linea: #Script | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.114470-05:00 
+Input: Linea:  | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.114470-05:00 
+Input: Linea: <?php | Resultado: None | Error: Error sintactico de tipo: NEW en el valor: new, el resultado fue: None en 2022-11-29 23:14:38.114470-05:00 
+Input: Linea:     $numero =rand(0,100); | Resultado: None | Error: Error sintactico de tipo: ENTERO en el valor: 1, el resultado fue: None en 2022-11-29 23:14:38.114470-05:00 
+Input: Linea:  | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.114470-05:00 
+Input: Linea:     if($numero > 0 && is_int($numero)){ | Resultado: None | Error: Error sintactico de tipo: LPAREN en el valor: (, el resultado fue: None en 2022-11-29 23:14:38.115476-05:00 
+Input: Linea:         echo "<h2> El número random es: $numero</h2>"; | Resultado: None | Error: Error sintactico de tipo: LPAREN en el valor: (, el resultado fue: None en 2022-11-29 23:14:38.115476-05:00 
+Input: Linea:         echo "<br>"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.115476-05:00 
+Input: Linea:         while($numero > 1){ | Resultado: None | Error: Error sintactico de tipo: COMMA en el valor: ,, el resultado fue: None en 2022-11-29 23:14:38.115476-05:00 
+Input: Linea:             if(($numero%2) == 0 ){ | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.115476-05:00 
+Input: Linea:                 $numero = $numero/2;   | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.116471-05:00 
+Input: Linea:             }else{ | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.116471-05:00 
+Input: Linea:                 $numero = ($numero*3)+1; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.116471-05:00 
+Input: Linea:             } | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.116471-05:00 
+Input: Linea:             echo "<br>"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.116471-05:00 
+Input: Linea:             echo "<li>$numeroPrincipal</li>"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.117469-05:00 
+Input: Linea:             echo "<br>";  | Resultado: None | Error: Error sintactico de tipo: RPAREN en el valor: ), el resultado fue: None en 2022-11-29 23:14:38.117469-05:00 
+Input: Linea:         } | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.117469-05:00 
+Input: Linea:     }else{ | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.117469-05:00 
+Input: Linea:         echo "No has ingresado ningún número o el número no es válido"; | Resultado: None | Error: Error sintactico: None, el resultado fue: None en 2022-11-29 23:14:38.117469-05:00 
+Input: Linea:     } | Resultado: None | Error: Error sintactico de tipo: NEW en el valor: new, el resultado fue: None en 2022-11-29 23:14:38.118439-05:00 
+Input: Linea: ?> | Resultado: None | Error: Error sintactico de tipo: ENTERO en el valor: 1, el resultado fue: None en 2022-11-29 23:14:38.118439-05:00 
+Input: Linea: Linea: #Script | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: NOMBRE en el valor: Resultado, el resultado fue: None en 2022-11-29 23:15:39.091195-05:00 
+Input: Linea: Linea:  | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: OPEN_TAG en el valor: <?php, el resultado fue: None en 2022-11-29 23:15:39.091195-05:00 
+Input: Linea: Linea: <?php | Resultado: None | Error: Error sintactico de tipo: NEW en el valor: new | Resultado: None | Error: Error sintactico de tipo: VARIABLE en el valor: $numero, el resultado fue: None en 2022-11-29 23:15:39.092230-05:00 
+Input: Linea: Linea:     $numero =rand(0,100); | Resultado: None | Error: Error sintactico de tipo: ENTERO en el valor: 1 | Resultado: None | Error: Error sintactico de tipo: NOMBRE en el valor: Resultado, el resultado fue: None en 2022-11-29 23:15:39.092230-05:00 
+Input: Linea: Linea:  | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: NOMBRE en el valor: Resultado, el resultado fue: None en 2022-11-29 23:15:39.092230-05:00 
+Input: Linea: Linea:     if($numero > 0 && is_int($numero)){ | Resultado: None | Error: Error sintactico de tipo: LPAREN en el valor: ( | Resultado: None | Error: Error sintactico de tipo: IF en el valor: if, el resultado fue: None en 2022-11-29 23:15:39.093189-05:00 
+Input: Linea: Linea:         echo "<h2> El número random es: $numero</h2>"; | Resultado: None | Error: Error sintactico de tipo: LPAREN en el valor: ( | Resultado: None | Error: Error sintactico de tipo: RPAREN en el valor: ), el resultado fue: None en 2022-11-29 23:15:39.093189-05:00 
+Input: Linea: Linea:         echo "<br>"; | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: ECHO en el valor: echo, el resultado fue: None en 2022-11-29 23:15:39.093189-05:00 
+Input: Linea: Linea:         while($numero > 1){ | Resultado: None | Error: Error sintactico de tipo: COMMA en el valor: , | Resultado: None | Error: Error sintactico de tipo: ECHO en el valor: echo, el resultado fue: None en 2022-11-29 23:15:39.093189-05:00 
+Input: Linea: Linea:             if(($numero%2) == 0 ){ | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: WHILE en el valor: while, el resultado fue: None en 2022-11-29 23:15:39.094186-05:00 
+Input: Linea: Linea:                 $numero = $numero/2;   | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: IF en el valor: if, el resultado fue: None en 2022-11-29 23:15:39.094186-05:00 
+Input: Linea: Linea:             }else{ | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: RPAREN en el valor: ), el resultado fue: None en 2022-11-29 23:15:39.094186-05:00 
+Input: Linea: Linea:                 $numero = ($numero*3)+1; | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: VARIABLE en el valor: $numero, el resultado fue: None en 2022-11-29 23:15:39.095183-05:00 
+Input: Linea: Linea:             } | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: SEMI en el valor: ;, el resultado fue: None en 2022-11-29 23:15:39.095183-05:00 
+Input: Linea: Linea:             echo "<br>"; | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: RBRACE en el valor: }, el resultado fue: None en 2022-11-29 23:15:39.095183-05:00 
+Input: Linea: Linea:             echo "<li>$numeroPrincipal</li>"; | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: VARIABLE en el valor: $numero, el resultado fue: None en 2022-11-29 23:15:39.095183-05:00 
+Input: Linea: Linea:             echo "<br>";  | Resultado: None | Error: Error sintactico de tipo: RPAREN en el valor: ) | Resultado: None | Error: Error sintactico de tipo: RBRACE en el valor: }, el resultado fue: None en 2022-11-29 23:15:39.096181-05:00 
+Input: Linea: Linea:         } | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: ECHO en el valor: echo, el resultado fue: None en 2022-11-29 23:15:39.096181-05:00 
+Input: Linea: Linea:     }else{ | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: ECHO en el valor: echo, el resultado fue: None en 2022-11-29 23:15:39.096181-05:00 
+Input: Linea: Linea:         echo "No has ingresado ningún número o el número no es válido"; | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: ECHO en el valor: echo, el resultado fue: None en 2022-11-29 23:15:39.096181-05:00 
+Input: Linea: Linea:     } | Resultado: None | Error: Error sintactico de tipo: NEW en el valor: new | Resultado: None | Error: Error sintactico de tipo: RBRACE en el valor: }, el resultado fue: None en 2022-11-29 23:15:39.097178-05:00 
+Input: Linea: Linea: ?> | Resultado: None | Error: Error sintactico de tipo: ENTERO en el valor: 1 | Resultado: None | Error: Error sintactico de tipo: RBRACE en el valor: }, el resultado fue: None en 2022-11-29 23:15:39.097178-05:00 
+Input: Linea: Linea: #Script | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: NOMBRE en el valor: Resultado, el resultado fue: None en 2022-11-29 23:15:39.097178-05:00 
+Input: Linea: Linea:  | Resultado: None | Error: Error sintactico: None | Resultado: None | Error: Error sintactico de tipo: OPEN_TAG en el valor: <?php, el resultado fue: None en 2022-11-29 23:15:39.097178-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:57.514748-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:57.514748-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:15:57.514748-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:15:57.514748-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:15:57.514748-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:57.515745-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:15:57.515745-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:57.515745-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:57.515745-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:15:57.515745-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:15:57.515745-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:15:57.515745-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:57.516743-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:57.517741-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:57.517741-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:15:57.517741-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:15:57.517741-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:15:57.517741-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:15:57.517741-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:15:57.517741-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:15:57.518738-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:57.518738-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:57.518738-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:57.518738-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:15:57.518738-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:57.518738-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:15:57.518738-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:57.519735-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:15:57.520733-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:15:57.520733-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:57.520733-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:57.520733-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:15:57.520733-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:57.520733-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:15:57.521729-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:57.521729-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:15:57.521729-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:57.521729-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:57.521729-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:15:57.521729-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:15:57.521729-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:15:57.522727-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:57.522727-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:15:57.522727-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:15:57.522727-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:57.522727-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:57.522727-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:58.932333-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:58.932333-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:15:58.932333-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:15:58.933330-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:15:58.933330-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:58.933330-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:15:58.933330-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:58.933330-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:58.933330-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:15:58.933330-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:15:58.934328-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:15:58.934328-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:15:58.934328-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:15:58.934328-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:58.934328-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:58.934328-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:15:58.934328-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:15:58.935325-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:58.936322-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:15:58.937320-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:15:58.937320-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:58.937320-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:58.937320-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:58.937320-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:15:58.937320-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:15:58.937320-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:58.938317-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:58.938317-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:15:58.938317-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:15:58.938317-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:58.938317-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:58.938317-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:15:58.939320-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:58.939320-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:15:58.939320-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:58.939320-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:15:58.939320-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:58.939320-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:58.939320-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:15:58.940311-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:15:58.940311-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:15:58.940311-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:58.940311-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:15:58.940311-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:15:58.940311-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:58.940311-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:58.941308-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.100161-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.100161-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:15:59.100161-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:15:59.100161-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:15:59.100161-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.101159-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:15:59.101159-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.101159-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.101159-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:15:59.101159-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.101159-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.101159-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.102156-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.103153-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:15:59.103153-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:15:59.103153-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:15:59.103153-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:15:59.103153-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:15:59.103153-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:15:59.103153-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.104151-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:15:59.105148-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.106146-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.106146-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:15:59.106146-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.106146-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:15:59.106146-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.106146-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:15:59.107143-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.107143-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.107143-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:15:59.107143-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:15:59.107143-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:15:59.107143-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.108140-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:15:59.108140-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:15:59.108140-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.108140-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.108140-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.272562-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.273560-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:15:59.273560-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:15:59.273560-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:15:59.273560-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.273560-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:15:59.273560-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.273560-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.274557-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:15:59.275554-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:15:59.276552-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.277549-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:15:59.277549-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:15:59.277549-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.277549-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.277549-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.277549-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:15:59.277549-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:15:59.278551-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.278551-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.278551-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:15:59.278551-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:15:59.278551-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.278551-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.279544-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:15:59.279544-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.279544-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:15:59.279544-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.279544-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:15:59.279544-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.279544-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.280541-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:15:59.280541-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:15:59.280541-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:15:59.280541-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.280541-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:15:59.280541-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:15:59.280541-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.281538-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.281538-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.429301-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.430299-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:15:59.430299-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:15:59.430299-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:15:59.430299-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.430299-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:15:59.430299-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.430299-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.431327-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:15:59.431327-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.431327-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.431327-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:15:59.431327-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:15:59.431327-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.431327-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:15:59.432323-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.433321-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:15:59.434318-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.434318-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:15:59.434318-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:15:59.434318-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.434318-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.434318-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.434318-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:15:59.435314-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:15:59.435314-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.435314-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.435314-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:15:59.435314-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:15:59.435314-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.436312-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.437312-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:15:59.437312-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:15:59.437312-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:15:59.437312-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.437312-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:15:59.437312-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:15:59.438277-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.438277-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.438277-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.601410-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.601410-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:15:59.601410-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:15:59.601410-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:15:59.602408-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.602408-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:15:59.602408-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.602408-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.602408-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:15:59.602408-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.602408-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:15:59.603405-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:15:59.603405-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:15:59.603405-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.603405-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.603405-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:15:59.603405-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:15:59.603405-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:15:59.604402-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:15:59.605400-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.606397-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:15:59.607394-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:15:59.607394-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:15:59.607394-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:15:59.607394-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:15:59.607394-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.607394-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:15:59.608391-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:15:59.608391-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:15:59.608391-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.608391-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:15:59.608391-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:15:59.608391-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:15:59.608391-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:15:59.609388-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:15:59.609388-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:15:59.609388-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:15:59.609388-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:15:59.609388-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:15:59.609388-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:18:02.372493-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:18:02.373522-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:18:02.373522-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:18:02.373522-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:18:02.373522-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:18:02.373522-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:18:02.374510-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:18:02.374510-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:18:02.374510-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:18:02.374510-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:18:02.374510-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:18:02.374510-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:18:02.374510-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:18:02.375526-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:18:02.376509-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:18:02.376509-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:18:02.376509-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:18:02.376509-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:18:02.376509-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:18:02.376509-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:18:02.376509-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:18:02.377508-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:18:02.377508-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:18:02.377508-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:18:02.377508-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:18:02.377508-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:18:02.377508-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:18:02.378478-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:18:02.379504-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:18:02.379504-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:18:02.379504-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:18:02.379504-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:18:02.379504-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:18:02.379504-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:18:02.379504-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:18:02.380500-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:18:02.380500-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:18:02.380500-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:18:02.380500-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:18:02.380500-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:18:02.380500-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:18:02.380500-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:18:02.381501-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:18:02.381501-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:18:02.381501-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:18:02.381501-05:00 
+Input: //Crea la pila, el resultado fue: None en 2022-11-29 23:19:58.272512-05:00 
+Input:   $stack = new SplStack();, el resultado fue: None en 2022-11-29 23:19:58.273510-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.273510-05:00 
+Input:   //Añade elementos, el resultado fue: None en 2022-11-29 23:19:58.273510-05:00 
+Input:   $stack->push('1');, el resultado fue: None en 2022-11-29 23:19:58.273510-05:00 
+Input:   $stack->push('2');, el resultado fue: None en 2022-11-29 23:19:58.273510-05:00 
+Input:   $stack->push('3');, el resultado fue: None en 2022-11-29 23:19:58.274471-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.274471-05:00 
+Input:   //Muestra el número de elementos de la pila (3), el resultado fue: None en 2022-11-29 23:19:58.274471-05:00 
+Input:   echo $stack->count();, el resultado fue: None en 2022-11-29 23:19:58.274471-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.274471-05:00 
+Input:   //Situa el puntero al final de la cola, el resultado fue: None en 2022-11-29 23:19:58.274471-05:00 
+Input:   $stack->rewind();, el resultado fue: None en 2022-11-29 23:19:58.275471-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.275471-05:00 
+Input:   //Muestra los elementos (3, 2, 1), el resultado fue: None en 2022-11-29 23:19:58.275471-05:00 
+Input:   while( $stack->valid() ), el resultado fue: None en 2022-11-29 23:19:58.275471-05:00 
+Input:   {, el resultado fue: None en 2022-11-29 23:19:58.275471-05:00 
+Input:     echo $stack->current(), PHP_EOL;, el resultado fue: None en 2022-11-29 23:19:58.275471-05:00 
+Input:     $stack->next();, el resultado fue: None en 2022-11-29 23:19:58.276468-05:00 
+Input:   }, el resultado fue: None en 2022-11-29 23:19:58.276468-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.276468-05:00 
+Input:    //Saca de la pila el último elemento y lo muestra, el resultado fue: None en 2022-11-29 23:19:58.276468-05:00 
+Input:    echo $stack->pop();, el resultado fue: None en 2022-11-29 23:19:58.276468-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.276468-05:00 
+Input:   //Situa el puntero al final de la cola, el resultado fue: None en 2022-11-29 23:19:58.276468-05:00 
+Input:    $stack->rewind();, el resultado fue: None en 2022-11-29 23:19:58.277465-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.277465-05:00 
+Input:    //Muestra el número de elementos de la pila (2), el resultado fue: None en 2022-11-29 23:19:58.277465-05:00 
+Input:     echo $stack->count();, el resultado fue: None en 2022-11-29 23:19:58.277465-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:19:58.277465-05:00 
+Input:   //Muestra los elementos (2, 1), el resultado fue: None en 2022-11-29 23:19:58.277465-05:00 
+Input:    while( $stack->valid() ), el resultado fue: None en 2022-11-29 23:19:58.278462-05:00 
+Input:    {, el resultado fue: None en 2022-11-29 23:19:58.278462-05:00 
+Input:     echo $stack->current(), PHP_EOL;, el resultado fue: None en 2022-11-29 23:19:58.278462-05:00 
+Input:     $stack->next();, el resultado fue: None en 2022-11-29 23:19:58.278462-05:00 
+Input:    }, el resultado fue: None en 2022-11-29 23:19:58.278462-05:00 
+Input:   , el resultado fue: None en 2022-11-29 23:19:58.278462-05:00 
+Input: array_pop($prueba);, el resultado fue: None en 2022-11-29 23:19:58.278462-05:00 
+Input: array_push($prueba, "test");, el resultado fue: None en 2022-11-29 23:19:58.279459-05:00 
+Input: var_dump($prueba);, el resultado fue: None en 2022-11-29 23:19:58.279459-05:00 
+Input: var_dump(array_values($prueba));, el resultado fue: None en 2022-11-29 23:19:58.279459-05:00 
+Input: $key = array_search("a", $code);, el resultado fue: None en 2022-11-29 23:19:58.279459-05:00 
+Input: $bigArray = array_values( $bigArray );, el resultado fue: None en 2022-11-29 23:19:58.279459-05:00 
+Input: print_r( array_values( $a ));, el resultado fue: None en 2022-11-29 23:19:58.279459-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:21:13.946028-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:21:13.946028-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:21:13.946028-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:21:13.946028-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:21:13.947072-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:21:13.947072-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:21:13.947072-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:21:13.947072-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:21:13.947072-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:21:13.947072-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:21:13.948025-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:21:13.948025-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:21:13.948025-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:21:13.948025-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:21:13.948025-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:21:13.948025-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:21:13.948025-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:21:13.949053-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:21:13.949053-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:21:13.949053-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:21:13.949053-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:21:13.949053-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:21:13.949053-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:21:13.949053-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:21:13.950048-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:21:13.951049-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:21:13.952042-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:21:13.953040-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:21:13.953040-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:21:13.953040-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:21:13.953040-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:21:13.953040-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:21:13.954006-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:21:13.954006-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:21:13.954006-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:21:13.954006-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:21:13.954006-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:21:13.954006-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:21:13.954006-05:00 
+Input: #Script, el resultado fue: None en 2022-11-29 23:23:08.909625-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:08.909625-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:08.909625-05:00 
+Input:     $numero =rand(0,100);, el resultado fue: None en 2022-11-29 23:23:08.910594-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:08.910594-05:00 
+Input:     if($numero > 0 && is_int($numero)){, el resultado fue: None en 2022-11-29 23:23:08.910594-05:00 
+Input:         echo "<h2> El número random es: $numero</h2>";, el resultado fue: None en 2022-11-29 23:23:08.910594-05:00 
+Input:         echo "<br>";, el resultado fue: None en 2022-11-29 23:23:08.910594-05:00 
+Input:         while($numero > 1){, el resultado fue: None en 2022-11-29 23:23:08.910594-05:00 
+Input:             if(($numero%2) == 0 ){, el resultado fue: None en 2022-11-29 23:23:08.910594-05:00 
+Input:                 $numero = $numero/2;  , el resultado fue: None en 2022-11-29 23:23:08.911591-05:00 
+Input:             }else{, el resultado fue: None en 2022-11-29 23:23:08.911591-05:00 
+Input:                 $numero = ($numero*3)+1;, el resultado fue: None en 2022-11-29 23:23:08.911591-05:00 
+Input:             }, el resultado fue: None en 2022-11-29 23:23:08.911591-05:00 
+Input:             echo "<br>";, el resultado fue: None en 2022-11-29 23:23:08.911591-05:00 
+Input:             echo "<li>$numeroPrincipal</li>";, el resultado fue: None en 2022-11-29 23:23:08.911591-05:00 
+Input:             echo "<br>"; , el resultado fue: None en 2022-11-29 23:23:08.911591-05:00 
+Input:         }, el resultado fue: None en 2022-11-29 23:23:08.912589-05:00 
+Input:     }else{, el resultado fue: None en 2022-11-29 23:23:08.912589-05:00 
+Input:         echo "No has ingresado ningún número o el número no es válido";, el resultado fue: None en 2022-11-29 23:23:08.912589-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:23:08.912589-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:08.912589-05:00 
+Input: #Script, el resultado fue: None en 2022-11-29 23:23:09.537301-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:09.538299-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:09.538299-05:00 
+Input:     $numero =rand(0,100);, el resultado fue: None en 2022-11-29 23:23:09.538299-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:09.538299-05:00 
+Input:     if($numero > 0 && is_int($numero)){, el resultado fue: None en 2022-11-29 23:23:09.538299-05:00 
+Input:         echo "<h2> El número random es: $numero</h2>";, el resultado fue: None en 2022-11-29 23:23:09.538299-05:00 
+Input:         echo "<br>";, el resultado fue: None en 2022-11-29 23:23:09.539295-05:00 
+Input:         while($numero > 1){, el resultado fue: None en 2022-11-29 23:23:09.539295-05:00 
+Input:             if(($numero%2) == 0 ){, el resultado fue: None en 2022-11-29 23:23:09.539295-05:00 
+Input:                 $numero = $numero/2;  , el resultado fue: None en 2022-11-29 23:23:09.539295-05:00 
+Input:             }else{, el resultado fue: None en 2022-11-29 23:23:09.539295-05:00 
+Input:                 $numero = ($numero*3)+1;, el resultado fue: None en 2022-11-29 23:23:09.539295-05:00 
+Input:             }, el resultado fue: None en 2022-11-29 23:23:09.539295-05:00 
+Input:             echo "<br>";, el resultado fue: None en 2022-11-29 23:23:09.540293-05:00 
+Input:             echo "<li>$numeroPrincipal</li>";, el resultado fue: None en 2022-11-29 23:23:09.540293-05:00 
+Input:             echo "<br>"; , el resultado fue: None en 2022-11-29 23:23:09.540293-05:00 
+Input:         }, el resultado fue: None en 2022-11-29 23:23:09.540293-05:00 
+Input:     }else{, el resultado fue: None en 2022-11-29 23:23:09.540293-05:00 
+Input:         echo "No has ingresado ningún número o el número no es válido";, el resultado fue: None en 2022-11-29 23:23:09.540293-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:23:09.540293-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:09.541290-05:00 
+Input: #Script, el resultado fue: None en 2022-11-29 23:23:13.496056-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:13.496056-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:13.496056-05:00 
+Input:     $numero =rand(0,100);, el resultado fue: None en 2022-11-29 23:23:13.496056-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:13.496056-05:00 
+Input:     if($numero > 0 && is_int($numero)){, el resultado fue: None en 2022-11-29 23:23:13.497053-05:00 
+Input:         echo "<h2> El número random es: $numero</h2>";, el resultado fue: None en 2022-11-29 23:23:13.497053-05:00 
+Input:         echo "<br>";, el resultado fue: None en 2022-11-29 23:23:13.497053-05:00 
+Input:         while($numero > 1){, el resultado fue: None en 2022-11-29 23:23:13.497053-05:00 
+Input:             if(($numero%2) == 0 ){, el resultado fue: None en 2022-11-29 23:23:13.497053-05:00 
+Input:                 $numero = $numero/2;  , el resultado fue: None en 2022-11-29 23:23:13.498050-05:00 
+Input:             }else{, el resultado fue: None en 2022-11-29 23:23:13.498050-05:00 
+Input:                 $numero = ($numero*3)+1;, el resultado fue: None en 2022-11-29 23:23:13.498050-05:00 
+Input:             }, el resultado fue: None en 2022-11-29 23:23:13.498050-05:00 
+Input:             echo "<br>";, el resultado fue: None en 2022-11-29 23:23:13.498050-05:00 
+Input:             echo "<li>$numeroPrincipal</li>";, el resultado fue: None en 2022-11-29 23:23:13.498050-05:00 
+Input:             echo "<br>"; , el resultado fue: None en 2022-11-29 23:23:13.499048-05:00 
+Input:         }, el resultado fue: None en 2022-11-29 23:23:13.499048-05:00 
+Input:     }else{, el resultado fue: None en 2022-11-29 23:23:13.499048-05:00 
+Input:         echo "No has ingresado ningún número o el número no es válido";, el resultado fue: None en 2022-11-29 23:23:13.499048-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:23:13.499048-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:13.499048-05:00 
+Input: #if/else, do-while, while, funciones, colas, pilas, arrays, for, for each, try-catch, el resultado fue: None en 2022-11-29 23:23:38.685545-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:38.686543-05:00 
+Input: function inverso($x) {, el resultado fue: None en 2022-11-29 23:23:38.686543-05:00 
+Input:     if (!$x) {, el resultado fue: None en 2022-11-29 23:23:38.686543-05:00 
+Input:         throw new Exception('División por cero.');, el resultado fue: None en 2022-11-29 23:23:38.686543-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:23:38.686543-05:00 
+Input:     return 1/$x;, el resultado fue: None en 2022-11-29 23:23:38.686543-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:23:38.686543-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:38.687539-05:00 
+Input: try {, el resultado fue: None en 2022-11-29 23:23:38.687539-05:00 
+Input:     echo inverso(5) . "\n";, el resultado fue: None en 2022-11-29 23:23:38.687539-05:00 
+Input:     echo inverso(0) . "\n";, el resultado fue: None en 2022-11-29 23:23:38.687539-05:00 
+Input: } catch (Exception $e) {, el resultado fue: None en 2022-11-29 23:23:38.687539-05:00 
+Input:     echo 'Excepción capturada: ',  $e->getMessage(), "\n";, el resultado fue: None en 2022-11-29 23:23:38.687539-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: // Continuar la ejecución, el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: echo 'Hola Mundo\n';, el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:38.688537-05:00 
+Input: if ($a > $b) {, el resultado fue: None en 2022-11-29 23:23:38.689534-05:00 
+Input:     echo "a es mayor que b";, el resultado fue: None en 2022-11-29 23:23:38.689534-05:00 
+Input: } elseif ($a == $b) {, el resultado fue: None en 2022-11-29 23:23:38.689534-05:00 
+Input:     echo "a es igual que b";, el resultado fue: None en 2022-11-29 23:23:38.689534-05:00 
+Input: } else {, el resultado fue: None en 2022-11-29 23:23:38.689534-05:00 
+Input:     echo "a es menor que b";, el resultado fue: None en 2022-11-29 23:23:38.689534-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:23:38.690532-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:38.690532-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:38.690532-05:00 
+Input: $i = 0;, el resultado fue: None en 2022-11-29 23:23:38.690532-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:23:38.690532-05:00 
+Input:     echo $i;, el resultado fue: None en 2022-11-29 23:23:38.690532-05:00 
+Input: } while ($i > 0);, el resultado fue: None en 2022-11-29 23:23:38.691529-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:38.691529-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:38.691529-05:00 
+Input: do {, el resultado fue: None en 2022-11-29 23:23:38.691529-05:00 
+Input:     if ($i < 5) {, el resultado fue: None en 2022-11-29 23:23:38.691529-05:00 
+Input:         echo "i is not big enough";, el resultado fue: None en 2022-11-29 23:23:38.691529-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:23:38.691529-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:23:38.692526-05:00 
+Input:     $i *= $factor;, el resultado fue: None en 2022-11-29 23:23:38.692526-05:00 
+Input:     if ($i < $minimum_limit) {, el resultado fue: None en 2022-11-29 23:23:38.692526-05:00 
+Input:         break;, el resultado fue: None en 2022-11-29 23:23:38.692526-05:00 
+Input:     }, el resultado fue: None en 2022-11-29 23:23:38.692526-05:00 
+Input:    echo "i is ok";, el resultado fue: None en 2022-11-29 23:23:38.692526-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:38.692526-05:00 
+Input:     /* process i */, el resultado fue: None en 2022-11-29 23:23:38.693524-05:00 
+Input: , el resultado fue: None en 2022-11-29 23:23:38.693524-05:00 
+Input: } while (0);, el resultado fue: None en 2022-11-29 23:23:38.693524-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:38.693524-05:00 
+Input: <?php, el resultado fue: None en 2022-11-29 23:23:38.693524-05:00 
+Input: $array = array(1, 2, 3, 4);, el resultado fue: None en 2022-11-29 23:23:38.693524-05:00 
+Input: foreach ($array as $valor) {, el resultado fue: None en 2022-11-29 23:23:38.693524-05:00 
+Input:     $valor = $valor * 2;, el resultado fue: None en 2022-11-29 23:23:38.694521-05:00 
+Input: }, el resultado fue: None en 2022-11-29 23:23:38.694521-05:00 
+Input: // $array ahora es array(2, 4, 6, 8), el resultado fue: None en 2022-11-29 23:23:38.694521-05:00 
+Input: unset($valor); // rompe la referencia con el último elemento, el resultado fue: None en 2022-11-29 23:23:38.694521-05:00 
+Input: ?>, el resultado fue: None en 2022-11-29 23:23:38.694521-05:00 
