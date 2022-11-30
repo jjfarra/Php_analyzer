@@ -1,6 +1,6 @@
 #import analyzers.lexico as lex
 #import analyzers.sintactico
-import analyzers.sintactico2
+import analyzers.sintactico
 #while True:
 #  try:
 #    s = input('calc > ')
