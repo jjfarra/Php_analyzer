@@ -521,6 +521,7 @@ def p_bpila(p):  #Keyla Franco
 def p_addpila(p):  #kEYLA fRANCO
   '''
     addpila : VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
+          | VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
   '''
 
 def p_poppila(p): #Keyla Franco
@@ -544,12 +545,12 @@ def p_funcionesCP_semi(p): #FRanco Keyla, Zaruma Ricardo
 def p_addcola(p): #Ricardo Zaruma
     '''
       addcola : VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-             
+            | VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
    '''
 def p_minuscola(p): #Ricardo Zaruma
   '''
       minuscola : VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-             
+             | VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
    '''
   
 
@@ -564,7 +565,9 @@ def p_arraypop(p): #Joby Farra
   '''arraypop : ARRAY_POP LPAREN VARIABLE RPAREN SEMI'''
 
 def p_arraypush(p):#Joby Farra
-  '''arraypush : ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI'''
+  '''arraypush : ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+             | ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+  '''
 
 def p_arrayvalues(p):#Joby Farra
   '''arrayvalues : ARRAY_VALUES LPAREN VARIABLE RPAREN'''

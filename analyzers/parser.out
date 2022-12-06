@@ -251,52 +251,56 @@ Rule 245   aumentoCasting -> VARIABLE operadores tipoDato condicion_booleana val
 Rule 246   aumentoCasting -> VARIABLE incrementos_mat VARIABLE SEMI
 Rule 247   bpila -> VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
 Rule 248   addpila -> VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-Rule 249   poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI
-Rule 250   funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN
-Rule 251   funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN
-Rule 252   funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN
-Rule 253   funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN
-Rule 254   funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN
-Rule 255   funcionesCP_semi -> funcionesCP
-Rule 256   funcionesCP_semi -> funcionesCP SEMI
-Rule 257   addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-Rule 258   minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-Rule 259   constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-Rule 260   constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
-Rule 261   arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-Rule 262   arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-Rule 263   arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN
-Rule 264   arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
+Rule 249   addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+Rule 250   poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI
+Rule 251   funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN
+Rule 252   funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN
+Rule 253   funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN
+Rule 254   funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN
+Rule 255   funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN
+Rule 256   funcionesCP_semi -> funcionesCP
+Rule 257   funcionesCP_semi -> funcionesCP SEMI
+Rule 258   addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+Rule 259   addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+Rule 260   minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+Rule 261   minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+Rule 262   constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+Rule 263   constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+Rule 264   arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+Rule 265   arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+Rule 266   arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+Rule 267   arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN
+Rule 268   arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
 
 Terminals, with rules where they appear
 
 AND                  : 140
-ARRAY                : 183 184 236 260
-ARRAY_POP            : 261
-ARRAY_PUSH           : 262
-ARRAY_SEARCH         : 264
-ARRAY_VALUES         : 263
+ARRAY                : 183 184 236 263
+ARRAY_POP            : 264
+ARRAY_PUSH           : 265 266
+ARRAY_SEARCH         : 268
+ARRAY_VALUES         : 267
 AS                   : 112
 BOOL                 : 232
 BOOLEAN              : 233
 BOOLEANO             : 56 181
 BREAK                : 121 122 197
-CADENA               : 55 120 189 191 225 225 226 227 228 228 230 259
+CADENA               : 55 120 189 191 225 225 226 227 228 228 230 262
 CASE                 : 119 120
 CATCH                : 124
 CLOSE_TAG            : 214 216
 COLON                : 114 119 120 168 202
 COMENTARIOS          : 193
-COMMA                : 71 165 172 185 191 259 260 262 264
+COMMA                : 71 165 172 185 191 262 263 265 266 268
 CONCAT               : 225 226 229 230 230
 CONCAT_EQUAL         : 227 228
 CONTINUE             : 199
-COUNT                : 252
-CURRENT              : 254
+COUNT                : 253
+CURRENT              : 255
 DECIMAL              : 58
 DEFAULT              : 198
-DEFINE               : 259 260
-DEQUEUE              : 258
+DEFINE               : 262 263
+DEQUEUE              : 260 261
 DIVISION             : 129 201
 DIV_EQUAL            : 139
 DO                   : 117
@@ -305,12 +309,12 @@ DOUBLE               : 234
 ECHO                 : 59 63 64 65 67 69 71 72
 ELSE                 : 81
 ELSEIF               : 80
-ENQUEUE              : 257
+ENQUEUE              : 258 259
 ENTERO               : 57 63 119 172 172
 EQUALS               : 36 39 40 41 42 43 45 47 48 49 50 108 109 188 240 243 244 247
 EXCEPTION            : 124
 EXIT                 : 196
-FLECHA               : 248 249 250 251 252 253 254 257 258
+FLECHA               : 248 249 250 251 252 253 254 255 258 259 260 261
 FLOAT                : 235
 FOR                  : 99
 FOREACH              : 112
@@ -329,36 +333,36 @@ IS_NOT_IDENTICAL     : 146
 IS_SMALLER_OR_EQUAL  : 133
 LBRACE               : 78 80 81 102 103 113 117 118 123 168 170 211 212
 LBRACKET             : 63 208 209
-LPAREN               : 61 73 74 75 76 77 78 79 80 92 93 99 112 113 114 115 118 124 151 152 153 154 155 156 164 168 169 170 171 172 183 184 188 189 190 191 192 192 203 204 205 206 240 241 247 248 249 250 251 252 253 254 257 258 259 260 261 262 263 264
+LPAREN               : 61 73 74 75 76 77 78 79 80 92 93 99 112 113 114 115 118 124 151 152 153 154 155 156 164 168 169 170 171 172 183 184 188 189 190 191 192 192 203 204 205 206 240 241 247 248 249 250 251 252 253 254 255 258 259 260 261 262 263 264 265 266 267 268
 MINUS_EQUAL          : 135
 MODULO               : 130
 MOD_EQUAL            : 136
 MULTIPLICACION       : 128
 MUL_EQUAL            : 137
 NEW                  : 188 247
-NEXT                 : 253
-NOMBRE               : 63 71 164 168 169 170 171 191 192 192 195 200 201 202 203 204 260
+NEXT                 : 254
+NOMBRE               : 63 71 164 168 169 170 171 191 192 192 195 200 201 202 203 204 263
 NULL                 : 179
 OBJECT               : 237
 OPEN_TAG             : 214 215
 OR                   : 141
 PLUS_EQUAL           : 138
-POP                  : 249
+POP                  : 250
 PRINT                : 60 61 62 66 68 70
 PRINT_R              : 75 76 77
 PRIVATE              : 174
 PROTECTED            : 175
 PUBLIC               : 173
-PUSH                 : 248
+PUSH                 : 248 249
 RAND                 : 172
 RBRACE               : 78 80 81 102 103 113 117 118 123 168 170 182 211 213
 RBRACKET             : 63 208 210
 READLINE             : 189 190
 RESTA                : 106 106 107 107 109 111 111 127
 RETURN               : 178 179 180 181
-REWIND               : 250
-RPAREN               : 61 73 74 75 76 77 78 79 80 92 93 99 112 113 114 115 118 124 151 152 153 154 155 156 164 168 169 170 171 172 183 184 188 189 190 191 192 192 203 204 205 207 240 241 247 248 249 250 251 252 253 254 257 258 259 260 261 262 263 264
-SEMI                 : 36 45 48 49 50 59 60 61 63 65 66 67 68 71 73 74 75 76 77 99 100 110 111 115 121 122 171 172 178 179 180 181 188 189 190 191 192 195 196 197 198 199 225 226 227 228 229 230 240 241 242 243 244 246 247 248 249 256 257 258 259 260 261 262
+REWIND               : 251
+RPAREN               : 61 73 74 75 76 77 78 79 80 92 93 99 112 113 114 115 118 124 151 152 153 154 155 156 164 168 169 170 171 172 183 184 188 189 190 191 192 192 203 204 205 207 240 241 247 248 249 250 251 252 253 254 255 258 259 260 261 262 263 264 265 266 267 268
+SEMI                 : 36 45 48 49 50 59 60 61 63 65 66 67 68 71 73 74 75 76 77 99 100 110 111 115 121 122 171 172 178 179 180 181 188 189 190 191 192 195 196 197 198 199 225 226 227 228 229 230 240 241 242 243 244 246 247 248 249 250 257 258 259 260 261 262 263 264 265 266
 SMALLER              : 131 200 201
 SPLQUEUE             : 188
 SPLSTACK             : 247
@@ -368,9 +372,9 @@ SUMA                 : 104 104 105 105 108 110 110 126
 SWITCH               : 118
 TRIM                 : 192
 TRY                  : 123
-VALID                : 251
+VALID                : 252
 VAR                  : 37
-VARIABLE             : 36 39 40 41 42 43 45 47 48 49 50 67 68 73 76 86 86 88 89 89 91 92 93 97 104 105 106 107 108 109 110 111 112 112 118 124 149 149 153 153 154 155 156 162 180 188 204 226 227 229 229 230 230 240 240 241 242 243 243 244 244 244 245 246 246 247 248 249 250 251 252 253 254 257 258 261 262 263 264
+VARIABLE             : 36 39 40 41 42 43 45 47 48 49 50 67 68 73 76 86 86 88 89 89 91 92 93 97 104 105 106 107 108 109 110 111 112 112 118 124 149 149 153 153 154 155 156 162 180 188 204 226 227 229 229 230 230 240 240 241 242 243 243 244 244 244 245 246 246 247 248 249 249 250 251 252 253 254 255 258 259 259 260 261 261 264 265 266 266 267 268
 VAR_DUMP             : 73 74
 VOID                 : 168
 WHILE                : 113 114 115
@@ -424,7 +428,7 @@ funcion_blank        : 159 160
 funcion_nparams      : 157 158
 funcion_void         : 161
 funciones            : 3 221
-funcionesCP          : 98 255 256
+funcionesCP          : 98 256 257
 funcionesCP_semi     : 29 69 70 71
 imprimir             : 1
 incrementOp          : 11
@@ -449,7 +453,7 @@ stc_bloque           : 100 102 113 114
 stc_bloque_def       : 99 112 123 124 164 169
 tipoDato             : 51 155 156 156 242 243 245
 tiposCast            : 240 241
-valor                : 36 59 60 61 87 87 88 90 90 91 92 92 93 93 147 147 148 151 151 152 154 154 185 186 203 245 248 257 258 259 262 264
+valor                : 36 59 60 61 87 87 88 90 90 91 92 92 93 93 147 147 148 151 151 152 154 154 185 186 203 245 248 258 260 262 265 268
 
 Parsing method: LALR
 
@@ -530,8 +534,8 @@ state 0
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -592,14 +596,18 @@ state 0
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -617,11 +625,11 @@ state 0
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
     (187) empty -> .
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for RBRACE resolved as shift
   ! reduce/reduce conflict for $end resolved using rule 116 (bwhile -> .)
@@ -1104,9 +1112,9 @@ state 37
     (148) operaciones_mat -> . valor operadores operaciones_mat
     (149) operaciones_mat -> . VARIABLE operadores VARIABLE
     (150) operaciones_mat -> . operaciones_mat_par
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (54) tipoDato -> . numero
     (55) tipoDato -> . CADENA
     (56) tipoDato -> . BOOLEANO
@@ -1118,11 +1126,11 @@ state 37
     (154) operaciones_mat_par -> . LPAREN VARIABLE operadores valor RPAREN operadores valor
     (155) operaciones_mat_par -> . LPAREN VARIABLE operadores tipoDato RPAREN
     (156) operaciones_mat_par -> . LPAREN VARIABLE operadores tipoDato RPAREN operadores tipoDato
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
@@ -1167,8 +1175,8 @@ state 38
     (148) operaciones_mat -> . valor operadores operaciones_mat
     (149) operaciones_mat -> . VARIABLE operadores VARIABLE
     (150) operaciones_mat -> . operaciones_mat_par
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (54) tipoDato -> . numero
     (55) tipoDato -> . CADENA
     (56) tipoDato -> . BOOLEANO
@@ -1180,11 +1188,11 @@ state 38
     (154) operaciones_mat_par -> . LPAREN VARIABLE operadores valor RPAREN operadores valor
     (155) operaciones_mat_par -> . LPAREN VARIABLE operadores tipoDato RPAREN
     (156) operaciones_mat_par -> . LPAREN VARIABLE operadores tipoDato RPAREN operadores tipoDato
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
@@ -1301,20 +1309,23 @@ state 44
     (229) bconcat -> VARIABLE . CONCAT VARIABLE SEMI
     (230) bconcat -> VARIABLE . CONCAT CADENA CONCAT VARIABLE SEMI
     (248) addpila -> VARIABLE . FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> VARIABLE . FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> VARIABLE . FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (249) poppila -> VARIABLE . FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> VARIABLE . FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> VARIABLE . FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> VARIABLE . FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> VARIABLE . FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> VARIABLE . FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (250) poppila -> VARIABLE . FLECHA POP LPAREN RPAREN SEMI
     (50) asignacion_array -> VARIABLE . EQUALS array_def SEMI
     (242) aumentoCasting -> VARIABLE . incrementos_mat tipoDato SEMI
     (243) aumentoCasting -> VARIABLE . EQUALS VARIABLE operadores tipoDato SEMI
     (244) aumentoCasting -> VARIABLE . EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
     (245) aumentoCasting -> VARIABLE . operadores tipoDato condicion_booleana valor
     (246) aumentoCasting -> VARIABLE . incrementos_mat VARIABLE SEMI
-    (250) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
     (135) incrementos_mat -> . MINUS_EQUAL
     (136) incrementos_mat -> . MOD_EQUAL
     (137) incrementos_mat -> . MUL_EQUAL
@@ -1517,8 +1528,8 @@ state 53
 
 state 54
 
-    (259) constante -> DEFINE . LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> DEFINE . LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> DEFINE . LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> DEFINE . LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
 
     LPAREN          shift and go to state 154
 
@@ -1836,29 +1847,30 @@ state 81
 
 state 82
 
-    (255) funcionesCP_semi -> funcionesCP .
-    (256) funcionesCP_semi -> funcionesCP . SEMI
+    (256) funcionesCP_semi -> funcionesCP .
+    (257) funcionesCP_semi -> funcionesCP . SEMI
 
   ! shift/reduce conflict for SEMI resolved as shift
-    $end            reduce using rule 255 (funcionesCP_semi -> funcionesCP .)
-    COMMA           reduce using rule 255 (funcionesCP_semi -> funcionesCP .)
-    RBRACE          reduce using rule 255 (funcionesCP_semi -> funcionesCP .)
-    BREAK           reduce using rule 255 (funcionesCP_semi -> funcionesCP .)
+    $end            reduce using rule 256 (funcionesCP_semi -> funcionesCP .)
+    COMMA           reduce using rule 256 (funcionesCP_semi -> funcionesCP .)
+    RBRACE          reduce using rule 256 (funcionesCP_semi -> funcionesCP .)
+    BREAK           reduce using rule 256 (funcionesCP_semi -> funcionesCP .)
     SEMI            shift and go to state 197
 
-  ! SEMI            [ reduce using rule 255 (funcionesCP_semi -> funcionesCP .) ]
+  ! SEMI            [ reduce using rule 256 (funcionesCP_semi -> funcionesCP .) ]
 
 
 state 83
 
-    (261) arraypop -> ARRAY_POP . LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> ARRAY_POP . LPAREN VARIABLE RPAREN SEMI
 
     LPAREN          shift and go to state 198
 
 
 state 84
 
-    (262) arraypush -> ARRAY_PUSH . LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (265) arraypush -> ARRAY_PUSH . LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> ARRAY_PUSH . LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
 
     LPAREN          shift and go to state 199
 
@@ -2029,14 +2041,14 @@ state 97
     (229) bconcat -> VARIABLE . CONCAT VARIABLE SEMI
     (230) bconcat -> VARIABLE . CONCAT CADENA CONCAT VARIABLE SEMI
     (149) operaciones_mat -> VARIABLE . operadores VARIABLE
-    (249) poppila -> VARIABLE . FLECHA POP LPAREN RPAREN SEMI
+    (250) poppila -> VARIABLE . FLECHA POP LPAREN RPAREN SEMI
     (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
     (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
-    (250) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
     (126) operadores -> . SUMA
     (127) operadores -> . RESTA
     (128) operadores -> . MULTIPLICACION
@@ -2415,11 +2427,11 @@ state 113
     (149) operaciones_mat -> VARIABLE . operadores VARIABLE
     (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
     (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
-    (250) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
     (126) operadores -> . SUMA
     (127) operadores -> . RESTA
     (128) operadores -> . MULTIPLICACION
@@ -2637,8 +2649,8 @@ state 129
     (149) operaciones_mat -> . VARIABLE operadores VARIABLE
     (150) operaciones_mat -> . operaciones_mat_par
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (263) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
-    (264) arraysearch -> . ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
+    (267) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
+    (268) arraysearch -> . ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
     (183) array_def -> . ARRAY LPAREN RPAREN
     (184) array_def -> . ARRAY LPAREN array_elmnt RPAREN
     (54) tipoDato -> . numero
@@ -2732,14 +2744,17 @@ state 133
 state 134
 
     (248) addpila -> VARIABLE FLECHA . PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> VARIABLE FLECHA . ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> VARIABLE FLECHA . DEQUEUE LPAREN valor RPAREN SEMI
-    (249) poppila -> VARIABLE FLECHA . POP LPAREN RPAREN SEMI
-    (250) funcionesCP -> VARIABLE FLECHA . REWIND LPAREN RPAREN
-    (251) funcionesCP -> VARIABLE FLECHA . VALID LPAREN RPAREN
-    (252) funcionesCP -> VARIABLE FLECHA . COUNT LPAREN RPAREN
-    (253) funcionesCP -> VARIABLE FLECHA . NEXT LPAREN RPAREN
-    (254) funcionesCP -> VARIABLE FLECHA . CURRENT LPAREN RPAREN
+    (249) addpila -> VARIABLE FLECHA . PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> VARIABLE FLECHA . ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> VARIABLE FLECHA . ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> VARIABLE FLECHA . DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> VARIABLE FLECHA . DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (250) poppila -> VARIABLE FLECHA . POP LPAREN RPAREN SEMI
+    (251) funcionesCP -> VARIABLE FLECHA . REWIND LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE FLECHA . VALID LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE FLECHA . COUNT LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE FLECHA . NEXT LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE FLECHA . CURRENT LPAREN RPAREN
 
     PUSH            shift and go to state 250
     ENQUEUE         shift and go to state 251
@@ -2883,7 +2898,7 @@ state 145
 
     (73) imprimir -> VAR_DUMP LPAREN . VARIABLE RPAREN SEMI
     (74) imprimir -> VAR_DUMP LPAREN . arrayvalues RPAREN SEMI
-    (263) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
+    (267) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
 
     VARIABLE        shift and go to state 262
     ARRAY_VALUES    shift and go to state 242
@@ -2895,8 +2910,8 @@ state 146
     (75) imprimir -> PRINT_R LPAREN . arraysearch RPAREN SEMI
     (76) imprimir -> PRINT_R LPAREN . VARIABLE RPAREN SEMI
     (77) imprimir -> PRINT_R LPAREN . arrayvalues RPAREN SEMI
-    (264) arraysearch -> . ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
-    (263) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
+    (268) arraysearch -> . ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
+    (267) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
 
     VARIABLE        shift and go to state 265
     ARRAY_SEARCH    shift and go to state 243
@@ -3056,8 +3071,8 @@ state 153
 
 state 154
 
-    (259) constante -> DEFINE LPAREN . CADENA COMMA valor RPAREN SEMI
-    (260) constante -> DEFINE LPAREN . NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> DEFINE LPAREN . CADENA COMMA valor RPAREN SEMI
+    (263) constante -> DEFINE LPAREN . NOMBRE COMMA ARRAY RPAREN SEMI
 
     CADENA          shift and go to state 269
     NOMBRE          shift and go to state 270
@@ -3150,11 +3165,11 @@ state 162
     (244) aumentoCasting -> . VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
     (245) aumentoCasting -> . VARIABLE operadores tipoDato condicion_booleana valor
     (246) aumentoCasting -> . VARIABLE incrementos_mat VARIABLE SEMI
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
     (54) tipoDato -> . numero
     (55) tipoDato -> . CADENA
     (56) tipoDato -> . BOOLEANO
@@ -3382,8 +3397,8 @@ state 175
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -3444,14 +3459,18 @@ state 175
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -3469,11 +3488,11 @@ state 175
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
     (187) empty -> .
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for RBRACE resolved as shift
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -3775,25 +3794,26 @@ state 196
 
 state 197
 
-    (256) funcionesCP_semi -> funcionesCP SEMI .
+    (257) funcionesCP_semi -> funcionesCP SEMI .
 
-    $end            reduce using rule 256 (funcionesCP_semi -> funcionesCP SEMI .)
-    COMMA           reduce using rule 256 (funcionesCP_semi -> funcionesCP SEMI .)
-    RBRACE          reduce using rule 256 (funcionesCP_semi -> funcionesCP SEMI .)
-    SEMI            reduce using rule 256 (funcionesCP_semi -> funcionesCP SEMI .)
-    BREAK           reduce using rule 256 (funcionesCP_semi -> funcionesCP SEMI .)
+    $end            reduce using rule 257 (funcionesCP_semi -> funcionesCP SEMI .)
+    COMMA           reduce using rule 257 (funcionesCP_semi -> funcionesCP SEMI .)
+    RBRACE          reduce using rule 257 (funcionesCP_semi -> funcionesCP SEMI .)
+    SEMI            reduce using rule 257 (funcionesCP_semi -> funcionesCP SEMI .)
+    BREAK           reduce using rule 257 (funcionesCP_semi -> funcionesCP SEMI .)
 
 
 state 198
 
-    (261) arraypop -> ARRAY_POP LPAREN . VARIABLE RPAREN SEMI
+    (264) arraypop -> ARRAY_POP LPAREN . VARIABLE RPAREN SEMI
 
     VARIABLE        shift and go to state 302
 
 
 state 199
 
-    (262) arraypush -> ARRAY_PUSH LPAREN . VARIABLE COMMA valor RPAREN SEMI
+    (265) arraypush -> ARRAY_PUSH LPAREN . VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> ARRAY_PUSH LPAREN . VARIABLE COMMA VARIABLE RPAREN SEMI
 
     VARIABLE        shift and go to state 303
 
@@ -3833,11 +3853,11 @@ state 201
     (244) aumentoCasting -> . VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
     (245) aumentoCasting -> . VARIABLE operadores tipoDato condicion_booleana valor
     (246) aumentoCasting -> . VARIABLE incrementos_mat VARIABLE SEMI
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
     (54) tipoDato -> . numero
     (55) tipoDato -> . CADENA
     (56) tipoDato -> . BOOLEANO
@@ -3972,12 +3992,12 @@ state 209
 
 state 210
 
-    (249) poppila -> VARIABLE FLECHA . POP LPAREN RPAREN SEMI
-    (250) funcionesCP -> VARIABLE FLECHA . REWIND LPAREN RPAREN
-    (251) funcionesCP -> VARIABLE FLECHA . VALID LPAREN RPAREN
-    (252) funcionesCP -> VARIABLE FLECHA . COUNT LPAREN RPAREN
-    (253) funcionesCP -> VARIABLE FLECHA . NEXT LPAREN RPAREN
-    (254) funcionesCP -> VARIABLE FLECHA . CURRENT LPAREN RPAREN
+    (250) poppila -> VARIABLE FLECHA . POP LPAREN RPAREN SEMI
+    (251) funcionesCP -> VARIABLE FLECHA . REWIND LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE FLECHA . VALID LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE FLECHA . COUNT LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE FLECHA . NEXT LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE FLECHA . CURRENT LPAREN RPAREN
 
     POP             shift and go to state 253
     REWIND          shift and go to state 254
@@ -4129,11 +4149,11 @@ state 219
 
 state 220
 
-    (250) funcionesCP -> VARIABLE FLECHA . REWIND LPAREN RPAREN
-    (251) funcionesCP -> VARIABLE FLECHA . VALID LPAREN RPAREN
-    (252) funcionesCP -> VARIABLE FLECHA . COUNT LPAREN RPAREN
-    (253) funcionesCP -> VARIABLE FLECHA . NEXT LPAREN RPAREN
-    (254) funcionesCP -> VARIABLE FLECHA . CURRENT LPAREN RPAREN
+    (251) funcionesCP -> VARIABLE FLECHA . REWIND LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE FLECHA . VALID LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE FLECHA . COUNT LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE FLECHA . NEXT LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE FLECHA . CURRENT LPAREN RPAREN
 
     REWIND          shift and go to state 254
     VALID           shift and go to state 255
@@ -4482,14 +4502,14 @@ state 241
 
 state 242
 
-    (263) arrayvalues -> ARRAY_VALUES . LPAREN VARIABLE RPAREN
+    (267) arrayvalues -> ARRAY_VALUES . LPAREN VARIABLE RPAREN
 
     LPAREN          shift and go to state 327
 
 
 state 243
 
-    (264) arraysearch -> ARRAY_SEARCH . LPAREN valor COMMA VARIABLE RPAREN
+    (268) arraysearch -> ARRAY_SEARCH . LPAREN valor COMMA VARIABLE RPAREN
 
     LPAREN          shift and go to state 328
 
@@ -4542,62 +4562,65 @@ state 249
 state 250
 
     (248) addpila -> VARIABLE FLECHA PUSH . LPAREN valor RPAREN SEMI
+    (249) addpila -> VARIABLE FLECHA PUSH . LPAREN VARIABLE RPAREN SEMI
 
     LPAREN          shift and go to state 336
 
 
 state 251
 
-    (257) addcola -> VARIABLE FLECHA ENQUEUE . LPAREN valor RPAREN SEMI
+    (258) addcola -> VARIABLE FLECHA ENQUEUE . LPAREN valor RPAREN SEMI
+    (259) addcola -> VARIABLE FLECHA ENQUEUE . LPAREN VARIABLE RPAREN SEMI
 
     LPAREN          shift and go to state 337
 
 
 state 252
 
-    (258) minuscola -> VARIABLE FLECHA DEQUEUE . LPAREN valor RPAREN SEMI
+    (260) minuscola -> VARIABLE FLECHA DEQUEUE . LPAREN valor RPAREN SEMI
+    (261) minuscola -> VARIABLE FLECHA DEQUEUE . LPAREN VARIABLE RPAREN SEMI
 
     LPAREN          shift and go to state 338
 
 
 state 253
 
-    (249) poppila -> VARIABLE FLECHA POP . LPAREN RPAREN SEMI
+    (250) poppila -> VARIABLE FLECHA POP . LPAREN RPAREN SEMI
 
     LPAREN          shift and go to state 339
 
 
 state 254
 
-    (250) funcionesCP -> VARIABLE FLECHA REWIND . LPAREN RPAREN
+    (251) funcionesCP -> VARIABLE FLECHA REWIND . LPAREN RPAREN
 
     LPAREN          shift and go to state 340
 
 
 state 255
 
-    (251) funcionesCP -> VARIABLE FLECHA VALID . LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE FLECHA VALID . LPAREN RPAREN
 
     LPAREN          shift and go to state 341
 
 
 state 256
 
-    (252) funcionesCP -> VARIABLE FLECHA COUNT . LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE FLECHA COUNT . LPAREN RPAREN
 
     LPAREN          shift and go to state 342
 
 
 state 257
 
-    (253) funcionesCP -> VARIABLE FLECHA NEXT . LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE FLECHA NEXT . LPAREN RPAREN
 
     LPAREN          shift and go to state 343
 
 
 state 258
 
-    (254) funcionesCP -> VARIABLE FLECHA CURRENT . LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE FLECHA CURRENT . LPAREN RPAREN
 
     LPAREN          shift and go to state 344
 
@@ -4706,8 +4729,8 @@ state 267
     (149) operaciones_mat -> . VARIABLE operadores VARIABLE
     (150) operaciones_mat -> . operaciones_mat_par
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (263) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
-    (264) arraysearch -> . ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
+    (267) arrayvalues -> . ARRAY_VALUES LPAREN VARIABLE RPAREN
+    (268) arraysearch -> . ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN
     (183) array_def -> . ARRAY LPAREN RPAREN
     (184) array_def -> . ARRAY LPAREN array_elmnt RPAREN
     (54) tipoDato -> . numero
@@ -4767,14 +4790,14 @@ state 268
 
 state 269
 
-    (259) constante -> DEFINE LPAREN CADENA . COMMA valor RPAREN SEMI
+    (262) constante -> DEFINE LPAREN CADENA . COMMA valor RPAREN SEMI
 
     COMMA           shift and go to state 361
 
 
 state 270
 
-    (260) constante -> DEFINE LPAREN NOMBRE . COMMA ARRAY RPAREN SEMI
+    (263) constante -> DEFINE LPAREN NOMBRE . COMMA ARRAY RPAREN SEMI
 
     COMMA           shift and go to state 362
 
@@ -4894,8 +4917,8 @@ state 276
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -4956,14 +4979,18 @@ state 276
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -4981,11 +5008,11 @@ state 276
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
     (187) empty -> .
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for RBRACE resolved as shift
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -5108,11 +5135,11 @@ state 277
     (244) aumentoCasting -> . VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
     (245) aumentoCasting -> . VARIABLE operadores tipoDato condicion_booleana valor
     (246) aumentoCasting -> . VARIABLE incrementos_mat VARIABLE SEMI
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
     (54) tipoDato -> . numero
     (55) tipoDato -> . CADENA
     (56) tipoDato -> . BOOLEANO
@@ -5183,11 +5210,11 @@ state 280
     (244) aumentoCasting -> VARIABLE . EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
     (245) aumentoCasting -> VARIABLE . operadores tipoDato condicion_booleana valor
     (246) aumentoCasting -> VARIABLE . incrementos_mat VARIABLE SEMI
-    (250) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> VARIABLE . FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> VARIABLE . FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> VARIABLE . FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> VARIABLE . FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> VARIABLE . FLECHA CURRENT LPAREN RPAREN
     (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
     (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
     (131) operador_logico -> . SMALLER
@@ -5357,11 +5384,11 @@ state 286
     (244) aumentoCasting -> . VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
     (245) aumentoCasting -> . VARIABLE operadores tipoDato condicion_booleana valor
     (246) aumentoCasting -> . VARIABLE incrementos_mat VARIABLE SEMI
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
     (54) tipoDato -> . numero
     (55) tipoDato -> . CADENA
     (56) tipoDato -> . BOOLEANO
@@ -5479,8 +5506,8 @@ state 288
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -5535,14 +5562,18 @@ state 288
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (187) empty -> .
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
@@ -5560,11 +5591,11 @@ state 288
     (168) funcion_void -> . FUNCTION NOMBRE LPAREN RPAREN COLON VOID LBRACE empty RBRACE
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for RBRACE resolved as shift
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -5865,14 +5896,15 @@ state 301
 
 state 302
 
-    (261) arraypop -> ARRAY_POP LPAREN VARIABLE . RPAREN SEMI
+    (264) arraypop -> ARRAY_POP LPAREN VARIABLE . RPAREN SEMI
 
     RPAREN          shift and go to state 394
 
 
 state 303
 
-    (262) arraypush -> ARRAY_PUSH LPAREN VARIABLE . COMMA valor RPAREN SEMI
+    (265) arraypush -> ARRAY_PUSH LPAREN VARIABLE . COMMA valor RPAREN SEMI
+    (266) arraypush -> ARRAY_PUSH LPAREN VARIABLE . COMMA VARIABLE RPAREN SEMI
 
     COMMA           shift and go to state 395
 
@@ -6288,14 +6320,14 @@ state 326
 
 state 327
 
-    (263) arrayvalues -> ARRAY_VALUES LPAREN . VARIABLE RPAREN
+    (267) arrayvalues -> ARRAY_VALUES LPAREN . VARIABLE RPAREN
 
     VARIABLE        shift and go to state 416
 
 
 state 328
 
-    (264) arraysearch -> ARRAY_SEARCH LPAREN . valor COMMA VARIABLE RPAREN
+    (268) arraysearch -> ARRAY_SEARCH LPAREN . valor COMMA VARIABLE RPAREN
     (51) valor -> . tipoDato
     (52) valor -> . bcolas
     (53) valor -> . bpila
@@ -6434,6 +6466,7 @@ state 335
 state 336
 
     (248) addpila -> VARIABLE FLECHA PUSH LPAREN . valor RPAREN SEMI
+    (249) addpila -> VARIABLE FLECHA PUSH LPAREN . VARIABLE RPAREN SEMI
     (51) valor -> . tipoDato
     (52) valor -> . bcolas
     (53) valor -> . bpila
@@ -6445,35 +6478,9 @@ state 336
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
+    VARIABLE        shift and go to state 422
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
-    VARIABLE        shift and go to state 403
-    ENTERO          shift and go to state 94
-    DECIMAL         shift and go to state 108
-
-    valor                          shift and go to state 422
-    tipoDato                       shift and go to state 100
-    bcolas                         shift and go to state 101
-    bpila                          shift and go to state 102
-    numero                         shift and go to state 106
-
-state 337
-
-    (257) addcola -> VARIABLE FLECHA ENQUEUE LPAREN . valor RPAREN SEMI
-    (51) valor -> . tipoDato
-    (52) valor -> . bcolas
-    (53) valor -> . bpila
-    (54) tipoDato -> . numero
-    (55) tipoDato -> . CADENA
-    (56) tipoDato -> . BOOLEANO
-    (188) bcolas -> . VARIABLE EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
-    (247) bpila -> . VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
-    (57) numero -> . ENTERO
-    (58) numero -> . DECIMAL
-
-    CADENA          shift and go to state 215
-    BOOLEANO        shift and go to state 107
-    VARIABLE        shift and go to state 403
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
@@ -6483,9 +6490,10 @@ state 337
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
 
-state 338
+state 337
 
-    (258) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN . valor RPAREN SEMI
+    (258) addcola -> VARIABLE FLECHA ENQUEUE LPAREN . valor RPAREN SEMI
+    (259) addcola -> VARIABLE FLECHA ENQUEUE LPAREN . VARIABLE RPAREN SEMI
     (51) valor -> . tipoDato
     (52) valor -> . bcolas
     (53) valor -> . bpila
@@ -6497,13 +6505,40 @@ state 338
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
+    VARIABLE        shift and go to state 424
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
-    VARIABLE        shift and go to state 403
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 424
+    valor                          shift and go to state 425
+    tipoDato                       shift and go to state 100
+    bcolas                         shift and go to state 101
+    bpila                          shift and go to state 102
+    numero                         shift and go to state 106
+
+state 338
+
+    (260) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN . valor RPAREN SEMI
+    (261) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN . VARIABLE RPAREN SEMI
+    (51) valor -> . tipoDato
+    (52) valor -> . bcolas
+    (53) valor -> . bpila
+    (54) tipoDato -> . numero
+    (55) tipoDato -> . CADENA
+    (56) tipoDato -> . BOOLEANO
+    (188) bcolas -> . VARIABLE EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
+    (247) bpila -> . VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
+    (57) numero -> . ENTERO
+    (58) numero -> . DECIMAL
+
+    VARIABLE        shift and go to state 426
+    CADENA          shift and go to state 215
+    BOOLEANO        shift and go to state 107
+    ENTERO          shift and go to state 94
+    DECIMAL         shift and go to state 108
+
+    valor                          shift and go to state 427
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
@@ -6511,44 +6546,44 @@ state 338
 
 state 339
 
-    (249) poppila -> VARIABLE FLECHA POP LPAREN . RPAREN SEMI
-
-    RPAREN          shift and go to state 425
-
-
-state 340
-
-    (250) funcionesCP -> VARIABLE FLECHA REWIND LPAREN . RPAREN
-
-    RPAREN          shift and go to state 426
-
-
-state 341
-
-    (251) funcionesCP -> VARIABLE FLECHA VALID LPAREN . RPAREN
-
-    RPAREN          shift and go to state 427
-
-
-state 342
-
-    (252) funcionesCP -> VARIABLE FLECHA COUNT LPAREN . RPAREN
+    (250) poppila -> VARIABLE FLECHA POP LPAREN . RPAREN SEMI
 
     RPAREN          shift and go to state 428
 
 
-state 343
+state 340
 
-    (253) funcionesCP -> VARIABLE FLECHA NEXT LPAREN . RPAREN
+    (251) funcionesCP -> VARIABLE FLECHA REWIND LPAREN . RPAREN
 
     RPAREN          shift and go to state 429
 
 
-state 344
+state 341
 
-    (254) funcionesCP -> VARIABLE FLECHA CURRENT LPAREN . RPAREN
+    (252) funcionesCP -> VARIABLE FLECHA VALID LPAREN . RPAREN
 
     RPAREN          shift and go to state 430
+
+
+state 342
+
+    (253) funcionesCP -> VARIABLE FLECHA COUNT LPAREN . RPAREN
+
+    RPAREN          shift and go to state 431
+
+
+state 343
+
+    (254) funcionesCP -> VARIABLE FLECHA NEXT LPAREN . RPAREN
+
+    RPAREN          shift and go to state 432
+
+
+state 344
+
+    (255) funcionesCP -> VARIABLE FLECHA CURRENT LPAREN . RPAREN
+
+    RPAREN          shift and go to state 433
 
 
 state 345
@@ -6622,7 +6657,7 @@ state 347
     DECIMAL         shift and go to state 108
 
     tipoDato                       shift and go to state 100
-    valor                          shift and go to state 431
+    valor                          shift and go to state 434
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
@@ -6722,35 +6757,35 @@ state 355
 
     (73) imprimir -> VAR_DUMP LPAREN VARIABLE RPAREN . SEMI
 
-    SEMI            shift and go to state 432
+    SEMI            shift and go to state 435
 
 
 state 356
 
     (74) imprimir -> VAR_DUMP LPAREN arrayvalues RPAREN . SEMI
 
-    SEMI            shift and go to state 433
+    SEMI            shift and go to state 436
 
 
 state 357
 
     (75) imprimir -> PRINT_R LPAREN arraysearch RPAREN . SEMI
 
-    SEMI            shift and go to state 434
+    SEMI            shift and go to state 437
 
 
 state 358
 
     (76) imprimir -> PRINT_R LPAREN VARIABLE RPAREN . SEMI
 
-    SEMI            shift and go to state 435
+    SEMI            shift and go to state 438
 
 
 state 359
 
     (77) imprimir -> PRINT_R LPAREN arrayvalues RPAREN . SEMI
 
-    SEMI            shift and go to state 436
+    SEMI            shift and go to state 439
 
 
 state 360
@@ -6790,7 +6825,7 @@ state 360
     (246) aumentoCasting -> . VARIABLE incrementos_mat VARIABLE SEMI
 
   ! shift/reduce conflict for RPAREN resolved as shift
-    RPAREN          shift and go to state 437
+    RPAREN          shift and go to state 440
     VARIABLE        shift and go to state 225
     COMMA           reduce using rule 187 (empty -> .)
     VAR             shift and go to state 47
@@ -6811,7 +6846,7 @@ state 360
 
 state 361
 
-    (259) constante -> DEFINE LPAREN CADENA COMMA . valor RPAREN SEMI
+    (262) constante -> DEFINE LPAREN CADENA COMMA . valor RPAREN SEMI
     (51) valor -> . tipoDato
     (52) valor -> . bcolas
     (53) valor -> . bpila
@@ -6829,7 +6864,7 @@ state 361
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 438
+    valor                          shift and go to state 441
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
@@ -6837,9 +6872,9 @@ state 361
 
 state 362
 
-    (260) constante -> DEFINE LPAREN NOMBRE COMMA . ARRAY RPAREN SEMI
+    (263) constante -> DEFINE LPAREN NOMBRE COMMA . ARRAY RPAREN SEMI
 
-    ARRAY           shift and go to state 439
+    ARRAY           shift and go to state 442
 
 
 state 363
@@ -6882,7 +6917,7 @@ state 365
 
     (189) lectura -> READLINE LPAREN CADENA RPAREN . SEMI
 
-    SEMI            shift and go to state 440
+    SEMI            shift and go to state 443
 
 
 state 366
@@ -6907,7 +6942,7 @@ state 367
 
     (81) condicion_else -> ELSE LBRACE cuerpo . RBRACE
 
-    RBRACE          shift and go to state 441
+    RBRACE          shift and go to state 444
 
 
 state 368
@@ -6923,7 +6958,7 @@ state 368
     (145) condicion_booleana -> . IS_IDENTICAL
     (146) condicion_booleana -> . IS_NOT_IDENTICAL
 
-    RPAREN          shift and go to state 442
+    RPAREN          shift and go to state 445
     AND             shift and go to state 348
     OR              shift and go to state 349
     XOR             shift and go to state 350
@@ -6950,7 +6985,7 @@ state 369
     DIVISION        shift and go to state 143
     MODULO          shift and go to state 144
 
-    operadores                     shift and go to state 443
+    operadores                     shift and go to state 446
 
 state 370
 
@@ -6958,9 +6993,9 @@ state 370
     (114) bwhile -> WHILE LPAREN condicion RPAREN . COLON stc_bloque
     (115) bwhile -> WHILE LPAREN condicion RPAREN . SEMI
 
-    LBRACE          shift and go to state 444
-    COLON           shift and go to state 445
-    SEMI            shift and go to state 446
+    LBRACE          shift and go to state 447
+    COLON           shift and go to state 448
+    SEMI            shift and go to state 449
 
 
 state 371
@@ -6990,11 +7025,11 @@ state 371
     (244) aumentoCasting -> . VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI
     (245) aumentoCasting -> . VARIABLE operadores tipoDato condicion_booleana valor
     (246) aumentoCasting -> . VARIABLE incrementos_mat VARIABLE SEMI
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
     (54) tipoDato -> . numero
     (55) tipoDato -> . CADENA
     (56) tipoDato -> . BOOLEANO
@@ -7005,14 +7040,14 @@ state 371
 
     VARIABLE        shift and go to state 280
     LPAREN          shift and go to state 278
-    NOMBRE          shift and go to state 449
+    NOMBRE          shift and go to state 452
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    condicion                      shift and go to state 447
-    comprobacion                   shift and go to state 448
+    condicion                      shift and go to state 450
+    comprobacion                   shift and go to state 451
     valor                          shift and go to state 281
     aumentoCasting                 shift and go to state 282
     funcionesCP                    shift and go to state 283
@@ -7036,13 +7071,13 @@ state 372
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
-    VARIABLE        shift and go to state 450
+    VARIABLE        shift and go to state 453
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 451
+    valor                          shift and go to state 454
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
@@ -7063,13 +7098,13 @@ state 373
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
-    VARIABLE        shift and go to state 452
+    VARIABLE        shift and go to state 455
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 453
+    valor                          shift and go to state 456
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
@@ -7082,7 +7117,7 @@ state 374
     (188) bcolas -> VARIABLE EQUALS . NEW SPLQUEUE LPAREN RPAREN SEMI
     (247) bpila -> VARIABLE EQUALS . NEW SPLSTACK LPAREN RPAREN SEMI
 
-    VARIABLE        shift and go to state 454
+    VARIABLE        shift and go to state 457
     NEW             shift and go to state 238
 
 
@@ -7150,7 +7185,7 @@ state 379
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 455
+    valor                          shift and go to state 458
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
@@ -7176,7 +7211,7 @@ state 380
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 456
+    valor                          shift and go to state 459
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
@@ -7186,7 +7221,7 @@ state 381
 
     (124) catches -> catches CATCH LPAREN . EXCEPTION VARIABLE RPAREN stc_bloque_def
 
-    EXCEPTION       shift and go to state 457
+    EXCEPTION       shift and go to state 460
 
 
 state 382
@@ -7203,7 +7238,7 @@ state 382
     $end            reduce using rule 116 (bwhile -> .)
     BREAK           reduce using rule 116 (bwhile -> .)
 
-    bwhile                         shift and go to state 458
+    bwhile                         shift and go to state 461
 
 state 383
 
@@ -7218,7 +7253,7 @@ state 383
     (145) condicion_booleana -> . IS_IDENTICAL
     (146) condicion_booleana -> . IS_NOT_IDENTICAL
 
-    SEMI            shift and go to state 459
+    SEMI            shift and go to state 462
     AND             shift and go to state 348
     OR              shift and go to state 349
     XOR             shift and go to state 350
@@ -7233,7 +7268,7 @@ state 384
 
     (112) bforeach -> FOREACH LPAREN VARIABLE AS . VARIABLE RPAREN stc_bloque_def
 
-    VARIABLE        shift and go to state 460
+    VARIABLE        shift and go to state 463
 
 
 state 385
@@ -7241,15 +7276,15 @@ state 385
     (102) stc_bloque_def -> LBRACE stc_bloque . RBRACE
     (100) stc_bloque -> stc_bloque . SEMI cuerpo
 
-    RBRACE          shift and go to state 461
-    SEMI            shift and go to state 462
+    RBRACE          shift and go to state 464
+    SEMI            shift and go to state 465
 
 
 state 386
 
     (103) stc_bloque_def -> LBRACE cuerpo . RBRACE
 
-    RBRACE          shift and go to state 463
+    RBRACE          shift and go to state 466
 
 
 state 387
@@ -7280,35 +7315,35 @@ state 388
     SEMI            reduce using rule 187 (empty -> .)
     BREAK           reduce using rule 187 (empty -> .)
 
-    catches                        shift and go to state 464
+    catches                        shift and go to state 467
     empty                          shift and go to state 174
 
 state 389
 
     (118) bswitch -> SWITCH LPAREN VARIABLE RPAREN . LBRACE innerSwitch RBRACE
 
-    LBRACE          shift and go to state 465
+    LBRACE          shift and go to state 468
 
 
 state 390
 
     (172) brand -> RAND LPAREN ENTERO COMMA . ENTERO RPAREN SEMI
 
-    ENTERO          shift and go to state 466
+    ENTERO          shift and go to state 469
 
 
 state 391
 
     (191) escribir -> FWRITE LPAREN NOMBRE COMMA . CADENA RPAREN SEMI
 
-    CADENA          shift and go to state 467
+    CADENA          shift and go to state 470
 
 
 state 392
 
     (192) btrim -> TRIM LPAREN NOMBRE LPAREN . NOMBRE RPAREN RPAREN SEMI
 
-    NOMBRE          shift and go to state 468
+    NOMBRE          shift and go to state 471
 
 
 state 393
@@ -7323,14 +7358,15 @@ state 393
 
 state 394
 
-    (261) arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN . SEMI
+    (264) arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN . SEMI
 
-    SEMI            shift and go to state 469
+    SEMI            shift and go to state 472
 
 
 state 395
 
-    (262) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA . valor RPAREN SEMI
+    (265) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA . valor RPAREN SEMI
+    (266) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA . VARIABLE RPAREN SEMI
     (51) valor -> . tipoDato
     (52) valor -> . bcolas
     (53) valor -> . bpila
@@ -7342,13 +7378,13 @@ state 395
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
+    VARIABLE        shift and go to state 473
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
-    VARIABLE        shift and go to state 403
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 470
+    valor                          shift and go to state 474
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
@@ -7359,7 +7395,7 @@ state 396
     (164) funcion_nparams -> FUNCTION NOMBRE LPAREN params_list . RPAREN stc_bloque_def
     (165) params_list -> params_list . COMMA param
 
-    RPAREN          shift and go to state 471
+    RPAREN          shift and go to state 475
     COMMA           shift and go to state 317
 
 
@@ -7371,10 +7407,10 @@ state 397
     (102) stc_bloque_def -> . LBRACE stc_bloque RBRACE
     (103) stc_bloque_def -> . LBRACE cuerpo RBRACE
 
-    LBRACE          shift and go to state 473
-    COLON           shift and go to state 474
+    LBRACE          shift and go to state 477
+    COLON           shift and go to state 478
 
-    stc_bloque_def                 shift and go to state 472
+    stc_bloque_def                 shift and go to state 476
 
 state 398
 
@@ -7382,16 +7418,16 @@ state 398
     (79) condicion_if -> IF LPAREN condicion RPAREN . llamada_funcion
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
 
-    LBRACE          shift and go to state 475
+    LBRACE          shift and go to state 479
     NOMBRE          shift and go to state 241
 
-    llamada_funcion                shift and go to state 476
+    llamada_funcion                shift and go to state 480
 
 state 399
 
     (63) imprimir -> ECHO NOMBRE LBRACKET ENTERO RBRACKET . SEMI
 
-    SEMI            shift and go to state 477
+    SEMI            shift and go to state 481
 
 
 state 400
@@ -7408,14 +7444,14 @@ state 401
 
     (151) operaciones_mat_par -> LPAREN valor operadores valor . RPAREN
 
-    RPAREN          shift and go to state 478
+    RPAREN          shift and go to state 482
 
 
 state 402
 
     (152) operaciones_mat_par -> LPAREN valor operadores operaciones_mat_par . RPAREN
 
-    RPAREN          shift and go to state 479
+    RPAREN          shift and go to state 483
 
 
 state 403
@@ -7432,7 +7468,7 @@ state 404
     (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
     (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
 
-    RPAREN          shift and go to state 480
+    RPAREN          shift and go to state 484
     EQUALS          shift and go to state 211
 
 
@@ -7440,7 +7476,7 @@ state 405
 
     (154) operaciones_mat_par -> LPAREN VARIABLE operadores valor . RPAREN operadores valor
 
-    RPAREN          shift and go to state 481
+    RPAREN          shift and go to state 485
 
 
 state 406
@@ -7450,7 +7486,7 @@ state 406
     (51) valor -> tipoDato .
 
   ! shift/reduce conflict for RPAREN resolved as shift
-    RPAREN          shift and go to state 482
+    RPAREN          shift and go to state 486
 
   ! RPAREN          [ reduce using rule 51 (valor -> tipoDato .) ]
 
@@ -7520,48 +7556,48 @@ state 411
     DIVISION        shift and go to state 143
     MODULO          shift and go to state 144
 
-    operadores                     shift and go to state 483
+    operadores                     shift and go to state 487
 
 state 412
 
     (243) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores tipoDato . SEMI
 
-    SEMI            shift and go to state 484
+    SEMI            shift and go to state 488
 
 
 state 413
 
     (188) bcolas -> VARIABLE EQUALS NEW SPLQUEUE LPAREN . RPAREN SEMI
 
-    RPAREN          shift and go to state 485
+    RPAREN          shift and go to state 489
 
 
 state 414
 
     (247) bpila -> VARIABLE EQUALS NEW SPLSTACK LPAREN . RPAREN SEMI
 
-    RPAREN          shift and go to state 486
+    RPAREN          shift and go to state 490
 
 
 state 415
 
     (240) casting -> VARIABLE EQUALS LPAREN tiposCast RPAREN . VARIABLE SEMI
 
-    VARIABLE        shift and go to state 487
+    VARIABLE        shift and go to state 491
 
 
 state 416
 
-    (263) arrayvalues -> ARRAY_VALUES LPAREN VARIABLE . RPAREN
+    (267) arrayvalues -> ARRAY_VALUES LPAREN VARIABLE . RPAREN
 
-    RPAREN          shift and go to state 488
+    RPAREN          shift and go to state 492
 
 
 state 417
 
-    (264) arraysearch -> ARRAY_SEARCH LPAREN valor . COMMA VARIABLE RPAREN
+    (268) arraysearch -> ARRAY_SEARCH LPAREN valor . COMMA VARIABLE RPAREN
 
-    COMMA           shift and go to state 489
+    COMMA           shift and go to state 493
 
 
 state 418
@@ -7576,8 +7612,8 @@ state 419
     (184) array_def -> ARRAY LPAREN array_elmnt . RPAREN
     (185) array_elmnt -> array_elmnt . COMMA valor
 
-    RPAREN          shift and go to state 490
-    COMMA           shift and go to state 491
+    RPAREN          shift and go to state 494
+    COMMA           shift and go to state 495
 
 
 state 420
@@ -7592,133 +7628,163 @@ state 421
 
     (230) bconcat -> VARIABLE CONCAT CADENA CONCAT VARIABLE . SEMI
 
-    SEMI            shift and go to state 492
+    SEMI            shift and go to state 496
 
 
 state 422
 
-    (248) addpila -> VARIABLE FLECHA PUSH LPAREN valor . RPAREN SEMI
+    (249) addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE . RPAREN SEMI
+    (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
+    (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
 
-    RPAREN          shift and go to state 493
+    RPAREN          shift and go to state 497
+    EQUALS          shift and go to state 211
 
 
 state 423
 
-    (257) addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor . RPAREN SEMI
+    (248) addpila -> VARIABLE FLECHA PUSH LPAREN valor . RPAREN SEMI
 
-    RPAREN          shift and go to state 494
+    RPAREN          shift and go to state 498
 
 
 state 424
 
-    (258) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor . RPAREN SEMI
+    (259) addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE . RPAREN SEMI
+    (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
+    (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
 
-    RPAREN          shift and go to state 495
+    RPAREN          shift and go to state 499
+    EQUALS          shift and go to state 211
 
 
 state 425
 
-    (249) poppila -> VARIABLE FLECHA POP LPAREN RPAREN . SEMI
+    (258) addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor . RPAREN SEMI
 
-    SEMI            shift and go to state 496
+    RPAREN          shift and go to state 500
 
 
 state 426
 
-    (250) funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .
+    (261) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE . RPAREN SEMI
+    (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
+    (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
 
-    SEMI            reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    $end            reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    COMMA           reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    RBRACE          reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    BREAK           reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    RPAREN          reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    AND             reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    OR              reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    XOR             reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    IS_EQUAL        reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    IS_NOT_EQUAL    reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    IS_IDENTICAL    reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
-    IS_NOT_IDENTICAL reduce using rule 250 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    RPAREN          shift and go to state 501
+    EQUALS          shift and go to state 211
 
 
 state 427
 
-    (251) funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .
+    (260) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor . RPAREN SEMI
 
-    SEMI            reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    $end            reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    COMMA           reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    RBRACE          reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    BREAK           reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    RPAREN          reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    AND             reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    OR              reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    XOR             reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    IS_EQUAL        reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    IS_NOT_EQUAL    reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    IS_IDENTICAL    reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
-    IS_NOT_IDENTICAL reduce using rule 251 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    RPAREN          shift and go to state 502
 
 
 state 428
 
-    (252) funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .
+    (250) poppila -> VARIABLE FLECHA POP LPAREN RPAREN . SEMI
 
-    SEMI            reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    $end            reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    COMMA           reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    RBRACE          reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    BREAK           reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    RPAREN          reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    AND             reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    OR              reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    XOR             reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    IS_EQUAL        reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    IS_NOT_EQUAL    reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    IS_IDENTICAL    reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
-    IS_NOT_IDENTICAL reduce using rule 252 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    SEMI            shift and go to state 503
 
 
 state 429
 
-    (253) funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .
+    (251) funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .
 
-    SEMI            reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    $end            reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    COMMA           reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    RBRACE          reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    BREAK           reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    RPAREN          reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    AND             reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    OR              reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    XOR             reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    IS_EQUAL        reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    IS_NOT_EQUAL    reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    IS_IDENTICAL    reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
-    IS_NOT_IDENTICAL reduce using rule 253 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    SEMI            reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    $end            reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    COMMA           reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    RBRACE          reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    BREAK           reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    RPAREN          reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    AND             reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    OR              reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    XOR             reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    IS_EQUAL        reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    IS_NOT_EQUAL    reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    IS_IDENTICAL    reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
+    IS_NOT_IDENTICAL reduce using rule 251 (funcionesCP -> VARIABLE FLECHA REWIND LPAREN RPAREN .)
 
 
 state 430
 
-    (254) funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .
+    (252) funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .
 
-    SEMI            reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    $end            reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    COMMA           reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    RBRACE          reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    BREAK           reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    RPAREN          reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    AND             reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    OR              reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    XOR             reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    IS_EQUAL        reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    IS_NOT_EQUAL    reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    IS_IDENTICAL    reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
-    IS_NOT_IDENTICAL reduce using rule 254 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    SEMI            reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    $end            reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    COMMA           reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    RBRACE          reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    BREAK           reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    RPAREN          reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    AND             reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    OR              reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    XOR             reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    IS_EQUAL        reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    IS_NOT_EQUAL    reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    IS_IDENTICAL    reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
+    IS_NOT_IDENTICAL reduce using rule 252 (funcionesCP -> VARIABLE FLECHA VALID LPAREN RPAREN .)
 
 
 state 431
+
+    (253) funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .
+
+    SEMI            reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    $end            reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    COMMA           reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    RBRACE          reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    BREAK           reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    RPAREN          reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    AND             reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    OR              reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    XOR             reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    IS_EQUAL        reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    IS_NOT_EQUAL    reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    IS_IDENTICAL    reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+    IS_NOT_IDENTICAL reduce using rule 253 (funcionesCP -> VARIABLE FLECHA COUNT LPAREN RPAREN .)
+
+
+state 432
+
+    (254) funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .
+
+    SEMI            reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    $end            reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    COMMA           reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    RBRACE          reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    BREAK           reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    RPAREN          reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    AND             reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    OR              reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    XOR             reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    IS_EQUAL        reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    IS_NOT_EQUAL    reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    IS_IDENTICAL    reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+    IS_NOT_IDENTICAL reduce using rule 254 (funcionesCP -> VARIABLE FLECHA NEXT LPAREN RPAREN .)
+
+
+state 433
+
+    (255) funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .
+
+    SEMI            reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    $end            reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    COMMA           reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    RBRACE          reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    BREAK           reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    RPAREN          reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    AND             reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    OR              reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    XOR             reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    IS_EQUAL        reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    IS_NOT_EQUAL    reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    IS_IDENTICAL    reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+    IS_NOT_IDENTICAL reduce using rule 255 (funcionesCP -> VARIABLE FLECHA CURRENT LPAREN RPAREN .)
+
+
+state 434
 
     (245) aumentoCasting -> VARIABLE operadores tipoDato condicion_booleana valor .
 
@@ -7743,7 +7809,7 @@ state 431
     IS_NOT_IDENTICAL reduce using rule 245 (aumentoCasting -> VARIABLE operadores tipoDato condicion_booleana valor .)
 
 
-state 432
+state 435
 
     (73) imprimir -> VAR_DUMP LPAREN VARIABLE RPAREN SEMI .
 
@@ -7753,7 +7819,7 @@ state 432
     BREAK           reduce using rule 73 (imprimir -> VAR_DUMP LPAREN VARIABLE RPAREN SEMI .)
 
 
-state 433
+state 436
 
     (74) imprimir -> VAR_DUMP LPAREN arrayvalues RPAREN SEMI .
 
@@ -7763,7 +7829,7 @@ state 433
     BREAK           reduce using rule 74 (imprimir -> VAR_DUMP LPAREN arrayvalues RPAREN SEMI .)
 
 
-state 434
+state 437
 
     (75) imprimir -> PRINT_R LPAREN arraysearch RPAREN SEMI .
 
@@ -7773,7 +7839,7 @@ state 434
     BREAK           reduce using rule 75 (imprimir -> PRINT_R LPAREN arraysearch RPAREN SEMI .)
 
 
-state 435
+state 438
 
     (76) imprimir -> PRINT_R LPAREN VARIABLE RPAREN SEMI .
 
@@ -7783,7 +7849,7 @@ state 435
     BREAK           reduce using rule 76 (imprimir -> PRINT_R LPAREN VARIABLE RPAREN SEMI .)
 
 
-state 436
+state 439
 
     (77) imprimir -> PRINT_R LPAREN arrayvalues RPAREN SEMI .
 
@@ -7793,32 +7859,32 @@ state 436
     BREAK           reduce using rule 77 (imprimir -> PRINT_R LPAREN arrayvalues RPAREN SEMI .)
 
 
-state 437
+state 440
 
     (169) funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN . stc_bloque_def
     (170) funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN . LBRACE empty RBRACE
     (102) stc_bloque_def -> . LBRACE stc_bloque RBRACE
     (103) stc_bloque_def -> . LBRACE cuerpo RBRACE
 
-    LBRACE          shift and go to state 473
+    LBRACE          shift and go to state 477
 
-    stc_bloque_def                 shift and go to state 472
+    stc_bloque_def                 shift and go to state 476
 
-state 438
+state 441
 
-    (259) constante -> DEFINE LPAREN CADENA COMMA valor . RPAREN SEMI
+    (262) constante -> DEFINE LPAREN CADENA COMMA valor . RPAREN SEMI
 
-    RPAREN          shift and go to state 497
-
-
-state 439
-
-    (260) constante -> DEFINE LPAREN NOMBRE COMMA ARRAY . RPAREN SEMI
-
-    RPAREN          shift and go to state 498
+    RPAREN          shift and go to state 504
 
 
-state 440
+state 442
+
+    (263) constante -> DEFINE LPAREN NOMBRE COMMA ARRAY . RPAREN SEMI
+
+    RPAREN          shift and go to state 505
+
+
+state 443
 
     (189) lectura -> READLINE LPAREN CADENA RPAREN SEMI .
 
@@ -7836,7 +7902,7 @@ state 440
     DECIMAL         reduce using rule 189 (lectura -> READLINE LPAREN CADENA RPAREN SEMI .)
 
 
-state 441
+state 444
 
     (81) condicion_else -> ELSE LBRACE cuerpo RBRACE .
 
@@ -7846,14 +7912,14 @@ state 441
     BREAK           reduce using rule 81 (condicion_else -> ELSE LBRACE cuerpo RBRACE .)
 
 
-state 442
+state 445
 
     (80) condicion_elseif -> ELSEIF LPAREN condicion RPAREN . LBRACE cuerpo RBRACE
 
-    LBRACE          shift and go to state 499
+    LBRACE          shift and go to state 506
 
 
-state 443
+state 446
 
     (92) condicion -> LPAREN VARIABLE operadores . valor RPAREN operador_logico valor
     (93) condicion -> LPAREN VARIABLE operadores . valor RPAREN condicion_booleana valor
@@ -7874,13 +7940,13 @@ state 443
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 500
+    valor                          shift and go to state 507
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
 
-state 444
+state 447
 
     (113) bwhile -> WHILE LPAREN condicion RPAREN LBRACE . stc_bloque RBRACE
     (100) stc_bloque -> . stc_bloque SEMI cuerpo
@@ -7897,11 +7963,11 @@ state 444
     RBRACE          reduce using rule 187 (empty -> .)
     SEMI            reduce using rule 187 (empty -> .)
 
-    stc_bloque                     shift and go to state 501
-    breturn                        shift and go to state 502
+    stc_bloque                     shift and go to state 508
+    breturn                        shift and go to state 509
     empty                          shift and go to state 76
 
-state 445
+state 448
 
     (114) bwhile -> WHILE LPAREN condicion RPAREN COLON . stc_bloque
     (100) stc_bloque -> . stc_bloque SEMI cuerpo
@@ -7920,11 +7986,11 @@ state 445
     $end            reduce using rule 187 (empty -> .)
     BREAK           reduce using rule 187 (empty -> .)
 
-    stc_bloque                     shift and go to state 503
-    breturn                        shift and go to state 502
+    stc_bloque                     shift and go to state 510
+    breturn                        shift and go to state 509
     empty                          shift and go to state 76
 
-state 446
+state 449
 
     (115) bwhile -> WHILE LPAREN condicion RPAREN SEMI .
 
@@ -7934,7 +8000,7 @@ state 446
     BREAK           reduce using rule 115 (bwhile -> WHILE LPAREN condicion RPAREN SEMI .)
 
 
-state 447
+state 450
 
     (94) condicion -> condicion condicion_booleana condicion .
     (94) condicion -> condicion . condicion_booleana condicion
@@ -7974,7 +8040,7 @@ state 447
 
     condicion_booleana             shift and go to state 371
 
-state 448
+state 451
 
     (95) condicion -> condicion condicion_booleana comprobacion .
 
@@ -7989,15 +8055,15 @@ state 448
     SEMI            reduce using rule 95 (condicion -> condicion condicion_booleana comprobacion .)
 
 
-state 449
+state 452
 
     (203) comprobacion -> NOMBRE . LPAREN valor RPAREN
     (204) comprobacion -> NOMBRE . LPAREN VARIABLE RPAREN
 
-    LPAREN          shift and go to state 504
+    LPAREN          shift and go to state 511
 
 
-state 450
+state 453
 
     (86) condicion -> VARIABLE operador_logico VARIABLE .
     (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
@@ -8015,7 +8081,7 @@ state 450
     EQUALS          shift and go to state 211
 
 
-state 451
+state 454
 
     (88) condicion -> VARIABLE operador_logico valor .
 
@@ -8030,7 +8096,7 @@ state 451
     SEMI            reduce using rule 88 (condicion -> VARIABLE operador_logico valor .)
 
 
-state 452
+state 455
 
     (89) condicion -> VARIABLE condicion_booleana VARIABLE .
     (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
@@ -8048,7 +8114,7 @@ state 452
     EQUALS          shift and go to state 211
 
 
-state 453
+state 456
 
     (91) condicion -> VARIABLE condicion_booleana valor .
 
@@ -8063,7 +8129,7 @@ state 453
     SEMI            reduce using rule 91 (condicion -> VARIABLE condicion_booleana valor .)
 
 
-state 454
+state 457
 
     (243) aumentoCasting -> VARIABLE EQUALS VARIABLE . operadores tipoDato SEMI
     (244) aumentoCasting -> VARIABLE EQUALS VARIABLE . operadores VARIABLE operadores operaciones_mat_par SEMI
@@ -8079,9 +8145,9 @@ state 454
     DIVISION        shift and go to state 143
     MODULO          shift and go to state 144
 
-    operadores                     shift and go to state 505
+    operadores                     shift and go to state 512
 
-state 455
+state 458
 
     (87) condicion -> valor operador_logico valor .
 
@@ -8096,7 +8162,7 @@ state 455
     SEMI            reduce using rule 87 (condicion -> valor operador_logico valor .)
 
 
-state 456
+state 459
 
     (90) condicion -> valor condicion_booleana valor .
 
@@ -8111,14 +8177,14 @@ state 456
     SEMI            reduce using rule 90 (condicion -> valor condicion_booleana valor .)
 
 
-state 457
+state 460
 
     (124) catches -> catches CATCH LPAREN EXCEPTION . VARIABLE RPAREN stc_bloque_def
 
-    VARIABLE        shift and go to state 506
+    VARIABLE        shift and go to state 513
 
 
-state 458
+state 461
 
     (117) bdo -> DO LBRACE cuerpo RBRACE bwhile .
 
@@ -8128,7 +8194,7 @@ state 458
     BREAK           reduce using rule 117 (bdo -> DO LBRACE cuerpo RBRACE bwhile .)
 
 
-state 459
+state 462
 
     (99) bfor -> FOR LPAREN asignacion condicion SEMI . for_incr RPAREN stc_bloque_def
     (104) for_incr -> . VARIABLE SUMA SUMA
@@ -8138,20 +8204,20 @@ state 459
     (108) for_incr -> . VARIABLE SUMA EQUALS numero
     (109) for_incr -> . VARIABLE RESTA EQUALS numero
 
-    VARIABLE        shift and go to state 508
-    SUMA            shift and go to state 509
-    RESTA           shift and go to state 510
+    VARIABLE        shift and go to state 515
+    SUMA            shift and go to state 516
+    RESTA           shift and go to state 517
 
-    for_incr                       shift and go to state 507
+    for_incr                       shift and go to state 514
 
-state 460
+state 463
 
     (112) bforeach -> FOREACH LPAREN VARIABLE AS VARIABLE . RPAREN stc_bloque_def
 
-    RPAREN          shift and go to state 511
+    RPAREN          shift and go to state 518
 
 
-state 461
+state 464
 
     (102) stc_bloque_def -> LBRACE stc_bloque RBRACE .
 
@@ -8162,7 +8228,7 @@ state 461
     CATCH           reduce using rule 102 (stc_bloque_def -> LBRACE stc_bloque RBRACE .)
 
 
-state 462
+state 465
 
     (100) stc_bloque -> stc_bloque SEMI . cuerpo
     (1) cuerpo -> . imprimir
@@ -8239,8 +8305,8 @@ state 462
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -8301,14 +8367,18 @@ state 462
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -8326,11 +8396,11 @@ state 462
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
     (187) empty -> .
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for BREAK resolved as shift
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -8393,7 +8463,7 @@ state 462
   ! $end            [ reduce using rule 187 (empty -> .) ]
   ! BREAK           [ reduce using rule 187 (empty -> .) ]
 
-    cuerpo                         shift and go to state 512
+    cuerpo                         shift and go to state 519
     imprimir                       shift and go to state 2
     asignacion                     shift and go to state 3
     funciones                      shift and go to state 4
@@ -8439,7 +8509,7 @@ state 462
     empty                          shift and go to state 76
     funcionesCP                    shift and go to state 82
 
-state 463
+state 466
 
     (103) stc_bloque_def -> LBRACE cuerpo RBRACE .
 
@@ -8450,7 +8520,7 @@ state 463
     CATCH           reduce using rule 103 (stc_bloque_def -> LBRACE cuerpo RBRACE .)
 
 
-state 464
+state 467
 
     (123) btry -> TRY LBRACE stc_bloque_def RBRACE catches .
     (124) catches -> catches . CATCH LPAREN EXCEPTION VARIABLE RPAREN stc_bloque_def
@@ -8462,7 +8532,7 @@ state 464
     CATCH           shift and go to state 284
 
 
-state 465
+state 468
 
     (118) bswitch -> SWITCH LPAREN VARIABLE RPAREN LBRACE . innerSwitch RBRACE
     (121) innerSwitch -> . bcase cuerpo BREAK SEMI
@@ -8472,48 +8542,58 @@ state 465
 
     CASE            shift and go to state 66
 
-    innerSwitch                    shift and go to state 513
-    bcase                          shift and go to state 514
-
-state 466
-
-    (172) brand -> RAND LPAREN ENTERO COMMA ENTERO . RPAREN SEMI
-
-    RPAREN          shift and go to state 515
-
-
-state 467
-
-    (191) escribir -> FWRITE LPAREN NOMBRE COMMA CADENA . RPAREN SEMI
-
-    RPAREN          shift and go to state 516
-
-
-state 468
-
-    (192) btrim -> TRIM LPAREN NOMBRE LPAREN NOMBRE . RPAREN RPAREN SEMI
-
-    RPAREN          shift and go to state 517
-
+    innerSwitch                    shift and go to state 520
+    bcase                          shift and go to state 521
 
 state 469
 
-    (261) arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .
+    (172) brand -> RAND LPAREN ENTERO COMMA ENTERO . RPAREN SEMI
 
-    $end            reduce using rule 261 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
-    RBRACE          reduce using rule 261 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
-    SEMI            reduce using rule 261 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
-    BREAK           reduce using rule 261 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
+    RPAREN          shift and go to state 522
 
 
 state 470
 
-    (262) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor . RPAREN SEMI
+    (191) escribir -> FWRITE LPAREN NOMBRE COMMA CADENA . RPAREN SEMI
 
-    RPAREN          shift and go to state 518
+    RPAREN          shift and go to state 523
 
 
 state 471
+
+    (192) btrim -> TRIM LPAREN NOMBRE LPAREN NOMBRE . RPAREN RPAREN SEMI
+
+    RPAREN          shift and go to state 524
+
+
+state 472
+
+    (264) arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .
+
+    $end            reduce using rule 264 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
+    RBRACE          reduce using rule 264 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
+    SEMI            reduce using rule 264 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
+    BREAK           reduce using rule 264 (arraypop -> ARRAY_POP LPAREN VARIABLE RPAREN SEMI .)
+
+
+state 473
+
+    (266) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE . RPAREN SEMI
+    (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
+    (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
+
+    RPAREN          shift and go to state 525
+    EQUALS          shift and go to state 211
+
+
+state 474
+
+    (265) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor . RPAREN SEMI
+
+    RPAREN          shift and go to state 526
+
+
+state 475
 
     (164) funcion_nparams -> FUNCTION NOMBRE LPAREN params_list RPAREN . stc_bloque_def
     (102) stc_bloque_def -> . LBRACE stc_bloque RBRACE
@@ -8521,9 +8601,9 @@ state 471
 
     LBRACE          shift and go to state 288
 
-    stc_bloque_def                 shift and go to state 519
+    stc_bloque_def                 shift and go to state 527
 
-state 472
+state 476
 
     (169) funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN stc_bloque_def .
 
@@ -8533,7 +8613,7 @@ state 472
     BREAK           reduce using rule 169 (funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN stc_bloque_def .)
 
 
-state 473
+state 477
 
     (170) funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN LBRACE . empty RBRACE
     (102) stc_bloque_def -> LBRACE . stc_bloque RBRACE
@@ -8621,8 +8701,8 @@ state 473
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -8677,14 +8757,18 @@ state 473
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -8701,11 +8785,11 @@ state 473
     (168) funcion_void -> . FUNCTION NOMBRE LPAREN RPAREN COLON VOID LBRACE empty RBRACE
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! reduce/reduce conflict for RBRACE resolved using rule 116 (bwhile -> .)
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -8759,7 +8843,7 @@ state 473
   ! RBRACE          [ reduce using rule 187 (empty -> .) ]
   ! RBRACE          [ reduce using rule 116 (bwhile -> .) ]
 
-    empty                          shift and go to state 520
+    empty                          shift and go to state 528
     stc_bloque                     shift and go to state 385
     cuerpo                         shift and go to state 386
     breturn                        shift and go to state 387
@@ -8806,14 +8890,14 @@ state 473
     condicion_if                   shift and go to state 57
     funcionesCP                    shift and go to state 82
 
-state 474
+state 478
 
     (168) funcion_void -> FUNCTION NOMBRE LPAREN RPAREN COLON . VOID LBRACE empty RBRACE
 
-    VOID            shift and go to state 521
+    VOID            shift and go to state 529
 
 
-state 475
+state 479
 
     (78) condicion_if -> IF LPAREN condicion RPAREN LBRACE . cuerpo RBRACE
     (1) cuerpo -> . imprimir
@@ -8890,8 +8974,8 @@ state 475
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -8952,14 +9036,18 @@ state 475
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -8977,11 +9065,11 @@ state 475
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
     (187) empty -> .
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for RBRACE resolved as shift
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -9034,7 +9122,7 @@ state 475
   ! RBRACE          [ reduce using rule 116 (bwhile -> .) ]
   ! RBRACE          [ reduce using rule 187 (empty -> .) ]
 
-    cuerpo                         shift and go to state 522
+    cuerpo                         shift and go to state 530
     imprimir                       shift and go to state 2
     asignacion                     shift and go to state 3
     funciones                      shift and go to state 4
@@ -9080,7 +9168,7 @@ state 475
     empty                          shift and go to state 76
     funcionesCP                    shift and go to state 82
 
-state 476
+state 480
 
     (79) condicion_if -> IF LPAREN condicion RPAREN llamada_funcion .
 
@@ -9092,7 +9180,7 @@ state 476
     BREAK           reduce using rule 79 (condicion_if -> IF LPAREN condicion RPAREN llamada_funcion .)
 
 
-state 477
+state 481
 
     (63) imprimir -> ECHO NOMBRE LBRACKET ENTERO RBRACKET SEMI .
 
@@ -9102,7 +9190,7 @@ state 477
     BREAK           reduce using rule 63 (imprimir -> ECHO NOMBRE LBRACKET ENTERO RBRACKET SEMI .)
 
 
-state 478
+state 482
 
     (151) operaciones_mat_par -> LPAREN valor operadores valor RPAREN .
 
@@ -9110,7 +9198,7 @@ state 478
     RPAREN          reduce using rule 151 (operaciones_mat_par -> LPAREN valor operadores valor RPAREN .)
 
 
-state 479
+state 483
 
     (152) operaciones_mat_par -> LPAREN valor operadores operaciones_mat_par RPAREN .
 
@@ -9118,7 +9206,7 @@ state 479
     RPAREN          reduce using rule 152 (operaciones_mat_par -> LPAREN valor operadores operaciones_mat_par RPAREN .)
 
 
-state 480
+state 484
 
     (153) operaciones_mat_par -> LPAREN VARIABLE operadores VARIABLE RPAREN .
 
@@ -9126,7 +9214,7 @@ state 480
     RPAREN          reduce using rule 153 (operaciones_mat_par -> LPAREN VARIABLE operadores VARIABLE RPAREN .)
 
 
-state 481
+state 485
 
     (154) operaciones_mat_par -> LPAREN VARIABLE operadores valor RPAREN . operadores valor
     (126) operadores -> . SUMA
@@ -9141,9 +9229,9 @@ state 481
     DIVISION        shift and go to state 143
     MODULO          shift and go to state 144
 
-    operadores                     shift and go to state 523
+    operadores                     shift and go to state 531
 
-state 482
+state 486
 
     (155) operaciones_mat_par -> LPAREN VARIABLE operadores tipoDato RPAREN .
     (156) operaciones_mat_par -> LPAREN VARIABLE operadores tipoDato RPAREN . operadores tipoDato
@@ -9161,9 +9249,9 @@ state 482
     DIVISION        shift and go to state 143
     MODULO          shift and go to state 144
 
-    operadores                     shift and go to state 524
+    operadores                     shift and go to state 532
 
-state 483
+state 487
 
     (244) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores VARIABLE operadores . operaciones_mat_par SEMI
     (151) operaciones_mat_par -> . LPAREN valor operadores valor RPAREN
@@ -9175,9 +9263,9 @@ state 483
 
     LPAREN          shift and go to state 105
 
-    operaciones_mat_par            shift and go to state 525
+    operaciones_mat_par            shift and go to state 533
 
-state 484
+state 488
 
     (243) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores tipoDato SEMI .
 
@@ -9202,50 +9290,50 @@ state 484
     IS_NOT_IDENTICAL reduce using rule 243 (aumentoCasting -> VARIABLE EQUALS VARIABLE operadores tipoDato SEMI .)
 
 
-state 485
+state 489
 
     (188) bcolas -> VARIABLE EQUALS NEW SPLQUEUE LPAREN RPAREN . SEMI
 
-    SEMI            shift and go to state 526
-
-
-state 486
-
-    (247) bpila -> VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN . SEMI
-
-    SEMI            shift and go to state 527
-
-
-state 487
-
-    (240) casting -> VARIABLE EQUALS LPAREN tiposCast RPAREN VARIABLE . SEMI
-
-    SEMI            shift and go to state 528
-
-
-state 488
-
-    (263) arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN .
-
-    SEMI            reduce using rule 263 (arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN .)
-    RPAREN          reduce using rule 263 (arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN .)
-
-
-state 489
-
-    (264) arraysearch -> ARRAY_SEARCH LPAREN valor COMMA . VARIABLE RPAREN
-
-    VARIABLE        shift and go to state 529
+    SEMI            shift and go to state 534
 
 
 state 490
+
+    (247) bpila -> VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN . SEMI
+
+    SEMI            shift and go to state 535
+
+
+state 491
+
+    (240) casting -> VARIABLE EQUALS LPAREN tiposCast RPAREN VARIABLE . SEMI
+
+    SEMI            shift and go to state 536
+
+
+state 492
+
+    (267) arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN .
+
+    SEMI            reduce using rule 267 (arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN .)
+    RPAREN          reduce using rule 267 (arrayvalues -> ARRAY_VALUES LPAREN VARIABLE RPAREN .)
+
+
+state 493
+
+    (268) arraysearch -> ARRAY_SEARCH LPAREN valor COMMA . VARIABLE RPAREN
+
+    VARIABLE        shift and go to state 537
+
+
+state 494
 
     (184) array_def -> ARRAY LPAREN array_elmnt RPAREN .
 
     SEMI            reduce using rule 184 (array_def -> ARRAY LPAREN array_elmnt RPAREN .)
 
 
-state 491
+state 495
 
     (185) array_elmnt -> array_elmnt COMMA . valor
     (51) valor -> . tipoDato
@@ -9265,13 +9353,13 @@ state 491
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 530
+    valor                          shift and go to state 538
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
 
-state 492
+state 496
 
     (230) bconcat -> VARIABLE CONCAT CADENA CONCAT VARIABLE SEMI .
 
@@ -9289,52 +9377,73 @@ state 492
     DECIMAL         reduce using rule 230 (bconcat -> VARIABLE CONCAT CADENA CONCAT VARIABLE SEMI .)
 
 
-state 493
-
-    (248) addpila -> VARIABLE FLECHA PUSH LPAREN valor RPAREN . SEMI
-
-    SEMI            shift and go to state 531
-
-
-state 494
-
-    (257) addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN . SEMI
-
-    SEMI            shift and go to state 532
-
-
-state 495
-
-    (258) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN . SEMI
-
-    SEMI            shift and go to state 533
-
-
-state 496
-
-    (249) poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .
-
-    $end            reduce using rule 249 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
-    RBRACE          reduce using rule 249 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
-    SEMI            reduce using rule 249 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
-    BREAK           reduce using rule 249 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
-
-
 state 497
 
-    (259) constante -> DEFINE LPAREN CADENA COMMA valor RPAREN . SEMI
+    (249) addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN . SEMI
 
-    SEMI            shift and go to state 534
+    SEMI            shift and go to state 539
 
 
 state 498
 
-    (260) constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN . SEMI
+    (248) addpila -> VARIABLE FLECHA PUSH LPAREN valor RPAREN . SEMI
 
-    SEMI            shift and go to state 535
+    SEMI            shift and go to state 540
 
 
 state 499
+
+    (259) addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN . SEMI
+
+    SEMI            shift and go to state 541
+
+
+state 500
+
+    (258) addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN . SEMI
+
+    SEMI            shift and go to state 542
+
+
+state 501
+
+    (261) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN . SEMI
+
+    SEMI            shift and go to state 543
+
+
+state 502
+
+    (260) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN . SEMI
+
+    SEMI            shift and go to state 544
+
+
+state 503
+
+    (250) poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .
+
+    $end            reduce using rule 250 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
+    RBRACE          reduce using rule 250 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
+    SEMI            reduce using rule 250 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
+    BREAK           reduce using rule 250 (poppila -> VARIABLE FLECHA POP LPAREN RPAREN SEMI .)
+
+
+state 504
+
+    (262) constante -> DEFINE LPAREN CADENA COMMA valor RPAREN . SEMI
+
+    SEMI            shift and go to state 545
+
+
+state 505
+
+    (263) constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN . SEMI
+
+    SEMI            shift and go to state 546
+
+
+state 506
 
     (80) condicion_elseif -> ELSEIF LPAREN condicion RPAREN LBRACE . cuerpo RBRACE
     (1) cuerpo -> . imprimir
@@ -9411,8 +9520,8 @@ state 499
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -9473,14 +9582,18 @@ state 499
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -9498,11 +9611,11 @@ state 499
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
     (187) empty -> .
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for RBRACE resolved as shift
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -9555,7 +9668,7 @@ state 499
   ! RBRACE          [ reduce using rule 116 (bwhile -> .) ]
   ! RBRACE          [ reduce using rule 187 (empty -> .) ]
 
-    cuerpo                         shift and go to state 536
+    cuerpo                         shift and go to state 547
     imprimir                       shift and go to state 2
     asignacion                     shift and go to state 3
     funciones                      shift and go to state 4
@@ -9601,24 +9714,24 @@ state 499
     empty                          shift and go to state 76
     funcionesCP                    shift and go to state 82
 
-state 500
+state 507
 
     (92) condicion -> LPAREN VARIABLE operadores valor . RPAREN operador_logico valor
     (93) condicion -> LPAREN VARIABLE operadores valor . RPAREN condicion_booleana valor
 
-    RPAREN          shift and go to state 537
+    RPAREN          shift and go to state 548
 
 
-state 501
+state 508
 
     (113) bwhile -> WHILE LPAREN condicion RPAREN LBRACE stc_bloque . RBRACE
     (100) stc_bloque -> stc_bloque . SEMI cuerpo
 
-    RBRACE          shift and go to state 538
-    SEMI            shift and go to state 462
+    RBRACE          shift and go to state 549
+    SEMI            shift and go to state 465
 
 
-state 502
+state 509
 
     (101) stc_bloque -> breturn .
     (182) breturn -> breturn . RBRACE
@@ -9632,7 +9745,7 @@ state 502
   ! RBRACE          [ reduce using rule 101 (stc_bloque -> breturn .) ]
 
 
-state 503
+state 510
 
     (114) bwhile -> WHILE LPAREN condicion RPAREN COLON stc_bloque .
     (100) stc_bloque -> stc_bloque . SEMI cuerpo
@@ -9641,12 +9754,12 @@ state 503
     $end            reduce using rule 114 (bwhile -> WHILE LPAREN condicion RPAREN COLON stc_bloque .)
     RBRACE          reduce using rule 114 (bwhile -> WHILE LPAREN condicion RPAREN COLON stc_bloque .)
     BREAK           reduce using rule 114 (bwhile -> WHILE LPAREN condicion RPAREN COLON stc_bloque .)
-    SEMI            shift and go to state 462
+    SEMI            shift and go to state 465
 
   ! SEMI            [ reduce using rule 114 (bwhile -> WHILE LPAREN condicion RPAREN COLON stc_bloque .) ]
 
 
-state 504
+state 511
 
     (203) comprobacion -> NOMBRE LPAREN . valor RPAREN
     (204) comprobacion -> NOMBRE LPAREN . VARIABLE RPAREN
@@ -9661,19 +9774,19 @@ state 504
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
-    VARIABLE        shift and go to state 540
+    VARIABLE        shift and go to state 551
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 539
+    valor                          shift and go to state 550
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
 
-state 505
+state 512
 
     (243) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores . tipoDato SEMI
     (244) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores . VARIABLE operadores operaciones_mat_par SEMI
@@ -9683,7 +9796,7 @@ state 505
     (57) numero -> . ENTERO
     (58) numero -> . DECIMAL
 
-    VARIABLE        shift and go to state 541
+    VARIABLE        shift and go to state 552
     CADENA          shift and go to state 215
     BOOLEANO        shift and go to state 107
     ENTERO          shift and go to state 94
@@ -9692,46 +9805,46 @@ state 505
     tipoDato                       shift and go to state 412
     numero                         shift and go to state 106
 
-state 506
+state 513
 
     (124) catches -> catches CATCH LPAREN EXCEPTION VARIABLE . RPAREN stc_bloque_def
 
-    RPAREN          shift and go to state 542
+    RPAREN          shift and go to state 553
 
 
-state 507
+state 514
 
     (99) bfor -> FOR LPAREN asignacion condicion SEMI for_incr . RPAREN stc_bloque_def
 
-    RPAREN          shift and go to state 543
+    RPAREN          shift and go to state 554
 
 
-state 508
+state 515
 
     (104) for_incr -> VARIABLE . SUMA SUMA
     (106) for_incr -> VARIABLE . RESTA RESTA
     (108) for_incr -> VARIABLE . SUMA EQUALS numero
     (109) for_incr -> VARIABLE . RESTA EQUALS numero
 
-    SUMA            shift and go to state 544
-    RESTA           shift and go to state 545
+    SUMA            shift and go to state 555
+    RESTA           shift and go to state 556
 
 
-state 509
+state 516
 
     (105) for_incr -> SUMA . SUMA VARIABLE
 
-    SUMA            shift and go to state 546
+    SUMA            shift and go to state 557
 
 
-state 510
+state 517
 
     (107) for_incr -> RESTA . RESTA VARIABLE
 
-    RESTA           shift and go to state 547
+    RESTA           shift and go to state 558
 
 
-state 511
+state 518
 
     (112) bforeach -> FOREACH LPAREN VARIABLE AS VARIABLE RPAREN . stc_bloque_def
     (102) stc_bloque_def -> . LBRACE stc_bloque RBRACE
@@ -9739,9 +9852,9 @@ state 511
 
     LBRACE          shift and go to state 288
 
-    stc_bloque_def                 shift and go to state 548
+    stc_bloque_def                 shift and go to state 559
 
-state 512
+state 519
 
     (100) stc_bloque -> stc_bloque SEMI cuerpo .
 
@@ -9751,14 +9864,14 @@ state 512
     BREAK           reduce using rule 100 (stc_bloque -> stc_bloque SEMI cuerpo .)
 
 
-state 513
+state 520
 
     (118) bswitch -> SWITCH LPAREN VARIABLE RPAREN LBRACE innerSwitch . RBRACE
 
-    RBRACE          shift and go to state 549
+    RBRACE          shift and go to state 560
 
 
-state 514
+state 521
 
     (121) innerSwitch -> bcase . cuerpo BREAK SEMI
     (122) innerSwitch -> bcase . cuerpo BREAK SEMI innerSwitch
@@ -9836,8 +9949,8 @@ state 514
     (160) funciones -> . proteccion funcion_blank
     (161) funciones -> . funcion_void
     (171) llamada_funcion -> . NOMBRE LPAREN params_list RPAREN SEMI
-    (259) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
-    (260) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
+    (262) constante -> . DEFINE LPAREN CADENA COMMA valor RPAREN SEMI
+    (263) constante -> . DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI
     (189) lectura -> . READLINE LPAREN CADENA RPAREN SEMI
     (190) lectura -> . READLINE LPAREN RPAREN SEMI
     (82) condicion_ifelse -> . condicion_if
@@ -9898,14 +10011,18 @@ state 514
     (214) simbolos -> . OPEN_TAG CLOSE_TAG
     (215) simbolos -> . OPEN_TAG
     (216) simbolos -> . CLOSE_TAG
-    (255) funcionesCP_semi -> . funcionesCP
-    (256) funcionesCP_semi -> . funcionesCP SEMI
+    (256) funcionesCP_semi -> . funcionesCP
+    (257) funcionesCP_semi -> . funcionesCP SEMI
     (248) addpila -> . VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI
-    (257) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
-    (258) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
-    (261) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
-    (262) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
-    (249) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
+    (249) addpila -> . VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI
+    (258) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI
+    (259) addcola -> . VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI
+    (260) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI
+    (261) minuscola -> . VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI
+    (264) arraypop -> . ARRAY_POP LPAREN VARIABLE RPAREN SEMI
+    (265) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI
+    (266) arraypush -> . ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI
+    (250) poppila -> . VARIABLE FLECHA POP LPAREN RPAREN SEMI
     (173) proteccion -> . PUBLIC
     (174) proteccion -> . PRIVATE
     (175) proteccion -> . PROTECTED
@@ -9923,11 +10040,11 @@ state 514
     (78) condicion_if -> . IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE
     (79) condicion_if -> . IF LPAREN condicion RPAREN llamada_funcion
     (187) empty -> .
-    (250) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
-    (251) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
-    (252) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
-    (253) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
-    (254) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
+    (251) funcionesCP -> . VARIABLE FLECHA REWIND LPAREN RPAREN
+    (252) funcionesCP -> . VARIABLE FLECHA VALID LPAREN RPAREN
+    (253) funcionesCP -> . VARIABLE FLECHA COUNT LPAREN RPAREN
+    (254) funcionesCP -> . VARIABLE FLECHA NEXT LPAREN RPAREN
+    (255) funcionesCP -> . VARIABLE FLECHA CURRENT LPAREN RPAREN
 
   ! shift/reduce conflict for BREAK resolved as shift
   ! shift/reduce conflict for RBRACE resolved as shift
@@ -9983,7 +10100,7 @@ state 514
   ! BREAK           [ reduce using rule 187 (empty -> .) ]
 
     bcase                          shift and go to state 16
-    cuerpo                         shift and go to state 550
+    cuerpo                         shift and go to state 561
     imprimir                       shift and go to state 2
     asignacion                     shift and go to state 3
     funciones                      shift and go to state 4
@@ -10028,35 +10145,42 @@ state 514
     empty                          shift and go to state 76
     funcionesCP                    shift and go to state 82
 
-state 515
+state 522
 
     (172) brand -> RAND LPAREN ENTERO COMMA ENTERO RPAREN . SEMI
 
-    SEMI            shift and go to state 551
+    SEMI            shift and go to state 562
 
 
-state 516
+state 523
 
     (191) escribir -> FWRITE LPAREN NOMBRE COMMA CADENA RPAREN . SEMI
 
-    SEMI            shift and go to state 552
+    SEMI            shift and go to state 563
 
 
-state 517
+state 524
 
     (192) btrim -> TRIM LPAREN NOMBRE LPAREN NOMBRE RPAREN . RPAREN SEMI
 
-    RPAREN          shift and go to state 553
+    RPAREN          shift and go to state 564
 
 
-state 518
+state 525
 
-    (262) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN . SEMI
+    (266) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN . SEMI
 
-    SEMI            shift and go to state 554
+    SEMI            shift and go to state 565
 
 
-state 519
+state 526
+
+    (265) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN . SEMI
+
+    SEMI            shift and go to state 566
+
+
+state 527
 
     (164) funcion_nparams -> FUNCTION NOMBRE LPAREN params_list RPAREN stc_bloque_def .
 
@@ -10066,33 +10190,33 @@ state 519
     BREAK           reduce using rule 164 (funcion_nparams -> FUNCTION NOMBRE LPAREN params_list RPAREN stc_bloque_def .)
 
 
-state 520
+state 528
 
     (170) funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN LBRACE empty . RBRACE
     (177) breturn -> empty .
 
   ! shift/reduce conflict for RBRACE resolved as shift
-    RBRACE          shift and go to state 555
+    RBRACE          shift and go to state 567
     SEMI            reduce using rule 177 (breturn -> empty .)
 
   ! RBRACE          [ reduce using rule 177 (breturn -> empty .) ]
 
 
-state 521
+state 529
 
     (168) funcion_void -> FUNCTION NOMBRE LPAREN RPAREN COLON VOID . LBRACE empty RBRACE
 
-    LBRACE          shift and go to state 556
+    LBRACE          shift and go to state 568
 
 
-state 522
+state 530
 
     (78) condicion_if -> IF LPAREN condicion RPAREN LBRACE cuerpo . RBRACE
 
-    RBRACE          shift and go to state 557
+    RBRACE          shift and go to state 569
 
 
-state 523
+state 531
 
     (154) operaciones_mat_par -> LPAREN VARIABLE operadores valor RPAREN operadores . valor
     (51) valor -> . tipoDato
@@ -10112,13 +10236,13 @@ state 523
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 558
+    valor                          shift and go to state 570
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
 
-state 524
+state 532
 
     (156) operaciones_mat_par -> LPAREN VARIABLE operadores tipoDato RPAREN operadores . tipoDato
     (54) tipoDato -> . numero
@@ -10132,17 +10256,17 @@ state 524
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    tipoDato                       shift and go to state 559
+    tipoDato                       shift and go to state 571
     numero                         shift and go to state 106
 
-state 525
+state 533
 
     (244) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par . SEMI
 
-    SEMI            shift and go to state 560
+    SEMI            shift and go to state 572
 
 
-state 526
+state 534
 
     (188) bcolas -> VARIABLE EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI .
 
@@ -10176,7 +10300,7 @@ state 526
     DECIMAL         reduce using rule 188 (bcolas -> VARIABLE EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI .)
 
 
-state 527
+state 535
 
     (247) bpila -> VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI .
 
@@ -10210,7 +10334,7 @@ state 527
     DECIMAL         reduce using rule 247 (bpila -> VARIABLE EQUALS NEW SPLSTACK LPAREN RPAREN SEMI .)
 
 
-state 528
+state 536
 
     (240) casting -> VARIABLE EQUALS LPAREN tiposCast RPAREN VARIABLE SEMI .
 
@@ -10220,14 +10344,14 @@ state 528
     BREAK           reduce using rule 240 (casting -> VARIABLE EQUALS LPAREN tiposCast RPAREN VARIABLE SEMI .)
 
 
-state 529
+state 537
 
-    (264) arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE . RPAREN
+    (268) arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE . RPAREN
 
-    RPAREN          shift and go to state 561
+    RPAREN          shift and go to state 573
 
 
-state 530
+state 538
 
     (185) array_elmnt -> array_elmnt COMMA valor .
 
@@ -10235,7 +10359,17 @@ state 530
     COMMA           reduce using rule 185 (array_elmnt -> array_elmnt COMMA valor .)
 
 
-state 531
+state 539
+
+    (249) addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI .
+
+    $end            reduce using rule 249 (addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI .)
+    RBRACE          reduce using rule 249 (addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI .)
+    SEMI            reduce using rule 249 (addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI .)
+    BREAK           reduce using rule 249 (addpila -> VARIABLE FLECHA PUSH LPAREN VARIABLE RPAREN SEMI .)
+
+
+state 540
 
     (248) addpila -> VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI .
 
@@ -10245,54 +10379,74 @@ state 531
     BREAK           reduce using rule 248 (addpila -> VARIABLE FLECHA PUSH LPAREN valor RPAREN SEMI .)
 
 
-state 532
+state 541
 
-    (257) addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .
+    (259) addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI .
 
-    $end            reduce using rule 257 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
-    RBRACE          reduce using rule 257 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
-    SEMI            reduce using rule 257 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
-    BREAK           reduce using rule 257 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
-
-
-state 533
-
-    (258) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .
-
-    $end            reduce using rule 258 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
-    RBRACE          reduce using rule 258 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
-    SEMI            reduce using rule 258 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
-    BREAK           reduce using rule 258 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
+    $end            reduce using rule 259 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI .)
+    RBRACE          reduce using rule 259 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI .)
+    SEMI            reduce using rule 259 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI .)
+    BREAK           reduce using rule 259 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN VARIABLE RPAREN SEMI .)
 
 
-state 534
+state 542
 
-    (259) constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .
+    (258) addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .
 
-    $end            reduce using rule 259 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
-    RBRACE          reduce using rule 259 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
-    SEMI            reduce using rule 259 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
-    BREAK           reduce using rule 259 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
-
-
-state 535
-
-    (260) constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .
-
-    $end            reduce using rule 260 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
-    RBRACE          reduce using rule 260 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
-    SEMI            reduce using rule 260 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
-    BREAK           reduce using rule 260 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
+    $end            reduce using rule 258 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
+    RBRACE          reduce using rule 258 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
+    SEMI            reduce using rule 258 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
+    BREAK           reduce using rule 258 (addcola -> VARIABLE FLECHA ENQUEUE LPAREN valor RPAREN SEMI .)
 
 
-state 536
+state 543
+
+    (261) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI .
+
+    $end            reduce using rule 261 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI .)
+    RBRACE          reduce using rule 261 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI .)
+    SEMI            reduce using rule 261 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI .)
+    BREAK           reduce using rule 261 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN VARIABLE RPAREN SEMI .)
+
+
+state 544
+
+    (260) minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .
+
+    $end            reduce using rule 260 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
+    RBRACE          reduce using rule 260 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
+    SEMI            reduce using rule 260 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
+    BREAK           reduce using rule 260 (minuscola -> VARIABLE FLECHA DEQUEUE LPAREN valor RPAREN SEMI .)
+
+
+state 545
+
+    (262) constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .
+
+    $end            reduce using rule 262 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
+    RBRACE          reduce using rule 262 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
+    SEMI            reduce using rule 262 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
+    BREAK           reduce using rule 262 (constante -> DEFINE LPAREN CADENA COMMA valor RPAREN SEMI .)
+
+
+state 546
+
+    (263) constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .
+
+    $end            reduce using rule 263 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
+    RBRACE          reduce using rule 263 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
+    SEMI            reduce using rule 263 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
+    BREAK           reduce using rule 263 (constante -> DEFINE LPAREN NOMBRE COMMA ARRAY RPAREN SEMI .)
+
+
+state 547
 
     (80) condicion_elseif -> ELSEIF LPAREN condicion RPAREN LBRACE cuerpo . RBRACE
 
-    RBRACE          shift and go to state 562
+    RBRACE          shift and go to state 574
 
 
-state 537
+state 548
 
     (92) condicion -> LPAREN VARIABLE operadores valor RPAREN . operador_logico valor
     (93) condicion -> LPAREN VARIABLE operadores valor RPAREN . condicion_booleana valor
@@ -10320,10 +10474,10 @@ state 537
     IS_IDENTICAL    shift and go to state 353
     IS_NOT_IDENTICAL shift and go to state 354
 
-    operador_logico                shift and go to state 563
-    condicion_booleana             shift and go to state 564
+    operador_logico                shift and go to state 575
+    condicion_booleana             shift and go to state 576
 
-state 538
+state 549
 
     (113) bwhile -> WHILE LPAREN condicion RPAREN LBRACE stc_bloque RBRACE .
 
@@ -10333,24 +10487,24 @@ state 538
     BREAK           reduce using rule 113 (bwhile -> WHILE LPAREN condicion RPAREN LBRACE stc_bloque RBRACE .)
 
 
-state 539
+state 550
 
     (203) comprobacion -> NOMBRE LPAREN valor . RPAREN
 
-    RPAREN          shift and go to state 565
+    RPAREN          shift and go to state 577
 
 
-state 540
+state 551
 
     (204) comprobacion -> NOMBRE LPAREN VARIABLE . RPAREN
     (188) bcolas -> VARIABLE . EQUALS NEW SPLQUEUE LPAREN RPAREN SEMI
     (247) bpila -> VARIABLE . EQUALS NEW SPLSTACK LPAREN RPAREN SEMI
 
-    RPAREN          shift and go to state 566
+    RPAREN          shift and go to state 578
     EQUALS          shift and go to state 211
 
 
-state 541
+state 552
 
     (244) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores VARIABLE . operadores operaciones_mat_par SEMI
     (126) operadores -> . SUMA
@@ -10365,9 +10519,9 @@ state 541
     DIVISION        shift and go to state 143
     MODULO          shift and go to state 144
 
-    operadores                     shift and go to state 483
+    operadores                     shift and go to state 487
 
-state 542
+state 553
 
     (124) catches -> catches CATCH LPAREN EXCEPTION VARIABLE RPAREN . stc_bloque_def
     (102) stc_bloque_def -> . LBRACE stc_bloque RBRACE
@@ -10375,9 +10529,9 @@ state 542
 
     LBRACE          shift and go to state 288
 
-    stc_bloque_def                 shift and go to state 567
+    stc_bloque_def                 shift and go to state 579
 
-state 543
+state 554
 
     (99) bfor -> FOR LPAREN asignacion condicion SEMI for_incr RPAREN . stc_bloque_def
     (102) stc_bloque_def -> . LBRACE stc_bloque RBRACE
@@ -10385,41 +10539,41 @@ state 543
 
     LBRACE          shift and go to state 288
 
-    stc_bloque_def                 shift and go to state 568
+    stc_bloque_def                 shift and go to state 580
 
-state 544
+state 555
 
     (104) for_incr -> VARIABLE SUMA . SUMA
     (108) for_incr -> VARIABLE SUMA . EQUALS numero
 
-    SUMA            shift and go to state 569
-    EQUALS          shift and go to state 570
+    SUMA            shift and go to state 581
+    EQUALS          shift and go to state 582
 
 
-state 545
+state 556
 
     (106) for_incr -> VARIABLE RESTA . RESTA
     (109) for_incr -> VARIABLE RESTA . EQUALS numero
 
-    RESTA           shift and go to state 571
-    EQUALS          shift and go to state 572
+    RESTA           shift and go to state 583
+    EQUALS          shift and go to state 584
 
 
-state 546
+state 557
 
     (105) for_incr -> SUMA SUMA . VARIABLE
 
-    VARIABLE        shift and go to state 573
+    VARIABLE        shift and go to state 585
 
 
-state 547
+state 558
 
     (107) for_incr -> RESTA RESTA . VARIABLE
 
-    VARIABLE        shift and go to state 574
+    VARIABLE        shift and go to state 586
 
 
-state 548
+state 559
 
     (112) bforeach -> FOREACH LPAREN VARIABLE AS VARIABLE RPAREN stc_bloque_def .
 
@@ -10429,7 +10583,7 @@ state 548
     BREAK           reduce using rule 112 (bforeach -> FOREACH LPAREN VARIABLE AS VARIABLE RPAREN stc_bloque_def .)
 
 
-state 549
+state 560
 
     (118) bswitch -> SWITCH LPAREN VARIABLE RPAREN LBRACE innerSwitch RBRACE .
 
@@ -10439,15 +10593,15 @@ state 549
     BREAK           reduce using rule 118 (bswitch -> SWITCH LPAREN VARIABLE RPAREN LBRACE innerSwitch RBRACE .)
 
 
-state 550
+state 561
 
     (121) innerSwitch -> bcase cuerpo . BREAK SEMI
     (122) innerSwitch -> bcase cuerpo . BREAK SEMI innerSwitch
 
-    BREAK           shift and go to state 575
+    BREAK           shift and go to state 587
 
 
-state 551
+state 562
 
     (172) brand -> RAND LPAREN ENTERO COMMA ENTERO RPAREN SEMI .
 
@@ -10465,7 +10619,7 @@ state 551
     DECIMAL         reduce using rule 172 (brand -> RAND LPAREN ENTERO COMMA ENTERO RPAREN SEMI .)
 
 
-state 552
+state 563
 
     (191) escribir -> FWRITE LPAREN NOMBRE COMMA CADENA RPAREN SEMI .
 
@@ -10483,24 +10637,34 @@ state 552
     DECIMAL         reduce using rule 191 (escribir -> FWRITE LPAREN NOMBRE COMMA CADENA RPAREN SEMI .)
 
 
-state 553
+state 564
 
     (192) btrim -> TRIM LPAREN NOMBRE LPAREN NOMBRE RPAREN RPAREN . SEMI
 
-    SEMI            shift and go to state 576
+    SEMI            shift and go to state 588
 
 
-state 554
+state 565
 
-    (262) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .
+    (266) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI .
 
-    $end            reduce using rule 262 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
-    RBRACE          reduce using rule 262 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
-    SEMI            reduce using rule 262 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
-    BREAK           reduce using rule 262 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
+    $end            reduce using rule 266 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI .)
+    RBRACE          reduce using rule 266 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI .)
+    SEMI            reduce using rule 266 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI .)
+    BREAK           reduce using rule 266 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA VARIABLE RPAREN SEMI .)
 
 
-state 555
+state 566
+
+    (265) arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .
+
+    $end            reduce using rule 265 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
+    RBRACE          reduce using rule 265 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
+    SEMI            reduce using rule 265 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
+    BREAK           reduce using rule 265 (arraypush -> ARRAY_PUSH LPAREN VARIABLE COMMA valor RPAREN SEMI .)
+
+
+state 567
 
     (170) funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN LBRACE empty RBRACE .
 
@@ -10510,16 +10674,16 @@ state 555
     BREAK           reduce using rule 170 (funcion_blank -> FUNCTION NOMBRE LPAREN RPAREN LBRACE empty RBRACE .)
 
 
-state 556
+state 568
 
     (168) funcion_void -> FUNCTION NOMBRE LPAREN RPAREN COLON VOID LBRACE . empty RBRACE
     (187) empty -> .
 
     RBRACE          reduce using rule 187 (empty -> .)
 
-    empty                          shift and go to state 577
+    empty                          shift and go to state 589
 
-state 557
+state 569
 
     (78) condicion_if -> IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE .
 
@@ -10531,7 +10695,7 @@ state 557
     BREAK           reduce using rule 78 (condicion_if -> IF LPAREN condicion RPAREN LBRACE cuerpo RBRACE .)
 
 
-state 558
+state 570
 
     (154) operaciones_mat_par -> LPAREN VARIABLE operadores valor RPAREN operadores valor .
 
@@ -10539,7 +10703,7 @@ state 558
     RPAREN          reduce using rule 154 (operaciones_mat_par -> LPAREN VARIABLE operadores valor RPAREN operadores valor .)
 
 
-state 559
+state 571
 
     (156) operaciones_mat_par -> LPAREN VARIABLE operadores tipoDato RPAREN operadores tipoDato .
 
@@ -10547,7 +10711,7 @@ state 559
     RPAREN          reduce using rule 156 (operaciones_mat_par -> LPAREN VARIABLE operadores tipoDato RPAREN operadores tipoDato .)
 
 
-state 560
+state 572
 
     (244) aumentoCasting -> VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI .
 
@@ -10572,15 +10736,15 @@ state 560
     IS_NOT_IDENTICAL reduce using rule 244 (aumentoCasting -> VARIABLE EQUALS VARIABLE operadores VARIABLE operadores operaciones_mat_par SEMI .)
 
 
-state 561
+state 573
 
-    (264) arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN .
+    (268) arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN .
 
-    SEMI            reduce using rule 264 (arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN .)
-    RPAREN          reduce using rule 264 (arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN .)
+    SEMI            reduce using rule 268 (arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN .)
+    RPAREN          reduce using rule 268 (arraysearch -> ARRAY_SEARCH LPAREN valor COMMA VARIABLE RPAREN .)
 
 
-state 562
+state 574
 
     (80) condicion_elseif -> ELSEIF LPAREN condicion RPAREN LBRACE cuerpo RBRACE .
 
@@ -10591,7 +10755,7 @@ state 562
     BREAK           reduce using rule 80 (condicion_elseif -> ELSEIF LPAREN condicion RPAREN LBRACE cuerpo RBRACE .)
 
 
-state 563
+state 575
 
     (92) condicion -> LPAREN VARIABLE operadores valor RPAREN operador_logico . valor
     (51) valor -> . tipoDato
@@ -10611,13 +10775,13 @@ state 563
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 578
+    valor                          shift and go to state 590
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
 
-state 564
+state 576
 
     (93) condicion -> LPAREN VARIABLE operadores valor RPAREN condicion_booleana . valor
     (51) valor -> . tipoDato
@@ -10637,13 +10801,13 @@ state 564
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    valor                          shift and go to state 579
+    valor                          shift and go to state 591
     tipoDato                       shift and go to state 100
     bcolas                         shift and go to state 101
     bpila                          shift and go to state 102
     numero                         shift and go to state 106
 
-state 565
+state 577
 
     (203) comprobacion -> NOMBRE LPAREN valor RPAREN .
 
@@ -10658,7 +10822,7 @@ state 565
     SEMI            reduce using rule 203 (comprobacion -> NOMBRE LPAREN valor RPAREN .)
 
 
-state 566
+state 578
 
     (204) comprobacion -> NOMBRE LPAREN VARIABLE RPAREN .
 
@@ -10673,7 +10837,7 @@ state 566
     SEMI            reduce using rule 204 (comprobacion -> NOMBRE LPAREN VARIABLE RPAREN .)
 
 
-state 567
+state 579
 
     (124) catches -> catches CATCH LPAREN EXCEPTION VARIABLE RPAREN stc_bloque_def .
 
@@ -10684,7 +10848,7 @@ state 567
     BREAK           reduce using rule 124 (catches -> catches CATCH LPAREN EXCEPTION VARIABLE RPAREN stc_bloque_def .)
 
 
-state 568
+state 580
 
     (99) bfor -> FOR LPAREN asignacion condicion SEMI for_incr RPAREN stc_bloque_def .
 
@@ -10694,14 +10858,14 @@ state 568
     BREAK           reduce using rule 99 (bfor -> FOR LPAREN asignacion condicion SEMI for_incr RPAREN stc_bloque_def .)
 
 
-state 569
+state 581
 
     (104) for_incr -> VARIABLE SUMA SUMA .
 
     RPAREN          reduce using rule 104 (for_incr -> VARIABLE SUMA SUMA .)
 
 
-state 570
+state 582
 
     (108) for_incr -> VARIABLE SUMA EQUALS . numero
     (57) numero -> . ENTERO
@@ -10710,16 +10874,16 @@ state 570
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    numero                         shift and go to state 580
+    numero                         shift and go to state 592
 
-state 571
+state 583
 
     (106) for_incr -> VARIABLE RESTA RESTA .
 
     RPAREN          reduce using rule 106 (for_incr -> VARIABLE RESTA RESTA .)
 
 
-state 572
+state 584
 
     (109) for_incr -> VARIABLE RESTA EQUALS . numero
     (57) numero -> . ENTERO
@@ -10728,31 +10892,31 @@ state 572
     ENTERO          shift and go to state 94
     DECIMAL         shift and go to state 108
 
-    numero                         shift and go to state 581
+    numero                         shift and go to state 593
 
-state 573
+state 585
 
     (105) for_incr -> SUMA SUMA VARIABLE .
 
     RPAREN          reduce using rule 105 (for_incr -> SUMA SUMA VARIABLE .)
 
 
-state 574
+state 586
 
     (107) for_incr -> RESTA RESTA VARIABLE .
 
     RPAREN          reduce using rule 107 (for_incr -> RESTA RESTA VARIABLE .)
 
 
-state 575
+state 587
 
     (121) innerSwitch -> bcase cuerpo BREAK . SEMI
     (122) innerSwitch -> bcase cuerpo BREAK . SEMI innerSwitch
 
-    SEMI            shift and go to state 582
+    SEMI            shift and go to state 594
 
 
-state 576
+state 588
 
     (192) btrim -> TRIM LPAREN NOMBRE LPAREN NOMBRE RPAREN RPAREN SEMI .
 
@@ -10770,14 +10934,14 @@ state 576
     DECIMAL         reduce using rule 192 (btrim -> TRIM LPAREN NOMBRE LPAREN NOMBRE RPAREN RPAREN SEMI .)
 
 
-state 577
+state 589
 
     (168) funcion_void -> FUNCTION NOMBRE LPAREN RPAREN COLON VOID LBRACE empty . RBRACE
 
-    RBRACE          shift and go to state 583
+    RBRACE          shift and go to state 595
 
 
-state 578
+state 590
 
     (92) condicion -> LPAREN VARIABLE operadores valor RPAREN operador_logico valor .
 
@@ -10792,7 +10956,7 @@ state 578
     SEMI            reduce using rule 92 (condicion -> LPAREN VARIABLE operadores valor RPAREN operador_logico valor .)
 
 
-state 579
+state 591
 
     (93) condicion -> LPAREN VARIABLE operadores valor RPAREN condicion_booleana valor .
 
@@ -10807,21 +10971,21 @@ state 579
     SEMI            reduce using rule 93 (condicion -> LPAREN VARIABLE operadores valor RPAREN condicion_booleana valor .)
 
 
-state 580
+state 592
 
     (108) for_incr -> VARIABLE SUMA EQUALS numero .
 
     RPAREN          reduce using rule 108 (for_incr -> VARIABLE SUMA EQUALS numero .)
 
 
-state 581
+state 593
 
     (109) for_incr -> VARIABLE RESTA EQUALS numero .
 
     RPAREN          reduce using rule 109 (for_incr -> VARIABLE RESTA EQUALS numero .)
 
 
-state 582
+state 594
 
     (121) innerSwitch -> bcase cuerpo BREAK SEMI .
     (122) innerSwitch -> bcase cuerpo BREAK SEMI . innerSwitch
@@ -10833,10 +10997,10 @@ state 582
     RBRACE          reduce using rule 121 (innerSwitch -> bcase cuerpo BREAK SEMI .)
     CASE            shift and go to state 66
 
-    bcase                          shift and go to state 514
-    innerSwitch                    shift and go to state 584
+    bcase                          shift and go to state 521
+    innerSwitch                    shift and go to state 596
 
-state 583
+state 595
 
     (168) funcion_void -> FUNCTION NOMBRE LPAREN RPAREN COLON VOID LBRACE empty RBRACE .
 
@@ -10846,7 +11010,7 @@ state 583
     BREAK           reduce using rule 168 (funcion_void -> FUNCTION NOMBRE LPAREN RPAREN COLON VOID LBRACE empty RBRACE .)
 
 
-state 584
+state 596
 
     (122) innerSwitch -> bcase cuerpo BREAK SEMI innerSwitch .
 
@@ -10876,35 +11040,35 @@ WARNING: shift/reduce conflict for RPAREN in state 304 resolved as shift
 WARNING: shift/reduce conflict for RPAREN in state 360 resolved as shift
 WARNING: shift/reduce conflict for RBRACE in state 387 resolved as shift
 WARNING: shift/reduce conflict for RPAREN in state 406 resolved as shift
-WARNING: shift/reduce conflict for AND in state 447 resolved as shift
-WARNING: shift/reduce conflict for OR in state 447 resolved as shift
-WARNING: shift/reduce conflict for XOR in state 447 resolved as shift
-WARNING: shift/reduce conflict for IS_EQUAL in state 447 resolved as shift
-WARNING: shift/reduce conflict for IS_NOT_EQUAL in state 447 resolved as shift
-WARNING: shift/reduce conflict for IS_IDENTICAL in state 447 resolved as shift
-WARNING: shift/reduce conflict for IS_NOT_IDENTICAL in state 447 resolved as shift
-WARNING: shift/reduce conflict for BREAK in state 462 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 462 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 462 resolved as shift
-WARNING: shift/reduce conflict for BREAK in state 462 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 473 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 475 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 475 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 499 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 499 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 502 resolved as shift
-WARNING: shift/reduce conflict for SEMI in state 503 resolved as shift
-WARNING: shift/reduce conflict for BREAK in state 514 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 514 resolved as shift
-WARNING: shift/reduce conflict for BREAK in state 514 resolved as shift
-WARNING: shift/reduce conflict for RBRACE in state 520 resolved as shift
+WARNING: shift/reduce conflict for AND in state 450 resolved as shift
+WARNING: shift/reduce conflict for OR in state 450 resolved as shift
+WARNING: shift/reduce conflict for XOR in state 450 resolved as shift
+WARNING: shift/reduce conflict for IS_EQUAL in state 450 resolved as shift
+WARNING: shift/reduce conflict for IS_NOT_EQUAL in state 450 resolved as shift
+WARNING: shift/reduce conflict for IS_IDENTICAL in state 450 resolved as shift
+WARNING: shift/reduce conflict for IS_NOT_IDENTICAL in state 450 resolved as shift
+WARNING: shift/reduce conflict for BREAK in state 465 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 465 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 465 resolved as shift
+WARNING: shift/reduce conflict for BREAK in state 465 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 477 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 479 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 479 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 506 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 506 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 509 resolved as shift
+WARNING: shift/reduce conflict for SEMI in state 510 resolved as shift
+WARNING: shift/reduce conflict for BREAK in state 521 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 521 resolved as shift
+WARNING: shift/reduce conflict for BREAK in state 521 resolved as shift
+WARNING: shift/reduce conflict for RBRACE in state 528 resolved as shift
 WARNING: reduce/reduce conflict in state 0 resolved using rule (bwhile -> <empty>)
 WARNING: rejected rule (empty -> <empty>) in state 0
 WARNING: reduce/reduce conflict in state 60 resolved using rule (bwhile -> <empty>)
 WARNING: rejected rule (empty -> <empty>) in state 60
 WARNING: reduce/reduce conflict in state 387 resolved using rule (cuerpo -> breturn)
 WARNING: rejected rule (stc_bloque -> breturn) in state 387
-WARNING: reduce/reduce conflict in state 462 resolved using rule (bwhile -> <empty>)
-WARNING: rejected rule (empty -> <empty>) in state 462
-WARNING: reduce/reduce conflict in state 473 resolved using rule (bwhile -> <empty>)
-WARNING: rejected rule (empty -> <empty>) in state 473
+WARNING: reduce/reduce conflict in state 465 resolved using rule (bwhile -> <empty>)
+WARNING: rejected rule (empty -> <empty>) in state 465
+WARNING: reduce/reduce conflict in state 477 resolved using rule (bwhile -> <empty>)
+WARNING: rejected rule (empty -> <empty>) in state 477
